@@ -76,15 +76,9 @@
                     @if (User.IsInRole(JIC.Base.SystemUserTypes.JICAdmin.ToString()))
                     {
                         <a href="/User/Index" id="ausers" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المستخدمين</a>
-                        <a href="/Lawyer/Index" id="ausers" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المحامين</a>
-                    }
-                    @if (User.IsInRole(JIC.Base.SystemUserTypes.DataEntry.ToString()))
-                    {
-                       
-                        <a href="/Lawyer/Index" id="ausers" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المحامين</a>
                     }
                     @*<a href="/Security/CurrentUsers" class="list-group-item" data-parent="#sub-menu" id="aCurrentUsers" runat="server" visible="false">المستخدمين الحاليين للنظام</a>*@
-
+               
                     @if (User.IsInRole(JIC.Base.SystemUserTypes.Secretary.ToString()))
                     {
                         <a href="/TextPredections/Index" class="list-group-item" data-parent="#sub-menu" id="aTextPredections" runat="server" visible="false">الجمل الشهيرة</a>
@@ -95,12 +89,12 @@
                         <a href="/Prosecutor/Index" id="aProsecuters" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">وكلاء النيابة</a>
                     }
                     @*@if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()  ) || User.IsInRole(JIC.Base.SystemUserTypes.CourtHead.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.InitialCourtAdministrator.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.CriminalDepManager.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ImplementationEmployee.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.InquiriesEmployee.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.JICAdmin.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.Judge.ToString())*@
-                    @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()))
+                    @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) )
                     {
                         <a href="/WorkingDays/Create" id="aVacations" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">إعداد الأدوار و العطلات</a>
                     }
                     @*<a href="/Configrations/EditNormalPerson" id="aEditNormalPerson" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">تعديل بيانات شخص طبيعى</a>
-        <a href="/Configrations/EditLegalPerson" id="aEditLegalPerson" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">تعديل بيانات شخص اعتبارى</a>*@
+                        <a href="/Configrations/EditLegalPerson" id="aEditLegalPerson" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">تعديل بيانات شخص اعتبارى</a>*@
                 </div>
 
 

@@ -44,7 +44,7 @@ namespace JIC.Components.Components
             unityContainer.RegisterType<VictimsSessionLogComponent>();
             unityContainer.RegisterType<DefendantsSessionLogComponent>();
             unityContainer.RegisterType<PoliceStationCircuitsComponent >();
-            unityContainer.RegisterType<LawyerComponent>();
+            unityContainer.RegisterType<WitnessesComponent>();
         }
     }
 }

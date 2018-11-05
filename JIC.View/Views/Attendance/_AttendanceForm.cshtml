@@ -1,4 +1,5 @@
 ﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
 @model  MinutesOfSessionCreateViewModel
 
 @using (Ajax.BeginForm("Index", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Indexdiv" }))
@@ -27,22 +28,22 @@
                     @Html.Label((Model.CaseDefectsData.Count).ToString() + " متهم ")
 
                     @(Html
-                                                                                                                                                                                       .Grid(Model.CaseDefectsData.AsEnumerable())
-                                                                                                                                                                                       .Build(columns =>
-                                                                                                                                                                                       {
-                                                                                                                                                                                           columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
+                                                                                                                                                                                               .Grid(Model.CaseDefectsData.AsEnumerable())
+                                                                                                                                                                                               .Build(columns =>
+                                                                                                                                                                                               {
+                                                                                                                                                                                                   columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
 
-                                                                                                                                                                                           columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Defendent' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.ID) + Html.Hidden("DefectType", model.DefectType)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
-                                                                                                                                                                                           columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
-                                                                                                                                                                                           columns.Add(model => model.Nationality).Titled(JIC.Base.Resources.Resources.Nationality);
-                                                                                                                                                                                           columns.Add(model => model.NationalID==null ? model.PassportNumber:model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
-                                                                                                                                                                                           //columns.Add(model => model.Birthdate).Titled(JIC.Base.Resources.Resources.Birthday);
-                                                                                                                                                                                           columns.Add(model => model.Age.ToString()).Titled(JIC.Base.Resources.Resources.Age);
-                                                                                                                                                                                           columns.Add(model => model.JobName).Titled(JIC.Base.Resources.Resources.Job);
-                                                                                                                                                                                           //  columns.Add(model => model.PassportNumber).Titled(JIC.Base.Resources.Resources.PassportNo);
-                                                                                                                                                                                           columns.Add(model => model.Address).Titled(JIC.Base.Resources.Resources.Address);
+                                                                                                                                                                                                   columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Defendent' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.ID) + Html.Hidden("DefectType", model.DefectType)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
+                                                                                                                                                                                                   columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
+                                                                                                                                                                                                   columns.Add(model => model.Nationality).Titled(JIC.Base.Resources.Resources.Nationality);
+                                                                                                                                                                                                   columns.Add(model => model.NationalID == null ? model.PassportNumber : model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+                                                                                                                                                                                                   //columns.Add(model => model.Birthdate).Titled(JIC.Base.Resources.Resources.Birthday);
+                                                                                                                                                                                                   columns.Add(model => model.Age.ToString()).Titled(JIC.Base.Resources.Resources.Age);
+                                                                                                                                                                                                   columns.Add(model => model.JobName).Titled(JIC.Base.Resources.Resources.Job);
+                                                                                                                                                                                                   //  columns.Add(model => model.PassportNumber).Titled(JIC.Base.Resources.Resources.PassportNo);
+                                                                                                                                                                                                   columns.Add(model => model.Address).Titled(JIC.Base.Resources.Resources.Address);
 
-                                                                                                                                                                                       }).RowCss(row => "Defendent")
+                                                                                                                                                                                               }).RowCss(row => "Defendent")
 
                     )
 
@@ -57,30 +58,90 @@
                 <div class="panel-body">
                     @Html.Label((Model.CaseVictims.Count).ToString() + " مجنى عليه ")
 
+
+
+
+
                     @(Html
-                                                                                                                                                                          .Grid(Model.CaseVictims.AsEnumerable())
-                                                                                                                                                                          .Build(columns =>
-                                                                                                                                                                          {
-                                                                                                                                                                              columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
+                                                                                                                                                                                  .Grid(Model.CaseVictims.AsEnumerable())
+                                                                                                                                                                                  .Build(columns =>
+                                                                                                                                                                                  {
+                                                                                                                                                                                      columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
 
-                                                                                                                                                                              columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Victims' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.ID) + Html.Hidden("DefectType", model.DefectType)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
-                                                                                                                                                                              columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
-                                                                                                                                                                              columns.Add(model => model.Nationality).Titled(JIC.Base.Resources.Resources.Nationality);
-                                                                                                                                                                              columns.Add(model => model.NationalID == null ? model.PassportNumber : model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
-                                                                                                                                                                              //columns.Add(model => model.Birthdate).Titled(JIC.Base.Resources.Resources.Birthday);
-                                                                                                                                                                              columns.Add(model => model.Age.ToString()).Titled(JIC.Base.Resources.Resources.Age);
-                                                                                                                                                                              columns.Add(model => model.JobName).Titled(JIC.Base.Resources.Resources.Job);
-                                                                                                                                                                              //  columns.Add(model => model.PassportNumber).Titled(JIC.Base.Resources.Resources.PassportNo);
-                                                                                                                                                                              columns.Add(model => model.Address).Titled(JIC.Base.Resources.Resources.Address);
+                                                                                                                                                                                      columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Victims' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.ID) + Html.Hidden("DefectType", model.DefectType)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
+                                                                                                                                                                                      columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
+                                                                                                                                                                                      columns.Add(model => model.Nationality).Titled(JIC.Base.Resources.Resources.Nationality);
+                                                                                                                                                                                      columns.Add(model => model.NationalID == null ? model.PassportNumber : model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+                                                                                                                                                                                      //columns.Add(model => model.Birthdate).Titled(JIC.Base.Resources.Resources.Birthday);
+                                                                                                                                                                                      columns.Add(model => model.Age.ToString()).Titled(JIC.Base.Resources.Resources.Age);
+                                                                                                                                                                                      columns.Add(model => model.JobName).Titled(JIC.Base.Resources.Resources.Job);
+                                                                                                                                                                                      //  columns.Add(model => model.PassportNumber).Titled(JIC.Base.Resources.Resources.PassportNo);
+                                                                                                                                                                                      columns.Add(model => model.Address).Titled(JIC.Base.Resources.Resources.Address);
 
-                                                                                                                                                                          }).RowCss(row => "Victims")
+                                                                                                                                                                                  }).RowCss(row => "Victims")
 
                     )
                 </div>
             </div>
 
+
+            @*----------------------------------- الشهود ----------------------------------------*@
+
+            <a href="#" class="btn-primary fa-lg modal-link" data-toggle="modal" data-target="#AddWitnessModel"  data-url="@Url.Action("Create", "Witnesses" , new { id=Model.MinutesOfSession.CaseID})">اضافة شاهد جديد</a>
+            <br />
+            <br />
+            <div class="panel-heading">
+                @JIC.Base.Resources.Resources.Witnesses
+            </div>
+            <div class="panel-body">
+                @Html.Label((Model.CaseWitnesses.Count).ToString() + " شهود ")
+
+
+                @(Html
+.Grid(Model.CaseWitnesses.AsEnumerable())
+.Build(columns =>
+{
+    columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
+    columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='witness' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.DefectID)+ Html.Hidden("SessionId", model.SessionId)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
+    //columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Victims' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.ID) + Html.Hidden("DefectType", model.DefectType)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
+    columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
+    columns.Add(model => model.Nationality).Titled(JIC.Base.Resources.Resources.Nationality);
+    columns.Add(model => model.NationalID == null ? model.PassportNumber : model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+    columns.Add(model => model.Birthdate).Titled(JIC.Base.Resources.Resources.Birthday);
+    columns.Add(model => model.Age.ToString()).Titled(JIC.Base.Resources.Resources.Age);
+    columns.Add(model => model.JobName).Titled(JIC.Base.Resources.Resources.Job);
+    columns.Add(model => model.PassportNumber).Titled(JIC.Base.Resources.Resources.PassportNo);
+    columns.Add(model => model.Address).Titled(JIC.Base.Resources.Resources.Address);
+    columns.Add(model =>
+                   //@Html.ActionLink(" ", "Edit", new { ProsecutorID = model.ID }, new { @class = "fa fa-pencil-square-o  fa-lg modal-link", data_toggle = "modal", data_target = "#EditModel" }).ToHtmlString()
+                   @"<a href=""#"" class=""fa fa-pencil-square-o  fa-lg modal-link"" data-toggle=""modal"" data-target=""#AddDocumentModel"" title=""" + Resources.AddDocumentWitness + @"""  data-url=""" + Url.Action("Create", "AtendanceWitnesses", new { CaseID=Model.MinutesOfSession.CaseID, SessionID = Model.MinutesOfSession.SessionID, WitnessID = model.DefectID,CircuitID=Model.MinutesOfSession.CircuitID }) + @"""></a>"
+    //@"<a href=""#"" class=""fa fa-pencil-square-o  fa-lg modal-link"" data-toggle=""modal"" data-target=""#EditModel"" title=""" + Resources.Edit + @"""  data-url=""" + Url.Action("Edit", new { id = model.ID }) + @"""></a>"
+    //+ " | " +
+    //@Html.ActionLink(JIC.Base.Resources.Resources.Delete, "Delete", new { ProsecutorID = model.ID }, new { @class = "fa fa-trash-o", data_toggle = "modal", data_target = "#DeleteModel" }).ToHtmlString()
+    //@"<a href=""#"" class=""fa fa-trash-o modal-link"" data-toggle=""modal"" data-target=""#DeleteModel"" title=""" + Resources.Delete + @""" data-url=""" + Url.Action("Delete", "AtendanceWitnesses", new { id = model.ID }) + @"""></a>"
+
+    //"<button type="button" class="fa fa-trash-o" data-toggle="modal" data-target="#DeleteModel" ></button>"
+    ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+}).RowCss(row => "AttendanceWitness")
+
+                )
+
+                @using (Html.BeginModel("AddDocumentModel", JIC.Base.Resources.Resources.AddDocumentWitness))
+    {
+        //Html.RenderAction("Edit");
+    }
+                @using (Html.BeginModel("AddWitnessModel", JIC.Base.Resources.Resources.AddWitness))
+    {
+        //Html.RenderAction("Edit");
+    }
+                @*@using (Html.BeginModel("DeleteModel", JIC.Base.Resources.Resources.Delete))
+    {
+        // Html.RenderAction("Delete");
+    }*@
+            </div>
         </div>
-    </div>
+        </div>
+    
     <div class="row">
 
         <div class="col-sm-4">

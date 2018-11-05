@@ -33,6 +33,21 @@
 
             </a>
         </li>
+
+        @*<li class="active" id="atten">
+            <a data-toggle="pill" href="#Attendance" id="AttendanceCheck">
+                @JIC.Base.Resources.PageTitles.WitnessesAttendance
+                @if (Model.SaveAttendance)
+            {
+                    <i class="fa fa-check">
+
+                    </i>
+                }
+
+            </a>
+        </li>*@
+
+
         @if (Model.CurentUserID == (int)JIC.Base.SystemUserTypes.Secretary)
         {
 
@@ -112,6 +127,15 @@
 
         </div>
 
+        //<div id="Witnesses" class="tab-pane fade">
+        //    <h3>  @JIC.Base.Resources.PageTitles.WitnessesAttendance  </h3>
+            @*  @using (Html.CUpdatePanel(Url.Action("Create", "MinutesOfSession"), "UPMinutesOfSession"))*@
+
+         //   @{Html.RenderAction("Index", "WitnessesAttendance", new { SessionID = Model.SessionID, id = Model.CaseID, CircuitID = Model.CircuitID });}
+
+      //  </div>
+
+
         <div id="Attachement" class="tab-pane fade">
 
             @{ Html.RenderAction("Index", "Attachment", new { id = Model.CaseID, SessionID = Model.SessionID });}
@@ -131,7 +155,7 @@
             <h3>@JIC.Base.Resources.PageTitles.SendToJudge</h3>
             @*@using (Html.CUpdatePanel(Url.Action("Index", "SendToJudge"), "UPSendToJudge"))
             {*@
-            @if (Model.CurentUserID != 2)
+            @if (Model.CurentUserID != (int)JIC.Base.SystemUserTypes.Judge)
             {
                 {
                     Html.RenderAction("SendPartial", "SendToJudge", new { SessionID = Model.SessionID, id = Model.CaseID });
@@ -196,6 +220,8 @@
                   $("#SendToJudgeCheck").append("<i class='fa fa-check'></i >");
 
               });
+             
+
  });
 
 </script>

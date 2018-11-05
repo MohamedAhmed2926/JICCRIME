@@ -63,7 +63,6 @@
   <ItemGroup>
     <Compile Include="Models\CaseAction.cs" />
     <Compile Include="Models\CaseAction_UserType.cs" />
-    <Compile Include="Models\CaseLawyers.cs" />
     <Compile Include="Models\Cases_CaseDefendants.cs" />
     <Compile Include="Models\Cases_CaseDescription.cs" />
     <Compile Include="Models\Cases_CaseDocumentFolders.cs" />
@@ -92,7 +91,7 @@
     <Compile Include="Models\Cases_VictimsCaseLog.cs" />
     <Compile Include="Models\Cases_VictimsSessionsLog.cs" />
     <Compile Include="Models\Cases_WitnessesCaseLog.cs" />
-    <Compile Include="Models\Case_Lawyer.cs" />
+    <Compile Include="Models\Cases_WitnessSessionLog.cs" />
     <Compile Include="Models\Configurations_CaseTypes.cs" />
     <Compile Include="Models\Configurations_Courts.cs" />
     <Compile Include="Models\Configurations_Courts_Crimes.cs" />

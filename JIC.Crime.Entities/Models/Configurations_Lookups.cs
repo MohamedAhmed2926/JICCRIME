@@ -34,9 +34,6 @@ namespace JIC.Crime.Entities.Models
             Configurations_Persons = new HashSet<Configurations_Persons>();
             Configurations_Persons1 = new HashSet<Configurations_Persons>();
             Security_UsersLoginFailure = new HashSet<Security_UsersLoginFailure>();
-            //Lawyers = new HashSet<Lawyers>();
-            CaseLawyers = new HashSet<CaseLawyers>();
-            Case_Lawyer = new HashSet<Case_Lawyer>();
         }
 
         public int ID { get; set; }
@@ -128,14 +125,7 @@ namespace JIC.Crime.Entities.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Security_UsersLoginFailure> Security_UsersLoginFailure { get; set; }
-        //   [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        //   public virtual ICollection<CourtConfigurations_TextPredictions> CourtConfigurations_TextPredictions { get; set; }
-        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        //public virtual ICollection<Lawyers> Lawyers { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CaseLawyers> CaseLawyers { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Case_Lawyer> Case_Lawyer { get; set; }
+     //   [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+     //   public virtual ICollection<CourtConfigurations_TextPredictions> CourtConfigurations_TextPredictions { get; set; }
     }
 }

@@ -21,6 +21,7 @@ namespace JIC.Base.Views
         public List<vw_KeyValue> Crimes { get; set; }
         public bool IsCivilRightProsecutor { get; set; }
         public string Address { get; set; }
+        public string NationalityName { get; set; }
         public string JobName { get; set; }
         public string PassportNumber { get; set; }
        public PresenceStatus Presence { get; set; }
@@ -29,5 +30,7 @@ namespace JIC.Base.Views
         public int? PoliceStationID { get; set; }
         public int? CityID { get; set; }
         public string Nationality { get; set; }
+        public byte[] WitnessTestimonyFile { get; set; }
+        public int? Attendence { get; set; }
     }
 }

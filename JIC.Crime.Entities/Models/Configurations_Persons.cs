@@ -16,10 +16,8 @@ namespace JIC.Crime.Entities.Models
             Cases_CaseWitnesses = new HashSet<Cases_CaseWitnesses>();
             Configurations_OrganizationRepresentatives = new HashSet<Configurations_OrganizationRepresentatives>();
             Configurations_OrganizationRepresentatives1 = new HashSet<Configurations_OrganizationRepresentatives>();
-            //Lawyers = new HashSet<Lawyers>();
+          
             Security_Users = new HashSet<Security_Users>();
-            CaseLawyers = new HashSet<CaseLawyers>();
-            Case_Lawyer = new HashSet<Case_Lawyer>();
         }
 
         public long ID { get; set; }
@@ -79,13 +77,5 @@ namespace JIC.Crime.Entities.Models
   
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Security_Users> Security_Users { get; set; }
-
-       // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-       // public virtual ICollection<Lawyers> Lawyers { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CaseLawyers> CaseLawyers { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Case_Lawyer> Case_Lawyer { get; set; }
     }
 }

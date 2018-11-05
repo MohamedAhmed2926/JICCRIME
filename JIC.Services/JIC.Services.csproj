@@ -108,7 +108,6 @@
     <Compile Include="ServicesInterfaces\IDecisionService.cs" />
     <Compile Include="ServicesInterfaces\IDefectsService.cs" />
     <Compile Include="ServicesInterfaces\IFaultCaseService.cs" />
-    <Compile Include="ServicesInterfaces\ILawyerService.cs" />
     <Compile Include="ServicesInterfaces\ILookupService.cs" />
     <Compile Include="ServicesInterfaces\INotCompleteCasesService.cs" />
     <Compile Include="ServicesInterfaces\IOrderOfAssignment.cs" />
@@ -122,12 +121,13 @@
     <Compile Include="ServicesInterfaces\ITextPredectionsService.cs" />
     <Compile Include="ServicesInterfaces\IUserService.cs" />
     <Compile Include="ServicesInterfaces\IVacationService.cs" />
+    <Compile Include="ServicesInterfaces\IWitnessesService.cs" />
+    <Compile Include="ServicesInterfaces\IWitnessSessionLogService.cs" />
     <Compile Include="ServicesInterfaces\IWorkdayService.cs" />
     <Compile Include="Services\AttachmentsService.cs" />
     <Compile Include="Services\CaseSessionsService.cs" />
     <Compile Include="Services\CircuitMembersService.cs" />
     <Compile Include="Services\DecisionService.cs" />
-    <Compile Include="Services\LawyerService.cs" />
     <Compile Include="Services\NotCompleteCaseService.cs" />
     <Compile Include="Services\ProsecutionCaseService.cs" />
     <Compile Include="Services\RollsService.cs" />
@@ -144,6 +144,8 @@
     <Compile Include="Services\Security_UsersService.cs" />
     <Compile Include="Services\SessionsService.cs" />
     <Compile Include="Services\TextPredictionsService.cs" />
+    <Compile Include="Services\WitnessesService.cs" />
+    <Compile Include="Services\WitnessSessionLogService.cs" />
     <Compile Include="Services\WorkDaysService.cs" />
     <Compile Include="UnityContainer.cs" />
   </ItemGroup>

@@ -1,0 +1,65 @@
+﻿@using JIC.Crime.View.Models
+@model  WitnessViewModel
+
+
+@using (Html.BeginForm("Create", "Witnesses", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+{
+   
+    //Model.CaseID = (int)ViewData["CaseID"];
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-sm-12">
+            @Html.CTextBoxFor(model => model.NatNo, new { }, false)
+        </div>
+
+    </div>
+    
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(model => model.Name, new { })
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(model => model.Job, new { })
+                        @*<span class="hidden" id='Jobrequire' style='color: red'>هذا الحقل مطلوب</span>*@
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CDropDownFor(model => model.NationalityID, new SelectList(Model.Nationalities, "ID", "Name"), true)
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(model => model.PassportNo, new { })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        @Html.CDropDownFor(model => model.address_CityID, new SelectList(Model.Cities, "ID", "Name"), true)
+                    </div>
+                    <div class="col-sm-3">
+                        @Html.CDropDownFor(model => model.address_PoliceStationID, new SelectList(Model.PoliceStations, "ID", "Name"), true)
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(model => model.address_address, new { })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.BirthDate)
+                    </div>
+                    <div class="col-sm-6">
+                        @*<label for="age_id">@JIC.Base.Resources.Resources.Age</label>
+                            <input type="text" id="age_id" class="form-control disabled" disabled />*@
+                        @Html.CTextBoxFor(model => model.Age, "", true)
+                    </div>
+
+                    <div class="form-group">
+                        <div class="">
+
+                            <input type="submit" class="btn btn-primary" name="submitButton" value="@JIC.Base.Resources.Resources.SaveAndClose" />
+
+
+                        </div>
+                    </div>
+                </div>
+
+}

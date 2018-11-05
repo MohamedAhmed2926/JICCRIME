@@ -1,320 +1,85 @@
-2018-10-31 13:15:59.587 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 13:28:44.046 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 13:29:26.949 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 13:38:38.530 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 13:38:56.856 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 59
-2018-10-31 13:50:10.296 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 13:55:08.611 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 13:55:15.878 +02:00 [Error] E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-System.Web.HttpCompileException (0x80004005): E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-   at System.Web.Compilation.AssemblyBuilder.Compile()
-   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
-   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at JIC.Utilities.MvcHelpers.CPartialView.ExecuteResult(ControllerContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Utilities\MvcHelpers\CPartialView.cs:line 58
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+2018-10-31 10:58:09.030 +02:00 [Error] The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
-2018-10-31 13:55:19.953 +02:00 [Error] E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-System.Web.HttpCompileException (0x80004005): E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+2018-10-31 11:06:51.576 +02:00 [Error] The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
-2018-10-31 13:55:20.542 +02:00 [Error] E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-System.Web.HttpCompileException (0x80004005): E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+2018-10-31 11:31:42.323 +02:00 [Error] The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
-2018-10-31 13:55:29.021 +02:00 [Error] E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-System.Web.HttpCompileException (0x80004005): E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Create.cshtml(16): error CS1503: Argument 4: cannot convert from '<anonymous type: string enctype, string id>' to 'System.Web.Mvc.Ajax.AjaxOptions'
-   at System.Web.Compilation.AssemblyBuilder.Compile()
-   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
-   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+2018-10-31 11:34:35.231 +02:00 [Error] The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'CaseID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Create(Int32, Int32, Int32)' in 'JIC.Crime.View.Controllers.AtendanceWitnessesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
-2018-10-31 14:08:02.218 +02:00 [Error] Expected a "{" but found a "@".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
-
-@if(isLoggedIn)
-    <p>Hello, @user</p>
-
-Instead, wrap the contents of the block in "{}":
-
-@if(isLoggedIn) {
-    <p>Hello, @user</p>
-}
-
-System.Web.HttpParseException (0x80004005): Expected a "{" but found a "@".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
-
-@if(isLoggedIn)
-    <p>Hello, @user</p>
-
-Instead, wrap the contents of the block in "{}":
-
-@if(isLoggedIn) {
-    <p>Hello, @user</p>
-}
-
-   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
-   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
-   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
-   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
-   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
-   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
-2018-10-31 14:23:40.196 +02:00 [Error] Object reference not set to an instance of an object.
+2018-10-31 16:40:07.646 +02:00 [Error] Object reference not set to an instance of an object.
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:28:07.953 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 14:28:27.085 +02:00 [Error] Object reference not set to an instance of an object.
+   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\new\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
+2018-10-31 16:43:35.090 +02:00 [Error] Object reference not set to an instance of an object.
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:49:09.815 +02:00 [Error] Object reference not set to an instance of an object.
+   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\new\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
+2018-10-31 16:44:29.528 +02:00 [Error] Object reference not set to an instance of an object.
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:49:31.417 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 14:49:55.527 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:52:23.883 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 14:52:45.246 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:55:24.602 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:57:38.498 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 14:57:51.809 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 14:59:09.806 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:00:49.038 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:01:00.571 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:01:00.671 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:01:03.269 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:01:14.823 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:01:14.844 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:01:14.891 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:03:17.480 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 15:20:35.364 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 15:21:11.350 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 15:21:43.134 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 15:23:30.182 +02:00 [Error] Object reference not set to an instance of an object.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
-2018-10-31 15:40:24.027 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
-2018-10-31 16:01:37.077 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
-   at System.Data.Entity.Internal.InternalContext.SaveChanges()
-   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   at System.Data.Entity.DbContext.SaveChanges()
-   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
-   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
-   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
-   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\new\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25

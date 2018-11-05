@@ -63,10 +63,12 @@
     <Compile Include="Exceptions.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Interfaces.cs" />
+    <Compile Include="Interfaces\ICasesWitnessSessionLogRepository.cs" />
     <Compile Include="Interfaces\ICaseVictimProsecutioRepository.cs" />
     <Compile Include="Interfaces\ICaseDefendantProsecutioRepository.cs" />
     <Compile Include="Interfaces\ICaseDescriptionRepository.cs" />
     <Compile Include="Interfaces\ICaseProsecutionRepository.cs" />
+    <Compile Include="Interfaces\ICaseWitnessesRepository.cs" />
     <Compile Include="Interfaces\ICrimeCaseRepository.cs" />
     <Compile Include="Interfaces\ICaseSessionsRepository.cs" />
     <Compile Include="Interfaces\IDecisionsRepository.cs" />
@@ -75,7 +77,6 @@
     <Compile Include="Interfaces\IDefendantChargesRepository.cs" />
     <Compile Include="Interfaces\IDefendantsDecisionRepository.cs" />
     <Compile Include="Interfaces\IFaultCaseRepository.cs" />
-    <Compile Include="Interfaces\ILawyerRepository.cs" />
     <Compile Include="Interfaces\IMasterCaseRepository.cs" />
     <Compile Include="Interfaces\ICaseTypeReposatry.cs" />
     <Compile Include="Interfaces\ICircuitMembersRepository.cs" />
@@ -176,8 +177,6 @@
     <Compile Include="Views\vw_DefendantData.cs" />
     <Compile Include="Views\vw_Documents.cs" />
     <Compile Include="Views\vw_Folders.cs" />
-    <Compile Include="Views\vw_LawyerData.cs" />
-    <Compile Include="Views\vw_LawyerLevelData.cs" />
     <Compile Include="Views\vw_ListOfDefendant.cs" />
     <Compile Include="Views\vw_MessageViewModel.cs" />
     <Compile Include="Views\vw_KeyValue.cs" />
@@ -199,6 +198,7 @@
     <Compile Include="Views\vw_Vacations.cs" />
     <Compile Include="Views\vw_VictimData.cs" />
     <Compile Include="Views\vw_VictimFullData.cs" />
+    <Compile Include="Views\vw_WitnessAttendance.cs" />
     <Compile Include="Views\vw_WorkDays.cs" />
   </ItemGroup>
   <ItemGroup>

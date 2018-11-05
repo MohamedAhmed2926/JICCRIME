@@ -269,57 +269,38 @@
     <Compile Include="Migrations\201804111343167_isSent.Designer.cs">
       <DependentUpon>201804111343167_isSent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810221021497_AddLawyer.cs" />
-    <Compile Include="Migrations\201810221021497_AddLawyer.Designer.cs">
-      <DependentUpon>201810221021497_AddLawyer.cs</DependentUpon>
+    <Compile Include="Migrations\201810151317423_witnesstable.cs" />
+    <Compile Include="Migrations\201810151317423_witnesstable.Designer.cs">
+      <DependentUpon>201810151317423_witnesstable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810221634579_lawyersss.cs" />
-    <Compile Include="Migrations\201810221634579_lawyersss.Designer.cs">
-      <DependentUpon>201810221634579_lawyersss.cs</DependentUpon>
+    <Compile Include="Migrations\201810171229041_EditWitnessestable.cs" />
+    <Compile Include="Migrations\201810171229041_EditWitnessestable.Designer.cs">
+      <DependentUpon>201810171229041_EditWitnessestable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810221652265_Newlawyers.cs" />
-    <Compile Include="Migrations\201810221652265_Newlawyers.Designer.cs">
-      <DependentUpon>201810221652265_Newlawyers.cs</DependentUpon>
+    <Compile Include="Migrations\201810250920294_WitnessSessions.cs" />
+    <Compile Include="Migrations\201810250920294_WitnessSessions.Designer.cs">
+      <DependentUpon>201810250920294_WitnessSessions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810221722029_CaseLawyerss.cs" />
-    <Compile Include="Migrations\201810221722029_CaseLawyerss.Designer.cs">
-      <DependentUpon>201810221722029_CaseLawyerss.cs</DependentUpon>
+    <Compile Include="Migrations\201810281000064_EditWitness.cs" />
+    <Compile Include="Migrations\201810281000064_EditWitness.Designer.cs">
+      <DependentUpon>201810281000064_EditWitness.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810221728383_CaseLawyerss1.cs" />
-    <Compile Include="Migrations\201810221728383_CaseLawyerss1.Designer.cs">
-      <DependentUpon>201810221728383_CaseLawyerss1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810231414315_addtionals.cs" />
-    <Compile Include="Migrations\201810231414315_addtionals.Designer.cs">
-      <DependentUpon>201810231414315_addtionals.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810231442306_addlookupforlawyers.cs" />
-    <Compile Include="Migrations\201810231442306_addlookupforlawyers.Designer.cs">
-      <DependentUpon>201810231442306_addlookupforlawyers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810281009580_Case_Lawyer.cs" />
-    <Compile Include="Migrations\201810281009580_Case_Lawyer.Designer.cs">
-      <DependentUpon>201810281009580_Case_Lawyer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810311103405_newcolumninCase_Lawyer.cs" />
-    <Compile Include="Migrations\201810311103405_newcolumninCase_Lawyer.Designer.cs">
-      <DependentUpon>201810311103405_newcolumninCase_Lawyer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810312224230_AddNewUser.cs" />
-    <Compile Include="Migrations\201810312224230_AddNewUser.Designer.cs">
-      <DependentUpon>201810312224230_AddNewUser.cs</DependentUpon>
+    <Compile Include="Migrations\201810290926063_WitnessSessionLogs.cs" />
+    <Compile Include="Migrations\201810290926063_WitnessSessionLogs.Designer.cs">
+      <DependentUpon>201810290926063_WitnessSessionLogs.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CaseRepository.cs" />
     <Compile Include="Repositories\CaseSessionsRepository.cs" />
+    <Compile Include="Repositories\CasesWitnessSessionLogRepository.cs" />
+    <Compile Include="Repositories\CaseWitnessesRepository.cs" />
     <Compile Include="Repositories\DatabaseRepository.cs" />
     <Compile Include="Repositories\DecisionsRepository.cs" />
     <Compile Include="Repositories\DecisionTypesRepository.cs" />
     <Compile Include="Repositories\DefendantCaseLogRepository.cs" />
     <Compile Include="Repositories\DefendantCharges.cs" />
     <Compile Include="Repositories\DefendantsDecisionRepository.cs" />
-    <Compile Include="Repositories\LawyerRepository.cs" />
     <Compile Include="Repositories\MasterCasesRepository.cs" />
     <Compile Include="Repositories\CaseTypeReposatry.cs" />
     <Compile Include="Repositories\CircuitMembersRepository.cs" />
@@ -505,35 +486,20 @@
     <EmbeddedResource Include="Migrations\201804111343167_isSent.resx">
       <DependentUpon>201804111343167_isSent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810221021497_AddLawyer.resx">
-      <DependentUpon>201810221021497_AddLawyer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810151317423_witnesstable.resx">
+      <DependentUpon>201810151317423_witnesstable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810221634579_lawyersss.resx">
-      <DependentUpon>201810221634579_lawyersss.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810171229041_EditWitnessestable.resx">
+      <DependentUpon>201810171229041_EditWitnessestable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810221652265_Newlawyers.resx">
-      <DependentUpon>201810221652265_Newlawyers.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810250920294_WitnessSessions.resx">
+      <DependentUpon>201810250920294_WitnessSessions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810221722029_CaseLawyerss.resx">
-      <DependentUpon>201810221722029_CaseLawyerss.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810281000064_EditWitness.resx">
+      <DependentUpon>201810281000064_EditWitness.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810221728383_CaseLawyerss1.resx">
-      <DependentUpon>201810221728383_CaseLawyerss1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810231414315_addtionals.resx">
-      <DependentUpon>201810231414315_addtionals.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810231442306_addlookupforlawyers.resx">
-      <DependentUpon>201810231442306_addlookupforlawyers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810281009580_Case_Lawyer.resx">
-      <DependentUpon>201810281009580_Case_Lawyer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810311103405_newcolumninCase_Lawyer.resx">
-      <DependentUpon>201810311103405_newcolumninCase_Lawyer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810312224230_AddNewUser.resx">
-      <DependentUpon>201810312224230_AddNewUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810290926063_WitnessSessionLogs.resx">
+      <DependentUpon>201810290926063_WitnessSessionLogs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

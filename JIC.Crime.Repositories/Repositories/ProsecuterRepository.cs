@@ -16,7 +16,7 @@ namespace JIC.Crime.Repositories.Repositories
         public ProsecutorStatus AddProsecuter(vw_ProcecuterData ProsecuterData, out int ProsecuterID)
         {
             try
-            {
+            { 
                 var NationalIDExistBefore = 0;
 
                 if (!string.IsNullOrEmpty(ProsecuterData.NationalID))

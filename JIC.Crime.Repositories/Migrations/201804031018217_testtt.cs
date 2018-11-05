@@ -7,12 +7,12 @@ namespace JIC.Crime.Repositories.Migrations
     {
         public override void Up()
         {
-             // AddColumn("dbo.Cases_Cases", "IsDeleted", c => c.Boolean());
+           // AddColumn("dbo.Cases_Cases", "IsDeleted", c => c.Boolean());
         }
 
         public override void Down()
         {
-            //    DropColumn("dbo.Cases_Cases", "IsDeleted");
+          //  DropColumn("dbo.Cases_Cases", "IsDeleted");
 
         }
     }

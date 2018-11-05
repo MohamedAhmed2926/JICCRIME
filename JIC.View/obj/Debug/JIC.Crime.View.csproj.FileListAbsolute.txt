@@ -6,7 +6,6 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Collections.Immu
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.ValueTuple.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe
@@ -34,9 +33,11 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.Proc
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.StackTrace.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.Compression.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.AccessControl.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Claims.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Encoding.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.Security.Principal.Windows.dll
@@ -146,6 +147,7 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Xml.XmlSerializer.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Xml.XPath.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Xml.XPath.XDocument.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Antlr3.Runtime.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\DataAnnotationsExtensions.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\EntityFramework.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Base.dll
@@ -166,13 +168,26 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Enti
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.SqlServer.Types.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\MiniProfiler.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll
@@ -183,6 +198,11 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Owin.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Portable.Licensing.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Serilog.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Collections.Immutable.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.AttributedModel.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.Convention.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.Hosting.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.Runtime.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.TypedParts.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Reflection.Metadata.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Text.Encoding.CodePages.dll
@@ -199,10 +219,25 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Unity.Container.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Unity.Mvc.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\WebActivatorEx.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\WebGrease.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\AutoMapper.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Components.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Build.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Build.Tasks.Core.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\EnvDTE.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Serilog.Sinks.File.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Threading.Tasks.Dataflow.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Build.Utilities.Core.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\stdole.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.MSXML.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Base.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Crime.Entities.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll.config
@@ -221,8 +256,20 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollect
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AI.Web.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.xml
@@ -244,40 +291,25 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Reflection.Metadata.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.ValueTuple.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.Helpers.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.Mvc.xml
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.Optimization.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.Razor.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.WebPages.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Web.Optimization.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\AutoMapper.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Components.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Components.dll.config
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll.config
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Serilog.Sinks.File.xml
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csprojResolveAssemblyReference.cache
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Common.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.DataVisualization.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Design.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebDesign.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebForms.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WinForms.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.SqlServer.Types.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\EnvDTE.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\stdole.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.OLE.Interop.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.MSXML.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Entities.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll.config
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -338,40 +370,6 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WinF
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\DataAnnotationsExtensions.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll.config
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Entities.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll.config
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.AttributedModel.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.Convention.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.Hosting.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.Runtime.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Composition.TypedParts.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Build.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Build.Tasks.Core.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\System.Threading.Tasks.Dataflow.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.Build.Utilities.Core.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.xml
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.xml
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\cs\Microsoft.Build.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\de\Microsoft.Build.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\en\Microsoft.Build.resources.dll
@@ -414,903 +412,793 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Utilities.C
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Utilities.Core.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Utilities.Core.resources.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Utilities.Core.resources.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\AutoMapper.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\bin\AutoMapper.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csprojAssemblyReference.cache
-E:\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CoreCompileInputs.cache
-E:\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ApplicationInsights.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.View.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.View.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.View.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csc.exe
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csc.exe.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csc.rsp
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csi.exe
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csi.exe.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csi.rsp
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.Win32.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.AppContext.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Collections.Immutable.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Console.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.Process.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.StackTrace.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.Compression.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.AccessControl.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Reflection.Metadata.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.AccessControl.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Claims.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Encoding.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Principal.Windows.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Text.Encoding.CodePages.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Threading.Thread.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.ValueTuple.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.ReaderWriter.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.XmlDocument.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.XDocument.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\vbc.exe
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\vbc.exe.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\vbc.rsp
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Win32.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\netstandard.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.AppContext.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Concurrent.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.NonGeneric.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Specialized.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.EventBasedAsync.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.TypeConverter.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Console.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Data.Common.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Contracts.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Debug.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.FileVersionInfo.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Process.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.StackTrace.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.TextWriterTraceListener.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Tools.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.TraceSource.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Tracing.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Drawing.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Dynamic.Runtime.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Globalization.Calendars.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Globalization.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Globalization.Extensions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.Compression.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.Compression.ZipFile.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.DriveInfo.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.Watcher.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.IsolatedStorage.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.MemoryMappedFiles.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.Pipes.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.UnmanagedMemoryStream.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.Expressions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.Parallel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.Queryable.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Http.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.NameResolution.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.NetworkInformation.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Ping.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Requests.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Security.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Sockets.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.WebHeaderCollection.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.WebSockets.Client.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.WebSockets.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ObjectModel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Extensions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Resources.Reader.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Resources.ResourceManager.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Resources.Writer.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.CompilerServices.VisualC.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Extensions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Handles.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.RuntimeInformation.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Numerics.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Formatters.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Json.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Xml.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Claims.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Algorithms.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Csp.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Encoding.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Primitives.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.X509Certificates.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Principal.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.SecureString.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.Encoding.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.Encoding.Extensions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.RegularExpressions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Overlapped.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Tasks.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Tasks.Parallel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Thread.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.ThreadPool.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Timer.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ValueTuple.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.ReaderWriter.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XDocument.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XmlDocument.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XmlSerializer.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XPath.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XPath.XDocument.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Antlr3.Runtime.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\DataAnnotationsExtensions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Base.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Entities.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Services.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Utilities.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.Agent.Intercept.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.PerfCounterCollector.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.ServerTelemetryChannel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.Web.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ApplicationInsights.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Common.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.DataVisualization.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Design.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebDesign.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebForms.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WinForms.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.SqlServer.Types.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Web.Infrastructure.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Mvc.Grid.Core.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Newtonsoft.Json.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Owin.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Portable.Licensing.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Immutable.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.AttributedModel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.Convention.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.Hosting.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.Runtime.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.TypedParts.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Metadata.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.Encoding.CodePages.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Helpers.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Mvc.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Optimization.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Razor.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Unity.Abstractions.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Unity.Container.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Unity.Mvc.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\WebActivatorEx.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\WebGrease.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\AutoMapper.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Components.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Build.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Build.Tasks.Core.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\EnvDTE.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.File.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Tasks.Dataflow.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Build.Utilities.Core.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\stdole.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.OLE.Interop.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.VSHelp.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.ProjectAggregator.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.ComponentModelHost.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Designer.Interfaces.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\EnvDTE80.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Data.Services.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\VSLangProj.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Data.Core.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\VSLangProj80.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.WCFReference.Interop.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.GraphModel.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.MSXML.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\VSLangProj2.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Base.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Entities.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Entities.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Entities.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Services.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Services.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Utilities.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Utilities.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Antlr3.Runtime.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.Web.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Newtonsoft.Json.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Portable.Licensing.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Immutable.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Metadata.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Helpers.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Mvc.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Razor.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Optimization.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\AutoMapper.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Components.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Components.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.File.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Designer.Interfaces.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.WCFReference.Interop.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Entities.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\cs\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\en\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pl\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\tr\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\en\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\en\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CopyComplete
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ApplicationInsights.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.View.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.View.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.View.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csc.exe
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csc.exe.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csc.rsp
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csi.exe
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csi.exe.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\csi.rsp
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\Microsoft.Win32.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.AppContext.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Collections.Immutable.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Console.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.Process.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.StackTrace.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.Compression.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.AccessControl.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Reflection.Metadata.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.AccessControl.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Claims.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Encoding.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Security.Principal.Windows.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Text.Encoding.CodePages.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Threading.Thread.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.ValueTuple.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.ReaderWriter.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.XmlDocument.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.XDocument.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\vbc.exe
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\vbc.exe.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\vbc.rsp
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Win32.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\netstandard.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.AppContext.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Concurrent.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.NonGeneric.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Specialized.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.EventBasedAsync.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ComponentModel.TypeConverter.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Console.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Data.Common.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Contracts.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Debug.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.FileVersionInfo.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Process.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.StackTrace.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.TextWriterTraceListener.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Tools.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.TraceSource.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.Tracing.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Drawing.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Dynamic.Runtime.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Globalization.Calendars.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Globalization.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Globalization.Extensions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.Compression.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.Compression.ZipFile.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.DriveInfo.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.FileSystem.Watcher.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.IsolatedStorage.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.MemoryMappedFiles.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.Pipes.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.IO.UnmanagedMemoryStream.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.Expressions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.Parallel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Linq.Queryable.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Http.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.NameResolution.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.NetworkInformation.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Ping.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Requests.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Security.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.Sockets.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.WebHeaderCollection.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.WebSockets.Client.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Net.WebSockets.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ObjectModel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Extensions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Resources.Reader.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Resources.ResourceManager.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Resources.Writer.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.CompilerServices.VisualC.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Extensions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Handles.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.RuntimeInformation.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Numerics.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Formatters.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Json.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Xml.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Claims.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Algorithms.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Csp.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Encoding.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.Primitives.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Cryptography.X509Certificates.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.Principal.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Security.SecureString.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.Encoding.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.Encoding.Extensions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.RegularExpressions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Overlapped.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Tasks.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Tasks.Parallel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Thread.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.ThreadPool.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Timer.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.ValueTuple.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.ReaderWriter.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XDocument.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XmlDocument.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XmlSerializer.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XPath.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Xml.XPath.XDocument.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Antlr3.Runtime.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\DataAnnotationsExtensions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Base.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Entities.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Services.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Utilities.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.Agent.Intercept.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.PerfCounterCollector.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.ServerTelemetryChannel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.Web.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ApplicationInsights.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Common.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.DataVisualization.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Design.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebDesign.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebForms.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WinForms.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.SqlServer.Types.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Web.Infrastructure.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Mvc.Grid.Core.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Newtonsoft.Json.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Owin.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Portable.Licensing.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Immutable.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.AttributedModel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.Convention.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.Hosting.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.Runtime.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Composition.TypedParts.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Metadata.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Text.Encoding.CodePages.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Helpers.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Mvc.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Optimization.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Razor.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Unity.Abstractions.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Unity.Container.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Unity.Mvc.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\WebActivatorEx.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\WebGrease.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\AutoMapper.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Components.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Build.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Build.Tasks.Core.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\EnvDTE.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.File.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Threading.Tasks.Dataflow.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Build.Utilities.Core.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\stdole.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.OLE.Interop.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.VSHelp.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.ProjectAggregator.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.ComponentModelHost.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Designer.Interfaces.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\EnvDTE80.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Data.Services.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\VSLangProj.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Data.Core.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\VSLangProj80.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.WCFReference.Interop.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.GraphModel.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.MSXML.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\VSLangProj2.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Base.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Entities.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Entities.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Entities.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Services.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Services.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Utilities.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Utilities.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Antlr3.Runtime.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.Web.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Newtonsoft.Json.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Portable.Licensing.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Collections.Immutable.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Reflection.Metadata.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Helpers.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Mvc.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Razor.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\System.Web.Optimization.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\AutoMapper.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Components.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Components.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Serilog.Sinks.File.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Designer.Interfaces.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.WCFReference.Interop.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Entities.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\cs\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\en\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pl\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\tr\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\en\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Tasks.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\de\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\en\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\es\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\it\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Utilities.Core.resources.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csprojAssemblyReference.cache
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CoreCompileInputs.cache
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CopyComplete
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.pdb
+E:\Crime\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csprojResolveAssemblyReference.cache
+E:\Crime\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CoreCompileInputs.cache
+E:\Crime\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.dll
+E:\Crime\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.pdb
+E:\Crime\JICCRIME\JIC.View\bin\ApplicationInsights.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.View.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.View.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.View.pdb
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\csc.exe
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\csc.exe.config
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\csc.rsp
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\csi.exe
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\csi.exe.config
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\csi.rsp
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.AppContext.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Collections.Immutable.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Console.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.Process.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.IO.Compression.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Reflection.Metadata.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.AccessControl.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.Claims.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Threading.Thread.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.ValueTuple.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\vbc.exe
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\vbc.exe.config
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\vbc.rsp
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe
+E:\Crime\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe.config
+E:\Crime\JICCRIME\JIC.View\bin\Antlr3.Runtime.dll
+E:\Crime\JICCRIME\JIC.View\bin\DataAnnotationsExtensions.dll
+E:\Crime\JICCRIME\JIC.View\bin\EntityFramework.dll
+E:\Crime\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Base.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Entities.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Services.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Utilities.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.Web.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ApplicationInsights.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Common.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Design.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebDesign.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebForms.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WinForms.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.SqlServer.Types.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Web.Infrastructure.dll
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.dll
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.dll
+E:\Crime\JICCRIME\JIC.View\bin\Mvc.Grid.Core.dll
+E:\Crime\JICCRIME\JIC.View\bin\Newtonsoft.Json.dll
+E:\Crime\JICCRIME\JIC.View\bin\Owin.dll
+E:\Crime\JICCRIME\JIC.View\bin\Portable.Licensing.dll
+E:\Crime\JICCRIME\JIC.View\bin\Serilog.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Collections.Immutable.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Composition.AttributedModel.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Composition.Convention.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Composition.Hosting.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Composition.Runtime.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Composition.TypedParts.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Reflection.Metadata.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Text.Encoding.CodePages.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.ValueTuple.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Helpers.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Mvc.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Optimization.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Razor.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.WebPages.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.dll
+E:\Crime\JICCRIME\JIC.View\bin\Unity.Abstractions.dll
+E:\Crime\JICCRIME\JIC.View\bin\Unity.Container.dll
+E:\Crime\JICCRIME\JIC.View\bin\Unity.Mvc.dll
+E:\Crime\JICCRIME\JIC.View\bin\WebActivatorEx.dll
+E:\Crime\JICCRIME\JIC.View\bin\WebGrease.dll
+E:\Crime\JICCRIME\JIC.View\bin\AutoMapper.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Components.dll
+E:\Crime\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Net.Http.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.Debug.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Collections.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Globalization.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Reflection.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.IO.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.IO.FileSystem.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.Extensions.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Collections.Concurrent.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Text.Encoding.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Linq.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Threading.Tasks.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Security.Cryptography.Algorithms.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Threading.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Xml.XDocument.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Reflection.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.Tools.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Resources.ResourceManager.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.IO.FileSystem.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Security.Cryptography.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Xml.ReaderWriter.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.IO.Compression.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.Numerics.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Xml.XPath.XDocument.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Reflection.Extensions.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Text.Encoding.Extensions.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Linq.Expressions.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Threading.Tasks.Parallel.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Text.RegularExpressions.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.Contracts.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.ObjectModel.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Linq.Parallel.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Build.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Build.Tasks.Core.dll
+E:\Crime\JICCRIME\JIC.View\bin\EnvDTE.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Data.Common.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.StackTrace.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.Tracing.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Globalization.Extensions.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Net.Sockets.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Xml.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Primitives.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Security.SecureString.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Threading.Overlapped.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll
+E:\Crime\JICCRIME\JIC.View\bin\Serilog.Sinks.File.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Threading.Tasks.Dataflow.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Build.Utilities.Core.dll
+E:\Crime\JICCRIME\JIC.View\bin\stdole.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll
+E:\Crime\JICCRIME\JIC.View\bin\System.Dynamic.Runtime.dll
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.MSXML.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Base.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.Entities.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Entities.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Entities.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Services.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Services.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Utilities.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Utilities.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\Antlr3.Runtime.pdb
+E:\Crime\JICCRIME\JIC.View\bin\EntityFramework.xml
+E:\Crime\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.Web.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.pdb
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.xml
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.pdb
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.xml
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.pdb
+E:\Crime\JICCRIME\JIC.View\bin\Newtonsoft.Json.xml
+E:\Crime\JICCRIME\JIC.View\bin\Portable.Licensing.xml
+E:\Crime\JICCRIME\JIC.View\bin\Serilog.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Collections.Immutable.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Reflection.Metadata.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.ValueTuple.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Helpers.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Mvc.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Razor.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.WebPages.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.xml
+E:\Crime\JICCRIME\JIC.View\bin\System.Web.Optimization.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Crime\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Crime\JICCRIME\JIC.View\bin\AutoMapper.xml
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Components.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Components.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.xml
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\Serilog.Sinks.File.xml
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Fault.Entities.pdb
+E:\Crime\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll.config
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\cs\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\en\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pl\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\tr\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\en\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Tasks.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\de\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\en\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\es\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\it\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Utilities.Core.resources.dll
+E:\Crime\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csprojResolveAssemblyReference.cache
+E:\new\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.csproj.CoreCompileInputs.cache
+E:\new\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.dll
+E:\new\JICCRIME\JIC.View\obj\Debug\JIC.Crime.View.pdb
+E:\new\JICCRIME\JIC.View\bin\ApplicationInsights.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.View.dll.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.View.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.View.pdb
+E:\new\JICCRIME\JIC.View\bin\roslyn\csc.exe
+E:\new\JICCRIME\JIC.View\bin\roslyn\csc.exe.config
+E:\new\JICCRIME\JIC.View\bin\roslyn\csc.rsp
+E:\new\JICCRIME\JIC.View\bin\roslyn\csi.exe
+E:\new\JICCRIME\JIC.View\bin\roslyn\csi.exe.config
+E:\new\JICCRIME\JIC.View\bin\roslyn\csi.rsp
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\new\JICCRIME\JIC.View\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.AppContext.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Collections.Immutable.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Console.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.Process.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.IO.Compression.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.IO.Pipes.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Reflection.Metadata.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.AccessControl.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.Claims.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Security.Principal.Windows.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Threading.Thread.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.ValueTuple.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Xml.XmlDocument.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\new\JICCRIME\JIC.View\bin\roslyn\vbc.exe
+E:\new\JICCRIME\JIC.View\bin\roslyn\vbc.exe.config
+E:\new\JICCRIME\JIC.View\bin\roslyn\vbc.rsp
+E:\new\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe
+E:\new\JICCRIME\JIC.View\bin\roslyn\VBCSCompiler.exe.config
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Win32.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\netstandard.dll
+E:\new\JICCRIME\JIC.View\bin\System.AppContext.dll
+E:\new\JICCRIME\JIC.View\bin\System.Collections.Concurrent.dll
+E:\new\JICCRIME\JIC.View\bin\System.Collections.dll
+E:\new\JICCRIME\JIC.View\bin\System.Collections.NonGeneric.dll
+E:\new\JICCRIME\JIC.View\bin\System.Collections.Specialized.dll
+E:\new\JICCRIME\JIC.View\bin\System.ComponentModel.dll
+E:\new\JICCRIME\JIC.View\bin\System.ComponentModel.EventBasedAsync.dll
+E:\new\JICCRIME\JIC.View\bin\System.ComponentModel.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.ComponentModel.TypeConverter.dll
+E:\new\JICCRIME\JIC.View\bin\System.Console.dll
+E:\new\JICCRIME\JIC.View\bin\System.Data.Common.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.Contracts.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.Debug.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.FileVersionInfo.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.Process.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.StackTrace.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.TextWriterTraceListener.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.Tools.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.TraceSource.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.Tracing.dll
+E:\new\JICCRIME\JIC.View\bin\System.Drawing.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.Dynamic.Runtime.dll
+E:\new\JICCRIME\JIC.View\bin\System.Globalization.Calendars.dll
+E:\new\JICCRIME\JIC.View\bin\System.Globalization.dll
+E:\new\JICCRIME\JIC.View\bin\System.Globalization.Extensions.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.Compression.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.Compression.ZipFile.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.FileSystem.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.FileSystem.DriveInfo.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.FileSystem.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.FileSystem.Watcher.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.IsolatedStorage.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.MemoryMappedFiles.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.Pipes.dll
+E:\new\JICCRIME\JIC.View\bin\System.IO.UnmanagedMemoryStream.dll
+E:\new\JICCRIME\JIC.View\bin\System.Linq.dll
+E:\new\JICCRIME\JIC.View\bin\System.Linq.Expressions.dll
+E:\new\JICCRIME\JIC.View\bin\System.Linq.Parallel.dll
+E:\new\JICCRIME\JIC.View\bin\System.Linq.Queryable.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.Http.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.NameResolution.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.NetworkInformation.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.Ping.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.Requests.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.Security.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.Sockets.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.WebHeaderCollection.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.WebSockets.Client.dll
+E:\new\JICCRIME\JIC.View\bin\System.Net.WebSockets.dll
+E:\new\JICCRIME\JIC.View\bin\System.ObjectModel.dll
+E:\new\JICCRIME\JIC.View\bin\System.Reflection.dll
+E:\new\JICCRIME\JIC.View\bin\System.Reflection.Extensions.dll
+E:\new\JICCRIME\JIC.View\bin\System.Reflection.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.Resources.Reader.dll
+E:\new\JICCRIME\JIC.View\bin\System.Resources.ResourceManager.dll
+E:\new\JICCRIME\JIC.View\bin\System.Resources.Writer.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.CompilerServices.VisualC.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Extensions.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Handles.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Numerics.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Formatters.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Json.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.Runtime.Serialization.Xml.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Claims.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Cryptography.Algorithms.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Cryptography.Csp.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Cryptography.Encoding.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Cryptography.Primitives.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Cryptography.X509Certificates.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.Principal.dll
+E:\new\JICCRIME\JIC.View\bin\System.Security.SecureString.dll
+E:\new\JICCRIME\JIC.View\bin\System.Text.Encoding.dll
+E:\new\JICCRIME\JIC.View\bin\System.Text.Encoding.Extensions.dll
+E:\new\JICCRIME\JIC.View\bin\System.Text.RegularExpressions.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.Overlapped.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.Tasks.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.Tasks.Parallel.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.Thread.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.ThreadPool.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.Timer.dll
+E:\new\JICCRIME\JIC.View\bin\System.Xml.ReaderWriter.dll
+E:\new\JICCRIME\JIC.View\bin\System.Xml.XDocument.dll
+E:\new\JICCRIME\JIC.View\bin\System.Xml.XmlDocument.dll
+E:\new\JICCRIME\JIC.View\bin\System.Xml.XmlSerializer.dll
+E:\new\JICCRIME\JIC.View\bin\System.Xml.XPath.dll
+E:\new\JICCRIME\JIC.View\bin\System.Xml.XPath.XDocument.dll
+E:\new\JICCRIME\JIC.View\bin\Antlr3.Runtime.dll
+E:\new\JICCRIME\JIC.View\bin\DataAnnotationsExtensions.dll
+E:\new\JICCRIME\JIC.View\bin\EntityFramework.dll
+E:\new\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Base.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Entities.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Services.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Utilities.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.Agent.Intercept.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.Web.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ApplicationInsights.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Common.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.Design.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebDesign.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WebForms.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.ReportViewer.WinForms.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.SqlServer.Types.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Web.Infrastructure.dll
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.dll
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.dll
+E:\new\JICCRIME\JIC.View\bin\Mvc.Grid.Core.dll
+E:\new\JICCRIME\JIC.View\bin\Newtonsoft.Json.dll
+E:\new\JICCRIME\JIC.View\bin\Owin.dll
+E:\new\JICCRIME\JIC.View\bin\Portable.Licensing.dll
+E:\new\JICCRIME\JIC.View\bin\Serilog.dll
+E:\new\JICCRIME\JIC.View\bin\System.Collections.Immutable.dll
+E:\new\JICCRIME\JIC.View\bin\System.Composition.AttributedModel.dll
+E:\new\JICCRIME\JIC.View\bin\System.Composition.Convention.dll
+E:\new\JICCRIME\JIC.View\bin\System.Composition.Hosting.dll
+E:\new\JICCRIME\JIC.View\bin\System.Composition.Runtime.dll
+E:\new\JICCRIME\JIC.View\bin\System.Composition.TypedParts.dll
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.dll
+E:\new\JICCRIME\JIC.View\bin\System.Reflection.Metadata.dll
+E:\new\JICCRIME\JIC.View\bin\System.Text.Encoding.CodePages.dll
+E:\new\JICCRIME\JIC.View\bin\System.ValueTuple.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.Helpers.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.Mvc.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.Optimization.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.Razor.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.WebPages.dll
+E:\new\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.dll
+E:\new\JICCRIME\JIC.View\bin\Unity.Abstractions.dll
+E:\new\JICCRIME\JIC.View\bin\Unity.Container.dll
+E:\new\JICCRIME\JIC.View\bin\Unity.Mvc.dll
+E:\new\JICCRIME\JIC.View\bin\WebActivatorEx.dll
+E:\new\JICCRIME\JIC.View\bin\WebGrease.dll
+E:\new\JICCRIME\JIC.View\bin\AutoMapper.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Components.dll
+E:\new\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Build.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Build.Tasks.Core.dll
+E:\new\JICCRIME\JIC.View\bin\EnvDTE.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll
+E:\new\JICCRIME\JIC.View\bin\Serilog.Sinks.File.dll
+E:\new\JICCRIME\JIC.View\bin\System.Threading.Tasks.Dataflow.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Build.Utilities.Core.dll
+E:\new\JICCRIME\JIC.View\bin\stdole.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll
+E:\new\JICCRIME\JIC.View\bin\Microsoft.MSXML.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll
+E:\new\JICCRIME\JIC.View\bin\JIC.Base.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.Entities.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.Entities.dll.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Crime.Repositories.dll.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Entities.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Entities.dll.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Services.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Services.dll.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Utilities.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Utilities.dll.config
+E:\new\JICCRIME\JIC.View\bin\Antlr3.Runtime.pdb
+E:\new\JICCRIME\JIC.View\bin\EntityFramework.xml
+E:\new\JICCRIME\JIC.View\bin\EntityFramework.SqlServer.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.DependencyCollector.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.Web.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AI.WindowsServer.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.Cookies.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.Owin.Security.OAuth.xml
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.pdb
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.xml
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.pdb
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.xml
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.EntityFramework6.dll.config
+E:\new\JICCRIME\JIC.View\bin\MiniProfiler.Mvc.pdb
+E:\new\JICCRIME\JIC.View\bin\Newtonsoft.Json.xml
+E:\new\JICCRIME\JIC.View\bin\Portable.Licensing.xml
+E:\new\JICCRIME\JIC.View\bin\Serilog.xml
+E:\new\JICCRIME\JIC.View\bin\System.Collections.Immutable.xml
+E:\new\JICCRIME\JIC.View\bin\System.Diagnostics.DiagnosticSource.xml
+E:\new\JICCRIME\JIC.View\bin\System.Reflection.Metadata.xml
+E:\new\JICCRIME\JIC.View\bin\System.ValueTuple.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.Helpers.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.Mvc.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.Razor.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.WebPages.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.WebPages.Deployment.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.WebPages.Razor.xml
+E:\new\JICCRIME\JIC.View\bin\System.Web.Optimization.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Core.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\new\JICCRIME\JIC.View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\new\JICCRIME\JIC.View\bin\AutoMapper.xml
+E:\new\JICCRIME\JIC.View\bin\JIC.Components.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Components.dll.config
+E:\new\JICCRIME\JIC.View\bin\Serilog.Sinks.RollingFile.xml
+E:\new\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Repositories.Interfaces.dll.config
+E:\new\JICCRIME\JIC.View\bin\Serilog.Sinks.File.xml
+E:\new\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Fault.Repositories.dll.config
+E:\new\JICCRIME\JIC.View\bin\JIC.Fault.Entities.pdb
+E:\new\JICCRIME\JIC.View\bin\JIC.Fault.Entities.dll.config
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\new\JICCRIME\JIC.View\bin\cs\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\en\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pl\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\tr\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.resources.dll
+E:\new\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\en\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Tasks.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\cs\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\de\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\en\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\es\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\fr\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\it\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ja\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ko\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pl\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\pt-BR\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\ru\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\tr\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-Hans\Microsoft.Build.Utilities.Core.resources.dll
+E:\new\JICCRIME\JIC.View\bin\zh-Hant\Microsoft.Build.Utilities.Core.resources.dll

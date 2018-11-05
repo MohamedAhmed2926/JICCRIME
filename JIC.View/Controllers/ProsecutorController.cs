@@ -13,7 +13,7 @@ using JIC.Crime.View.Helpers;
 
 namespace JIC.Crime.View.Controllers
 {
-   [CAuthorize(SystemUserTypes.CriminalDepManager, SystemUserTypes.ElementaryCourtAdministrator)]
+   [CAuthorize(SystemUserTypes.CriminalDepManager , SystemUserTypes.ElementaryCourtAdministrator)]
     public class ProsecutorController : ControllerBase
     {
         private IProsecutorService prosecutorService;
@@ -27,6 +27,7 @@ namespace JIC.Crime.View.Controllers
         {
             if (Prosecutions == null)
                 Prosecutions = new ProsecutorViewModels();
+
             return new ProsecutorCreateViewModel
             {
                 ListProsecutionModel = LookupService.GetProsecutions(IsAuthenticatied ? CurrentUser.CourtID : null)
@@ -35,6 +36,7 @@ namespace JIC.Crime.View.Controllers
                  ID = Pros.ID,
                  ProsecutionName = Pros.Name,
              }).ToList(),
+
                 ProsecutorModel = Prosecutions,
             };
 
@@ -285,8 +287,8 @@ namespace JIC.Crime.View.Controllers
                 {
                     if (ModelState.IsValid)
                     {
-                        vw_ProcecuterData ProsecutorToGetPersonID = new vw_ProcecuterData();
-                        ProsecutorToGetPersonID = prosecutorService.GetProsecutorByID(ProsecutorModel.ID);
+                      //  vw_ProcecuterData ProsecutorToGetPersonID = new vw_ProcecuterData();
+                        //ProsecutorToGetPersonID = prosecutorService.GetProsecutorByID(ProsecutorModel.ID);
                         var prosecutorResult = prosecutorService.DeleteProsecutor(ProsecutorModel.ID);
                         if (prosecutorResult == ProsecutorStatus.Succeeded)
                         {

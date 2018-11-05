@@ -273,4 +273,7 @@
   <data name="SendToJudge" xml:space="preserve">
     <value>إرسال المحضر للقاضى للتصديق</value>
   </data>
+  <data name="WitnessesAttendance" xml:space="preserve">
+    <value>إثبات حضور الشهود</value>
+  </data>
 </root>

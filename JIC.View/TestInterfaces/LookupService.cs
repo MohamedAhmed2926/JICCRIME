@@ -20,18 +20,6 @@ namespace JIC.Crime.View.TestInterfaces
             };
         }
 
-        public List<vw_KeyValue> GetLawyersLevel()
-        {
-            return new List<vw_KeyValue>
-            {
-                 new vw_KeyValue((int)Cycle.FirstCycle ,JIC.Base.Resources.Resources.FirstCycle),
-                 new vw_KeyValue((int) Cycle.SecondCycle ,JIC.Base.Resources.Resources.SecondCycle),
-                new vw_KeyValue((int) Cycle.ThridCycle ,JIC.Base.Resources.Resources.ThirdCycle),
-                 new vw_KeyValue((int) Cycle.FourthCycle ,JIC.Base.Resources.Resources.FourthCycle)
-            };
-
-        }
-
         public List<vw_KeyValue> GetCourts()
         {
             return new LookUpService(CaseType.Crime).GetCourts();

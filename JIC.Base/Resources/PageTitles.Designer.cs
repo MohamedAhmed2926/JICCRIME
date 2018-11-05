@@ -520,6 +520,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إثبات حضور الشهود.
+        /// </summary>
+        public static string WitnessesAttendance {
+            get {
+                return ResourceManager.GetString("WitnessesAttendance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تحديد العطلات الأسبوعية.
         /// </summary>
         public static string WorkingDays {

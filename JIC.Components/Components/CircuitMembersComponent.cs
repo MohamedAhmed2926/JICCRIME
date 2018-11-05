@@ -18,7 +18,8 @@ namespace JIC.Components.Components
             this.CircuitMembersRepository = CircuitMembersRepository;
         }
 
-
+        public bool IsPersonIsCircuitMember(int PersonID, int CaseID)
+        { return CircuitMembersRepository.IsPersonIsCircuitMember( PersonID,  CaseID); }
         public bool IsCircuitMember(int userID)
         {
             return CircuitMembersRepository.IsCircuitMember(userID);

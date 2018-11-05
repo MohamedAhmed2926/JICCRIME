@@ -1,6 +1,7 @@
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll.config
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.dll
@@ -13,74 +14,71 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entiti
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll.config
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.pdb
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csprojResolveAssemblyReference.cache
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.pdb
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.dll
-C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.xml
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.InitialDB.resources
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.AddProsecutionServiceIds.resources
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.GenerateResource.Cache
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.pdb
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll.config
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csprojAssemblyReference.cache
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.InitialDB.resources
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.AddProsecutionServiceIds.resources
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.GenerateResource.cache
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CoreCompileInputs.cache
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CopyComplete
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.dll
-E:\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.pdb
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll.config
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csprojAssemblyReference.cache
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.InitialDB.resources
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.AddProsecutionServiceIds.resources
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.GenerateResource.cache
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CoreCompileInputs.cache
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CopyComplete
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.dll
-E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.pdb
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll.config
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.pdb
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.pdb
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.pdb
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll.config
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.pdb
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll.config
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.xml
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.xml
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Crime\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csprojResolveAssemblyReference.cache
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.InitialDB.resources
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.AddProsecutionServiceIds.resources
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.GenerateResource.Cache
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CoreCompileInputs.cache
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.dll
+E:\Crime\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.pdb
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll.config
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Repositories.pdb
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Base.pdb
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.pdb
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Entities.dll.config
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.pdb
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\JIC.Fault.Entities.dll.config
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\AutoMapper.xml
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.xml
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\new\JICCRIME\JIC.Fault.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csprojResolveAssemblyReference.cache
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.InitialDB.resources
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.Migrations.AddProsecutionServiceIds.resources
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.GenerateResource.Cache
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.csproj.CoreCompileInputs.cache
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.dll
+E:\new\JICCRIME\JIC.Fault.Repositories\obj\Debug\JIC.Fault.Repositories.pdb

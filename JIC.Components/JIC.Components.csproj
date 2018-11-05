@@ -91,7 +91,6 @@
     <Compile Include="Components\DecisionTypesComponent.cs" />
     <Compile Include="Components\DefendantsDecisionComponent.cs" />
     <Compile Include="Components\FaultCaseComponent.cs" />
-    <Compile Include="Components\LawyerComponent.cs" />
     <Compile Include="Components\MasterCaseComponent.cs" />
     <Compile Include="Components\CircuitMembersComponent.cs" />
     <Compile Include="Components\NotCompleteCaseComponent.cs" />
@@ -118,6 +117,8 @@
     <Compile Include="Components\VacationsComponent.cs" />
     <Compile Include="Components\VictimsComponent.cs" />
     <Compile Include="Components\VictimsSessionLogComponent.cs" />
+    <Compile Include="Components\WitnessesComponents.cs" />
+    <Compile Include="Components\WitnessSessionLogComponent.cs" />
     <Compile Include="Components\WorkDaysComponent.cs" />
     <Compile Include="Components\UserComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

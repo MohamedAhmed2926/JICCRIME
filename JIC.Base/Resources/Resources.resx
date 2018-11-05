@@ -1398,28 +1398,25 @@
   <data name="ReturnToSecretary" xml:space="preserve">
     <value>إعاده الى امين السر</value>
   </data>
-  <data name="DateOfBirth" xml:space="preserve">
-    <value>تاريخ الميلاد</value>
+  <data name="Witnesses" xml:space="preserve">
+    <value>الشهود</value>
   </data>
-  <data name="Lawyeradd" xml:space="preserve">
-    <value>اضافة محامي</value>
+  <data name="Attended" xml:space="preserve">
+    <value>حضر</value>
   </data>
-  <data name="LawyerCardNumber" xml:space="preserve">
-    <value>رقم الكارنيه</value>
+  <data name="NotAttended" xml:space="preserve">
+    <value>لم يحضر</value>
   </data>
-  <data name="LawyerLevel" xml:space="preserve">
-    <value>درجه  المحامى</value>
+  <data name="AddWitness" xml:space="preserve">
+    <value>إضافة شاهد جديد</value>
   </data>
-  <data name="lawyerName" xml:space="preserve">
-    <value>اسم المحامى</value>
+  <data name="AddDocumentWitness" xml:space="preserve">
+    <value>اضافة نص الشهادة</value>
   </data>
-  <data name="LawyerEdit" xml:space="preserve">
-    <value>تعديل بيانات محامى</value>
+  <data name="AddWitnessTestimony" xml:space="preserve">
+    <value>ادخال نص الشهادة</value>
   </data>
-  <data name="LawyerCardPicture" xml:space="preserve">
-    <value>صورة كارنية النقابة</value>
-  </data>
-  <data name="LawyerFileData" xml:space="preserve">
-    <value>رفع صورة كارنية النقابة</value>
+  <data name="SendtoJudge" xml:space="preserve">
+    <value>عدم امكانية ادخال الشهادة بعد ارسال المحضر للقاضى للتصديق </value>
   </data>
 </root>

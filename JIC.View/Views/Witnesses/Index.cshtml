@@ -1,0 +1,78 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model  IEnumerable<WitnessViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="col-xs-3">
+
+    @Html.Partial("PVCaseStep", new CaseViewModel { CaseID = (int)ViewData["CaseID"], caseStatus = JIC.Base.CaseStatus.Witnesses })
+</div>
+<div class="col-xs-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">@JIC.Base.Resources.Resources.Witnesses</div>
+        <div class="col-xs-3">
+            
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Create">@JIC.Base.Resources.Resources.AddWitness</button>
+        </div>
+
+        <div class="panel-body">
+
+            @(Html
+                    .Grid(Model)
+                    .Build(columns =>
+                    {
+                        columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
+                        columns.Add(model => model.NatNo).Titled(JIC.Base.Resources.Resources.NationalId);
+
+                        //columns.Add(model =>
+                        ////@Html.ActionLink(" ", "Edit", new { ProsecutorID = model.ID }, new { @class = "fa fa-pencil-square-o  fa-lg modal-link", data_toggle = "modal", data_target = "#EditModel" }).ToHtmlString()
+
+                        //@"<a href=""#"" class=""fa fa-pencil-square-o  fa-lg modal-link"" data-toggle=""modal"" data-target=""#EditModel"" title=""" + Resources.Edit + @"""  data-url=""" + Url.Action("Edit", new { id = model.ID }) + @"""></a>"
+                        //    + " | " +
+                        //  //@Html.ActionLink(JIC.Base.Resources.Resources.Delete, "Delete", new { ProsecutorID = model.ID }, new { @class = "fa fa-trash-o", data_toggle = "modal", data_target = "#DeleteModel" }).ToHtmlString()
+                        //  @"<a href=""#"" class=""fa fa-trash-o modal-link"" data-toggle=""modal"" data-target=""#DeleteModel"" title=""" + Resources.Delete + @""" data-url=""" + Url.Action("Delete", new { id = model.ID }) + @"""></a>"
+
+                        // //"<button type="button" class="fa fa-trash-o" data-toggle="modal" data-target="#DeleteModel" ></button>"
+                        // ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+
+
+                    })
+                    .Filterable()
+                    .Sortable()
+                    .Pageable()
+
+
+            )
+            @using (Html.BeginModel("EditModel", JIC.Base.Resources.Resources.prosecuterEdit))
+            {
+                //Html.RenderAction("Edit");
+            }
+
+            @using (Html.BeginModel("DeleteModel", JIC.Base.Resources.Resources.prosecuterDelete))
+            {
+                // Html.RenderAction("Delete");
+            }
+
+
+
+
+
+
+            @using (Html.BeginModel("Create", JIC.Base.Resources.Resources.AddWitness))
+            {
+                using (Html.CUpdatePanel(Url.Action("Create", "Witnesses"), "CreateDiv"))
+                {
+                    
+                    Html.RenderAction("Create", new { id = (int)ViewData["CaseID"] });
+                }
+
+            }
+        </div>
+
+
+
+    </div>
+</div>
+

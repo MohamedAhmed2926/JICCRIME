@@ -168,6 +168,7 @@
     <Reference Include="Mvc.Grid.Core, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NonFactors.Grid.Core.Mvc5.4.3.0\lib\net45\Mvc.Grid.Core.dll</HintPath>
     </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -296,6 +297,7 @@
     <Compile Include="Controllers\ALLMinutesOfSessionController.cs" />
     <Compile Include="Controllers\AllOpenRollsController.cs" />
     <Compile Include="Controllers\ApproveByJudgeController.cs" />
+    <Compile Include="Controllers\AtendanceWitnessesController.cs" />
     <Compile Include="Controllers\AttachmentController.cs" />
     <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\CaseConfugurationController.cs" />
@@ -310,7 +312,6 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FolderAttachmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LawyerController.cs" />
     <Compile Include="Controllers\NotCompleteCasesController.cs" />
     <Compile Include="Controllers\OpenRollController.cs" />
     <Compile Include="Controllers\OrderOfAssignmentController.cs" />
@@ -324,6 +325,7 @@
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VacationsController.cs" />
     <Compile Include="Controllers\ProsecutorController.cs" />
+    <Compile Include="Controllers\WitnessesController.cs" />
     <Compile Include="Controllers\WorkingDaysController.cs" />
     <Compile Include="Controllers\MinutesOfSessionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -359,8 +361,6 @@
     <Compile Include="Models\CircuitsJudgesViewModel.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\JudgeViewModel.cs" />
-    <Compile Include="Models\LawyerLevelViewModels.cs" />
-    <Compile Include="Models\LawyerViewModels.cs" />
     <Compile Include="Models\ListOfDefendantViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\AddressViewModels.cs" />
@@ -385,6 +385,8 @@
     <Compile Include="Models\TextPredectionsViewModels.cs" />
     <Compile Include="Models\UserPersonViewModel.cs" />
     <Compile Include="Models\UserViewModels.cs" />
+    <Compile Include="Models\WitnessSessionViewModel.cs" />
+    <Compile Include="Models\WitnessViewModel.cs" />
     <Compile Include="Models\WorkingDaysViewModels.cs" />
     <Compile Include="Models\VacationsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -826,9 +828,9 @@
     <Content Include="Views\ApproveByJudge\Approve.cshtml" />
     <Content Include="Views\SearchCase\UnAuthorizedEdit.cshtml" />
     <Content Include="Views\ApproveByJudge\ReturnToSecretary.cshtml" />
-    <Content Include="Views\Lawyer\Index.cshtml" />
-    <Content Include="Views\Lawyer\Create.cshtml" />
-    <Content Include="Views\Lawyer\Edit.cshtml" />
+    <Content Include="Views\Witnesses\Index.cshtml" />
+    <Content Include="Views\Witnesses\Create.cshtml" />
+    <Content Include="Views\AtendanceWitnesses\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

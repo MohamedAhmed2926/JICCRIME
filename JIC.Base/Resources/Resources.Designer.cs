@@ -214,6 +214,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اضافة نص الشهادة.
+        /// </summary>
+        public static string AddDocumentWitness {
+            get {
+                return ResourceManager.GetString("AddDocumentWitness", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to اضافة ملف.
         /// </summary>
         public static string AddFile {
@@ -282,6 +291,24 @@ namespace JIC.Base.Resources {
         public static string AddText {
             get {
                 return ResourceManager.GetString("AddText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة شاهد جديد.
+        /// </summary>
+        public static string AddWitness {
+            get {
+                return ResourceManager.GetString("AddWitness", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ادخال نص الشهادة.
+        /// </summary>
+        public static string AddWitnessTestimony {
+            get {
+                return ResourceManager.GetString("AddWitnessTestimony", resourceCulture);
             }
         }
         
@@ -419,6 +446,15 @@ namespace JIC.Base.Resources {
         public static string Attendance {
             get {
                 return ResourceManager.GetString("Attendance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to حضر.
+        /// </summary>
+        public static string Attended {
+            get {
+                return ResourceManager.GetString("Attended", resourceCulture);
             }
         }
         
@@ -1049,15 +1085,6 @@ namespace JIC.Base.Resources {
         public static string dateMissing {
             get {
                 return ResourceManager.GetString("dateMissing", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to تاريخ الميلاد.
-        /// </summary>
-        public static string DateOfBirth {
-            get {
-                return ResourceManager.GetString("DateOfBirth", resourceCulture);
             }
         }
         
@@ -2043,69 +2070,6 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to اضافة محامي.
-        /// </summary>
-        public static string Lawyeradd {
-            get {
-                return ResourceManager.GetString("Lawyeradd", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to رقم الكارنيه.
-        /// </summary>
-        public static string LawyerCardNumber {
-            get {
-                return ResourceManager.GetString("LawyerCardNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to صورة كارنية النقابة.
-        /// </summary>
-        public static string LawyerCardPicture {
-            get {
-                return ResourceManager.GetString("LawyerCardPicture", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to تعديل بيانات محامى.
-        /// </summary>
-        public static string LawyerEdit {
-            get {
-                return ResourceManager.GetString("LawyerEdit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to رفع صورة كارنية النقابة.
-        /// </summary>
-        public static string LawyerFileData {
-            get {
-                return ResourceManager.GetString("LawyerFileData", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to درجه  المحامى.
-        /// </summary>
-        public static string LawyerLevel {
-            get {
-                return ResourceManager.GetString("LawyerLevel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to اسم المحامى.
-        /// </summary>
-        public static string lawyerName {
-            get {
-                return ResourceManager.GetString("lawyerName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to قاضى اليسار.
         /// </summary>
         public static string LeftJudge {
@@ -2399,6 +2363,15 @@ namespace JIC.Base.Resources {
         public static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لم يحضر.
+        /// </summary>
+        public static string NotAttended {
+            get {
+                return ResourceManager.GetString("NotAttended", resourceCulture);
             }
         }
         
@@ -3420,6 +3393,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to عدم امكانية ادخال الشهادة بعد ارسال المحضر للقاضى للتصديق .
+        /// </summary>
+        public static string SendtoJudge {
+            get {
+                return ResourceManager.GetString("SendtoJudge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to رقم التتابع.
         /// </summary>
         public static string SequenceNo {
@@ -3803,6 +3785,15 @@ namespace JIC.Base.Resources {
         public static string Warning {
             get {
                 return ResourceManager.GetString("Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الشهود.
+        /// </summary>
+        public static string Witnesses {
+            get {
+                return ResourceManager.GetString("Witnesses", resourceCulture);
             }
         }
         

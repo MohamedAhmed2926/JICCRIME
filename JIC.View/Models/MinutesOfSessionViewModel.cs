@@ -75,6 +75,10 @@ namespace JIC.Crime.View.Models
         public MinutesOfSessionViewModel MinutesOfSession { get; set; }
         public List<CaseDefectsDataViewModel> CaseDefectsData { get; set; }
         public List<CaseDefectsDataViewModel> CaseVictims { get; set; }
+
+        public List<CaseDefectsDataViewModel> CaseWitnesses { get; set; }
+
+       
         public int CrimeType { get; set; }
         public vw_SessionData SessionData { get; set; }
         public vw_CrimeCaseBasicData CaseBasicData { get; set; }

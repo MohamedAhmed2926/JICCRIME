@@ -20,6 +20,18 @@ namespace JIC.Crime.Repositories.Repositories
             return DataContext.CourtConfigurations_CircuitMembers.Where(user => user.UserID == userID).Count() > 0;
         }
 
+        public bool IsPersonIsCircuitMember(int PersonID, int CaseID)
+        {
+          return  (from cases in DataContext.Cases_Cases
+            join Circ in DataContext.CourtConfigurations_Circuits on cases.CircuitID equals Circ.ID
+            join Member in DataContext.CourtConfigurations_CircuitMembers on Circ.ID equals Member.CircuitID
+            join user in DataContext.Users on Member.UserID equals user.Id
+            join person in DataContext.Configurations_Persons on user.PersonsId equals PersonID
+            where (cases.ID == CaseID && Member.ToDate == null)
+            select Member.ID).Count()>0;
+
+            }
+
         public SaveCircuitStatus AddCircuitJudges(List<vw_CircuitsJudges> JudgesList, int CircuitID, DateTime CircuitStartDate)
         {
             foreach (var CircuitJudge in JudgesList)
