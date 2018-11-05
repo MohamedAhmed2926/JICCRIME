@@ -90,50 +90,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Base.dll" size="240640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Base.dll" size="241664">
       <assemblyIdentity name="JIC.Base" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>co7iOMtlVqhxzHF2VFNLVN2+Cz7Y/1XQ2rxBZPJKnqE=</dsig:DigestValue>
+        <dsig:DigestValue>QUBZDO6uCDnKE52LFrJhXuWRLt5VnyejqR76srK0/2k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Components.dll" size="36864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Components.dll" size="37376">
       <assemblyIdentity name="JIC.Components" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gQpiQSWfN7vh3rjoskEtzC9PsLdPkzeu9/YMTqFmyFI=</dsig:DigestValue>
+        <dsig:DigestValue>M+B4LE9eSL7cYaV8KvSXEiU1AqOqn7HEMSarM9PjZNc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Crime.Entities.dll" size="104960">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Crime.Entities.dll" size="106496">
       <assemblyIdentity name="JIC.Crime.Entities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pTtzfSoFMG70SC7a448C8eLIkxdR2IhVRt5NZettpbM=</dsig:DigestValue>
+        <dsig:DigestValue>WSK7dNNfvo0oUL6yaNIizWvE3Z6fnv9QRew3lWSw9h8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Crime.Repositories.dll" size="2638336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Crime.Repositories.dll" size="3068928">
       <assemblyIdentity name="JIC.Crime.Repositories" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>51CbeWYDvZWKA4eZ7tgxGC9bAyKA7GhO2xLJionKff4=</dsig:DigestValue>
+        <dsig:DigestValue>PZoxL8X9JgoUtr0VZOxBafuQFpHmxQx/LF7g+yhgQRM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -145,7 +145,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7AyYmpmwsPqu6ozq3oXVVaMHSImz8m4laXUlz9n3g0s=</dsig:DigestValue>
+        <dsig:DigestValue>kEOMU96irLaUUkT+1x5wjtaJ+atlFS6qKbLa2CzKAnE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -157,19 +157,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/4eE4ZkrwaJVQwFh9jI5Mr800Y6pzJAWKRsYO5H72A8=</dsig:DigestValue>
+        <dsig:DigestValue>HVaXsedgdeJQv8AVOHWgQAbfVHLUHDWLrskWNWcJ0gI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Fault.Repositories.dll" size="228864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Fault.Repositories.dll" size="229376">
       <assemblyIdentity name="JIC.Fault.Repositories" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>snOHjD6pDby/65cNezKXdue1or+SvS0salWdvLDCg7I=</dsig:DigestValue>
+        <dsig:DigestValue>WgBchU5CC7xAMExDmEjmtiNMJfOWtqjhVGbhV6ebaf0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -181,7 +181,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FxtFkaWHHHZd26vgRUWvGpyQjlJUX7TZdGxe4awmTmQ=</dsig:DigestValue>
+        <dsig:DigestValue>fT7B9uF0QYP6IIhXgh4aBGfbYno99f53iG1r3a1V244=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -193,19 +193,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cUpeZFOMTCLOTWYaQZUauSC3yE2NsRtU8igGoOffG9w=</dsig:DigestValue>
+        <dsig:DigestValue>jue3nkb+9Tj51z0j0+MA4ul+V0RHmK2QEOWlm1Avtdc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Services.dll" size="65024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JIC.Services.dll" size="67072">
       <assemblyIdentity name="JIC.Services" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iSVSSOxWlhoJgRaZnTDdGIe7hDGps8YY6eDOQmqcH9w=</dsig:DigestValue>
+        <dsig:DigestValue>WyzRqQr8yA1IyCl+Nj4WgG0kjtOZQtz6LATdrRNSIG4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

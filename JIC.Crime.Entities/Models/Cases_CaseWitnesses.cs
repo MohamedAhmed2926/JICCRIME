@@ -19,9 +19,6 @@ namespace JIC.Crime.Entities.Models
         public long PersonID { get; set; }
 
         public int CaseID { get; set; }
-        public string WitnessDocument { get; set; }
-
-        public byte[] FileDataDocument { get; set; }
 
         public bool IsActive { get; set; }
 

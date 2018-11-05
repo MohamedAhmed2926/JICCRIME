@@ -11,6 +11,7 @@ namespace JIC.Services.ServicesInterfaces
     public interface ILookupService
     {
         List<vw_KeyValue> GetProsecutions(int? CourtID);
+
         List<vw_KeyValue> GetIntialProsecutions(int Prosecution);
         List<vw_KeyValue> GetUserTypes();
         List<vw_KeyValue> GetCourts();

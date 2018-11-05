@@ -1,165 +1,259 @@
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Repositories.dll.config
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Repositories.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Repositories.pdb
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.SqlServer.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Base.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Entities.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Entities.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Core.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Base.pdb
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Entities.pdb
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Entities.dll.config
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Entities.pdb
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Entities.dll.config
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.SqlServer.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Core.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csprojResolveAssemblyReference.cache
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.initialDB.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csproj.GenerateResource.Cache
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.pdb
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddStoredProcedur.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.UniqCycleDate.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csproj.CoreCompileInputs.cache
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.IsCompleteMasterCase.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_user_types.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_roles.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Owin.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.Cookies.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.OAuth.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Newtonsoft.Json.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Owin.dll
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Owin.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.Cookies.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.OAuth.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/bin/Debug/Newtonsoft.Json.xml
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_lookup_categories.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.ChangeRoleNames.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addJICAdmin.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.Add_Lookup.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.Add_Courts.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.Add_Pros.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_textpredictions.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.editTextPredictions.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.OverAlllNullAple2.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addcourt_inCaseadd_OrderOfAssignment.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addlookupjudge.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addCycleLookup.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addSeperatorLookup.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addlookupDocumentsTypes.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addlookupjudgerow.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.MakeCaseCircuitIDNullable.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.MakeCaseNoteStatusIDNullable.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddOrderColoumn.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddUserType.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.CourtHalls.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.hallidcolumn.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addCrimesRelation.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddCrimeTypes.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddCourtCrimes.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addDecisionTypes.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_CourtID_overall_number.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.fix_document_type_encode.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.EditProsecuterModel.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.edit_crimetype_ralations.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.secretarycolumn.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.secretarycolinsessions.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.CircuitTextPredections.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.sendtojudge.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.sent.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.doc.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.folderCreate.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.isSent.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.witness.resources
-E:/EnProject/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.lookup.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Repositories.dll.config
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Repositories.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Repositories.pdb
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.SqlServer.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Base.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Entities.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Entities.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Core.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Owin.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.Cookies.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.OAuth.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Newtonsoft.Json.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Owin.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Base.pdb
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Entities.pdb
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Crime.Entities.dll.config
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Entities.pdb
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/JIC.Entities.dll.config
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/EntityFramework.SqlServer.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Core.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.AspNet.Identity.Owin.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.Cookies.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Microsoft.Owin.Security.OAuth.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/bin/Debug/Newtonsoft.Json.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csprojAssemblyReference.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.initialDB.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddStoredProcedur.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.UniqCycleDate.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.IsCompleteMasterCase.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_user_types.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_roles.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_lookup_categories.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.ChangeRoleNames.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addJICAdmin.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.Add_Lookup.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.Add_Courts.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.Add_Pros.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_textpredictions.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.editTextPredictions.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.OverAlllNullAple2.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addcourt_inCaseadd_OrderOfAssignment.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addlookupjudge.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addlookupDocumentsTypes.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addCycleLookup.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addSeperatorLookup.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addlookupjudgerow.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.MakeCaseCircuitIDNullable.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.MakeCaseNoteStatusIDNullable.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddOrderColoumn.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddUserType.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.CourtHalls.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.hallidcolumn.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addCrimesRelation.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddCrimeTypes.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.AddCourtCrimes.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.addDecisionTypes.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.add_CourtID_overall_number.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.fix_document_type_encode.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.EditProsecuterModel.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.edit_crimetype_ralations.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.secretarycolumn.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.secretarycolinsessions.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.sendtojudge.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.CircuitTextPredections.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.sent.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.doc.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.folderCreate.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.isSent.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.witness.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.Migrations.lookup.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csproj.GenerateResource.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csproj.CoreCompileInputs.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.csproj.CopyComplete
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Crime.Repositories/obj/Debug/JIC.Crime.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Base.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Owin.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Base.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.initialDB.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddStoredProcedur.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.UniqCycleDate.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.IsCompleteMasterCase.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_user_types.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_roles.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_lookup_categories.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.ChangeRoleNames.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addJICAdmin.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Lookup.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Courts.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Pros.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_textpredictions.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.editTextPredictions.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.OverAlllNullAple2.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addcourt_inCaseadd_OrderOfAssignment.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupjudge.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupDocumentsTypes.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addCycleLookup.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addSeperatorLookup.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupjudgerow.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.MakeCaseCircuitIDNullable.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.MakeCaseNoteStatusIDNullable.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddOrderColoumn.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddUserType.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CourtHalls.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.hallidcolumn.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addCrimesRelation.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddCrimeTypes.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddCourtCrimes.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.GenerateResource.Cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addDecisionTypes.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_CourtID_overall_number.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.fix_document_type_encode.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.EditProsecuterModel.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.edit_crimetype_ralations.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.secretarycolumn.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.secretarycolinsessions.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.sendtojudge.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CircuitTextPredections.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.sent.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.deletecasecolumn.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.testtt.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.doc.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.folderCreate.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.isSent.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Base.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Newtonsoft.Json.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Owin.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Base.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Newtonsoft.Json.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csprojAssemblyReference.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.initialDB.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddStoredProcedur.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.UniqCycleDate.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.IsCompleteMasterCase.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_user_types.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_roles.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_lookup_categories.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.ChangeRoleNames.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addJICAdmin.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Lookup.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Courts.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Pros.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_textpredictions.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.editTextPredictions.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.OverAlllNullAple2.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addcourt_inCaseadd_OrderOfAssignment.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupjudge.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupDocumentsTypes.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addCycleLookup.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addSeperatorLookup.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupjudgerow.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.MakeCaseCircuitIDNullable.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.MakeCaseNoteStatusIDNullable.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddOrderColoumn.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddUserType.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CourtHalls.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.hallidcolumn.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addCrimesRelation.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddCrimeTypes.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddCourtCrimes.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addDecisionTypes.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_CourtID_overall_number.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.fix_document_type_encode.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.EditProsecuterModel.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.edit_crimetype_ralations.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.secretarycolumn.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.secretarycolinsessions.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.sendtojudge.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CircuitTextPredections.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.sent.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.deletecasecolumn.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.testtt.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.doc.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.folderCreate.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.isSent.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.GenerateResource.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.CoreCompileInputs.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.CopyComplete
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddLawyer.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Repositories.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Base.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Newtonsoft.Json.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Owin.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Base.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Crime.Entities.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\JIC.Entities.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\bin\Debug\Newtonsoft.Json.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csprojAssemblyReference.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.initialDB.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddStoredProcedur.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.UniqCycleDate.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.IsCompleteMasterCase.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_user_types.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_roles.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_lookup_categories.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.ChangeRoleNames.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addJICAdmin.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Lookup.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Courts.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Add_Pros.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_textpredictions.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.editTextPredictions.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.OverAlllNullAple2.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addcourt_inCaseadd_OrderOfAssignment.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupjudge.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupDocumentsTypes.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addCycleLookup.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addSeperatorLookup.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupjudgerow.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.MakeCaseCircuitIDNullable.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.MakeCaseNoteStatusIDNullable.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddOrderColoumn.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddUserType.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CourtHalls.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.hallidcolumn.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addCrimesRelation.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddCrimeTypes.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddCourtCrimes.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addDecisionTypes.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.add_CourtID_overall_number.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.fix_document_type_encode.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.EditProsecuterModel.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.edit_crimetype_ralations.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.secretarycolumn.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.secretarycolinsessions.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.sendtojudge.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CircuitTextPredections.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.sent.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.deletecasecolumn.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.testtt.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.doc.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.folderCreate.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.isSent.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddLawyer.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.GenerateResource.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.CoreCompileInputs.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.csproj.CopyComplete
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.lawyersss.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Newlawyers.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CaseLawyerss.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.CaseLawyerss1.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addtionals.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.addlookupforlawyers.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.Case_Lawyer.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.newcolumninCase_Lawyer.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\obj\Debug\JIC.Crime.Repositories.Migrations.AddNewUser.resources

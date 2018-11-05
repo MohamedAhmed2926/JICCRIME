@@ -419,4 +419,7 @@
   <data name="SentBefore" xml:space="preserve">
     <value>تم الإرسال من قبل</value>
   </data>
+  <data name="exist" xml:space="preserve">
+    <value>لا يمكن اضافة محامي مرتين</value>
+  </data>
 </root>

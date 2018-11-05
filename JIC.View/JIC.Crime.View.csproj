@@ -301,7 +301,6 @@
     <Compile Include="Controllers\CaseConfugurationController.cs" />
     <Compile Include="Controllers\CaseController.cs" />
     <Compile Include="Controllers\CasePartiesController.cs" />
-    <Compile Include="Controllers\CaseWitnessController.cs" />
     <Compile Include="Controllers\CircuitConfigurationController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\CyclesDistributionController.cs" />
@@ -311,12 +310,12 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FolderAttachmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LawyerController.cs" />
     <Compile Include="Controllers\NotCompleteCasesController.cs" />
     <Compile Include="Controllers\OpenRollController.cs" />
     <Compile Include="Controllers\OrderOfAssignmentController.cs" />
     <Compile Include="Controllers\OverAllNumberController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
-    <Compile Include="Controllers\PersonInformationController.cs" />
     <Compile Include="Controllers\PrintController.cs" />
     <Compile Include="Controllers\RollController.cs" />
     <Compile Include="Controllers\SearchCaseController.cs" />
@@ -350,7 +349,6 @@
     <Compile Include="Models\CasePartiesViewModels.cs" />
     <Compile Include="Models\CaseSessionViewModel.cs" />
     <Compile Include="Models\CaseViewModel.cs" />
-    <Compile Include="Models\CaseWitnessesViewModel.cs" />
     <Compile Include="Models\CourtConfigurationViewModel.cs" />
     <Compile Include="Models\CrimeTypes.cs" />
     <Compile Include="Models\CyclesModel.cs" />
@@ -361,6 +359,8 @@
     <Compile Include="Models\CircuitsJudgesViewModel.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\JudgeViewModel.cs" />
+    <Compile Include="Models\LawyerLevelViewModels.cs" />
+    <Compile Include="Models\LawyerViewModels.cs" />
     <Compile Include="Models\ListOfDefendantViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\AddressViewModels.cs" />
@@ -370,7 +370,6 @@
     <Compile Include="Models\OrderOfAssignmentViewModels.cs" />
     <Compile Include="Models\OverAllNumberViewModel.cs" />
     <Compile Include="Models\PersonDataViewModels.cs" />
-    <Compile Include="Models\PersonInformatViewModel.cs" />
     <Compile Include="Models\ProsecutionViewModels.cs" />
     <Compile Include="Models\ProsecutorViewModels.cs" />
     <Compile Include="Models\PersonViewModel.cs" />
@@ -386,7 +385,6 @@
     <Compile Include="Models\TextPredectionsViewModels.cs" />
     <Compile Include="Models\UserPersonViewModel.cs" />
     <Compile Include="Models\UserViewModels.cs" />
-    <Compile Include="Models\WitnessesSessionLogViewModel.cs" />
     <Compile Include="Models\WorkingDaysViewModels.cs" />
     <Compile Include="Models\VacationsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -596,8 +594,6 @@
     <Content Include="Handler\UploadHandler.ashx" />
     <Content Include="Content\MvcGrid\Fonts\GridGlyphs.woff" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -830,9 +826,9 @@
     <Content Include="Views\ApproveByJudge\Approve.cshtml" />
     <Content Include="Views\SearchCase\UnAuthorizedEdit.cshtml" />
     <Content Include="Views\ApproveByJudge\ReturnToSecretary.cshtml" />
-    <Content Include="Views\CaseWitness\Index.cshtml" />
-    <Content Include="Views\PersonInformation\Index.cshtml" />
-    <Content Include="Views\PersonInformation\Create.cshtml" />
+    <Content Include="Views\Lawyer\Index.cshtml" />
+    <Content Include="Views\Lawyer\Create.cshtml" />
+    <Content Include="Views\Lawyer\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

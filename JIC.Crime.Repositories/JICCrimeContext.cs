@@ -81,6 +81,10 @@ namespace JIC.Crime.Repositories
         public virtual DbSet<CourtConfigurations_TextPredictions> CourtConfigurations_TextPredictions { get; set; }
         public virtual DbSet<CourtConfigurations_CourtHalls> CourtConfigurations_CourtHalls { get; set; }
 
+        //public virtual DbSet<Lawyers> Lawyers { get; set; }
+        public virtual DbSet<CaseLawyers> CaseLawyers { get; set; }
+        public virtual DbSet<Case_Lawyer> Case_Lawyer { get; set; }
+
         #endregion
 
         #region Methods
@@ -224,7 +228,7 @@ namespace JIC.Crime.Repositories
                 .WithOptional(e => e.Cases_CaseSessions)
                 .HasForeignKey(e => e.SessionID);
 
-     
+
 
             modelBuilder.Entity<Cases_CaseSessions>()
                 .HasMany(e => e.Cases_CaseDocumentFolders)
@@ -613,7 +617,7 @@ namespace JIC.Crime.Repositories
                 .HasForeignKey(e => e.ProsecuterID);
 
             modelBuilder.Entity<Configurations_Prosecuters>()
-             .HasMany(e => e.Cases_CaseSessions )
+             .HasMany(e => e.Cases_CaseSessions)
              .WithOptional(e => e.Configurations_Prosecuters)
              .HasForeignKey(e => e.ProsecuterID);
 
@@ -713,7 +717,7 @@ namespace JIC.Crime.Repositories
                 .WithRequired(e => e.CourtConfigurations_Cycles)
                 .HasForeignKey(e => e.CycleID)
                 .WillCascadeOnDelete(false);
-            
+
 
             modelBuilder.Entity<Security_Actions>()
                 .HasMany(e => e.Security_UserTypeActions)
@@ -749,8 +753,8 @@ namespace JIC.Crime.Repositories
                 .HasForeignKey(e => e.SecretaryID);
 
             modelBuilder.Entity<Security_Users>()
-                  .HasMany(e => e.Cases_CaseSessions )
-                  .WithOptional(e => e.Security_Users )
+                  .HasMany(e => e.Cases_CaseSessions)
+                  .WithOptional(e => e.Security_Users)
                   .HasForeignKey(e => e.SecretaryID);
 
             modelBuilder.Entity<Security_Users>()
@@ -821,6 +825,44 @@ namespace JIC.Crime.Repositories
               .HasMany(e => e.CourtConfigurations_CircuitRolls)
               .WithOptional(e => e.CourtConfigurations_CourtHalls)
               .HasForeignKey(e => e.HallID);
+
+
+
+            //modelBuilder.Entity<Configurations_Persons>()
+            //                  .HasMany(e => e.Lawyers)
+            //                  .WithRequired(e => e.Configurations_Persons)
+            //                  .HasForeignKey(e => e.PersonID)
+            //                  .WillCascadeOnDelete(false);
+
+            //modelBuilder.Entity<Configurations_Lookups>()
+            //                 .HasMany(e => e.Lawyers)
+            //                 .WithRequired(e => e.Configurations_Lookups)
+            //                 .HasForeignKey(e => e.LevelID)
+            //                 .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Configurations_Persons>()
+                           .HasMany(e => e.CaseLawyers)
+                           .WithRequired(e => e.Configurations_Personss)
+                           .HasForeignKey(e => e.PersonID)
+                           .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Configurations_Lookups>()
+                             .HasMany(e => e.CaseLawyers)
+                             .WithRequired(e => e.Configurations_Lookupss)
+                             .HasForeignKey(e => e.LevelID)
+                             .WillCascadeOnDelete(false);
+
+
+            modelBuilder.Entity<Configurations_Persons>()
+                          .HasMany(e => e.Case_Lawyer)
+                          .WithRequired(e => e.Configurations_Personss)
+                          .HasForeignKey(e => e.PersonID)
+                          .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Configurations_Lookups>()
+                             .HasMany(e => e.Case_Lawyer)
+                             .WithRequired(e => e.Configurations_Lookupss)
+                             .HasForeignKey(e => e.LevelID)
+                             .WillCascadeOnDelete(false);
         }
 
         #endregion

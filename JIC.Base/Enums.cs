@@ -392,7 +392,8 @@ namespace JIC.Base
         ResumptionStatus = 16,
         ProsecutionResumptionCause = 17,
         JudgePodiumType = 18,
-        Citites = 19
+        Citites = 19,
+        LawyerLevel = 20
     }
 
     #region TransferTypes
@@ -568,6 +569,7 @@ namespace JIC.Base
         JICAdmin = 8,
         ImplementationEmployee = 9,
         CriminalDepManager = 10,
+        DataEntry = 11,
     }
     #endregion
 
@@ -762,6 +764,14 @@ namespace JIC.Base
         NationalNO_Exist_Before
     }
 
+    public enum LawyerStatus
+    {
+        Succeeded,
+        Failed,
+        NationalNO_Exist_Before,
+        CardNumber_Exist_Before
+    }
+
     public enum AddTextStatus
     {
         AddSuccefull,
@@ -812,8 +822,7 @@ namespace JIC.Base
         previousdecisions,
         Edit,
         GoInFlow,
-        NotGoInFlow,
-        CaseWitness
+        NotGoInFlow
 
 
     }
@@ -1056,4 +1065,5 @@ IsMember,
     {
         NewCairoCourt = 1
     }
+
 }

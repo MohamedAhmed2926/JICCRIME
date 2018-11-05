@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 using System.Data.Entity.Infrastructure;
 using JIC.Fault.Repositories;
 using JIC.Fault.Repositories.DBInteractions;
+using System.Data.Entity.Validation;
 
 namespace JIC.Repositories.DBInteractions
 {
@@ -170,8 +171,18 @@ namespace JIC.Repositories.DBInteractions
 
         public void Save()
         {
-            DataContext.SaveChanges();
+            //DataContext.SaveChanges();
+            try
+            {
+                DataContext.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                e = null;
+              //  throw newException;
+            }
         }
+
 
         #endregion
     }

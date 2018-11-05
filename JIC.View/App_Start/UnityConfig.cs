@@ -72,7 +72,7 @@ namespace JIC.Crime.View
             container.RegisterType<IOverAllNumberService, CrimeCaseServise>();
             container.RegisterType<ISessionService, SessionsService>();
             container.RegisterType<IDecisionService, DecisionService>();
-            container.RegisterType<IPersonInformationService, PersonInformationService>();
+            container.RegisterType<ILawyerService, LawyerService>();
             ////Test Service
             container.RegisterType<ICircuitConfigurationService, TestService.CircuitConfigurationService>();
 

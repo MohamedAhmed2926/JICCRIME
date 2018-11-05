@@ -1,14 +1,11 @@
 ﻿using JIC.Base.Views;
 using JIC.Crime.View.Models;
 using JIC.Services.ServicesInterfaces;
-using Microsoft.ApplicationInsights.Extensibility.Implementation;
-//using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.Security;
 
 namespace JIC.Crime.View.Controllers
 {
@@ -33,7 +30,7 @@ namespace JIC.Crime.View.Controllers
         // GET: AllOpenRolls
         public ActionResult Index()
         {
-            if (CurrentUser !=null)
+            if(CurrentUser !=null)
             { 
             List<vw_SessionData> GetOpenedRolls = RollService.GetRollsOpend(CurrentUser.ID,CurrentUser.UserTypeID);
             OpenRollCreateViewModel _AllViewModel = new OpenRollCreateViewModel();

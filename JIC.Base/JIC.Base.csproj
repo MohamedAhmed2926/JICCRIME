@@ -75,6 +75,7 @@
     <Compile Include="Interfaces\IDefendantChargesRepository.cs" />
     <Compile Include="Interfaces\IDefendantsDecisionRepository.cs" />
     <Compile Include="Interfaces\IFaultCaseRepository.cs" />
+    <Compile Include="Interfaces\ILawyerRepository.cs" />
     <Compile Include="Interfaces\IMasterCaseRepository.cs" />
     <Compile Include="Interfaces\ICaseTypeReposatry.cs" />
     <Compile Include="Interfaces\ICircuitMembersRepository.cs" />
@@ -90,7 +91,6 @@
     <Compile Include="Interfaces\ILookupRepository.cs" />
     <Compile Include="Interfaces\IOrderOfAssignmentRepository.cs" />
     <Compile Include="Interfaces\IOverAllNumberRepository.cs" />
-    <Compile Include="Interfaces\IPersonInformationRepository.cs" />
     <Compile Include="Interfaces\IPoliceStationsCircuitsRepository.cs" />
     <Compile Include="Interfaces\IPoliceStationsRepository.cs" />
     <Compile Include="Interfaces\IProsecuterRepository.cs" />
@@ -152,12 +152,10 @@
     <Compile Include="Views\vw_CaseBasicData.cs" />
     <Compile Include="Views\vw_CasePartyProsecution.cs" />
     <Compile Include="Views\vw_CaseProsecution.cs" />
-    <Compile Include="Views\vw_CaseWitnesses.cs" />
     <Compile Include="Views\vw_DefentantData.cs" />
     <Compile Include="Views\vw_DefendantsDecisionData.cs" />
     <Compile Include="Views\vw_FaultCaseBasicData.cs" />
     <Compile Include="Views\vw_FaultCaseConfiguration.cs" />
-    <Compile Include="Views\vw_InformationPerson.cs" />
     <Compile Include="Views\vw_KeyValueDate.cs" />
     <Compile Include="Views\SearchResult.cs" />
     <Compile Include="Views\vw_AddCycles.cs" />
@@ -178,6 +176,8 @@
     <Compile Include="Views\vw_DefendantData.cs" />
     <Compile Include="Views\vw_Documents.cs" />
     <Compile Include="Views\vw_Folders.cs" />
+    <Compile Include="Views\vw_LawyerData.cs" />
+    <Compile Include="Views\vw_LawyerLevelData.cs" />
     <Compile Include="Views\vw_ListOfDefendant.cs" />
     <Compile Include="Views\vw_MessageViewModel.cs" />
     <Compile Include="Views\vw_KeyValue.cs" />
@@ -199,7 +199,6 @@
     <Compile Include="Views\vw_Vacations.cs" />
     <Compile Include="Views\vw_VictimData.cs" />
     <Compile Include="Views\vw_VictimFullData.cs" />
-    <Compile Include="Views\vw_WitnessesSessionLog.cs" />
     <Compile Include="Views\vw_WorkDays.cs" />
   </ItemGroup>
   <ItemGroup>

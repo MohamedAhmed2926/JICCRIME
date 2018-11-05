@@ -76,9 +76,15 @@
                     @if (User.IsInRole(JIC.Base.SystemUserTypes.JICAdmin.ToString()))
                     {
                         <a href="/User/Index" id="ausers" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المستخدمين</a>
+                        <a href="/Lawyer/Index" id="ausers" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المحامين</a>
+                    }
+                    @if (User.IsInRole(JIC.Base.SystemUserTypes.DataEntry.ToString()))
+                    {
+                       
+                        <a href="/Lawyer/Index" id="ausers" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المحامين</a>
                     }
                     @*<a href="/Security/CurrentUsers" class="list-group-item" data-parent="#sub-menu" id="aCurrentUsers" runat="server" visible="false">المستخدمين الحاليين للنظام</a>*@
-               
+
                     @if (User.IsInRole(JIC.Base.SystemUserTypes.Secretary.ToString()))
                     {
                         <a href="/TextPredections/Index" class="list-group-item" data-parent="#sub-menu" id="aTextPredections" runat="server" visible="false">الجمل الشهيرة</a>
@@ -89,12 +95,12 @@
                         <a href="/Prosecutor/Index" id="aProsecuters" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">وكلاء النيابة</a>
                     }
                     @*@if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()  ) || User.IsInRole(JIC.Base.SystemUserTypes.CourtHead.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.InitialCourtAdministrator.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.CriminalDepManager.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ImplementationEmployee.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.InquiriesEmployee.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.JICAdmin.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.Judge.ToString())*@
-                    @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) )
+                    @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()))
                     {
                         <a href="/WorkingDays/Create" id="aVacations" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">إعداد الأدوار و العطلات</a>
                     }
                     @*<a href="/Configrations/EditNormalPerson" id="aEditNormalPerson" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">تعديل بيانات شخص طبيعى</a>
-                        <a href="/Configrations/EditLegalPerson" id="aEditLegalPerson" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">تعديل بيانات شخص اعتبارى</a>*@
+        <a href="/Configrations/EditLegalPerson" id="aEditLegalPerson" visible="false" class="list-group-item" data-parent="#sub-menu" runat="server">تعديل بيانات شخص اعتبارى</a>*@
                 </div>
 
 
@@ -108,30 +114,24 @@
 
                 <a class="list-group-item menu" runat="server" data-parent="#main-menu" id="aCase" data-toggle="collapse" Visible="False" href="#sub-menu2">قضايا <span class="caret"></span></a>
                 <div class="collapse list-group-level1" id="sub-menu2">
-                    @if (!User.IsInRole(JIC.Base.SystemUserTypes.JICAdmin.ToString()))
-    {
-                <a href="/SearchCase/Search" id="acasesearch" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">البحث عن قضية</a>
+@if (!User.IsInRole(JIC.Base.SystemUserTypes.JICAdmin.ToString()))
+{
+                    <a href="/SearchCase/Search" id="acasesearch" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">البحث عن قضية</a>
 }
                     @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) || (User.IsInRole(JIC.Base.SystemUserTypes.schedualEmployee.ToString())))
-    {
-                <a href="/Case/Create" id="aaddcase" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">اضافة قضية</a>
+                    {
+                        <a href="/Case/Create" id="aaddcase" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">اضافة قضية</a>
 
-                <a href="/NotCompleteCases" id="NotCompleteCases" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">القضايا الغير مكتملة</a>
-}
+                        <a href="/NotCompleteCases" id="NotCompleteCases" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">القضايا الغير مكتملة</a>
+                    }
 
-
-                    @if (User.IsInRole(JIC.Base.SystemUserTypes.Judge.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()))
-    {
-                <a href="/PersonInformation/Index" id="PersonInformation" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">الاستعلامات</a>
-}
-
-                @*<a href="/SearchCase/Search" id="acasesearch" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">البحث عن قضية</a>
-    <a href="/Cases/UrgeCaseFromSuspend" id="aUrge" class="list-group-item" data-parent="#sub-menu" runat="server" visible="False">تعجيل قضية من الوقف</a>
-    <a href="/Cases/ObjectionBasicData" id="aObjection" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المعارضات</a>
-    <a href="/Cases/ElementaryCase" id="aElementaryCase" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">الأستئناف</a>
-    <a href="/Cases/EditCase" id="aEditCase" runat="server" class="list-group-item" data-parent="#sub-menu" visible="false">تعديل بيانات قضية</a>
-    <a href="/Cases/EditObjection" id="aEditObjection" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">تعديل بيانات معارضة</a>
-    <a href="/Cases/EditElementaryCase" id="aEditElementaryCase" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">تعديل بيانات قضية مستانفه</a>*@
+                    @*<a href="/SearchCase/Search" id="acasesearch" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">البحث عن قضية</a>
+                        <a href="/Cases/UrgeCaseFromSuspend" id="aUrge" class="list-group-item" data-parent="#sub-menu" runat="server" visible="False">تعجيل قضية من الوقف</a>
+                        <a href="/Cases/ObjectionBasicData" id="aObjection" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">المعارضات</a>
+                        <a href="/Cases/ElementaryCase" id="aElementaryCase" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">الأستئناف</a>
+                        <a href="/Cases/EditCase" id="aEditCase" runat="server" class="list-group-item" data-parent="#sub-menu" visible="false">تعديل بيانات قضية</a>
+                        <a href="/Cases/EditObjection" id="aEditObjection" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">تعديل بيانات معارضة</a>
+                        <a href="/Cases/EditElementaryCase" id="aEditElementaryCase" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false">تعديل بيانات قضية مستانفه</a>*@
 
                 </div>
                 
@@ -202,26 +202,23 @@
                     <div class="date-time" style="text-align:center;padding-top: 10px;">
                         <CustomControls:CLabel runat="server" ID="lblDate" Style="color: #b2cee6;"></CustomControls:CLabel>
                         <span class="clock" style="color: #b2cee6;"></span>
-                        @if (User.IsInRole(JIC.Base.SystemUserTypes.Judge.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()))
-    {
-                    <a href="/PersonInformation/Index" id="PersonInformation" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false"  style="  display: inline;  border-radius: 5px;">الاستعلامات</a>
-}
-                        @if (User.IsInRole(JIC.Base.SystemUserTypes.Secretary.ToString()) || User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()))
-    {
+
+                        @if (User.IsInRole(JIC.Base.SystemUserTypes.Secretary.ToString())|| User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()))
+                {
 
 
-                    <a href="/AllOpenRolls" id="AllOpenRolls" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false" style="  display: inline;  border-radius: 5px;">
-                        استكمال قضايا الرول
-                    </a>
+    <a href="/AllOpenRolls" id="AllOpenRolls" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false" style="  display: inline;  border-radius: 5px;">
+        استكمال قضايا الرول
+    </a>
 
-}
+                            }
 
-                        @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) || (User.IsInRole(JIC.Base.SystemUserTypes.schedualEmployee.ToString())))
+                            @if (User.IsInRole(JIC.Base.SystemUserTypes.ElementaryCourtAdministrator.ToString()) || (User.IsInRole(JIC.Base.SystemUserTypes.schedualEmployee.ToString())))
     {
                     <a href="/NotCompleteCases" id="NotCompleteCases" class="list-group-item" data-parent="#sub-menu" runat="server" visible="false" style="  display: inline; box-shadow: none; padding: 5px; margin-right: 15px; border-radius: 5px;">القضايا الغير مكتملة</a>
 
 
-}
+                        }
                         <div style="float:left;display:inline;color:#000;">
 
                             @if (Request.IsAuthenticated)

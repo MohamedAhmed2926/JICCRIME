@@ -76,9 +76,8 @@ namespace JIC.Repositories
                     DIContainer.RegisterType<IDefendantsDecisionRepository, JIC.Crime.Repositories.Repositories.DefendantsDecisionRepository>();
                     DIContainer.RegisterType<IDecisionTypesRepository, JIC.Crime.Repositories.Repositories.DecisionTypesRepository>();
                     DIContainer.RegisterType<ISessionRepository, JIC.Crime.Repositories.Repositories.SessionRepository>();
-
+                    DIContainer.RegisterType<ILawyerRepository, JIC.Crime.Repositories.Repositories.LawyerRepository>();
                     DIContainer.RegisterType<ICaseDescriptionRepository>(new InjectionFactory((c) => null));
-                    DIContainer.RegisterType<IPersonInformationRepository, JIC.Crime.Repositories.Repositories.PersonInformationRepository>();
 
                     break;
                 case CaseType.Fault:
@@ -103,6 +102,7 @@ namespace JIC.Repositories
                     DIContainer.RegisterType<ICaseProsecutionRepository, JIC.Fault.Repositories.Repositories.CaseProsecutionRepository>();
                     DIContainer.RegisterType<ICaseDefendantProsecutioRepository, JIC.Fault.Repositories.Repositories.CaseDefendantProsecutioRepository>();
                     DIContainer.RegisterType<ICaseVictimProsecutioRepository, JIC.Fault.Repositories.Repositories.CaseVictimProsecutioRepository>();
+                  
 
                     DIContainer.RegisterType<IOverAllNumberRepository>(new InjectionFactory((c) => null));
                     break;

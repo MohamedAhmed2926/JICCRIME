@@ -1053,6 +1053,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تاريخ الميلاد.
+        /// </summary>
+        public static string DateOfBirth {
+            get {
+                return ResourceManager.GetString("DateOfBirth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تاريخ الأنعقاد الثاني يجب أن يكون أكبر من تاريخ الأنعقاد الأول.
         /// </summary>
         public static string DateSecondSession {
@@ -2030,6 +2039,69 @@ namespace JIC.Base.Resources {
         public static string LastSessionDate {
             get {
                 return ResourceManager.GetString("LastSessionDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اضافة محامي.
+        /// </summary>
+        public static string Lawyeradd {
+            get {
+                return ResourceManager.GetString("Lawyeradd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رقم الكارنيه.
+        /// </summary>
+        public static string LawyerCardNumber {
+            get {
+                return ResourceManager.GetString("LawyerCardNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to صورة كارنية النقابة.
+        /// </summary>
+        public static string LawyerCardPicture {
+            get {
+                return ResourceManager.GetString("LawyerCardPicture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تعديل بيانات محامى.
+        /// </summary>
+        public static string LawyerEdit {
+            get {
+                return ResourceManager.GetString("LawyerEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رفع صورة كارنية النقابة.
+        /// </summary>
+        public static string LawyerFileData {
+            get {
+                return ResourceManager.GetString("LawyerFileData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to درجه  المحامى.
+        /// </summary>
+        public static string LawyerLevel {
+            get {
+                return ResourceManager.GetString("LawyerLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اسم المحامى.
+        /// </summary>
+        public static string lawyerName {
+            get {
+                return ResourceManager.GetString("lawyerName", resourceCulture);
             }
         }
         
@@ -3654,15 +3726,6 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to نوع المستخدم.
-        /// </summary>
-        public static string UserType {
-            get {
-                return ResourceManager.GetString("UserType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to أنواع المستخدمين.
         /// </summary>
         public static string UserTypes {
@@ -3740,51 +3803,6 @@ namespace JIC.Base.Resources {
         public static string Warning {
             get {
                 return ResourceManager.GetString("Warning", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to عرض مرفق نص الشهادة.
-        /// </summary>
-        public static string WitnessDataFile {
-            get {
-                return ResourceManager.GetString("WitnessDataFile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to حذف الشاهد.
-        /// </summary>
-        public static string WitnessDelete {
-            get {
-                return ResourceManager.GetString("WitnessDelete", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to نص الشهادة.
-        /// </summary>
-        public static string WitnessDocument {
-            get {
-                return ResourceManager.GetString("WitnessDocument", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to تعديل بيانات الشاهد.
-        /// </summary>
-        public static string WitnessEdit {
-            get {
-                return ResourceManager.GetString("WitnessEdit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to اسم الشاهد.
-        /// </summary>
-        public static string WitnessName {
-            get {
-                return ResourceManager.GetString("WitnessName", resourceCulture);
             }
         }
         

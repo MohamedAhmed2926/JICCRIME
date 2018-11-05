@@ -20,7 +20,7 @@ namespace JIC.Services.Services
         public PoliceStationComponent policeStationComponent { get { return GetComponent<PoliceStationComponent>(); } }
         public DecisionTypesComponent DecisionTypesComp { get { return GetComponent<DecisionTypesComponent>(); } }
         public TextPredictionsComponent TextPredictionsComponent { get { return GetComponent<TextPredictionsComponent>(); } }
-
+        //public LawyerLevelComponent LawyerLevelComponent { get { return GetComponent<LawyerLevelComponent>(); } }
         #endregion
         public LookUpService(CaseType caseType) : base(caseType)
         {
@@ -59,6 +59,20 @@ namespace JIC.Services.Services
         {
             return ProsecutionsComponent.GetProsecutions(CourtID).ToList();
         }
+
+        //public List<vw_KeyValue> GetLawyersLevel()
+        //{
+        //    //List<vw_KeyValue> vw_s = new List<vw_KeyValue>();
+        //    //vw_KeyValue vw_Key = new vw_KeyValue();
+        //    //vw_Key.ID = 0;
+        //    //vw_Key.Name = "ff";
+        //    //vw_s.Add(vw_Key);
+        //    //return vw_s;
+        //    return LawyerLevelComponent.GetLawyersLevel().ToList();
+         
+
+
+        //}
 
         public List<vw_KeyValue> GetUserTypes()
         {

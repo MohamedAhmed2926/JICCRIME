@@ -37,9 +37,10 @@ namespace JIC.Services
             container.RegisterType<IOverAllNumberService, CrimeCaseServise>();
             container.RegisterType<ISessionService, SessionsService>();
             container.RegisterType<IDecisionService, DecisionService>();
-        
+            container.RegisterType<ILawyerService, LawyerService>();
+
             container.RegisterType<ICrimeCaseService, CrimeCaseServise>();
-            container.RegisterType<IPersonInformationService, PersonInformationService>();
+            
 
             //Fault Service
             container.RegisterType<IFaultCaseService, FaultCaseService>();

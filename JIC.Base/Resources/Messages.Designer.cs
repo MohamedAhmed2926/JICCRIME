@@ -268,6 +268,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to لا يمكن اضافة محامي مرتين.
+        /// </summary>
+        public static string exist {
+            get {
+                return ResourceManager.GetString("exist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to أسم المستخدم مدخل من قبل!.
         /// </summary>
         public static string ExistProsecuterName {

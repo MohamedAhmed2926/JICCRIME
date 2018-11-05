@@ -197,26 +197,8 @@ namespace JIC.Crime.Repositories.Repositories
 
         public int? GetRollID(int circuitid, DateTime SessionDate)
         {
-            CourtConfigurations_CircuitRolls circuit = new CourtConfigurations_CircuitRolls();
-             circuit = DataContext.CourtConfigurations_CircuitRolls.SingleOrDefault(roll => roll.CircuitID == circuitid && roll.SessionDate != null);
-            long? rollid = null;
-            if (circuit != null)
-            {
-             rollid = DataContext.CourtConfigurations_CircuitRolls.SingleOrDefault(roll => roll.CircuitID == circuitid && roll.SessionDate != null && roll.SessionDate.ToShortDateString() == SessionDate.ToShortDateString()).ID;
-            }
-            if (rollid == null)
-            {
-
-                vw_CaseConfiguration caseConfigurationData = new vw_CaseConfiguration();
-                caseConfigurationData.CircuitID = circuitid;
-                caseConfigurationData.SessionDate = SessionDate;
-               // caseConfigurationData.r
-                long RollID;
-                AddRoll(caseConfigurationData, out  RollID);
-                // AddRoll()
-                rollid = RollID;
-            }
-            if (rollid!=null)
+           long? rollid = DataContext.CourtConfigurations_CircuitRolls.Single(roll =>roll.CircuitID ==circuitid && roll.SessionDate.ToShortDateString()==SessionDate.ToShortDateString()).ID;
+            if(rollid!=null)
             return int.Parse(rollid.ToString());
             else return null;
         }

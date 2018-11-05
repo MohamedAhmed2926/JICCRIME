@@ -94,7 +94,7 @@ namespace JIC.Crime.Repositories.Repositories
         {
             var result=(from person in DataContext.Configurations_Persons
                           join user in DataContext.Users on person.ID equals user.PersonsId
-                          where ((person.PassportNumber == PassportNo) &&(person.PassportNumber!=null)&& ((ignoreID.HasValue && user.Id != ignoreID.Value) || !ignoreID.HasValue))
+                          where ((person.PassportNumber == PassportNo) && ((ignoreID.HasValue && user.Id != ignoreID.Value) || !ignoreID.HasValue))
 
                           select new
                           {
@@ -104,8 +104,8 @@ namespace JIC.Crime.Repositories.Repositories
             if (ignoreID == null)
             {
                 result=(from person in DataContext.Configurations_Persons
-                where (person.PassportNumber == PassportNo) && (person.PassportNumber != null)
-                        select new
+                where person.PassportNumber == PassportNo
+                select new
                 {
 
 

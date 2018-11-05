@@ -108,11 +108,11 @@
     <Compile Include="ServicesInterfaces\IDecisionService.cs" />
     <Compile Include="ServicesInterfaces\IDefectsService.cs" />
     <Compile Include="ServicesInterfaces\IFaultCaseService.cs" />
+    <Compile Include="ServicesInterfaces\ILawyerService.cs" />
     <Compile Include="ServicesInterfaces\ILookupService.cs" />
     <Compile Include="ServicesInterfaces\INotCompleteCasesService.cs" />
     <Compile Include="ServicesInterfaces\IOrderOfAssignment.cs" />
     <Compile Include="ServicesInterfaces\IOverAllNumberService.cs" />
-    <Compile Include="ServicesInterfaces\IPersonInformationService.cs" />
     <Compile Include="ServicesInterfaces\IPersonService.cs" />
     <Compile Include="ServicesInterfaces\IProsecutionCaseService.cs" />
     <Compile Include="ServicesInterfaces\IProsecutorService.cs" />
@@ -127,8 +127,8 @@
     <Compile Include="Services\CaseSessionsService.cs" />
     <Compile Include="Services\CircuitMembersService.cs" />
     <Compile Include="Services\DecisionService.cs" />
+    <Compile Include="Services\LawyerService.cs" />
     <Compile Include="Services\NotCompleteCaseService.cs" />
-    <Compile Include="Services\PersonInformationService.cs" />
     <Compile Include="Services\ProsecutionCaseService.cs" />
     <Compile Include="Services\RollsService.cs" />
     <Compile Include="Services\CourtConfiguration.cs" />

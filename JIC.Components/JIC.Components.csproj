@@ -91,10 +91,10 @@
     <Compile Include="Components\DecisionTypesComponent.cs" />
     <Compile Include="Components\DefendantsDecisionComponent.cs" />
     <Compile Include="Components\FaultCaseComponent.cs" />
+    <Compile Include="Components\LawyerComponent.cs" />
     <Compile Include="Components\MasterCaseComponent.cs" />
     <Compile Include="Components\CircuitMembersComponent.cs" />
     <Compile Include="Components\NotCompleteCaseComponent.cs" />
-    <Compile Include="Components\PersonInformationComponent.cs" />
     <Compile Include="Components\PoliceStationCircuitsComponent.cs" />
     <Compile Include="Components\RollsComponent.cs" />
     <Compile Include="Components\CircuitsComponent.cs" />

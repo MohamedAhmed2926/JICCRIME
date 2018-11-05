@@ -1,0 +1,87 @@
+2018-10-28 13:20:45.475 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.GetLawyerByID(Nullable`1 LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 96
+   at JIC.Crime.View.Controllers.LawyerController.Edit(Nullable`1 id) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 175
+2018-10-28 13:23:15.722 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.GetLawyerByID(Nullable`1 LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 96
+   at JIC.Crime.View.Controllers.LawyerController.Edit(Nullable`1 id) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 175
+2018-10-28 13:24:31.564 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.GetLawyerByID(Nullable`1 LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 96
+   at JIC.Crime.View.Controllers.LawyerController.Edit(Nullable`1 id) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 175
+2018-10-28 13:24:42.374 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.GetLawyerByID(Nullable`1 LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 96
+   at JIC.Crime.View.Controllers.LawyerController.Edit(Nullable`1 id) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 175
+2018-10-28 13:26:55.303 +02:00 [Error] DataBinding: 'JIC.Base.Views.vw_KeyValue' does not contain a property with the name 'LawyerName'.
+System.Web.HttpException (0x80004005): DataBinding: 'JIC.Base.Views.vw_KeyValue' does not contain a property with the name 'LawyerName'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.Mvc.MultiSelectList.Eval(Object container, String expression)
+   at System.Web.Mvc.MultiSelectList.<>c__DisplayClass2.<GetListItemsWithValueField>b__1(Object item)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at System.Web.Mvc.MultiSelectList.GetListItemsWithValueField()
+   at System.Web.Mvc.MultiSelectList.GetListItems()
+   at System.Web.Mvc.MultiSelectList.GetEnumerator()
+   at System.Web.Mvc.Html.SelectExtensions.GetSelectListWithDefaultValue(IEnumerable`1 selectList, Object defaultValue, Boolean allowMultiple)
+   at System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)
+   at System.Web.Mvc.Html.SelectExtensions.DropDownListFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, String optionLabel, IDictionary`2 htmlAttributes)
+   at JIC.Utilities.MvcHelpers.CustomHtmlHelper.CSelectize[TModel,TProperty](HtmlHelper`1 helper, Expression`1 expression, IEnumerable`1 ListItem_, CelectizeAtt htmlAttributes) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Utilities\MvcHelpers\CustomHtmlHelper.cs:line 264
+   at JIC.Utilities.MvcHelpers.CustomHtmlHelper.CDropDownFor[TModel,TProperty](HtmlHelper`1 helper, Expression`1 expression, IEnumerable`1 ListItem_, Boolean IncludeDefaultItem, Boolean IsDisabled, Boolean IsRequired) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Utilities\MvcHelpers\CustomHtmlHelper.cs:line 225
+   at ASP._Page_Views_Lawyer_Edit_cshtml.Execute() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Views\Lawyer\Edit.cshtml:line 25
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-10-28 13:27:32.850 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 120
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 13:27:33.373 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 120
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 13:41:56.846 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 123
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:06:45.494 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 123
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:29:18.881 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 123
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:30:00.046 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 123
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:38:06.991 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 123
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:50:09.680 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 123
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:57:31.831 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData)
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229
+2018-10-28 15:57:56.858 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.EditLawyer(vw_LawyerData lawyerData)
+   at JIC.Crime.View.Controllers.LawyerController.Edit(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 229

@@ -249,6 +249,14 @@
     <Compile Include="Migrations\201803251228116_sent.Designer.cs">
       <DependentUpon>201803251228116_sent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804031003481_deletecasecolumn.cs" />
+    <Compile Include="Migrations\201804031003481_deletecasecolumn.Designer.cs">
+      <DependentUpon>201804031003481_deletecasecolumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804031018217_testtt.cs" />
+    <Compile Include="Migrations\201804031018217_testtt.Designer.cs">
+      <DependentUpon>201804031018217_testtt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201804101225470_doc.cs" />
     <Compile Include="Migrations\201804101225470_doc.Designer.cs">
       <DependentUpon>201804101225470_doc.cs</DependentUpon>
@@ -261,13 +269,45 @@
     <Compile Include="Migrations\201804111343167_isSent.Designer.cs">
       <DependentUpon>201804111343167_isSent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805301203229_witness.cs" />
-    <Compile Include="Migrations\201805301203229_witness.Designer.cs">
-      <DependentUpon>201805301203229_witness.cs</DependentUpon>
+    <Compile Include="Migrations\201810221021497_AddLawyer.cs" />
+    <Compile Include="Migrations\201810221021497_AddLawyer.Designer.cs">
+      <DependentUpon>201810221021497_AddLawyer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805301231344_lookup.cs" />
-    <Compile Include="Migrations\201805301231344_lookup.Designer.cs">
-      <DependentUpon>201805301231344_lookup.cs</DependentUpon>
+    <Compile Include="Migrations\201810221634579_lawyersss.cs" />
+    <Compile Include="Migrations\201810221634579_lawyersss.Designer.cs">
+      <DependentUpon>201810221634579_lawyersss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810221652265_Newlawyers.cs" />
+    <Compile Include="Migrations\201810221652265_Newlawyers.Designer.cs">
+      <DependentUpon>201810221652265_Newlawyers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810221722029_CaseLawyerss.cs" />
+    <Compile Include="Migrations\201810221722029_CaseLawyerss.Designer.cs">
+      <DependentUpon>201810221722029_CaseLawyerss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810221728383_CaseLawyerss1.cs" />
+    <Compile Include="Migrations\201810221728383_CaseLawyerss1.Designer.cs">
+      <DependentUpon>201810221728383_CaseLawyerss1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810231414315_addtionals.cs" />
+    <Compile Include="Migrations\201810231414315_addtionals.Designer.cs">
+      <DependentUpon>201810231414315_addtionals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810231442306_addlookupforlawyers.cs" />
+    <Compile Include="Migrations\201810231442306_addlookupforlawyers.Designer.cs">
+      <DependentUpon>201810231442306_addlookupforlawyers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810281009580_Case_Lawyer.cs" />
+    <Compile Include="Migrations\201810281009580_Case_Lawyer.Designer.cs">
+      <DependentUpon>201810281009580_Case_Lawyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810311103405_newcolumninCase_Lawyer.cs" />
+    <Compile Include="Migrations\201810311103405_newcolumninCase_Lawyer.Designer.cs">
+      <DependentUpon>201810311103405_newcolumninCase_Lawyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810312224230_AddNewUser.cs" />
+    <Compile Include="Migrations\201810312224230_AddNewUser.Designer.cs">
+      <DependentUpon>201810312224230_AddNewUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -279,6 +319,7 @@
     <Compile Include="Repositories\DefendantCaseLogRepository.cs" />
     <Compile Include="Repositories\DefendantCharges.cs" />
     <Compile Include="Repositories\DefendantsDecisionRepository.cs" />
+    <Compile Include="Repositories\LawyerRepository.cs" />
     <Compile Include="Repositories\MasterCasesRepository.cs" />
     <Compile Include="Repositories\CaseTypeReposatry.cs" />
     <Compile Include="Repositories\CircuitMembersRepository.cs" />
@@ -294,7 +335,6 @@
     <Compile Include="Repositories\LookupRepository.cs" />
     <Compile Include="Repositories\MasterCaseRepository.cs" />
     <Compile Include="Repositories\OverallNumberRepository.cs" />
-    <Compile Include="Repositories\PersonInformationRepository.cs" />
     <Compile Include="Repositories\PoliceStationRepository.cs" />
     <Compile Include="Repositories\PoliceStationsCircuitsRepository.cs" />
     <Compile Include="Repositories\ProsecuterRepository.cs" />
@@ -450,6 +490,12 @@
     <EmbeddedResource Include="Migrations\201803251228116_sent.resx">
       <DependentUpon>201803251228116_sent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804031003481_deletecasecolumn.resx">
+      <DependentUpon>201804031003481_deletecasecolumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804031018217_testtt.resx">
+      <DependentUpon>201804031018217_testtt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804101225470_doc.resx">
       <DependentUpon>201804101225470_doc.cs</DependentUpon>
     </EmbeddedResource>
@@ -459,11 +505,35 @@
     <EmbeddedResource Include="Migrations\201804111343167_isSent.resx">
       <DependentUpon>201804111343167_isSent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805301203229_witness.resx">
-      <DependentUpon>201805301203229_witness.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810221021497_AddLawyer.resx">
+      <DependentUpon>201810221021497_AddLawyer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805301231344_lookup.resx">
-      <DependentUpon>201805301231344_lookup.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810221634579_lawyersss.resx">
+      <DependentUpon>201810221634579_lawyersss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810221652265_Newlawyers.resx">
+      <DependentUpon>201810221652265_Newlawyers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810221722029_CaseLawyerss.resx">
+      <DependentUpon>201810221722029_CaseLawyerss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810221728383_CaseLawyerss1.resx">
+      <DependentUpon>201810221728383_CaseLawyerss1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810231414315_addtionals.resx">
+      <DependentUpon>201810231414315_addtionals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810231442306_addlookupforlawyers.resx">
+      <DependentUpon>201810231442306_addlookupforlawyers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810281009580_Case_Lawyer.resx">
+      <DependentUpon>201810281009580_Case_Lawyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810311103405_newcolumninCase_Lawyer.resx">
+      <DependentUpon>201810311103405_newcolumninCase_Lawyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810312224230_AddNewUser.resx">
+      <DependentUpon>201810312224230_AddNewUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

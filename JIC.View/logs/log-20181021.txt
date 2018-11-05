@@ -1,0 +1,38 @@
+2018-10-21 15:39:15.721 +02:00 [Error] Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+
+Unity.Exceptions.ResolutionFailedException: Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+ ---> System.InvalidOperationException: The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.Creation.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructInterface(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.Builder.BuilderContext.NewBuildUp(Type type, String name, Action`1 childCustomizationBlock)
+   at Unity.ResolverPolicy.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   --- End of inner exception stack trace ---
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.Resolve(Type typeToBuild, String nameToBuild, ResolverOverride[] resolverOverrides)
+   at Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   at JIC.Services.ServiceBase.GetComponent[T]() in E:\jiic\JICCRIME\JICCRIME\JIC.Services\ServiceBase.cs:line 63
+   at JIC.Services.Services.LawyerService.get_LawyerComponent() in E:\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 22
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 46
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 57

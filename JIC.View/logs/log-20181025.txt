@@ -1,0 +1,749 @@
+2018-10-25 10:31:29.240 +02:00 [Error] Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+
+Unity.Exceptions.ResolutionFailedException: Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+ ---> System.InvalidOperationException: The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.Creation.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructInterface(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.Builder.BuilderContext.NewBuildUp(Type type, String name, Action`1 childCustomizationBlock)
+   at Unity.ResolverPolicy.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   --- End of inner exception stack trace ---
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.Resolve(Type typeToBuild, String nameToBuild, ResolverOverride[] resolverOverrides)
+   at Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   at JIC.Services.ServiceBase.GetComponent[T]() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\ServiceBase.cs:line 63
+   at JIC.Services.Services.LawyerService.get_LawyerComponent() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 22
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-25 10:37:34.393 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Components.Components.LawyerComponent.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 38
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-25 10:40:12.780 +02:00 [Error] Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+
+Unity.Exceptions.ResolutionFailedException: Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+ ---> System.InvalidOperationException: The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.Creation.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructInterface(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.Builder.BuilderContext.NewBuildUp(Type type, String name, Action`1 childCustomizationBlock)
+   at Unity.ResolverPolicy.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   --- End of inner exception stack trace ---
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.Resolve(Type typeToBuild, String nameToBuild, ResolverOverride[] resolverOverrides)
+   at Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   at JIC.Services.ServiceBase.GetComponent[T]() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\ServiceBase.cs:line 63
+   at JIC.Services.Services.LawyerService.get_LawyerComponent() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 22
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-25 10:50:56.676 +02:00 [Error] Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+
+Unity.Exceptions.ResolutionFailedException: Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+ ---> System.InvalidOperationException: The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.Creation.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructInterface(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.Builder.BuilderContext.NewBuildUp(Type type, String name, Action`1 childCustomizationBlock)
+   at Unity.ResolverPolicy.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   --- End of inner exception stack trace ---
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.Resolve(Type typeToBuild, String nameToBuild, ResolverOverride[] resolverOverrides)
+   at Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   at JIC.Services.ServiceBase.GetComponent[T]() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\ServiceBase.cs:line 63
+   at JIC.Services.Services.LawyerService.get_LawyerComponent() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 22
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-25 10:59:46.181 +02:00 [Error] Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+
+Unity.Exceptions.ResolutionFailedException: Resolution of the dependency failed, type = 'JIC.Components.Components.LawyerComponent', name = '(none)'.
+Exception occurred while: while resolving.
+Exception is: InvalidOperationException - The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+-----------------------------------------------
+At the time of the exception, the container was: 
+  Resolving JIC.Components.Components.LawyerComponent,(none)
+  Resolving parameter 'LawyerRepository' of constructor JIC.Components.Components.LawyerComponent(JIC.Base.Interfaces.ILawyerRepository LawyerRepository)
+    Resolving JIC.Base.Interfaces.ILawyerRepository,(none)
+ ---> System.InvalidOperationException: The current type, JIC.Base.Interfaces.ILawyerRepository, is an interface and cannot be constructed. Are you missing a type mapping?
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.Creation.DynamicMethodConstructorStrategy.ThrowForAttemptingToConstructInterface(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.Builder.BuilderContext.NewBuildUp(Type type, String name, Action`1 childCustomizationBlock)
+   at Unity.ResolverPolicy.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at lambda_method(Closure , IBuilderContext )
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicBuildPlanGenerationContext.<>c__DisplayClass16_0.<GetBuildMethod>b__0(IBuilderContext context)
+   at Unity.ObjectBuilder.BuildPlan.DynamicMethod.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Unity.Strategies.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   --- End of inner exception stack trace ---
+   at Unity.UnityContainer.ThrowingBuildUp(IBuilderContext context)
+   at Unity.UnityContainer.Resolve(Type typeToBuild, String nameToBuild, ResolverOverride[] resolverOverrides)
+   at Unity.UnityContainerExtensions.Resolve[T](IUnityContainer container, ResolverOverride[] overrides)
+   at JIC.Services.ServiceBase.GetComponent[T]() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\ServiceBase.cs:line 63
+   at JIC.Services.Services.LawyerService.get_LawyerComponent() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 22
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-25 11:21:52.221 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Components.Components.LawyerComponent.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 38
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-25 11:46:25.754 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Components.Components.LawyerComponent.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 38
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-10-25 11:50:52.182 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Components.Components.LawyerComponent.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 38
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-10-25 11:50:52.826 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Components.Components.LawyerComponent.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 38
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 93
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-10-25 12:18:52.309 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 48
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 12:24:42.281 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 48
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 12:45:58.831 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 48
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 12:56:30.933 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 48
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 12:59:47.485 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:04:01.022 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:09:27.759 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:13:35.164 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:15:30.995 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:18:23.174 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:19:05.175 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:20:11.677 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:22:15.793 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:22:52.016 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:27:18.013 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:28:50.699 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:33:25.786 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:37:19.761 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:42:16.096 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 13:48:35.688 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 52
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 14:16:20.978 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 55
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 14:28:21.317 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.PersonRepository.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\PersonRepository.cs:line 33
+   at JIC.Components.Components.PersonComponent.AddPerson(vw_PersonData personData, Int64& personID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\PersonComponent.cs:line 22
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 56
+2018-10-25 14:59:58.079 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 15:44:50.761 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 15:47:14.043 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 15:50:11.415 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 15:59:23.595 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 16:16:06.757 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130
+2018-10-25 16:19:51.267 +02:00 [Error] An error occurred while updating the entries. See the inner exception for details.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID', table 'JICCrimesTest2.dbo.CaseLawyers'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\TeamCity\buildAgent\work\a743336045964cbc\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 246
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 33
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+   at JIC.Crime.View.Controllers.LawyerController.Create(LawyerViewModels LawyerModel) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 130

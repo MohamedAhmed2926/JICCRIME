@@ -95,6 +95,7 @@ namespace JIC.Crime.View.Controllers
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
+
         {
             try
             {

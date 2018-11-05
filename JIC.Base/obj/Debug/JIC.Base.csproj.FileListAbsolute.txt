@@ -1,27 +1,41 @@
-E:/EnProject/JICCRIME/JIC.Base/bin/Debug/JIC.Base.dll
-E:/EnProject/JICCRIME/JIC.Base/bin/Debug/JIC.Base.pdb
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.Resources.Messages.resources
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.Resources.PageTitles.resources
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.Resources.Resources.resources
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csproj.GenerateResource.Cache
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.dll
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.pdb
-E:/EnProject/JICCRIME/JIC.Base/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csproj.CoreCompileInputs.cache
-E:/EnProject/JICCRIME/JIC.Base/bin/Debug/AutoMapper.dll
-E:/EnProject/JICCRIME/JIC.Base/bin/Debug/AutoMapper.xml
-E:/EnProject/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csprojResolveAssemblyReference.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/bin/Debug/JIC.Base.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/bin/Debug/JIC.Base.pdb
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/bin/Debug/AutoMapper.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/bin/Debug/AutoMapper.xml
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csprojAssemblyReference.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.Resources.Messages.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.Resources.PageTitles.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.Resources.Resources.resources
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csproj.GenerateResource.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csproj.CoreCompileInputs.cache
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.csproj.CopyComplete
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.dll
-/Users/mohamedahmed/Desktop/JICCRIME/JIC.Base/obj/Debug/JIC.Base.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\bin\Debug\JIC.Base.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\bin\Debug\JIC.Base.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.Messages.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.PageTitles.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.Resources.resources
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.GenerateResource.Cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\bin\Debug\AutoMapper.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Base\bin\Debug\AutoMapper.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\JIC.Base.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\JIC.Base.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\AutoMapper.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\AutoMapper.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csprojAssemblyReference.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.Messages.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.PageTitles.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.Resources.resources
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.GenerateResource.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.CoreCompileInputs.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.CopyComplete
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\JIC.Base.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\JIC.Base.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\AutoMapper.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\bin\Debug\AutoMapper.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csprojAssemblyReference.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.Messages.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.PageTitles.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.Resources.Resources.resources
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.GenerateResource.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.CoreCompileInputs.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.csproj.CopyComplete
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Base\obj\Debug\JIC.Base.pdb

@@ -1,0 +1,43 @@
+2018-10-31 16:01:37.077 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+2018-10-31 16:17:17.550 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+2018-10-31 16:23:05.875 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+2018-10-31 16:38:41.231 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Crime.View.Handler.UploadHandler.ProcessRequest(HttpContext context) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Handler\UploadHandler.ashx.cs:line 25
+2018-10-31 16:51:47.426 +02:00 [Error] Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at JIC.Repositories.DBInteractions.EntityRepositoryBase`1.Save() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\DBInteractions\EntityRepositoryBase.cs:line 178
+   at JIC.Crime.Repositories.Repositories.LawyerRepository.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Crime.Repositories\Repositories\LawyerRepository.cs:line 35
+   at JIC.Components.Components.LawyerComponent.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Components\Components\LawyerComponent.cs:line 24
+   at JIC.Services.Services.LawyerService.AddLawyer(vw_LawyerData lawyerData, Int32& LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 42
+2018-10-31 18:03:46.131 +02:00 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at JIC.Services.Services.LawyerService.GetLawyerByID(Nullable`1 LawyerID) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 98
+   at JIC.Crime.View.Controllers.LawyerController.Edit(Nullable`1 id) in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 208

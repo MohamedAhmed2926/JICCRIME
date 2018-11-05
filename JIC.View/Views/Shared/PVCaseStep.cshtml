@@ -23,7 +23,6 @@
         TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Create", "OrderOfAssignment", new { id = Model.CaseID }), Name = "أمر الإحالة", IsActive = Model.caseStatus == CaseStatus.OrderOfAssigment, IsDisabled = Model.caseStatus == CaseStatus.New });
 
     }
-    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "CaseWitness", new { id = Model.CaseID }), Name = "الشهود", IsActive = Model.caseStatus == CaseStatus.CaseWitness, IsDisabled = Model.caseStatus == CaseStatus.New });
     TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "Attachment", new { id = Model.CaseID }), Name = "مرفقات القضية ", IsActive = Model.caseStatus == CaseStatus.CaseAttachments, IsDisabled = Model.caseStatus == CaseStatus.New });
     TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "OverAllNumber", new { CaseID = Model.CaseID }), Name = "انشاء الرقم الشامل", IsActive = Model.caseStatus == CaseStatus.previousdecisions, IsDisabled = Model.caseStatus == CaseStatus.New });
 

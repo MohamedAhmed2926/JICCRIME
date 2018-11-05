@@ -1,0 +1,40 @@
+2018-10-29 12:26:14.689 +02:00 [Error] Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 115
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-29 12:32:51.306 +02:00 [Error] Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 118
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-29 12:40:58.246 +02:00 [Error] Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 118
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-29 12:59:33.712 +02:00 [Error] StartIndex cannot be less than zero.
+Parameter name: startIndex
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 118
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58
+2018-10-29 13:16:40.916 +02:00 [Error] StartIndex cannot be less than zero.
+Parameter name: startIndex
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at JIC.Services.Services.LawyerService.GetLawyers() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Services\Services\LawyerService.cs:line 118
+   at JIC.Crime.View.Controllers.LawyerController.Index() in E:\jiic\jiic\JICCRIME\JICCRIME\JIC.View\Controllers\LawyerController.cs:line 58

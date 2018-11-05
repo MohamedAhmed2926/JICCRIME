@@ -1,75 +1,227 @@
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Annotations.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Primitives.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Container.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Serilog.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Owin.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Serilog.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.pdb
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll.config
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.xml
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csprojResolveAssemblyReference.cache
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csproj.CoreCompileInputs.cache
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.dll
-E:\EnProject\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Annotations.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Primitives.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Container.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Serilog.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Owin.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Serilog.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.pdb
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll.config
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.xml
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.dll
+C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Annotations.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Primitives.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Container.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Owin.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.pdb
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll.config
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.xml
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csprojAssemblyReference.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csproj.CoreCompileInputs.cache
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csproj.CopyComplete
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.dll
+E:\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Prosecution.Service.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Annotations.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\System.ComponentModel.Primitives.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Container.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Owin.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Base.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Entities.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Repositories.Interfaces.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Services.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\AutoMapper.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\CommonServiceLocator.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\EntityFramework.SqlServer.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\FluentValidation.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Abstractions.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Configuration.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.Interception.Configuration.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.RegistrationByConvention.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Unity.ServiceLocation.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Core.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Repositories.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Repositories.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Components.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.RollingFile.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Crime.Entities.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Microsoft.Owin.Security.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.pdb
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\JIC.Fault.Entities.dll.config
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\bin\Serilog.Sinks.File.xml
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csprojAssemblyReference.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csproj.CoreCompileInputs.cache
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.BaseService.csproj.CopyComplete
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.dll
+E:\jiic\jiic\JICCRIME\JICCRIME\JIC.Prosecution.Service\obj\Debug\JIC.Prosecution.Service.pdb
