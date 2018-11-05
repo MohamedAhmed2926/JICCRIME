@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E10614F-1C05-4AAE-84F8-3C6971285CCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JIC.Crime.Repositories</RootNamespace>
+    <AssemblyName>JIC.Crime.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBInteractions\DBFactory.cs" />
+    <Compile Include="DBInteractions\EntityRepositoryBase.cs" />
+    <Compile Include="DBInteractions\RepositoryBase.cs" />
+    <Compile Include="DBInteractions\Utitlities.cs" />
+    <Compile Include="JICCrimeContext.cs" />
+    <Compile Include="Migrations\201712160921437_initialDB.cs" />
+    <Compile Include="Migrations\201712160921437_initialDB.Designer.cs">
+      <DependentUpon>201712160921437_initialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712191102241_AddStoredProcedur.cs" />
+    <Compile Include="Migrations\201712191102241_AddStoredProcedur.Designer.cs">
+      <DependentUpon>201712191102241_AddStoredProcedur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712191108429_UniqCycleDate.cs" />
+    <Compile Include="Migrations\201712191108429_UniqCycleDate.Designer.cs">
+      <DependentUpon>201712191108429_UniqCycleDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712201023570_IsCompleteMasterCase.cs" />
+    <Compile Include="Migrations\201712201023570_IsCompleteMasterCase.Designer.cs">
+      <DependentUpon>201712201023570_IsCompleteMasterCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712201504196_add_user_types.cs" />
+    <Compile Include="Migrations\201712201504196_add_user_types.Designer.cs">
+      <DependentUpon>201712201504196_add_user_types.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712201927478_add_roles.cs" />
+    <Compile Include="Migrations\201712201927478_add_roles.Designer.cs">
+      <DependentUpon>201712201927478_add_roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712242133470_add_lookup_categories.cs" />
+    <Compile Include="Migrations\201712242133470_add_lookup_categories.Designer.cs">
+      <DependentUpon>201712242133470_add_lookup_categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712261702280_ChangeRoleNames.cs" />
+    <Compile Include="Migrations\201712261702280_ChangeRoleNames.Designer.cs">
+      <DependentUpon>201712261702280_ChangeRoleNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712261835498_addJICAdmin.cs" />
+    <Compile Include="Migrations\201712261835498_addJICAdmin.Designer.cs">
+      <DependentUpon>201712261835498_addJICAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712270629033_Add_Lookup.cs" />
+    <Compile Include="Migrations\201712270629033_Add_Lookup.Designer.cs">
+      <DependentUpon>201712270629033_Add_Lookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712270704538_Add_Courts.cs" />
+    <Compile Include="Migrations\201712270704538_Add_Courts.Designer.cs">
+      <DependentUpon>201712270704538_Add_Courts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712270714251_Add_Pros.cs" />
+    <Compile Include="Migrations\201712270714251_Add_Pros.Designer.cs">
+      <DependentUpon>201712270714251_Add_Pros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712271358278_add_textpredictions.cs" />
+    <Compile Include="Migrations\201712271358278_add_textpredictions.Designer.cs">
+      <DependentUpon>201712271358278_add_textpredictions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712281647157_editTextPredictions.cs" />
+    <Compile Include="Migrations\201712281647157_editTextPredictions.Designer.cs">
+      <DependentUpon>201712281647157_editTextPredictions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712310916257_OverAlllNullAple2.cs" />
+    <Compile Include="Migrations\201712310916257_OverAlllNullAple2.Designer.cs">
+      <DependentUpon>201712310916257_OverAlllNullAple2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801031107403_addcourt_inCase-add_OrderOfAssignment.cs" />
+    <Compile Include="Migrations\201801031107403_addcourt_inCase-add_OrderOfAssignment.Designer.cs">
+      <DependentUpon>201801031107403_addcourt_inCase-add_OrderOfAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801031314127_addlookupjudge.cs" />
+    <Compile Include="Migrations\201801031314127_addlookupjudge.Designer.cs">
+      <DependentUpon>201801031314127_addlookupjudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801041221209_addlookupDocumentsTypes.cs" />
+    <Compile Include="Migrations\201801041221209_addlookupDocumentsTypes.Designer.cs">
+      <DependentUpon>201801041221209_addlookupDocumentsTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801052157057_addCycleLookup.cs" />
+    <Compile Include="Migrations\201801052157057_addCycleLookup.Designer.cs">
+      <DependentUpon>201801052157057_addCycleLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801061032139_addSeperatorLookup.cs" />
+    <Compile Include="Migrations\201801061032139_addSeperatorLookup.Designer.cs">
+      <DependentUpon>201801061032139_addSeperatorLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801031438580_addlookupjudgerow.cs" />
+    <Compile Include="Migrations\201801031438580_addlookupjudgerow.Designer.cs">
+      <DependentUpon>201801031438580_addlookupjudgerow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801091514325_MakeCaseCircuitIDNullable.cs" />
+    <Compile Include="Migrations\201801091514325_MakeCaseCircuitIDNullable.Designer.cs">
+      <DependentUpon>201801091514325_MakeCaseCircuitIDNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801091527440_MakeCaseNoteStatusIDNullable.cs" />
+    <Compile Include="Migrations\201801091527440_MakeCaseNoteStatusIDNullable.Designer.cs">
+      <DependentUpon>201801091527440_MakeCaseNoteStatusIDNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801121803250_AddOrderColoumn.cs" />
+    <Compile Include="Migrations\201801121803250_AddOrderColoumn.Designer.cs">
+      <DependentUpon>201801121803250_AddOrderColoumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801151425342_AddUserType.cs" />
+    <Compile Include="Migrations\201801151425342_AddUserType.Designer.cs">
+      <DependentUpon>201801151425342_AddUserType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801160843352_CourtHalls.cs" />
+    <Compile Include="Migrations\201801160843352_CourtHalls.Designer.cs">
+      <DependentUpon>201801160843352_CourtHalls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801170925095_hallidcolumn.cs" />
+    <Compile Include="Migrations\201801170925095_hallidcolumn.Designer.cs">
+      <DependentUpon>201801170925095_hallidcolumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801200918169_addCrimesRelation.cs" />
+    <Compile Include="Migrations\201801200918169_addCrimesRelation.Designer.cs">
+      <DependentUpon>201801200918169_addCrimesRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801202053374_AddCrimeTypes.cs" />
+    <Compile Include="Migrations\201801202053374_AddCrimeTypes.Designer.cs">
+      <DependentUpon>201801202053374_AddCrimeTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801202057576_AddCourtCrimes.cs" />
+    <Compile Include="Migrations\201801202057576_AddCourtCrimes.Designer.cs">
+      <DependentUpon>201801202057576_AddCourtCrimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801241422266_addDecisionTypes.cs" />
+    <Compile Include="Migrations\201801241422266_addDecisionTypes.Designer.cs">
+      <DependentUpon>201801241422266_addDecisionTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801311700564_add_CourtID_overall_number.cs" />
+    <Compile Include="Migrations\201801311700564_add_CourtID_overall_number.Designer.cs">
+      <DependentUpon>201801311700564_add_CourtID_overall_number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801311930058_fix_document_type_encode.cs" />
+    <Compile Include="Migrations\201801311930058_fix_document_type_encode.Designer.cs">
+      <DependentUpon>201801311930058_fix_document_type_encode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802051123424_EditProsecuterModel.cs" />
+    <Compile Include="Migrations\201802051123424_EditProsecuterModel.Designer.cs">
+      <DependentUpon>201802051123424_EditProsecuterModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802071223503_edit_crimetype_ralations.cs" />
+    <Compile Include="Migrations\201802071223503_edit_crimetype_ralations.Designer.cs">
+      <DependentUpon>201802071223503_edit_crimetype_ralations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802140959051_secretarycolumn.cs" />
+    <Compile Include="Migrations\201802140959051_secretarycolumn.Designer.cs">
+      <DependentUpon>201802140959051_secretarycolumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802141004558_secretarycolinsessions.cs" />
+    <Compile Include="Migrations\201802141004558_secretarycolinsessions.Designer.cs">
+      <DependentUpon>201802141004558_secretarycolinsessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221106524_Circuit-TextPredections.cs" />
+    <Compile Include="Migrations\201802221106524_Circuit-TextPredections.Designer.cs">
+      <DependentUpon>201802221106524_Circuit-TextPredections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251312126_sendtojudge.cs" />
+    <Compile Include="Migrations\201802251312126_sendtojudge.Designer.cs">
+      <DependentUpon>201802251312126_sendtojudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803251228116_sent.cs" />
+    <Compile Include="Migrations\201803251228116_sent.Designer.cs">
+      <DependentUpon>201803251228116_sent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804101225470_doc.cs" />
+    <Compile Include="Migrations\201804101225470_doc.Designer.cs">
+      <DependentUpon>201804101225470_doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804101439560_folderCreate.cs" />
+    <Compile Include="Migrations\201804101439560_folderCreate.Designer.cs">
+      <DependentUpon>201804101439560_folderCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804111343167_isSent.cs" />
+    <Compile Include="Migrations\201804111343167_isSent.Designer.cs">
+      <DependentUpon>201804111343167_isSent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805301203229_witness.cs" />
+    <Compile Include="Migrations\201805301203229_witness.Designer.cs">
+      <DependentUpon>201805301203229_witness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805301231344_lookup.cs" />
+    <Compile Include="Migrations\201805301231344_lookup.Designer.cs">
+      <DependentUpon>201805301231344_lookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CaseRepository.cs" />
+    <Compile Include="Repositories\CaseSessionsRepository.cs" />
+    <Compile Include="Repositories\DatabaseRepository.cs" />
+    <Compile Include="Repositories\DecisionsRepository.cs" />
+    <Compile Include="Repositories\DecisionTypesRepository.cs" />
+    <Compile Include="Repositories\DefendantCaseLogRepository.cs" />
+    <Compile Include="Repositories\DefendantCharges.cs" />
+    <Compile Include="Repositories\DefendantsDecisionRepository.cs" />
+    <Compile Include="Repositories\MasterCasesRepository.cs" />
+    <Compile Include="Repositories\CaseTypeReposatry.cs" />
+    <Compile Include="Repositories\CircuitMembersRepository.cs" />
+    <Compile Include="Repositories\CircuitRollsRepository.cs" />
+    <Compile Include="Repositories\CircuitsRepository.cs" />
+    <Compile Include="Repositories\CourtRepository.cs" />
+    <Compile Include="Repositories\CrimeTypeRepository.cs" />
+    <Compile Include="Repositories\CycleRepository.cs" />
+    <Compile Include="Repositories\DefendantsRepository.cs" />
+    <Compile Include="Repositories\DocumentsRepository.cs" />
+    <Compile Include="Repositories\FoldersRepository.cs" />
+    <Compile Include="Repositories\DefendantsSessionLogRepository.cs" />
+    <Compile Include="Repositories\LookupRepository.cs" />
+    <Compile Include="Repositories\MasterCaseRepository.cs" />
+    <Compile Include="Repositories\OverallNumberRepository.cs" />
+    <Compile Include="Repositories\PersonInformationRepository.cs" />
+    <Compile Include="Repositories\PoliceStationRepository.cs" />
+    <Compile Include="Repositories\PoliceStationsCircuitsRepository.cs" />
+    <Compile Include="Repositories\ProsecuterRepository.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
+    <Compile Include="Repositories\ProsecutionsRepository.cs" />
+    <Compile Include="Repositories\SearchCaseRepository.cs" />
+    <Compile Include="Repositories\Security_UsersRepository.cs" />
+    <Compile Include="Repositories\SessionRepository.cs" />
+    <Compile Include="Repositories\TextPredictionsRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\VacationsRepository.cs" />
+    <Compile Include="Repositories\VictimsRepository.cs" />
+    <Compile Include="Repositories\VictimsSessionLogRepository.cs" />
+    <Compile Include="Repositories\WorkDaysRepository.cs" />
+    <Compile Include="UserManager\IdentityConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JIC.Base\JIC.Base.csproj">
+      <Project>{DAC34128-EDBD-492A-81BE-68B641B896EA}</Project>
+      <Name>JIC.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JIC.Crime.Entities\JIC.Crime.Entities.csproj">
+      <Project>{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3}</Project>
+      <Name>JIC.Crime.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JIC.Entities\JIC.Base.Entities.csproj">
+      <Project>{15dab1e4-6220-4d73-aee4-d3f3b76a19f0}</Project>
+      <Name>JIC.Base.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712160921437_initialDB.resx">
+      <DependentUpon>201712160921437_initialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712191102241_AddStoredProcedur.resx">
+      <DependentUpon>201712191102241_AddStoredProcedur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712191108429_UniqCycleDate.resx">
+      <DependentUpon>201712191108429_UniqCycleDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712201023570_IsCompleteMasterCase.resx">
+      <DependentUpon>201712201023570_IsCompleteMasterCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712201504196_add_user_types.resx">
+      <DependentUpon>201712201504196_add_user_types.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712201927478_add_roles.resx">
+      <DependentUpon>201712201927478_add_roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712242133470_add_lookup_categories.resx">
+      <DependentUpon>201712242133470_add_lookup_categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712261702280_ChangeRoleNames.resx">
+      <DependentUpon>201712261702280_ChangeRoleNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712261835498_addJICAdmin.resx">
+      <DependentUpon>201712261835498_addJICAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712270629033_Add_Lookup.resx">
+      <DependentUpon>201712270629033_Add_Lookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712270704538_Add_Courts.resx">
+      <DependentUpon>201712270704538_Add_Courts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712270714251_Add_Pros.resx">
+      <DependentUpon>201712270714251_Add_Pros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712271358278_add_textpredictions.resx">
+      <DependentUpon>201712271358278_add_textpredictions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712281647157_editTextPredictions.resx">
+      <DependentUpon>201712281647157_editTextPredictions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712310916257_OverAlllNullAple2.resx">
+      <DependentUpon>201712310916257_OverAlllNullAple2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801031107403_addcourt_inCase-add_OrderOfAssignment.resx">
+      <DependentUpon>201801031107403_addcourt_inCase-add_OrderOfAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801031314127_addlookupjudge.resx">
+      <DependentUpon>201801031314127_addlookupjudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801041221209_addlookupDocumentsTypes.resx">
+      <DependentUpon>201801041221209_addlookupDocumentsTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801052157057_addCycleLookup.resx">
+      <DependentUpon>201801052157057_addCycleLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801061032139_addSeperatorLookup.resx">
+      <DependentUpon>201801061032139_addSeperatorLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801031438580_addlookupjudgerow.resx">
+      <DependentUpon>201801031438580_addlookupjudgerow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801091514325_MakeCaseCircuitIDNullable.resx">
+      <DependentUpon>201801091514325_MakeCaseCircuitIDNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801091527440_MakeCaseNoteStatusIDNullable.resx">
+      <DependentUpon>201801091527440_MakeCaseNoteStatusIDNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801121803250_AddOrderColoumn.resx">
+      <DependentUpon>201801121803250_AddOrderColoumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801151425342_AddUserType.resx">
+      <DependentUpon>201801151425342_AddUserType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801160843352_CourtHalls.resx">
+      <DependentUpon>201801160843352_CourtHalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801170925095_hallidcolumn.resx">
+      <DependentUpon>201801170925095_hallidcolumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801200918169_addCrimesRelation.resx">
+      <DependentUpon>201801200918169_addCrimesRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801202053374_AddCrimeTypes.resx">
+      <DependentUpon>201801202053374_AddCrimeTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801202057576_AddCourtCrimes.resx">
+      <DependentUpon>201801202057576_AddCourtCrimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801241422266_addDecisionTypes.resx">
+      <DependentUpon>201801241422266_addDecisionTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801311700564_add_CourtID_overall_number.resx">
+      <DependentUpon>201801311700564_add_CourtID_overall_number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801311930058_fix_document_type_encode.resx">
+      <DependentUpon>201801311930058_fix_document_type_encode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802051123424_EditProsecuterModel.resx">
+      <DependentUpon>201802051123424_EditProsecuterModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802071223503_edit_crimetype_ralations.resx">
+      <DependentUpon>201802071223503_edit_crimetype_ralations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802140959051_secretarycolumn.resx">
+      <DependentUpon>201802140959051_secretarycolumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802141004558_secretarycolinsessions.resx">
+      <DependentUpon>201802141004558_secretarycolinsessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251312126_sendtojudge.resx">
+      <DependentUpon>201802251312126_sendtojudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221106524_Circuit-TextPredections.resx">
+      <DependentUpon>201802221106524_Circuit-TextPredections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803251228116_sent.resx">
+      <DependentUpon>201803251228116_sent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101225470_doc.resx">
+      <DependentUpon>201804101225470_doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101439560_folderCreate.resx">
+      <DependentUpon>201804101439560_folderCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804111343167_isSent.resx">
+      <DependentUpon>201804111343167_isSent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805301203229_witness.resx">
+      <DependentUpon>201805301203229_witness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805301231344_lookup.resx">
+      <DependentUpon>201805301231344_lookup.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

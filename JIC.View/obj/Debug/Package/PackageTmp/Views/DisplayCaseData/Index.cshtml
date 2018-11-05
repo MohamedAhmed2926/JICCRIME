@@ -1,0 +1,253 @@
+﻿@using JIC.Crime.View.Models
+@model  CaseDataViewModels
+@{
+    string CurrentURL = Request.Url.PathAndQuery;
+}
+@if(Request.Url.LocalPath.Contains("/CaseConfuguration/CaseDetails"))
+{
+    Layout = null;
+}
+else
+{
+
+    ViewBag.Title = JIC.Base.Resources.Resources.DisplayCaseData;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@{
+    ViewBag.Title = JIC.Base.Resources.Resources.DisplayCaseData;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+<style>
+    .Text-Area {
+        height: 400px;
+        width: 950px;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-4">
+        <h3>@JIC.Base.Resources.Resources.CaseDetailes</h3>
+
+        (@Model.CaseBasicDataViewModel.SecondNumber/
+        @Model.CaseBasicDataViewModel.SecondYear/
+        @Model.CaseBasicDataViewModel.SecoundProsecutionName
+        -      @Model.CaseBasicDataViewModel.FirstNumber/
+        @Model.CaseBasicDataViewModel.FirstYear/
+        @Model.CaseBasicDataViewModel.FirstprosecutionName
+        )
+
+    </div>
+    <div class="col-sm-4">
+    </div>
+    @*<div class="col-sm-4">
+            <a href='@Url.Action("Edit", "Case", new { id = Model.CaseBasicDataViewModel.CaseID })'>
+                <input type='button' value='@JIC.Base.Resources.Resources.EditCase' />
+            </a>
+            <br />
+            ( @Model.CaseBasicDataViewModel.SecondNumber/
+            @Model.CaseBasicDataViewModel.SecondYear/
+            @Model.CaseBasicDataViewModel.SecondLevelProcID
+            -      @Model.CaseBasicDataViewModel.FirstNumber/
+            @Model.CaseBasicDataViewModel.FirstYear/
+            @Model.CaseBasicDataViewModel.FirstLevelProsecutionID
+            )
+        </div>*@
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        @JIC.Base.Resources.Resources.basicCaseData
+    </div>
+    <div class="panel-body">
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.CaseBasicDataViewModel.CaseID)
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseBasicDataViewModel.SecondNumber)
+            </div>
+            <div class="col-sm-3">
+                @Model.CaseBasicDataViewModel.SecondNumber/
+                @Model.CaseBasicDataViewModel.SecondYear/
+                @Model.CaseBasicDataViewModel.SecoundProsecutionName
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseBasicDataViewModel.FirstNumber)
+            </div>
+            <div class="col-sm-3">
+                @Model.CaseBasicDataViewModel.FirstNumber/
+                @Model.CaseBasicDataViewModel.FirstYear/
+                @Model.CaseBasicDataViewModel.FirstprosecutionName
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseBasicDataViewModel.OverAllNumber)
+            </div>
+            <div class="col-sm-3">
+                @Model.CaseBasicDataViewModel.OverAllNumber/
+                @Model.CaseBasicDataViewModel.OverAllNumberYear/
+                @Model.CaseBasicDataViewModel.SecoundProsecutionName
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseBasicDataViewModel.CaseName)
+            </div>
+            <div class="col-sm-3">
+                @Model.CaseBasicDataViewModel.CaseName
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseBasicDataViewModel.MainCrime)
+            </div>
+            <div class="col-sm-3">
+                @Model.CaseBasicDataViewModel.MainCrime
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseBasicDataViewModel.HasObtainment)
+            </div>
+            <div class="col-sm-3">
+                @Model.CaseBasicDataViewModel.Obtainment
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        @JIC.Base.Resources.Resources.CaseParties
+    </div>
+    <div class="panel-body">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                @JIC.Base.Resources.Resources.Victims
+            </div>
+            <div class="panel-body">
+                @(Html
+                                                            .Grid(Model.Victims.AsEnumerable())
+                                                            .Build(columns =>
+                                                            {
+                                                                columns.Add(model => model.PartiesOrder).Titled(JIC.Base.Resources.Resources.Order);
+                                                                columns.Add(model => model.PartyName).Titled(JIC.Base.Resources.Resources.PartyName);
+                                                                columns.Add(model => model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+                                                                //  columns.Add(model => model.Status).Titled(JIC.Base.Resources.Resources.Status);
+                                                                // columns.Add(model => model.PartyType).Titled(JIC.Base.Resources.Resources.PartyType);
+                                                                columns.Add(model => model.IsCivilRights).Titled(JIC.Base.Resources.Resources.IsCivilRightProsecutor);
+
+                                                            })
+
+                                                            .Filterable()
+                                                            .Sortable()
+                                                            .Pageable()
+                )
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                @JIC.Base.Resources.Resources.Defendants
+            </div>
+            <div class="panel-body">
+                @(Html
+                                                            .Grid(Model.Parties.AsEnumerable())
+                                                            .Build(columns =>
+                                                            {
+                                                                columns.Add(model => model.PartiesOrder).Titled(JIC.Base.Resources.Resources.Order);
+                                                                columns.Add(model => model.PartyName).Titled(JIC.Base.Resources.Resources.PartyName);
+                                                                columns.Add(model => model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+                                                                columns.Add(model => model.Status).Titled(JIC.Base.Resources.Resources.Status);
+                                                                // columns.Add(model => model.PartyType).Titled(JIC.Base.Resources.Resources.PartyType);
+                                                                columns.Add(model => model.IsCivilRights).Titled(JIC.Base.Resources.Resources.IsCivilRightProsecutor);
+
+                                                            })
+
+                                                            .Filterable()
+                                                            .Sortable()
+                                                            .Pageable()
+                )
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        @JIC.Base.Resources.Resources.OrderDescription
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.TextAreaFor(m => m.OrderOfAssignment.Description, new { @readonly = "readonly", @class = "Text-Area" })
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@if (ViewBag.AllowUser == true)
+{
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">مرفقات القضية</div>
+        <div class="panel-body">
+            @{
+                Html.RenderAction("CaseAttachment", new { id = Model.CaseBasicDataViewModel.CaseID });
+            }
+
+
+        </div>
+    </div>
+}
+@*@if(ViewBag.AllowUser==true){
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    @JIC.Base.Resources.Resources.CaseDocuments
+                </div>
+                <div class="panel-body">
+                    @(Html
+                                                                                                         .Grid(Model.Documents.AsEnumerable())
+                                                                                                         .Build(columns =>
+                                                                                                         {
+                                                                                                             columns.Add(model => model.DocumentName).Titled(JIC.Base.Resources.Resources.Name);
+                                                                                                             columns.Add(model =>@Html.ActionLink(" ","Index", "DownloadDocument", new { DocumentID = model.DocumentID, id = Model.CaseBasicDataViewModel.CaseID }, new { @class = "fa fa-download fa-lg modal-link" }).ToHtmlString()
+                                                                                                    ).Titled(JIC.Base.Resources.Resources.Download).Encoded(false);
+
+                                                                                                         })
+
+                                                                                                    .Filterable()
+                                                                                                    .Sortable()
+                                                                                                    .Pageable()
+                    )
+                </div>
+
+            </div>
+
+    }
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    @JIC.Base.Resources.Resources.lastDecision
+                </div>
+                <div class="panel-body">
+                    @(Html
+                                                                                                                                         .Grid(Model.CaseDecision.AsEnumerable())
+                                                                                                                                         .Build(columns =>
+                                                                                                                                         {
+                                                                                                                                             columns.Add(model => model.DecionDesc).Titled(JIC.Base.Resources.Resources.DecionDesc);
+                                                                                                                                             columns.Add(model => model.DecisionDate).Titled(JIC.Base.Resources.Resources.DecisionDate);
+
+                                                                                                                                         })
+
+                                                                                                                                    .Filterable()
+                                                                                                                                    .Sortable()
+                                                                                                                                    .Pageable()
+                    )
+                </div>
+            </div>*@

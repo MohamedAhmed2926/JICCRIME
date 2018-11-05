@@ -1,0 +1,294 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base
+@model CaseBasicDataViewModel
+@{
+    ViewBag.Title = JIC.Base.Resources.PageTitles.CaseBasicData;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <section id="CaseBasicDataFrom">
+        @using (Html.BeginForm("Create", "Case", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @*@Html.CDropDownFor(m => m.CourtID, new SelectList(Model.Courts, "ID", "Name"), new { disabled = "disabled" })*@
+            <div class="col-xs-3">
+
+                @Html.Partial("PVCaseStep", new CaseViewModel { CaseID = Model.CaseID, caseStatus = JIC.Base.CaseStatus.New })
+            </div>
+            <div class="col-xs-8">
+                <div class="row">
+                    @if (Model.Courts.Count <= 1)
+                    {
+                        <div class="row">
+
+                            <div class="col-xs-4">
+                                @Html.HiddenFor(model => model.CourtID)
+                                @Html.HiddenFor(model => model.CourtName)
+                                @Model.CourtName.ToString()
+                            </div>
+
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-xs-4">
+                                @Html.CDropDownFor(m => m.CourtID, new SelectList(Model.Courts, "ID", "Name"), new { onchange = "ddlCourtID_SelectedIndexChanged()" }, Model.Courts.Count != 1, Model.Courts.Count == 1)
+                            </div>
+
+                        </div>
+                    }
+                </div>
+                <div class="row">
+                    @using (Html.CUpdatePanel(Url.Action("GetCourtCrimeTypes", "Case"), "divCrimeType"))
+                    {
+                        @Html.CDropDownFor(m => m.CrimeID, new SelectList(Model.CrimesTypes, "ID", "Name"), true)
+                    }
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.SecondNumber, new { placeholder = Html.DisplayNameFor(n => n.SecondNumber) })
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.SecondYear, new { placeholder = Html.DisplayNameFor(n => n.SecondYear) })
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.SecondLevelProcID, new SelectList(Model.SecondLevelProsecutions, "ID", "Name"), new { onchange = "ddlSecondLevelProsecution_SelectedIndexChanged()" }, true)
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.FirstNumber, new { placeholder = Html.DisplayNameFor(n => n.FirstNumber) })
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.FirstYear, new { placeholder = Html.DisplayNameFor(n => n.FirstYear) })
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.FirstLevelProsecutionID, new SelectList(Model.FirstLevelProsecutions, "ID", "Name"), new { onchange = "ddlFirstLevelProsecutions_SelectedIndexChanged()" }, true)
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.PoliceStationID, new SelectList(Model.PoliceStations, "ID", "Name"), true)
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.CaseName, new { placeholder = Html.DisplayNameFor(n => n.CaseName) })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.OverAllNumber, new { placeholder = Html.DisplayNameFor(n => n.OverAllNumber) }, true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.OverAllNumberYear, new { placeholder = Html.DisplayNameFor(n => n.OverAllNumberYear) }, true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.OverAllNumberProsecution, new { placeholder = Html.DisplayNameFor(n => n.OverAllNumberProsecution) }, true)
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.MainCrimeID, new SelectList(Model.AllMainCrimeType, "ID", "Name"), true)
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CCheckBox(m => m.HasObtainment, JIC.Base.Resources.Resources.HasObtainment.ToString())
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.CaseNationalID, new { placeholder = Html.DisplayNameFor(n => n.CaseNationalID), @readonly = "readonly" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" class="btn btn-default" value="@JIC.Base.Resources.Resources.Save" />
+                            <input type="reset" class="btn btn-default" value="@JIC.Base.Resources.Resources.Cancel" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </section>
+</div>
+@section Scripts
+                    {
+<script type="text/javascript">
+        var txt = "";
+        var Cour = 2;
+        var CaseLevel = 2;
+        var CrimeID = 0;
+        var Prose = 0;
+        var FirstYear = "";
+        var InitialProsecution = "";
+         var FirstNumber = "";
+            var CaseNationalID = "";
+        $(document).on('focusout', ("#@Html.IdFor(m=>m.SecondLevelProcID),#@Html.IdFor(m => m.SecondYear),#@Html.IdFor(m => m.CourtID)", "#@Html.IdFor(m => m.FirstLevelProsecutionID)", "#@Html.IdFor(m => m.CrimeID)", function () {
+
+
+            Prose = parseInt($("#@Html.IdFor(m=>m.SecondLevelProcID)").val()) || 0;
+            InitialProsecution = $("#@Html.IdFor(m=>m.FirstLevelProsecutionID)").val();
+                            @*if ($("#@Html.IdFor(m=>m.SecondLevelProsecutionID)").contents("إختار"))
+                                {
+                                     var Prose = 0;
+                                var InitialProsecution = 0;
+                                }
+                                else{
+                                    var Prose = $("#@Html.IdFor(m=>m.SecondLevelProsecutionID)").val();
+                                var InitialProsecution = $("#@Html.IdFor(m=>m.FirstLevelProsecutionID)").val();
+                                }*@
+
+             CrimeID = $("#@Html.IdFor(m => m.CrimeID)").val();
+             FirstYear = $("#@Html.IdFor(m => m.FirstYear)").val();
+             FirstNumber = $("#@Html.IdFor(m => m.FirstNumber)").val();
+             CaseNationalID = $("#@Html.IdFor(m => m.CaseNationalID)");
+
+            txt = Cour + "-" + CaseLevel + "-" + Prose + "-" + InitialProsecution + "-" + CrimeID + "-" + FirstYear + "-" + FirstNumber;
+            CaseNationalID.val(txt);
+            }));
+        $(document).on('change', ("#@Html.IdFor(m => m.CrimeID)", function () {
+
+
+            Prose = parseInt($("#@Html.IdFor(m=>m.SecondLevelProcID)").val()) || 0;
+            InitialProsecution = $("#@Html.IdFor(m=>m.FirstLevelProsecutionID)").val();
+                            @*if ($("#@Html.IdFor(m=>m.SecondLevelProsecutionID)").contents("إختار"))
+                                {
+                                     var Prose = 0;
+                                var InitialProsecution = 0;
+                                }
+                                else{
+                                    var Prose = $("#@Html.IdFor(m=>m.SecondLevelProsecutionID)").val();
+                                var InitialProsecution = $("#@Html.IdFor(m=>m.FirstLevelProsecutionID)").val();
+                                }*@
+
+             CrimeID = $("#@Html.IdFor(m => m.CrimeID)").val();
+             FirstYear = $("#@Html.IdFor(m => m.FirstYear)").val();
+             FirstNumber = $("#@Html.IdFor(m => m.FirstNumber)").val();
+             CaseNationalID = $("#@Html.IdFor(m => m.CaseNationalID)");
+
+            txt = Cour + "-" + CaseLevel + "-" + Prose + "-" + InitialProsecution + "-" + CrimeID + "-" + FirstYear + "-" + FirstNumber;
+            CaseNationalID.val(txt);
+        }));
+
+        @*function ddlCrimeID_SelectedIndexChanged() {
+            var CrimeID = parseInt($("#@Html.IdFor(m => m.CrimeID)").val());
+            if (CrimeID == @((int)JIC.Base.Enum_CrimeType.Journalist)){
+                $("#@Html.IdFor(m => m.SecondLevelProcID)").prop('disabled', 'disabled');
+            } else {
+                $("#@Html.IdFor(m => m.SecondLevelProcID)").prop('disabled', false);
+            }
+        }*@
+
+
+        function ddlCourtID_SelectedIndexChanged() {
+
+            var CourtID = $("#@Html.IdFor(m => m.CourtID)").val();
+            if (CourtID == "") {
+                CourtID = 0
+            }
+            else {
+                $("#divCrimeType").trigger('update', { CourtID: CourtID });
+                $.ajax(
+                    {
+
+                        url: '/Case/GetPartialProsecutions',
+                        type: "GET",
+                        dataType: "JSON",
+                        data: { CourtID: CourtID },
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (Prosecutions) {
+                            $('#SecondLevelProsecutionID').each(function () {
+                                if (this.selectize) {
+                                    var ddlSecondLevelProsecution = this.selectize;
+                                    ddlSecondLevelProsecution.clearOptions();
+                                    $.each(Prosecutions, function (i, Prosecutions) {
+                                        ddlSecondLevelProsecution.addOption({ value: Prosecutions.ID, text: Prosecutions.Name });
+                                    });
+
+                                }
+                            });
+                        }
+                    });
+            }
+
+        }
+        function ddlSecondLevelProsecution_SelectedIndexChanged() {
+            var ProsecutionID = $("#@Html.IdFor(m => m.SecondLevelProcID)").val();
+            if (ProsecutionID == "") {
+                ProsecutionID = 0;
+                var $select = $('#PoliceStationID').selectize();
+                var control = $select[0].selectize;
+                control.clear();
+            }
+                $.ajax(
+                    {
+
+                        url: '/Case/GetIntialProsecution',
+                        type: "GET",
+                        dataType: "JSON",
+                        data: { ProsecutionID: ProsecutionID },
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (IntialProsecution) {
+                            $('#FirstLevelProsecutionID').each(function () {
+                                if (this.selectize) {
+                                    var ddlFirstLevelProsecution = this.selectize;
+                                    ddlFirstLevelProsecution.clearOptions();
+                                    ddlFirstLevelProsecution.addOption({ value: "", text: "@JIC.Base.Resources.Resources.DefaultSelectItem" });
+
+                                    $.each(IntialProsecution, function (i, IntialProsecution) {
+                                        ddlFirstLevelProsecution.addOption({ value: IntialProsecution.ID, text: IntialProsecution.Name });
+                                    });
+                                    ddlFirstLevelProsecution.setValue('');
+                                }
+                            });
+                        }
+
+                    });
+
+        }
+        function ddlFirstLevelProsecutions_SelectedIndexChanged() {
+            var FirstLevelProsecutionID = $("#@Html.IdFor(m => m.FirstLevelProsecutionID)").val();
+            if (FirstLevelProsecutionID == "") {
+                FirstLevelProsecutionID = 0;
+            }
+                $.ajax(
+                    {
+                        url: '/Case/GetPoliceStation',
+                        type: "GET",
+                        dataType: "JSON",
+                        data: { ProsecutionID: FirstLevelProsecutionID },
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (PoliceStations) {
+                            $('#PoliceStationID').each(function () {
+                                if (this.selectize) {
+                                    var ddlPoliceStations = this.selectize;
+                                    ddlPoliceStations.clearOptions();
+                                    ddlPoliceStations.addOption({ value: "", text: "@JIC.Base.Resources.Resources.DefaultSelectItem" });
+                                    $.each(PoliceStations, function (i, PoliceStations) {
+                                        ddlPoliceStations.addOption({ value: PoliceStations.ID, text: PoliceStations.Name });
+                                    });
+                                    ddlPoliceStations.setValue('');
+                                }
+                            });
+                        }
+                    });
+
+        }
+</script>
+}
+

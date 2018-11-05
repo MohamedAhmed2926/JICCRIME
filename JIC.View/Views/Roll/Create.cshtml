@@ -1,0 +1,159 @@
+﻿@using JIC.Crime.View.Models
+@model RollOrderViewModel
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<script>
+
+    function GetObjectViewModelRoll() {
+        debugger;
+        var ObjectAfter = [];
+        var NotSubmit = true;
+        $(".RollAfterOrderRow").each(function () {
+           
+            var SecretaryValue = $(this).find('#SecretaryID').val();
+            var ChooseValue = $(this).find("#SecretaryID option:eq(0)").val();
+            if (SecretaryValue == ChooseValue) {
+                $(this).find("#AfterSP").removeClass("hidden");
+                $(this).find("#AfterSP").addClass("show");
+                NotSubmit = false;
+            }
+            else {
+                $(this).find("#AfterSP").removeClass("show");
+                $(this).find("#AfterSP").addClass("hidden");
+            };
+            ObjectAfter.push({
+                Order: $(this).find("#OrderID").val(),
+                CaseID: $(this).find("#CaseID").val(),
+                SecritaryID: $(this).find("#SecretaryID").val(),
+
+            });
+        });
+        $.ajaxSetup({ traditional: false });
+        var SubmitObjectAfter = { CaseOrder: ObjectAfter, __RequestVerificationToken: $(':input[name="__RequestVerificationToken"]').val() };
+        if (NotSubmit){
+            $.post("@Html.Raw(Url.Action("Create", new {CircuitID=Model.Roll.CircuitID,RollID=Model.Roll.RollID, saveBeforeOrder = false}))", SubmitObjectAfter)
+                .done(function (data) {
+                    $("#Indexdiv").html(data);
+                });
+        };
+    };
+
+
+    function moveToOrderTable() {
+        debugger;
+        var ObjectBefore = [];
+        var NotSubmit = true;
+        var NotCkecked = false;
+        $(".RollBeforeOrder").each(function () {
+           
+               var row = $(this);
+               if (row.find('input[type="checkbox"]').is(':checked')) {
+                   NotCkecked = true;
+                   var SecretaryValue = $(this).find('#SecretaryID').val();
+                   var ChooseValue = $(this).find("#SecretaryID option:eq(0)").val();
+                   if (SecretaryValue == ChooseValue) {
+                       $(this).find("#BeforeSP").removeClass("hidden");
+                       $(this).find("#BeforeSP").addClass("show");
+                       NotSubmit = false;
+                   } else {
+                       $(this).find("#BeforeSP").removeClass("show");
+                       $(this).find("#BeforeSP").addClass("hidden");
+                   };
+                   ObjectBefore.push({
+                     Order: $(this).find("#OrderID").val(),
+                     CaseID: $(this).find("#CaseID").val(),
+                     SecritaryID: $(this).find("#SecretaryID").val(),
+
+
+                 });
+               };
+
+           });
+           $.ajaxSetup({ traditional: false });
+
+           var SubmitObjectBefore = { CaseOrder: ObjectBefore, __RequestVerificationToken: $(':input[name="__RequestVerificationToken"]').val() };
+           if (NotSubmit && NotCkecked) {
+               $.post("@Html.Raw(Url.Action("Create", new { CircuitID = Model.Roll.CircuitID, RollID = Model.Roll.RollID , saveBeforeOrder =true}))", SubmitObjectBefore)
+                   .done(function (data) {
+                       $("#Indexdiv").html(data);
+
+                   });
+
+               $("#RollOrderDiv").trigger('update', { RollID: $("#@Html.IdFor(m => m.Roll.RollID)").val(), CircuitID: $("#@Html.IdFor(m => m.Roll.CircuitID)").val() });
+
+           };
+    };
+
+
+    OnDocReady(function () {
+
+        $(".table-sortable").sortable({
+            containerSelector: 'table',
+            itemPath: '> tbody',
+            itemSelector: 'tr',
+            placeholder: '<tr class="placeholder" />',
+            onDrop: function ($item, container, _super, event) {
+                $item.removeClass(container.group.options.draggedClass).removeAttr("style")
+                $("body").removeClass(container.group.options.bodyClass);
+                ChangeOrder();
+            }
+        });
+        $('#CheckAll').click(function () {
+            debugger;
+            var checked = $(this).prop('checked');
+            $('.RollBeforeOrder').find('input:checkbox').prop('checked', checked);
+        });
+
+        $(".RollBeforeOrder").each(function () {
+            debugger;
+            var count = $(this).find('#SecretaryID option').length;
+        if (count == 2) {
+            $(this).find("#SecretaryID").val($("#SecretaryID option:eq(1)").val());
+        };
+        });
+    });
+
+    function ChangeOrder() {
+
+        var Count = 1;
+        $(".RollAfterOrderRow").each(function () {
+            $(this).find("td:eq(1)").text(Count),
+                $(this).find("#OrderID").val(Count)
+            Count++;
+        });
+    };
+</script>
+
+
+<style>
+    body.dragging, body.dragging * {
+        cursor: move !important;
+    }
+
+    .dragged {
+        position: absolute;
+        opacity: 0.5;
+        z-index: 2000;
+    }
+
+    .table-sortable tr.placeholder {
+        position: relative;
+        /** More li styles **/
+    }
+
+        .table-sortable tr.placeholder:before {
+            position: absolute;
+            /** Define arrowhead **/
+        }
+</style>
+<div id="Indexdiv">
+    @Html.Partial("_RollForm", Model)
+</div>
+
+
+

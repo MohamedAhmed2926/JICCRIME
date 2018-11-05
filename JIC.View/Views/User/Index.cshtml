@@ -1,0 +1,98 @@
+﻿@model IEnumerable<JIC.Crime.View.Models.UserViewModels>
+
+@{
+    /**/
+
+    ViewBag.Title = JIC.Base.Resources.Resources.ManageUsers;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts {
+    <script>
+           $(document).on("User:UsernameExist2", function () {
+                $(document).trigger('ErrorMessage', 'اسم المستخدم موجود من قبل');
+            });
+
+           $(document).on("User:UserWrong3", function () {
+                debugger;
+                $(document).trigger('ErrorMessage', 'اسم المستخدم يجب ان يحتوى على حروف وأرقام فقط');
+            });
+            $(document).on("User:PhoneNoExist2", function () {
+                $(document).trigger('ErrorMessage', 'رقم التليفون المحمول موجود من قبل');
+            });
+            $(document).on("User:PassportNoExist2", function () {
+                $(document).trigger('ErrorMessage', 'رقم جواز السفر موجود من قبل');
+            });
+
+        $(document).on("User:SaveSuccefull", function () {
+            debugger;
+            $(document).trigger('SuccessMessage', 'تمت العملية بنجاح');
+
+            $("#CreateUserUpdatePanelID").trigger('update');
+            $("#CreateModelID").modal('hide');
+            formUpdated();
+        });
+        $(document).on("User:CloseAddEditForm", function () {
+            $("#CreateModelID").modal('hide');
+            $("#EditModel").modal('hide');
+     
+            $('.modal-backdrop').hide();
+           });
+        $(document).on("User:ReopenModel", function () {
+            $(document).trigger('SuccessMessage', 'تمت العملية بنجاح');
+           // $("#CreateModelID").modal('hide');
+            $("#CreateUserUpdatePanelID").trigger('update');
+            formUpdated();
+        });
+        
+        $(document).on("User:DeleteSuccefull", function () {
+            $(document).trigger('SuccessMessage', 'تمت العملية بنجاح');
+            $("#DeleteModel").modal('hide');
+            $("#LockModel").modal('hide');
+            $("#UnLockModel").modal('hide');
+            formUpdated();
+        });
+        $(document).on("User:UpdateSuccefull", function () {
+            $(document).trigger('SuccessMessage', 'تمت العملية بنجاح');
+            $("#EditModel").modal('hide');
+            $("#LockModel").modal('hide');
+            $("#UnLockModel").modal('hide');
+            formUpdated();
+        });
+        $('#CreateModelID').on('hidden.bs.modal', function (event) {
+            event.preventDefault();
+            $("#CreateUserUpdatePanelID").trigger('update');
+        });
+ </script>
+}
+
+<h2>@JIC.Base.Resources.Resources.ManageUsers</h2>
+
+<p>
+    @*@Html.ActionLink(JIC.Base.Resources.Resources.AddNewUser, "Create")*@
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#CreateModelID">@JIC.Base.Resources.Resources.AddNewUser</button>
+</p>
+@using (Html.BeginModel("CreateModelID", JIC.Base.Resources.Resources.AddNewUser))
+{
+    using (Html.CUpdatePanel(Url.Action("Create"), "CreateUserUpdatePanelID"))
+    {
+        Html.RenderAction("Create");
+    }
+}
+
+@using (Html.BeginModel("EditModel", JIC.Base.Resources.Resources.EditUser))
+{
+}
+
+@using (Html.BeginModel("LockModel", "تعطيل حساب المستخدم"))
+{
+}
+@using (Html.BeginModel("UnLockModel", "تفعيل حساب المستخدم"))
+{
+}
+
+@using (Html.BeginModel("DeleteModel", "حذف مستخدم"))
+{
+}
+@Html.AjaxGrid(Url.Action("UserGrid"))
+
+

@@ -1,0 +1,160 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model SessionsSearchViewModel
+@{
+    /**/
+
+    ViewBag.Title = @JIC.Base.Resources.PageTitles.CaseSessions.ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /* Switch button */
+    .btn-default.btn-on.active {
+        background-color: #5BB75B;
+        color: white;
+    }
+</style>
+<script type="text/javascript">
+
+
+
+    OnDocReady(function () {
+
+        var status = document.getElementById('status');
+        status.onclick = function () {
+            debugger;
+            var allcases = $("#allcases");
+            var NotSendcases = $("#NotSendcases");
+            if ($("#allcases").hasClass("active")) {
+                $("#AllCases_div").hide();
+                $("#EditCase").show();
+            }
+            else if ($("#NotSendcases").hasClass("active")) {
+                $("#EditCase").hide();
+                $("#AllCases_div").show();
+            }
+        };
+        $('#CheckAll').click(function () {
+            var checked = $(this).prop('checked');
+            $('.CaseRow').find('input:checkbox').prop('checked', checked);
+        });
+    });
+    //var x = $("#@Html.IdFor(m=>m.tabName)").val();
+    function ReturnToToggle(divname) {
+        if (divname == "allcases") {
+            $("#allcases").addClass("active");
+            $("#NotSendcases").removeClass("active");
+            $("#AllCases_div").hide();
+            $("#EditCase").show();
+        }
+        else {
+            $("#NotSendcases").addClass("active");
+            $("#allcases").removeClass("active");
+            $("#AllCases_div").show();
+            $("#EditCase").hide();
+        }
+
+    }
+    function Save() {
+        debugger;
+        var Cases = { Cases: [], CrimeID };
+        $(".CaseRow").each(function () {
+            var row = $(this);
+            if (row.find('input[type="checkbox"]').is(':checked')) {
+                Cases.Cases.push($(this).find("#CaseID").val());
+                Cases.CrimeID = $(this).find("#CrimeIDCreate").val();
+            }
+        });
+        console.log(Cases);
+        $("#CaseAttachmentsDiv").trigger('update', Cases);
+
+    };
+
+</script>
+@*@using (Html.CUpdatePanel(Url.Action("Index", "CaseConfuguration"), "indexdiv"))*@
+@*//{*@
+
+        <div class="row">
+            <div class="col-xs-4">
+                <h3> @JIC.Base.Resources.PageTitles.CaseSessions.ToString()</h3>
+            </div>
+            <div class="col-xs-8">
+                <div class="btn-group" id="status" data-toggle="buttons">
+                    <label id="allcases" class="btn btn-default btn-on btn-lg active">
+                        <input type="radio" id="" value="1" name="multifeatured_module[module_id][status]" checked="checked">قضايا لم يتم تحديد لها جلسات
+
+
+                    </label>
+                    <label id="NotSendcases" class="btn btn-default btn-on btn-lg">
+                        <input type="radio" value="0" name="multifeatured_module[module_id][status]">قضايا تحدد لها جلسات
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="cases">
+            <div>
+                @using (Html.CUpdatePanel(Url.Action("Edit", "CaseConfuguration"), "EditCases"))
+                {
+                    Html.RenderAction("AllCases");
+                }
+          
+               
+            </div>
+        </div>
+        <div class="row" id="EditCase" style="display:none">
+            <div id="x">
+                @*@{Html.RenderAction("Edit", "CaseConfuguration", Model);}*@
+                @using (Html.CUpdatePanel(Url.Action("Edit", "CaseConfuguration"), "EditCases"))
+                {
+                    Html.RenderAction("Edit");
+                }
+
+
+            </div>
+        </div>
+
+@*</div>*@
+@*//}*@
+
+@using (Html.BeginModel("Create", JIC.Base.Resources.Resources.SelectCircuitAndSession))
+{
+    using (Html.CUpdatePanel(Url.Action("Create", "CaseConfuguration"), "CaseAttachmentsDiv")) { }
+}
+@section Scripts
+                    {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+            var div = $("#@Html.IdFor(m=>m.tabName)").val();
+            if (div == "Edit") {
+                $("#allcases").addClass("active");
+                $("#NotSendcases").removeClass("active");
+                $("#AllCases_div").hide();
+                $("#EditCase").show();
+                $("#NotSendcases").addClass("active");
+                $("#allcases").removeClass("active");
+
+            }
+            $(document).on('Session:Saved', function () {
+                $(document).trigger('SuccessMessage', '@JIC.Base.Resources.Messages.OperationCompletedSuccessfully');
+                $('#EditSessions').modal('hide');
+                $('.modal-backdrop').hide();
+                $('#Edit_cases').trigger('update');
+                //formUpdated();
+                $("body").css({ "overflow": "visible" });
+
+            });
+
+            $(document).on('SessionCreate:Saved', function () {
+                $(document).trigger('SuccessMessage', '@JIC.Base.Resources.Messages.OperationCompletedSuccessfully');
+                $('#Create').modal('hide');
+                $('.modal-backdrop').hide();
+                $('#AllCases_div').trigger('update');
+                $("body").css({ "overflow": "visible" });
+            });
+        });
+
+
+    </script>
+}

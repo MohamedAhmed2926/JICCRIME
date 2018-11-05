@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74CB8404-1109-4368-A5DC-0C2E2321A063}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JIC.Components</RootNamespace>
+    <AssemblyName>JIC.Components</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.8.1\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.1\lib\net46\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentFactory.cs" />
+    <Compile Include="Components\CasePartyProsecutionComponent.cs" />
+    <Compile Include="Components\CaseProsecutionComponent.cs" />
+    <Compile Include="Components\CrimeCaseComponent.cs" />
+    <Compile Include="Components\CaseDescriptionComponent.cs" />
+    <Compile Include="Components\CaseSessionsComponent.cs" />
+    <Compile Include="Components\DecisionsComponent.cs" />
+    <Compile Include="Components\DecisionTypesComponent.cs" />
+    <Compile Include="Components\DefendantsDecisionComponent.cs" />
+    <Compile Include="Components\FaultCaseComponent.cs" />
+    <Compile Include="Components\MasterCaseComponent.cs" />
+    <Compile Include="Components\CircuitMembersComponent.cs" />
+    <Compile Include="Components\NotCompleteCaseComponent.cs" />
+    <Compile Include="Components\PersonInformationComponent.cs" />
+    <Compile Include="Components\PoliceStationCircuitsComponent.cs" />
+    <Compile Include="Components\RollsComponent.cs" />
+    <Compile Include="Components\CircuitsComponent.cs" />
+    <Compile Include="Components\CrimTypeComponent.cs" />
+    <Compile Include="Components\CycleComponent.cs" />
+    <Compile Include="Components\DatabaseComponent.cs" />
+    <Compile Include="Components\DefendantsComponent.cs" />
+    <Compile Include="Components\DefendantsSessionLogComponent.cs" />
+    <Compile Include="Components\AttachmentsComponent.cs" />
+    <Compile Include="Components\LoginComponent.cs" />
+    <Compile Include="Components\LookupComponent.cs" />
+    <Compile Include="Components\OrderOfAssignmentComponent.cs" />
+    <Compile Include="Components\OverallNumberComponent.cs" />
+    <Compile Include="Components\PoliceStationComponent.cs" />
+    <Compile Include="Components\ProsecuterComponent.cs" />
+    <Compile Include="Components\PersonComponent.cs" />
+    <Compile Include="Components\ProsecutionsComponent.cs" />
+    <Compile Include="Components\SearchCaseComponent.cs" />
+    <Compile Include="Components\SessionsComponent.cs" />
+    <Compile Include="Components\TextPredictionsComponent.cs" />
+    <Compile Include="Components\VacationsComponent.cs" />
+    <Compile Include="Components\VictimsComponent.cs" />
+    <Compile Include="Components\VictimsSessionLogComponent.cs" />
+    <Compile Include="Components\WorkDaysComponent.cs" />
+    <Compile Include="Components\UserComponent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JIC.Base\JIC.Base.csproj">
+      <Project>{dac34128-edbd-492a-81be-68b641b896ea}</Project>
+      <Name>JIC.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JIC.Entities\JIC.Base.Entities.csproj">
+      <Project>{15dab1e4-6220-4d73-aee4-d3f3b76a19f0}</Project>
+      <Name>JIC.Base.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JIC.Repositories\JIC.Repositories.csproj">
+      <Project>{0d77f8fb-6adf-47fa-affe-e11532c0e490}</Project>
+      <Name>JIC.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

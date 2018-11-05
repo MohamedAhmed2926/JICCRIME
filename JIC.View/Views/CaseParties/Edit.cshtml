@@ -1,0 +1,58 @@
+﻿@model JIC.Crime.View.Models.FullCasePartiesViewModel
+<script>
+    debugger;
+    $(document).trigger('Parties:Edite');
+
+</script>
+
+@*<script>
+    $(document).ready(function () {
+       // var sessionVal = $("#IsEnded").val();
+        var sessionVal = @ViewData["SessionEnded"];
+        alert(sessionVal);
+        if (sessionVal == true) {
+            window.location.href = "/User/Login?returnUrl=/";
+        }
+    });
+</script>*@
+
+
+@if (Model.CaseInFlow == JIC.Base.CaseStatus.GoInFlow)
+{
+    <h3 style="color:orangered">لا يمكن التعديل الا بواسطة مدير نظام المحكمة</h3>
+    <script>
+        debugger;
+        $(document).trigger('StopSubmit:Show');
+    </script>
+}
+
+@{Html.RenderPartialWithPrefix("Create", Model, "Edit");}
+
+@if (ViewBag.SavedEdite != null && (bool)ViewBag.SavedEdite)
+{
+    <script>
+        debugger;
+        $(document).trigger('Parties:UpdateSuccefull');
+
+    </script>
+}
+@if (ViewBag.SavedEdite != null && (bool)ViewBag.SavedEdite)
+{
+    <script>
+        debugger;
+        $(document).trigger('Parties:UpdateSuccefull');
+
+    </script>
+}
+@if ((bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+    window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+
+
+
+
+

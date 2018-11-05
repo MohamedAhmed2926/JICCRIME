@@ -1,0 +1,18 @@
+﻿@model IEnumerable<JIC.Crime.View.Models.FileAttachment>
+
+@(
+        Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+            columns.Add(model => model.Name).Titled("إسم المرفق");
+            columns.Add(model => model.AttachmentType).Titled("نوع الملف");
+            columns.Add(model => model.UploadDate.ToShortDateString()).Titled("تاريخ رفع المرفق");
+            columns.Add(model =>
+            new MvcHtmlString(
+                Html.ActionLink(" ", "DownloadAttachment", "Attachment", new { model.AttachmentID }, new { @class = "fa fa-download fa-lg" }).ToString()
+                )
+
+                );
+        }).Css("table-bordered")
+)

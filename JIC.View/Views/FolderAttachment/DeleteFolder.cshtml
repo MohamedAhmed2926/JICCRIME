@@ -1,0 +1,8 @@
+﻿@model JIC.Crime.View.Models.FolderViewModel
+<div id="DeleteFolderDiv">
+    @using (Ajax.BeginForm("Delete", new { CaseID = Model.CaseID, SessionID = Model.SessionID }, new AjaxOptions { HttpMethod = "Post" , UpdateTargetId= "DeleteFolderDiv" }))
+    {
+        @Html.Hidden("FolderID")
+    }
+</div>
+

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<JIC.Crime.View.Models.UserViewModels>
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+@(Html
+        .Grid(Model)
+        .Build(columns =>
+        {
+            columns.Add(model => model.UserName).Titled(JIC.Base.Resources.Resources.UserName);
+            columns.Add(model => model.UserType).Titled(JIC.Base.Resources.Resources.UserTypes);
+            columns.Add(model => model.PhoneNo).Titled(JIC.Base.Resources.Resources.Phone);
+            columns.Add(model =>
+                "<a href='#' class='fa fa-pencil-square-o fa-lg modal-link'  data-toggle='modal' data-target='#EditModel' data-url='" + Url.Action("Edit", new { id = model.ID }) + "'> </a>"
+                + "&nbsp;"
+                + (model.Locked ?
+                    "<a href='#' class='fa fa-unlock fa-lg modal-link'  data-toggle='modal' data-target='#UnLockModel' data-url='" + Url.Action("UnLock", new { id = model.ID }) + "'> </a>"
+                    :
+                    "<a href='#' class='fa fa-lock fa-lg modal-link'  data-toggle='modal' data-target='#LockModel' data-url='" + Url.Action("Lock", new { id = model.ID }) + "'> </a>"
+                    )
+                + "&nbsp;"
+                + "<a href='#' class='fa fa-trash-o fa-lg modal-link'  data-toggle='modal' data-target='#DeleteModel' data-url='" + Url.Action("Delete", new { id = model.ID }) + "'> </a>"
+
+            ).Css("text-center").Encoded(false);
+        })
+        .Pageable()
+        .Sortable()
+        .Filterable()
+        .Css("table-bordered")
+        .Empty("لا توجد نتائج")
+)

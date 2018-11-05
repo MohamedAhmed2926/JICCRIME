@@ -1,0 +1,20 @@
+﻿@using JIC.Crime.View.Models
+@model List<TabsViewModel>
+
+<ul class="nav nav-pills nav-stacked text-center" style="width:100%;">
+    @foreach (var tab in Model)
+    {
+        <li role="presentation" class="@(tab.IsActive ? "active" : "" )@(tab.IsDisabled ? "disabled" : "")">
+
+            <a href="@(tab.IsDisabled || String.IsNullOrEmpty(tab.Url) ? "#" : tab.Url)" style="border:1px solid;">
+                @tab.Name
+            @*@if (tab.IsDone)
+            {
+                <i class="fa fa-check">
+                   
+                </i>
+            }*@
+            </a>
+        </li>
+    }
+        </ul>

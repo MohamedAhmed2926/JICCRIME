@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://court.integration.cj.rss.com/" targetNamespace="http://court.integration.cj.rss.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="businessCaseMerging">
+    <xsd:sequence>
+      <xsd:element name="originalBusinessCase" type="xsd:int" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="mergedBusinessCases" nillable="true" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="businessCaseMergingResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="courtJudgementCompleteResolution">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="resolution" type="xsd:string" />
+      <xsd:element name="circleId" type="xsd:int" />
+      <xsd:element name="businesscaseId" type="xsd:int" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="parties" nillable="true" type="ns0:party" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="courtJudgementCompleteResolutionResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="courtJudgementResolution">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="courtBcHearingResParties" type="ns0:courtBcHearingResParties" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="courtJudgementResolutionResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="newCircle">
+    <xsd:sequence>
+      <xsd:element name="circleId" type="xsd:int" />
+      <xsd:element name="courtId" type="xsd:int" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="circleHearingDates" nillable="true" type="xsd:dateTime" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="newCircleResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="updateBusinessCaseDescription">
+    <xsd:sequence>
+      <xsd:element name="circleId" type="xsd:int" />
+      <xsd:element name="courtId" type="xsd:int" />
+      <xsd:element name="businessCaseId" type="xsd:int" />
+      <xsd:element minOccurs="0" name="circleDate" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="newDescription" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="updateBusinessCaseDescriptionResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="updateCourtHearingDateReservation">
+    <xsd:sequence>
+      <xsd:element name="reservationId" type="xsd:int" />
+      <xsd:element minOccurs="0" name="newReservationDate" type="xsd:dateTime" />
+      <xsd:element name="courtId" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="updateCourtHearingDateReservationResponse">
+    <xsd:sequence>
+      <xsd:element name="return" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="party">
+    <xsd:sequence>
+      <xsd:element name="partyId" type="xsd:int" />
+      <xsd:element name="courtType" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="courtBcHearingResParties">
+    <xsd:sequence>
+      <xsd:element name="actionTypeId" type="xsd:int" />
+      <xsd:element name="actionTypeIdNull" type="xsd:boolean" />
+      <xsd:element name="amount" type="xsd:float" />
+      <xsd:element name="amountNull" type="xsd:boolean" />
+      <xsd:element name="announced" type="xsd:int" />
+      <xsd:element name="announcedNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="attachment1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="attachment2" type="xsd:string" />
+      <xsd:element name="attendance" type="xsd:int" />
+      <xsd:element name="attendanceNull" type="xsd:boolean" />
+      <xsd:element name="bcDegreeSpecId" type="xsd:int" />
+      <xsd:element name="bcDegreeSpecIdNull" type="xsd:boolean" />
+      <xsd:element name="courtBcHearingResId" type="xsd:int" />
+      <xsd:element name="courtBcHearingResIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="createdBy" type="xsd:string" />
+      <xsd:element minOccurs="0" name="createdDate" type="xsd:dateTime" />
+      <xsd:element name="createdEntityId" type="xsd:int" />
+      <xsd:element name="createdEntityIdNull" type="xsd:boolean" />
+      <xsd:element name="createdUserId" type="xsd:int" />
+      <xsd:element name="createdUserIdNull" type="xsd:boolean" />
+      <xsd:element name="dailyPayments" type="xsd:int" />
+      <xsd:element name="dailyPaymentsNull" type="xsd:boolean" />
+      <xsd:element name="degree" type="xsd:int" />
+      <xsd:element name="degreeNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="description" type="xsd:string" />
+      <xsd:element name="executionCancellation" type="xsd:int" />
+      <xsd:element minOccurs="0" name="executionCancellationCause" type="xsd:string" />
+      <xsd:element name="executionCancellationNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="executionNumber" type="xsd:string" />
+      <xsd:element name="executionNumberSchedule" type="xsd:int" />
+      <xsd:element name="executionNumberScheduleNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="executionStartDate" type="xsd:dateTime" />
+      <xsd:element name="fees" type="xsd:int" />
+      <xsd:element name="feesNull" type="xsd:boolean" />
+      <xsd:element name="guarantee" type="xsd:int" />
+      <xsd:element minOccurs="0" name="guaranteeDate" type="xsd:dateTime" />
+      <xsd:element name="guaranteeNull" type="xsd:boolean" />
+      <xsd:element name="guaranteeNumber" type="xsd:int" />
+      <xsd:element name="guaranteeNumberNull" type="xsd:boolean" />
+      <xsd:element name="id" type="xsd:int" />
+      <xsd:element name="inPrisonDays" type="xsd:int" />
+      <xsd:element name="inPrisonDaysNull" type="xsd:boolean" />
+      <xsd:element name="inPrisonMonths" type="xsd:int" />
+      <xsd:element name="inPrisonMonthsNull" type="xsd:boolean" />
+      <xsd:element name="inPrisonYears" type="xsd:int" />
+      <xsd:element name="inPrisonYearsNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="judgementResolution" type="xsd:string" />
+      <xsd:element name="lawyerFees" type="xsd:int" />
+      <xsd:element name="lawyerFeesNull" type="xsd:boolean" />
+      <xsd:element name="partyId" type="xsd:int" />
+      <xsd:element name="partyIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="paymentsNumber" type="xsd:string" />
+      <xsd:element name="scheduleYear" type="xsd:int" />
+      <xsd:element name="scheduleYearNull" type="xsd:boolean" />
+      <xsd:element name="stamp" type="xsd:int" />
+      <xsd:element name="stampNull" type="xsd:boolean" />
+      <xsd:element name="status" type="xsd:int" />
+      <xsd:element name="statusNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="updateBy" type="xsd:string" />
+      <xsd:element minOccurs="0" name="updatedDate" type="xsd:dateTime" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="businessCaseMerging" type="ns0:businessCaseMerging" />
+  <xsd:element name="businessCaseMergingResponse" type="ns0:businessCaseMergingResponse" />
+  <xsd:element name="courtJudgementCompleteResolution" type="ns0:courtJudgementCompleteResolution" />
+  <xsd:element name="courtJudgementCompleteResolutionResponse" type="ns0:courtJudgementCompleteResolutionResponse" />
+  <xsd:element name="courtJudgementResolution" type="ns0:courtJudgementResolution" />
+  <xsd:element name="courtJudgementResolutionResponse" type="ns0:courtJudgementResolutionResponse" />
+  <xsd:element name="newCircle" type="ns0:newCircle" />
+  <xsd:element name="newCircleResponse" type="ns0:newCircleResponse" />
+  <xsd:element name="updateBusinessCaseDescription" type="ns0:updateBusinessCaseDescription" />
+  <xsd:element name="updateBusinessCaseDescriptionResponse" type="ns0:updateBusinessCaseDescriptionResponse" />
+  <xsd:element name="updateCourtHearingDateReservation" type="ns0:updateCourtHearingDateReservation" />
+  <xsd:element name="updateCourtHearingDateReservationResponse" type="ns0:updateCourtHearingDateReservationResponse" />
+  <xsd:complexType name="addCourtDecision">
+    <xsd:sequence>
+      <xsd:element name="businessCaseId" type="xsd:int" />
+      <xsd:element name="decisionCode" type="xsd:int" />
+      <xsd:element minOccurs="0" name="decisionText" type="xsd:string" />
+      <xsd:element minOccurs="0" name="decisionUrl" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="addCourtDecisionResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="addCourtDecision" type="ns0:addCourtDecision" />
+  <xsd:element name="addCourtDecisionResponse" type="ns0:addCourtDecisionResponse" />
+  <xsd:complexType name="addPartyToBusinessCase">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="parParties" type="ns0:parParties" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="addPartyToBusinessCaseResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="parParties">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="fullName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="address" type="xsd:string" />
+      <xsd:element minOccurs="0" name="age" type="xsd:string" />
+      <xsd:element name="businessCaseDetailsId" type="xsd:int" />
+      <xsd:element name="businessCaseDetailsIdNull" type="xsd:boolean" />
+      <xsd:element name="businessCaseId" type="xsd:int" />
+      <xsd:element name="businessCaseIdNull" type="xsd:boolean" />
+      <xsd:element name="city" type="xsd:int" />
+      <xsd:element name="cityNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="createdBy" type="xsd:string" />
+      <xsd:element name="createdByBusinessCaseId" type="xsd:int" />
+      <xsd:element name="createdByBusinessCaseIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="createdDate" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="dateOfBirth" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="duty" type="xsd:string" />
+      <xsd:element minOccurs="0" name="educationalEntityAddress" type="xsd:string" />
+      <xsd:element name="educationalEntityId" type="xsd:int" />
+      <xsd:element name="educationalEntityIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="educationalEntityName" type="xsd:string" />
+      <xsd:element name="educationalLevelId" type="xsd:int" />
+      <xsd:element name="educationalLevelIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="entityName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="entityRepresentative" type="xsd:string" />
+      <xsd:element minOccurs="0" name="extraInformation" type="xsd:string" />
+      <xsd:element minOccurs="0" name="flex1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="flex2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="flex3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="flex4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="fname" type="xsd:string" />
+      <xsd:element minOccurs="0" name="fourthname" type="xsd:string" />
+      <xsd:element minOccurs="0" name="gender" type="xsd:string" />
+      <xsd:element name="govermentDegreeId" type="xsd:int" />
+      <xsd:element name="govermentDegreeIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="govermentEmployer" type="xsd:string" />
+      <xsd:element minOccurs="0" name="govermentEmployerAddress" type="xsd:string" />
+      <xsd:element minOccurs="0" name="govermentJoiningDate" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="guardianName" type="xsd:string" />
+      <xsd:element name="guardianNationalityId" type="xsd:int" />
+      <xsd:element name="guardianNationalityIdNull" type="xsd:boolean" />
+      <xsd:element name="id" type="xsd:int" />
+      <xsd:element minOccurs="0" name="idNumber" type="xsd:string" />
+      <xsd:element name="idType" type="xsd:int" />
+      <xsd:element name="idTypeNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="issueDate" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="jobTitle" type="xsd:string" />
+      <xsd:element minOccurs="0" name="militaryCurrentUnit" type="xsd:string" />
+      <xsd:element name="militaryRankId" type="xsd:int" />
+      <xsd:element name="militaryRankIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="militaryRecruitmentId" type="xsd:string" />
+      <xsd:element name="militaryServiceCorpsId" type="xsd:int" />
+      <xsd:element name="militaryServiceCorpsIdNull" type="xsd:boolean" />
+      <xsd:element name="moiPrisonId" type="xsd:int" />
+      <xsd:element name="moiPrisonIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="moiPrisonNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nationality" type="xsd:string" />
+      <xsd:element name="nearlyGuardianId" type="xsd:int" />
+      <xsd:element name="nearlyGuardianIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="nickname" type="xsd:string" />
+      <xsd:element name="parId" type="xsd:int" />
+      <xsd:element name="parIdNull" type="xsd:boolean" />
+      <xsd:element name="partyStatus" type="xsd:int" />
+      <xsd:element name="partyStatusNull" type="xsd:boolean" />
+      <xsd:element name="partyType" type="xsd:int" />
+      <xsd:element minOccurs="0" name="partyTypeName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="placeOfBirth" type="xsd:string" />
+      <xsd:element minOccurs="0" name="placeOfIssue" type="xsd:string" />
+      <xsd:element name="requestId" type="xsd:int" />
+      <xsd:element name="requestIdNull" type="xsd:boolean" />
+      <xsd:element minOccurs="0" name="sname" type="xsd:string" />
+      <xsd:element minOccurs="0" name="tname" type="xsd:string" />
+      <xsd:element minOccurs="0" name="updatedBy" type="xsd:string" />
+      <xsd:element minOccurs="0" name="updatedDate" type="xsd:dateTime" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="addPartyToBusinessCase" type="ns0:addPartyToBusinessCase" />
+  <xsd:element name="addPartyToBusinessCaseResponse" type="ns0:addPartyToBusinessCaseResponse" />
+  <xsd:complexType name="updatePartyToBusinessCase">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="parParties" type="ns0:parParties" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="updatePartyToBusinessCaseResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="updatePartyToBusinessCase" type="ns0:updatePartyToBusinessCase" />
+  <xsd:element name="updatePartyToBusinessCaseResponse" type="ns0:updatePartyToBusinessCaseResponse" />
+</xsd:schema>

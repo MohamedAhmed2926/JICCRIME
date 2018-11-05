@@ -1,0 +1,1419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accept" xml:space="preserve">
+    <value>قبول</value>
+    <comment>Default</comment>
+  </data>
+  <data name="AddNewUser" xml:space="preserve">
+    <value>أضافة مستخدم جديد</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="Add_New_Circuit" xml:space="preserve">
+    <value>إضافة دائرة جديدة</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>السن</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>تطبيق</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>التصنيف</value>
+  </data>
+  <data name="ChangeMyPassword" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>--اختر--</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Circuit" xml:space="preserve">
+    <value>الدائرة</value>
+  </data>
+  <data name="CompanyType" xml:space="preserve">
+    <value>نوع الشركة</value>
+  </data>
+  <data name="CompareValidatorGreaterThanErrorMessage" xml:space="preserve">
+    <value>القيمة يجب أن تكون أكبر من {0}.</value>
+    <comment>Default</comment>
+  </data>
+  <data name="CompareValidatorLessThanErrorMessage" xml:space="preserve">
+    <value>القيمة يجب أن تكون أقل من {0}.</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>تأكيد</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>يوم</value>
+  </data>
+  <data name="EditUser" xml:space="preserve">
+    <value>تعديل المستخدم</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ErrorID" xml:space="preserve">
+    <value>رقم الخطأ</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ExportAsExcel" xml:space="preserve">
+    <value>تصدير كأكسيل</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>تفريغ الحقول</value>
+    <comment>Default</comment>
+  </data>
+  <data name="operation" xml:space="preserve">
+    <value>الخيارات</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>تصفية</value>
+    <comment>Default</comment>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>من</value>
+    <comment>Default</comment>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>الاسم بالكامل</value>
+  </data>
+  <data name="IndustNo" xml:space="preserve">
+    <value>رقم السجل الصناعي\التجاري\التشييد و البناء</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>بيانات</value>
+    <comment>Default</comment>
+  </data>
+  <data name="InvalidValue" xml:space="preserve">
+    <value>القيمة غير صحيحة.</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ItemsCount" xml:space="preserve">
+    <value>عدد العناصر</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>المهنة</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>حقل</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Lookup" xml:space="preserve">
+    <value>البيانات الأساسية للنظام</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الأسم</value>
+  </data>
+  <data name="NationalId" xml:space="preserve">
+    <value>رقم تحقيق الشخصية</value>
+  </data>
+  <data name="NationalIdNotValid" xml:space="preserve">
+    <value>قم بإدخال رقم قومى صحيح</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>الجنسية</value>
+  </data>
+  <data name="NewItem" xml:space="preserve">
+    <value>عنصر جديد</value>
+    <comment>Default</comment>
+  </data>
+  <data name="newLookup" xml:space="preserve">
+    <value>إدخال بيان جديد</value>
+  </data>
+  <data name="notFindUser" xml:space="preserve">
+    <value>اسم المستخدم غير موجود</value>
+  </data>
+  <data name="PassportNo" xml:space="preserve">
+    <value>رقم جواز السفر</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>التليفون المحمول</value>
+  </data>
+  <data name="RangeValidatorErrorMessage" xml:space="preserve">
+    <value>قيمة غير صحيحة</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>إعادة تحميل</value>
+    <comment>Default</comment>
+  </data>
+  <data name="RequiredErrorMessage" xml:space="preserve">
+    <value>هذا الحقل مطلوب.</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ResetPass" xml:space="preserve">
+    <value>إعادة تعيين كلمة السر</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>نجاح</value>
+    <comment>Default</comment>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>أسم المستخدم</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+    <comment>Default</comment>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل دخول</value>
+    <comment>Default</comment>
+  </data>
+  <data name="UserTypes" xml:space="preserve">
+    <value>أنواع المستخدمين</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>تحذير</value>
+    <comment>Default</comment>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>سنة</value>
+  </data>
+  <data name="AddCaseBasicData" xml:space="preserve">
+    <value>قيد دعوى جديدة</value>
+  </data>
+  <data name="EditCaseBasicData" xml:space="preserve">
+    <value>تعديل بيانات الدعوى الأساسية</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="CaseTitle" xml:space="preserve">
+    <value>اسم القضية</value>
+  </data>
+  <data name="Court" xml:space="preserve">
+    <value>المحكمة</value>
+  </data>
+  <data name="CourtType" xml:space="preserve">
+    <value>درجة التقاضى</value>
+  </data>
+  <data name="FirstLevelNumber" xml:space="preserve">
+    <value>رقم القضية الجزئي</value>
+  </data>
+  <data name="FirstLevelYear" xml:space="preserve">
+    <value>سنة القضية الجزئية</value>
+  </data>
+  <data name="SecondLevelNumber" xml:space="preserve">
+    <value>رقم القضية الكلى</value>
+  </data>
+  <data name="SecondLevelYear" xml:space="preserve">
+    <value>سنة القضية الكلية</value>
+  </data>
+  <data name="CaseStatus" xml:space="preserve">
+    <value>حالة القضية</value>
+  </data>
+  <data name="CaseType" xml:space="preserve">
+    <value>نوع الجدول</value>
+  </data>
+  <data name="PoliceStation" xml:space="preserve">
+    <value>قسم الشرطة</value>
+  </data>
+  <data name="Prosecution" xml:space="preserve">
+    <value>النيابة</value>
+  </data>
+  <data name="SessionDate" xml:space="preserve">
+    <value>تاريخ الجلسة</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>ترتيب</value>
+  </data>
+  <data name="OrderRoll" xml:space="preserve">
+    <value>ترتيب الرول الجلسة</value>
+  </data>
+  <data name="RollCases" xml:space="preserve">
+    <value>قضايا الرول</value>
+  </data>
+  <data name="SearchInfo" xml:space="preserve">
+    <value>محددات البحث</value>
+  </data>
+  <data name="Sessions" xml:space="preserve">
+    <value>الجلسات</value>
+  </data>
+  <data name="Select_CourtType" xml:space="preserve">
+    <value>إختار نوع المحكمة</value>
+  </data>
+  <data name="CaseDocuments" xml:space="preserve">
+    <value>مرفقات القضية</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>اضافة ملف</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>انشاء حافظة</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>اختر الملف</value>
+  </data>
+  <data name="ChooseFiles" xml:space="preserve">
+    <value>اختار الملفات</value>
+  </data>
+  <data name="DocumentsCount" xml:space="preserve">
+    <value>عدد المستندات</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>اسم الملف</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>نوع الملف</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>اسم الحافظة</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="JudgLevel" xml:space="preserve">
+    <value>درجة القاضي</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>تفعيل</value>
+  </data>
+  <data name="ActiveConfirm" xml:space="preserve">
+    <value>هل أنت متأكد من رغبتك فى تفعيل حساب المستخدم؟</value>
+  </data>
+  <data name="ActiveDeActive" xml:space="preserve">
+    <value>تفعيل / إيقاف</value>
+  </data>
+  <data name="ConfirmChangPass" xml:space="preserve">
+    <value>هل أنت متأكد من أعادة تعيين كلمة السر؟</value>
+  </data>
+  <data name="DeActive" xml:space="preserve">
+    <value>إيقاف</value>
+  </data>
+  <data name="AddNewPerson" xml:space="preserve">
+    <value>اضافة شخص طبيعي</value>
+  </data>
+  <data name="EditPerson" xml:space="preserve">
+    <value>تعديل شخص طبيعي</value>
+  </data>
+  <data name="RepresentativeName" xml:space="preserve">
+    <value>الممثل القانوني</value>
+  </data>
+  <data name="CaseStatus_InProgress" xml:space="preserve">
+    <value>متداولة</value>
+  </data>
+  <data name="CaseStatus_New" xml:space="preserve">
+    <value>جديدة</value>
+  </data>
+  <data name="Case_NationalID" xml:space="preserve">
+    <value>الرقم القومي للقضية</value>
+  </data>
+  <data name="ProsecutionJudgment" xml:space="preserve">
+    <value>أمر جنائي</value>
+  </data>
+  <data name="CircuitName" xml:space="preserve">
+    <value>إسم الدائرة</value>
+  </data>
+  <data name="CircuitStartDate" xml:space="preserve">
+    <value>تاريخ بداية الدائرة</value>
+  </data>
+  <data name="Select_Judge" xml:space="preserve">
+    <value>إختار القاضي</value>
+  </data>
+  <data name="SelectCaseType" xml:space="preserve">
+    <value>أختار نوع الجدول</value>
+  </data>
+  <data name="ManageWorkingDays" xml:space="preserve">
+    <value>أيام الإنعقاد</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="SessionDecion" xml:space="preserve">
+    <value>قرار القضية</value>
+  </data>
+  <data name="SessionDecisions" xml:space="preserve">
+    <value>قرارات القضية</value>
+  </data>
+  <data name="DectionType" xml:space="preserve">
+    <value>نوع القرار</value>
+  </data>
+  <data name="NextSession" xml:space="preserve">
+    <value>الجلسة القادمة</value>
+  </data>
+  <data name="SecondSession" xml:space="preserve">
+    <value>الجلسة التالية</value>
+  </data>
+  <data name="Circle" xml:space="preserve">
+    <value>دوائر المحكمة</value>
+  </data>
+  <data name="DecionDesc" xml:space="preserve">
+    <value>نص القرار</value>
+  </data>
+  <data name="DecisionDate" xml:space="preserve">
+    <value>تاريخ القرار</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>تاريخ الدفع</value>
+  </data>
+  <data name="PaymentDon" xml:space="preserve">
+    <value>تم الدفع</value>
+  </data>
+  <data name="DecionDecion" xml:space="preserve">
+    <value>قرار</value>
+  </data>
+  <data name="DecionFinal" xml:space="preserve">
+    <value>حكم قطعي</value>
+  </data>
+  <data name="DecionPost" xml:space="preserve">
+    <value>حكم تمهيدي</value>
+  </data>
+  <data name="SearchLegalPerson" xml:space="preserve">
+    <value>بحث عن شخص اعتباري</value>
+  </data>
+  <data name="SearchNormalPerson" xml:space="preserve">
+    <value>بحث عن شخص طبيعي</value>
+  </data>
+  <data name="AddLegalPerson" xml:space="preserve">
+    <value>اضافة شخص اعتباري</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>اضافة</value>
+  </data>
+  <data name="MinutesOfSessions" xml:space="preserve">
+    <value>محاضر الجلسات</value>
+  </data>
+  <data name="MinutesOfSession" xml:space="preserve">
+    <value> محضر الجلسة</value>
+  </data>
+  <data name="PresenceStatus" xml:space="preserve">
+    <value>حالة الحضور</value>
+  </data>
+  <data name="dateMissing" xml:space="preserve">
+    <value>تاريخ الجلسة يجب أن يكون أكبر من تاريخ اليوم</value>
+  </data>
+  <data name="DateFirstsession" xml:space="preserve">
+    <value>تاريخ الأنعقاد الأول يجب أن يكون أكبر من تاريخ القرار</value>
+  </data>
+  <data name="DateSecondSession" xml:space="preserve">
+    <value>تاريخ الأنعقاد الثاني يجب أن يكون أكبر من تاريخ الأنعقاد الأول</value>
+  </data>
+  <data name="CircuitExist" xml:space="preserve">
+    <value>هذه الدائرة موجودة من قبل</value>
+  </data>
+  <data name="CaseDescrption" xml:space="preserve">
+    <value>وصف القضية</value>
+  </data>
+  <data name="ProsCaseDescrption" xml:space="preserve">
+    <value>طبقا للنيابة</value>
+  </data>
+  <data name="CourtCaseDescrption" xml:space="preserve">
+    <value>طبقا للمحكمة</value>
+  </data>
+  <data name="CaseLawItems" xml:space="preserve">
+    <value>قيد القضية</value>
+  </data>
+  <data name="Case_Desc_Law_Itm" xml:space="preserve">
+    <value>قيد و وصف الدعوى</value>
+  </data>
+  <data name="Phrase" xml:space="preserve">
+    <value>الجملة</value>
+  </data>
+  <data name="TextPredections" xml:space="preserve">
+    <value>الجمل الشهيرة</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="IsGilty" xml:space="preserve">
+    <value>إدانة</value>
+  </data>
+  <data name="GridDecionDetails" xml:space="preserve">
+    <value>نص القرار</value>
+  </data>
+  <data name="GridDecionGalty" xml:space="preserve">
+    <value>براءة/إدانة</value>
+  </data>
+  <data name="GridDecionPersName" xml:space="preserve">
+    <value>إسم المتهم</value>
+  </data>
+  <data name="Accused" xml:space="preserve">
+    <value>متهم</value>
+  </data>
+  <data name="AccusedPersons" xml:space="preserve">
+    <value>المتهمين</value>
+  </data>
+  <data name="GridDecionRest" xml:space="preserve">
+    <value>رقم الحصر</value>
+  </data>
+  <data name="GridDecionRestYear" xml:space="preserve">
+    <value>عدد السنوات</value>
+  </data>
+  <data name="Crime" xml:space="preserve">
+    <value>التهمة</value>
+  </data>
+  <data name="CaseParties" xml:space="preserve">
+    <value>خصوم القضية</value>
+  </data>
+  <data name="IsCivilRightProsecutor" xml:space="preserve">
+    <value>مدعى بالحق المدني</value>
+  </data>
+  <data name="PartyName" xml:space="preserve">
+    <value>إسم الخصم</value>
+  </data>
+  <data name="PartyStatus" xml:space="preserve">
+    <value>إثبات الحالة</value>
+  </data>
+  <data name="PartyType" xml:space="preserve">
+    <value>صفته بالقضية</value>
+  </data>
+  <data name="ConfirmRemoveParty" xml:space="preserve">
+    <value>هل أنت متأكد من حذف الخصم ؟</value>
+  </data>
+  <data name="RemoveParty" xml:space="preserve">
+    <value>حذف خصم</value>
+  </data>
+  <data name="AddCaseParty" xml:space="preserve">
+    <value>إضافة خصم جديد</value>
+  </data>
+  <data name="Defendant" xml:space="preserve">
+    <value>متهم</value>
+  </data>
+  <data name="Defendants" xml:space="preserve">
+    <value>المتهمين</value>
+  </data>
+  <data name="Victim" xml:space="preserve">
+    <value>مجني عليه</value>
+  </data>
+  <data name="VictimAndDefendant" xml:space="preserve">
+    <value>مجني عليه و متهم</value>
+  </data>
+  <data name="EditCaseParty" xml:space="preserve">
+    <value>تعديل بيانات خصم</value>
+  </data>
+  <data name="IndustNoValidation" xml:space="preserve">
+    <value>الرقم مسجل من قبل</value>
+  </data>
+  <data name="Arrested" xml:space="preserve">
+    <value>محبوس</value>
+  </data>
+  <data name="Fugitive" xml:space="preserve">
+    <value>هارب</value>
+  </data>
+  <data name="UnWanted" xml:space="preserve">
+    <value>غير مطلوب</value>
+  </data>
+  <data name="CaseNumber" xml:space="preserve">
+    <value>رقم القضية الجزئى</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="ProcedureType_Case" xml:space="preserve">
+    <value>قضية جزئية</value>
+  </data>
+  <data name="ProcedureType_Objection" xml:space="preserve">
+    <value>معارضة</value>
+  </data>
+  <data name="ProcedureType" xml:space="preserve">
+    <value>نوع القضية</value>
+  </data>
+  <data name="CaseStatus_PostDecision" xml:space="preserve">
+    <value>حكم تمهيدي</value>
+  </data>
+  <data name="CaseStatus_ReadyForFinalDecision" xml:space="preserve">
+    <value>محجوزة للحكم</value>
+  </data>
+  <data name="Procedure" xml:space="preserve">
+    <value>درجة التقاضي</value>
+  </data>
+  <data name="ViewCaseBasicData" xml:space="preserve">
+    <value>عرض البيانات الأساسية للدعوى</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="SearchCases" xml:space="preserve">
+    <value>بحث عن قضية جزئية</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="ObjectionCases" xml:space="preserve">
+    <value>طلبات المعارضة</value>
+  </data>
+  <data name="DefendantObjection" xml:space="preserve">
+    <value>المتهمين مقدمي طلبات المعارضة</value>
+  </data>
+  <data name="ObjectionDate" xml:space="preserve">
+    <value>تاريخ المعارضة</value>
+  </data>
+  <data name="ManageCircuits" xml:space="preserve">
+    <value>إدارة الدوائر</value>
+  </data>
+  <data name="Judge" xml:space="preserve">
+    <value>القاضي</value>
+  </data>
+  <data name="CircuitStartDateGtToday" xml:space="preserve">
+    <value>تاريخ الدائرة لابد ان يكون بعد تاريخ اليوم</value>
+  </data>
+  <data name="CircuitStartDateLtYear" xml:space="preserve">
+    <value>تاريخ الدائرة لابد ان يكون فى هذه السنة</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>بتاريخ</value>
+  </data>
+  <data name="AdminTransfer" xml:space="preserve">
+    <value>تأجيل ادارى</value>
+  </data>
+  <data name="CurrentRoll" xml:space="preserve">
+    <value>الجلسة الحالية</value>
+  </data>
+  <data name="ReviewSession" xml:space="preserve">
+    <value>استعراض الجلسة</value>
+  </data>
+  <data name="TargetRoll" xml:space="preserve">
+    <value>الجلسة المستهدفة</value>
+  </data>
+  <data name="ConfirmDeleteFolder" xml:space="preserve">
+    <value>سيتم مسح الحافظة نهائيا ..هل انت متأكد ؟ </value>
+  </data>
+  <data name="ConfirmDeleteFile" xml:space="preserve">
+    <value>سيتم مسح الملف نهائيا ..هل انت متأكد ؟</value>
+  </data>
+  <data name="ProsecutionDocuments" xml:space="preserve">
+    <value>مستندات النيابة</value>
+  </data>
+  <data name="MoveCases" xml:space="preserve">
+    <value>نقل القضايا</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>متابعة</value>
+  </data>
+  <data name="OpenSessionRoll" xml:space="preserve">
+    <value>فتح رول الجلسة</value>
+  </data>
+  <data name="CircuitMembers" xml:space="preserve">
+    <value>أعضاء الدائرة</value>
+  </data>
+  <data name="Prosecuter" xml:space="preserve">
+    <value>وكيل النيابة</value>
+  </data>
+  <data name="CaseForApprove" xml:space="preserve">
+    <value>قضايا مطلوب التصديق عليها</value>
+  </data>
+  <data name="PostSession" xml:space="preserve">
+    <value>الجلسة المؤجل إليها</value>
+  </data>
+  <data name="AdminTransferApprove" xml:space="preserve">
+    <value>تصديق على التأجيل الأدارى</value>
+  </data>
+  <data name="HasPrisoner" xml:space="preserve">
+    <value>يوجد متهمين بالحبس</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="Guilty" xml:space="preserve">
+    <value>مذنب</value>
+  </data>
+  <data name="PunishmentDetail" xml:space="preserve">
+    <value>بيان العقوبة</value>
+  </data>
+  <data name="PunishmentType" xml:space="preserve">
+    <value>نوع العقوبة</value>
+  </data>
+  <data name="RestrictionNo" xml:space="preserve">
+    <value>رقم الحصر</value>
+  </data>
+  <data name="RestrictionYear" xml:space="preserve">
+    <value>سنة الحصر</value>
+  </data>
+  <data name="Cases" xml:space="preserve">
+    <value>القضايا</value>
+  </data>
+  <data name="JudgmentOnDefendant" xml:space="preserve">
+    <value>تسديد الأحكام</value>
+  </data>
+  <data name="OpenCaseType" xml:space="preserve">
+    <value>فتح الجدول</value>
+  </data>
+  <data name="IsTransferedFromSession" xml:space="preserve">
+    <value>مؤجلةإدارياً من جلسة سابقة</value>
+  </data>
+  <data name="NewCaseDocuments" xml:space="preserve">
+    <value>مستندات قضية جديدة</value>
+  </data>
+  <data name="ApprovRoll" xml:space="preserve">
+    <value>موافقة على الرول</value>
+  </data>
+  <data name="ApprovRollMasseg" xml:space="preserve">
+    <value>هل أنت موافق على الرول؟</value>
+  </data>
+  <data name="ApprovRollMassegRE" xml:space="preserve">
+    <value>لا يمكن التراجع على الأجراء!</value>
+  </data>
+  <data name="DeActiveConfirm" xml:space="preserve">
+    <value>هل أنت متأكد من رغبتك فى إيقاف المستخدم؟</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="HasSentance" xml:space="preserve">
+    <value>تم التسديد</value>
+  </data>
+  <data name="RollHasIncomingPostpoundCases" xml:space="preserve">
+    <value>هناك قضايا لم يتم إعتماد نقلها إداريا لهذه الدائرة</value>
+  </data>
+  <data name="RollSessionsHasPostpoundCases" xml:space="preserve">
+    <value>هناك قضايا لم يتم إعتماد نقلها إداريا إلى دائرة أخرى</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>تاريخ النهاية</value>
+  </data>
+  <data name="FromDate" xml:space="preserve">
+    <value>تاريخ البداية</value>
+  </data>
+  <data name="Name_Vacations" xml:space="preserve">
+    <value>اسم الاجازة</value>
+  </data>
+  <data name="Vacations" xml:space="preserve">
+    <value>إعداد الأدوار و العطلات</value>
+  </data>
+  <data name="LockConfirm" xml:space="preserve">
+    <value>هل انت متأكد من رغبتك فى ايقاف حساب المستخدم</value>
+  </data>
+  <data name="UnlockConfirm" xml:space="preserve">
+    <value>هل انت متأكد من رغبتك فى تشغيل حساب المستخدم</value>
+  </data>
+  <data name="hasExpertPayment" xml:space="preserve">
+    <value>تستحق سداد رسوم امانة الخبير</value>
+  </data>
+  <data name="ObjectionRequest" xml:space="preserve">
+    <value>طلب معارضة</value>
+  </data>
+  <data name="ObjectionStatus" xml:space="preserve">
+    <value>حالة المعارضة</value>
+  </data>
+  <data name="AddObjectionData" xml:space="preserve">
+    <value>معارضة جديدة</value>
+  </data>
+  <data name="SelectedObjectionDefendant" xml:space="preserve">
+    <value>المتهمين الذى تم إختيارهم</value>
+  </data>
+  <data name="SelectObjectionDefendant" xml:space="preserve">
+    <value>المتهمين الذي يمكن المعارضة عليهم</value>
+  </data>
+  <data name="NewObjectionDocuments" xml:space="preserve">
+    <value>مستندات معارضة جديدة</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>مستند</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>حافظة</value>
+  </data>
+  <data name="ResumptionRequest" xml:space="preserve">
+    <value>طلب إستئناف</value>
+  </data>
+  <data name="ElementaryCourt" xml:space="preserve">
+    <value>المحكمة الإبتدائية</value>
+  </data>
+  <data name="InitialCourt" xml:space="preserve">
+    <value>المحكمة الجزئية</value>
+  </data>
+  <data name="ResumptionIdentity" xml:space="preserve">
+    <value>صفة المستأنف</value>
+  </data>
+  <data name="SecondLevelProsecution" xml:space="preserve">
+    <value>النيابة الكلية</value>
+  </data>
+  <data name="ProsecutionResumptionCause" xml:space="preserve">
+    <value>سبب إستئناف النيابة</value>
+  </data>
+  <data name="ProsecutionReport" xml:space="preserve">
+    <value>تقرير النيابة</value>
+  </data>
+  <data name="ResumptionSubmitDate" xml:space="preserve">
+    <value>تاريخ تقديم طلب الإستئناف</value>
+  </data>
+  <data name="SequenceNo" xml:space="preserve">
+    <value>رقم التتابع</value>
+  </data>
+  <data name="EditDecesion" xml:space="preserve">
+    <value>تعديل القرار</value>
+  </data>
+  <data name="IsNotGuilty" xml:space="preserve">
+    <value>براءة</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="ReportsPramter" xml:space="preserve">
+    <value>أختار</value>
+  </data>
+  <data name="RollJudgRep" xml:space="preserve">
+    <value>طباعة رول القاضي</value>
+  </data>
+  <data name="RollSessionRep" xml:space="preserve">
+    <value>طباعة رول الجلسة</value>
+  </data>
+  <data name="SessionFolder" xml:space="preserve">
+    <value>مستندات جلسة </value>
+  </data>
+  <data name="ActionType" xml:space="preserve">
+    <value>مسح / تعديل</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="SessionDocumentsLogDetails" xml:space="preserve">
+    <value>تعديلات المرفقات اثناء الجلسة</value>
+  </data>
+  <data name="LastDecisionDate" xml:space="preserve">
+    <value>تاريخ أخر قرار</value>
+  </data>
+  <data name="SequenceYear" xml:space="preserve">
+    <value>سنة التتابع</value>
+  </data>
+  <data name="CaseSessionApprove" xml:space="preserve">
+    <value>التصديق على قضية</value>
+  </data>
+  <data name="OpenSession" xml:space="preserve">
+    <value>فتح قضية</value>
+  </data>
+  <data name="sessionOnNotPayment" xml:space="preserve">
+    <value>الأجل الأول</value>
+  </data>
+  <data name="sessionOnPayment" xml:space="preserve">
+    <value>الأجل الثاني</value>
+  </data>
+  <data name="UploadedDocuments" xml:space="preserve">
+    <value>المستندات المرفوعه فعليا</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>تصديق</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>استعراض</value>
+  </data>
+  <data name="ApprovCseSession" xml:space="preserve">
+    <value>التصديق على قضايا الجلسة</value>
+  </data>
+  <data name="ApprovCsesessionMessage" xml:space="preserve">
+    <value>هل توافق على اعتماد الجلسة لهذة القضية </value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>سداد</value>
+  </data>
+  <data name="JudgmentType" xml:space="preserve">
+    <value>نوع الحكم</value>
+  </data>
+  <data name="Judgment" xml:space="preserve">
+    <value>الحكم</value>
+  </data>
+  <data name="DefendantsDecisions" xml:space="preserve">
+    <value>احكام المتهمين تفصيلياً</value>
+  </data>
+  <data name="NextSessionDate" xml:space="preserve">
+    <value>تاريخ الجلسة القادمة</value>
+  </data>
+  <data name="WrongNID" xml:space="preserve">
+    <value>رقم قومى خاطئ</value>
+  </data>
+  <data name="LeftJudge" xml:space="preserve">
+    <value>قاضى اليسار</value>
+  </data>
+  <data name="RightJudge" xml:space="preserve">
+    <value>قاضى اليمين</value>
+  </data>
+  <data name="berthDateError" xml:space="preserve">
+    <value>تاريخ الميلاد يجب ان يكون اقل من تاريخ اليوم الحالى</value>
+  </data>
+  <data name="WorkDay" xml:space="preserve">
+    <value>أيام العمل</value>
+  </data>
+  <data name="TargetCircuit" xml:space="preserve">
+    <value>الدائرة المستهدفة</value>
+  </data>
+  <data name="UrgeFromSuspend" xml:space="preserve">
+    <value>تعجيل من الوقف</value>
+  </data>
+  <data name="expertPay" xml:space="preserve">
+    <value>سداد الأمانة</value>
+  </data>
+  <data name="AbsenceAttendance" xml:space="preserve">
+    <value>غيابي</value>
+  </data>
+  <data name="AttornyAttendance" xml:space="preserve">
+    <value>حضوري بتوكيل</value>
+  </data>
+  <data name="ConsederationAttendance" xml:space="preserve">
+    <value>حضوري اعتباري</value>
+  </data>
+  <data name="PersonalAttendance" xml:space="preserve">
+    <value>حضوري شخصي</value>
+  </data>
+  <data name="Update_New_Circuit" xml:space="preserve">
+    <value>تعديل تشكيل دائرة</value>
+  </data>
+  <data name="ProsecuterName" xml:space="preserve">
+    <value>أسم وكيل النيابة</value>
+  </data>
+  <data name="prosecuteradd" xml:space="preserve">
+    <value>أضافة وكيل نيابة</value>
+  </data>
+  <data name="prosecuterEdit" xml:space="preserve">
+    <value>تعديل بيانات وكيل النيابة</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>كلمة السر القديمة</value>
+  </data>
+  <data name="ValuesDoNotMatch" xml:space="preserve">
+    <value>كلمة السر لا تطابق حقل التأكيد</value>
+  </data>
+  <data name="EditObjectionData" xml:space="preserve">
+    <value>تعديل بيانات معارضة</value>
+  </data>
+  <data name="EditResumptionBasicData" xml:space="preserve">
+    <value>تعديل بيانات دعوى مستانفه</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="NameWithNoSpaces" xml:space="preserve">
+    <value>لا يمكن إضافه اسم لايوجد به مسافات</value>
+  </data>
+  <data name="CaseNationalId" xml:space="preserve">
+    <value>الرقم القومى للقضية</value>
+  </data>
+  <data name="LastDecisionText" xml:space="preserve">
+    <value>اخر قرار</value>
+  </data>
+  <data name="ExistSession" xml:space="preserve">
+    <value>هل انت متاكد من الخروج من صفحة المحضر (لن يتم حفظ اى جزئية لم يتم عمل حفظ لها) ؟</value>
+  </data>
+  <data name="ExistSessionTitle" xml:space="preserve">
+    <value>الخروج من المحضر؟</value>
+  </data>
+  <data name="empty" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>إنهاء</value>
+  </data>
+  <data name="CaseSessionRepo" xml:space="preserve">
+    <value>تقرير محضر الجلسة</value>
+  </data>
+  <data name="ReportView" xml:space="preserve">
+    <value>عرض تقرير</value>
+  </data>
+  <data name="Case" xml:space="preserve">
+    <value>قضية</value>
+  </data>
+  <data name="GoToCase" xml:space="preserve">
+    <value>اذهب الى قضية</value>
+  </data>
+  <data name="RollCaseOpen" xml:space="preserve">
+    <value>اعادة للقاضى</value>
+  </data>
+  <data name="SessionsDecision" xml:space="preserve">
+    <value>قرار القضايا</value>
+  </data>
+  <data name="RollIndex" xml:space="preserve">
+    <value>ترتيب القضية</value>
+  </data>
+  <data name="GroupJudgment" xml:space="preserve">
+    <value>ادخال احكام غيابية مجمعة</value>
+  </data>
+  <data name="AddDecision" xml:space="preserve">
+    <value>إضافة قرار</value>
+  </data>
+  <data name="DefaultSelectItem" xml:space="preserve">
+    <value>إختار ------</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>المدينة</value>
+  </data>
+  <data name="CrimeType" xml:space="preserve">
+    <value>نوع الجناية</value>
+  </data>
+  <data name="ProsecutorAdd" xml:space="preserve">
+    <value>وكلاء النيابة</value>
+  </data>
+  <data name="prosecuterDelete" xml:space="preserve">
+    <value>حذف وكيل نيابة</value>
+  </data>
+  <data name="FirstLevelProsecution" xml:space="preserve">
+    <value>النيابة الجزئية</value>
+  </data>
+  <data name="OverAllNumber" xml:space="preserve">
+    <value>الرقم الشامل</value>
+  </data>
+  <data name="OverAllNumberProsecution" xml:space="preserve">
+    <value>النيابة</value>
+  </data>
+  <data name="OverAllNumberYear" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="HasObtainment" xml:space="preserve">
+    <value>لها حرز</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>الرقم القومى للقضية</value>
+  </data>
+  <data name="JudgeCount" xml:space="preserve">
+    <value>عدد القضاة</value>
+  </data>
+  <data name="DeleteCase" xml:space="preserve">
+    <value>حذف القضية</value>
+  </data>
+  <data name="NotComplete" xml:space="preserve">
+    <value>البيانات الغير مكتملة</value>
+  </data>
+  <data name="NotCompleteCases" xml:space="preserve">
+    <value>القضايا الغير مكتملة</value>
+  </data>
+  <data name="AddCase" xml:space="preserve">
+    <value>اضافة قضية جديدة</value>
+  </data>
+  <data name="FifthJudge" xml:space="preserve">
+    <value>عضو يسار يسار يسار اليسار</value>
+  </data>
+  <data name="FirstJudge" xml:space="preserve">
+    <value>عضو اليمين</value>
+  </data>
+  <data name="FourthJudge" xml:space="preserve">
+    <value>عضو يسار يسار اليسار</value>
+  </data>
+  <data name="HeadJudge" xml:space="preserve">
+    <value>رئيس الدائرة</value>
+  </data>
+  <data name="SecondJudge" xml:space="preserve">
+    <value>عضو اليسار</value>
+  </data>
+  <data name="SecretaryAssistant" xml:space="preserve">
+    <value>مساعد أمين السر</value>
+  </data>
+  <data name="SecretaryHead" xml:space="preserve">
+    <value>أمين السر</value>
+  </data>
+  <data name="SixthJudge" xml:space="preserve">
+    <value>عضو يسار يسار يسار يسار اليسار</value>
+  </data>
+  <data name="ThirdJudge" xml:space="preserve">
+    <value>عضو يسار اليسار</value>
+  </data>
+  <data name="DescriptionDate" xml:space="preserve">
+    <value>قيد و وصف الدعوى  طبقا للنيابة بتاريخ</value>
+  </data>
+  <data name="DescriptionDateCourt" xml:space="preserve">
+    <value>قيد و وصف الدعوى  تبعا للمحكمة بتاريخ</value>
+  </data>
+  <data name="DescriptionFromCourt" xml:space="preserve">
+    <value>القيد و الوصف تبعا للمحكمة</value>
+  </data>
+  <data name="DescriptionFromProsection" xml:space="preserve">
+    <value>القيد و الوصف الوارد من النيابة</value>
+  </data>
+  <data name="DisplayCaseData" xml:space="preserve">
+    <value>عرض تفاصيل القضية</value>
+  </data>
+  <data name="lastDecision" xml:space="preserve">
+    <value>القرارت السابقة</value>
+  </data>
+  <data name="NotHasObtainment" xml:space="preserve">
+    <value>لا يوجد بها حرز</value>
+  </data>
+  <data name="IsNotCivilRightProsecutor" xml:space="preserve">
+    <value>ليس مدعى بالحق المدنى</value>
+  </data>
+  <data name="DownloadDone" xml:space="preserve">
+    <value>تم تحميل الملف</value>
+  </data>
+  <data name="DownloadFaild" xml:space="preserve">
+    <value>لم يتم تحميل الملف</value>
+  </data>
+  <data name="basicCaseData" xml:space="preserve">
+    <value>البيانات التعريفية للقضية</value>
+  </data>
+  <data name="CaseDetailes" xml:space="preserve">
+    <value>عرض تفاصيل القضية</value>
+  </data>
+  <data name="EditCase" xml:space="preserve">
+    <value>تعديل بيانات قضية</value>
+  </data>
+  <data name="Obtainments" xml:space="preserve">
+    <value>الاحراز</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>تذكرنى</value>
+  </data>
+  <data name="TextPredectionsDescription" xml:space="preserve">
+    <value>نص الجملة الشهيرة</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>عنوان الجملة</value>
+  </data>
+  <data name="AddText" xml:space="preserve">
+    <value>اضافة الجملة الشهيرة</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>حذف الجملة الشهيرة</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>تعديل جملة شهيرة</value>
+  </data>
+  <data name="JudgeDate" xml:space="preserve">
+    <value>تاريخ الصدور</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="LastSessionDate" xml:space="preserve">
+    <value>البحث باخر تاريخ جلسة</value>
+  </data>
+  <data name="NextSessionDateSearch" xml:space="preserve">
+    <value>البحث بتاريخ الجلسة المقبلة</value>
+  </data>
+  <data name="NotReservedSession" xml:space="preserve">
+    <value>لم يتم تحديد اى جلسات لها</value>
+  </data>
+  <data name="Cycles" xml:space="preserve">
+    <value>الادوار</value>
+  </data>
+  <data name="EditOrderDescription" xml:space="preserve">
+    <value>تعديل امر الاحالة</value>
+  </data>
+  <data name="OrderDescription" xml:space="preserve">
+    <value>أمر الإحالة</value>
+  </data>
+  <data name="alternativeJudge" xml:space="preserve">
+    <value>عضو يسار اليسار</value>
+  </data>
+  <data name="ChooseSession" xml:space="preserve">
+    <value>اختر الجلسة المراد ترتيب الرول الخاص بها</value>
+  </data>
+  <data name="GetUnApprovedMovmentCases" xml:space="preserve">
+    <value>هذه القضايا لم يتم تصديق النقل الادارى لها</value>
+  </data>
+  <data name="MainCrime" xml:space="preserve">
+    <value>التهمة الأساسية</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>مسلسل</value>
+  </data>
+  <data name="SaveOrder" xml:space="preserve">
+    <value>حفظ الترتيب</value>
+  </data>
+  <data name="SecritaryTo" xml:space="preserve">
+    <value>أمانة السر لهذه القضية ستكون</value>
+  </data>
+  <data name="AddCircuitConfiguration" xml:space="preserve">
+    <value>إضافة تشكيل دائرة</value>
+  </data>
+  <data name="Cycle" xml:space="preserve">
+    <value>الدور</value>
+  </data>
+  <data name="SelectCircuitAndSession" xml:space="preserve">
+    <value>تحديد الدائرة و الجلسة</value>
+  </data>
+  <data name="CrimeNumber" xml:space="preserve">
+    <value>رقم الجناية</value>
+  </data>
+  <data name="ShowCaseDetails" xml:space="preserve">
+    <value>عرض تفاصيل القضية</value>
+  </data>
+  <data name="Session" xml:space="preserve">
+    <value>الجلسة</value>
+  </data>
+  <data name="SaveAndSend" xml:space="preserve">
+    <value>حفظ و إرسال</value>
+  </data>
+  <data name="FirstCycle" xml:space="preserve">
+    <value>الدور الأول</value>
+  </data>
+  <data name="FourthCycle" xml:space="preserve">
+    <value>الدور الرابع</value>
+  </data>
+  <data name="SecondCycle" xml:space="preserve">
+    <value>الدور الثانى</value>
+  </data>
+  <data name="ThirdCycle" xml:space="preserve">
+    <value>الدور الثالث</value>
+  </data>
+  <data name="moveToOrderTable" xml:space="preserve">
+    <value>نقل إلى جدول الترتيب</value>
+  </data>
+  <data name="NotOrderCases" xml:space="preserve">
+    <value>القضايا التى لم يتم ترتيبها</value>
+  </data>
+  <data name="OrderCases" xml:space="preserve">
+    <value>القضايا التى تم ترتيبها</value>
+  </data>
+  <data name="OpenRoll" xml:space="preserve">
+    <value>فتح رول الجلسة</value>
+  </data>
+  <data name="HallName" xml:space="preserve">
+    <value>مكان الإنعقاد</value>
+  </data>
+  <data name="PrintRoll" xml:space="preserve">
+    <value>طباعة رول الجلسة</value>
+  </data>
+  <data name="MainCrimeTypeCase" xml:space="preserve">
+    <value>التهمة الرئيسية للقضية ككل</value>
+  </data>
+  <data name="PresenceStatusInSession" xml:space="preserve">
+    <value>إثبات الحضور بالجلسة</value>
+  </data>
+  <data name="GenerateOverAllNumber" xml:space="preserve">
+    <value>انشاء الرقم الشامل</value>
+  </data>
+  <data name="PrintMinutesOfSession" xml:space="preserve">
+    <value>طباعة محضر الجلسة</value>
+  </data>
+  <data name="Absence" xml:space="preserve">
+    <value>لم يحضر المتهم
+لم يحضر الشاهد
+النيابة قالت بأن المتهم أعلن قانونا بالجلسة
+تلي أمر الإحالة
+النيابة طلبت نطبيق مواد الاتهام
+النيابة اكتفت بتلاوة أقوال الشهود
+المحكمة أمرت بتلاوتها فتليت علنا
+النيابة صممت على الطلبات
+وبعد ذلك صدر الحكم الآتي
+حكمت المحكمة غيابيا:.....................................</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>حضر المتهم
+لم يحضر الشهود
+حضر الأستاذ........... المحامي موكلا / منتدبا
+سئل المتهم عن اسمه وسنه وصنعته
+فأجاب........................................... 
+تلي أمر الإحالة
+النيابة طلبت تطبيق مواد الاتهام
+سئل المتهم عن التهمة المنسوبة إليه فأجاب....................
+النيابة والدفاع اكتفيا بتلاوة أقوال الشاهد
+المحكمة أمرت بتلاوتها فتليت علنا بالجلسة
+النيابة صممت على الطلبات
+الدفاع الحاضر مع المتهم إلتمس...................................</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>استكمال بيانات القضية</value>
+  </data>
+  <data name="MinuteNotComplete" xml:space="preserve">
+    <value>استكمال المحضر</value>
+  </data>
+  <data name="MinutesSaved" xml:space="preserve">
+    <value>تم ادخال المحضر</value>
+  </data>
+  <data name="NotSave" xml:space="preserve">
+    <value>فتح المحضر</value>
+  </data>
+  <data name="CourtName" xml:space="preserve">
+    <value>محكمة</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>حفظ و اغلاق</value>
+  </data>
+  <data name="SaveAndNewCircuitConfiguration" xml:space="preserve">
+    <value>حفظ و تشكيل جديد</value>
+  </data>
+  <data name="DeleteCircuit" xml:space="preserve">
+    <value>حذف تشكيل الدائرة</value>
+  </data>
+  <data name="CompleteOpenRoll" xml:space="preserve">
+    <value>استكمال قضايا الرول</value>
+  </data>
+  <data name="Victims" xml:space="preserve">
+    <value>المجنى عليهم</value>
+  </data>
+  <data name="DefectsStatus" xml:space="preserve">
+    <value>حالة المتهمين</value>
+  </data>
+  <data name="CloseRoll" xml:space="preserve">
+    <value>غلق الرول</value>
+  </data>
+  <data name="CloseRollOPened" xml:space="preserve">
+    <value>غلق الرول المفتوح</value>
+  </data>
+  <data name="ReturnToSecretary" xml:space="preserve">
+    <value>إعاده الى امين السر</value>
+  </data>
+  <data name="WitnessDataFile" xml:space="preserve">
+    <value>عرض مرفق نص الشهادة</value>
+  </data>
+  <data name="WitnessDelete" xml:space="preserve">
+    <value>حذف الشاهد</value>
+  </data>
+  <data name="WitnessDocument" xml:space="preserve">
+    <value>نص الشهادة</value>
+  </data>
+  <data name="WitnessEdit" xml:space="preserve">
+    <value>تعديل بيانات الشاهد</value>
+  </data>
+  <data name="WitnessName" xml:space="preserve">
+    <value>اسم الشاهد</value>
+  </data>
+  <data name="UserType" xml:space="preserve">
+    <value>نوع المستخدم</value>
+  </data>
+</root>

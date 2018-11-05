@@ -1,0 +1,302 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model SessionsSearchViewModel
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<style>
+    .invisible {
+        display: none;
+    }
+</style>
+<script>
+    OnDocReady(function () {
+        debugger;
+        $('#CaseDetails_Edit').on('hidden.bs.modal', function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            //return false;
+        });
+        //$("#allcases").addClass("active");
+        //$("#NotSendcases").removeClass("active");
+        //$("#AllCases_div").hide();
+        //$("#EditCase").show();
+        //$("#NotSendcases").addClass("active");
+        //$("#allcases").removeClass("active");
+        //$("#AllCases_div").show();
+        //$("#EditCase").hide();
+        $('#Edit_EditCheckAll').click(function () {
+            var checked = $(this).prop('checked');
+            $('.EditCaseRow').find('input:checkbox').prop('checked', checked);
+        });
+
+        var order = 0;
+        //$(".EditCaseRow").each(function () {
+        //    order++;
+        //    $(this).find("td:eq(2)").text(order);
+
+        //});
+    });
+    function ReturnTo() {
+        debugger;
+        $("#@Html.IdFor(m=>m.tabName)").val("Edit");
+    };
+    function SaveEdit() {
+        debugger;
+        @*var CrimeID = $('#@Html.IdFor(x=>x.CrimeType)').val();*@
+        var Cases = { Cases: [] , CrimeID };
+        var $row = $(this).closest('table').children('tr:first');
+
+        $(".EditCaseRow").each(function () {
+            var row = $(this);
+            if (row.find('input[type="checkbox"]').is(':checked')) {
+                Cases.Cases.push($(this).find("#Edit_CaseID").val());
+                Cases.CrimeID = $(this).find("#Edit_CrimeIDEdit").val();
+            }
+        });
+        console.log(Cases);
+        $("#CaseConfedit").trigger('update', Cases);
+    };
+</script>
+<div id="Edit_cases">
+    @using (Ajax.BeginForm("Edit", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Edit_cases" }))
+    {
+        @Html.AntiForgeryToken()
+        @*@Html.HiddenFor(model => model.tabName)
+            @Html.HiddenFor(model => model.CrimeType)*@
+        <div id="AllCases_div">
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            @Html.CDropDownFor(m => m.CircuitID, new SelectList(Model.Circuits, "ID", "Name"), new { onchange = "ddlCircuits_SelectedIndexChanged()" }, true)
+                        </div>
+                        <div class="col-xs-4">
+                            @using (Html.CUpdatePanel(Url.Action("GetCircuitSessions", "CaseConfuguration", new { id = Model.CircuitID }), "SessionsDiv"))
+                            {
+                                @Html.CDropDownFor(m => m.SessionID, new SelectList(Model.Sessions, "ID", "Name"), true)
+
+                            }
+                            @*@using (Html.CUpdatePanel(Url.Action("GetSessions", "CaseConfuguration"), "CircuitSessions"))
+                                {
+                                    @Html.CDropDownFor(m => m.SessionID, new SelectList(Model.Sessions, "ID", "Name"), true)
+
+                                }*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-xs-6">
+
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            @Html.CTextBoxFor(m => m.SecondLevelNumber)
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.CTextBoxFor(m => m.SecondLevelYear)
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.CDropDownFor(m => m.SecondLevelProsecutionID, new SelectList(Model.SecondLevelProsecutions, "ID", "Name"), true)
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
+                            @Html.CTextBoxFor(m => m.FirstLevelNumber)
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.CTextBoxFor(m => m.FirstLevelYear)
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.CDropDownFor(m => m.FirstLevelProsecutionID, new SelectList(Model.FirstLevelProsecutions, "ID", "Name"), true)
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        @*<div class="col-xs-4">
+                                @Html.CDropDownFor(m => m.CircuitID, new SelectList(Model.Circuits, "ID", "Name"), true)
+                            </div>*@
+                        <div class="col-xs-4">
+                            @Html.CDropDownFor(m => m.PoliceStationID, new SelectList(Model.PoliceStations, "ID", "Name"), true)
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="col-xs-12">
+
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-xs-6">
+                            @Html.CDropDownFor(m => m.DefendantStatusID, new SelectList(Model.DefendantsStautes, "ID", "Name"), true)
+                        </div>
+                        <div class="col-xs-6">
+                            @Html.CDropDownFor(m => m.CrimeID, new SelectList(Model.MainCrimes, "ID", "Name"), true)
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-xs-6">
+                            @Html.CDropDownFor(m => m.CrimeType, new SelectList(Model.Crimes, "ID", "Name"), new { onchange = "ddlCrimeType_SelectedIndexChanged()" })
+                        </div>
+                        <div class="col-xs-6">
+                            @Html.CDropDownFor(m => m.CaseStatusID, new SelectList(Model.CaseStatues, "ID", "Name"), true)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <input type="submit" value="@JIC.Base.Resources.Resources.Search" class="btn btn-primary" id="search" @*onclick="Submit_OnClick()"*@ />
+                <input type="reset" value="@JIC.Base.Resources.Resources.Reset" class="btn btn-primary" />
+            </div>
+
+            <div>
+                <div class="row">
+                    @Html.Label("نتائج البحث" + (Model.cases.ToList().Count).ToString() + " قضية ")
+                    <h5>  </h5>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#EditSessions" onclick="SaveEdit()">@JIC.Base.Resources.Resources.SelectCircuitAndSession</button>
+                </div>
+                <div class="row">
+                    @(Html
+                                                                                                                                         .Grid(Model.cases.AsEnumerable())
+                                                                                                                                         .Build(columns =>
+                                                                                                                                         {
+                                                                                                                                             columns.Add(model => Html.Hidden("CaseID", model.CaseID)).Encoded(false).Css("invisible");
+                                                                                                                                             columns.Add(model => Html.CheckBox("Check")).Titled(Html.CheckBox("EditCheckAll"));
+                                                                                                                                             columns.Add(model => model.CircuitName).Titled(Resources.Circuit);
+                                                                                                                                             columns.Add(model => model.SessionDate).Titled(Resources.SessionDate);
+                                                                                                                                             columns.Add(model => model.FirstLevelNumber).Titled(Resources.FirstLevelNumber);
+                                                                                                                                             columns.Add(model => model.SecondLevelNumber).Titled(Resources.SecondLevelNumber);
+
+                                                                                                                                             columns.Add(model => model.CrimeType).Titled(Resources.CrimeType);
+                                                                                                                                             columns.Add(model => model.PoliceStation).Titled(Resources.PoliceStation);
+                                                                                                                                             columns.Add(model => model.MainCrime).Titled(Resources.MainCrime);
+                                                                                                                                             columns.Add(model => model.CaseStatus).Titled(Resources.CaseStatus);
+                                                                                                                                             //columns.Add(model => model.CrimeID).Titled(Resources.Circuit).Css("invisible");
+                                                                                                                                             columns.Add(model => Html.Hidden("CrimeIDEdit", model.CrimeID)).Encoded(false).Css("invisible");
+
+                                                                                                                                             columns.Add(model => Html.MvcString("<a href='#' class='fa fa-eye  fa-lg modal-link' data-toggle='modal' data-target='#CaseDetails_Edit' title=" + JIC.Base.Resources.Resources.CaseDetailes + @" data-url=" + Url.Action("CaseDetails", new { id = model.CaseID }) + @"></a>")).Titled(Resources.Details);
+
+                                                                                                                                         })
+                                                                                                                                         .Empty("لا توجد نتائج بحث")
+                                                                                                                                         .RowCss(row => "EditCaseRow")
+
+
+                    )
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#EditSessions" onclick="SaveEdit()">@JIC.Base.Resources.Resources.SelectCircuitAndSession</button>
+                </div>
+            </div>
+        </div>
+
+    }
+    @using (Html.BeginModel("EditSessions", JIC.Base.Resources.Resources.SelectCircuitAndSession))
+    {
+        using (Html.CUpdatePanel(Url.Action("EditSessions", "CaseConfuguration"), "CaseConfedit"))
+        {
+        }
+    }
+    @using (Html.BeginModel("CaseDetails_Edit", JIC.Base.Resources.Resources.Details))
+    {
+    }
+</div>
+
+
+
+<script>
+    function ddlCrimeType_SelectedIndexChanged() {
+        debugger;
+            var CrimeID = $("#@Html.IdFor(m => m.CrimeType)").val();
+            if (CrimeID == "") {
+                CrimeID = 0
+            }
+            else {
+                $.ajax(
+                    {
+
+                        url: '/CaseConfuguration/GetCircuitsByCrime',
+                        type: "GET",
+                        dataType: "JSON",
+                        data: { CrimeID: CrimeID },
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (Circuits) {
+                            $('#@Html.IdFor(m=>m.CircuitID)').each(function () {
+                                if (this.selectize) {
+                                    var ddlCourtID = this.selectize;
+                                    ddlCourtID.clearOptions();
+                                    ddlCourtID.addOption({ value: "", text: "@JIC.Base.Resources.Resources.DefaultSelectItem" });
+
+                                    $("#@Html.IdFor(m => m.CircuitID)").prepend(" <option value='' selected='selected'></option>");
+                                    $.each(Circuits, function (i, Circuits) {
+                                        ddlCourtID.addOption({ value: Circuits.ID, text: Circuits.Name });
+                                    });
+                                    ddlCourtID.setValue('');
+
+
+
+                                }
+                            });
+                        }
+                    });
+                $("@Html.IdFor(m => m.CircuitID)").val('60');
+            }
+
+        }
+    function ddlCircuits_SelectedIndexChanged() {
+        debugger;
+        var CircuitID = $("#@Html.IdFor(m=>m.CircuitID)").val();
+        if (CircuitID == "") {
+            CircuitID = 0;
+        }
+            $('#SessionsDiv').trigger('update', { CircuitID: CircuitID });
+        }
+    function Submit_OnClick() {
+        debugger;
+        SessionID: $("#SessionID").val();
+        CircuitID: $("#CircuitID").val();
+        var y = $("#Edit_FirstLevelNumber").val();
+        var y2 = $("#Edit_FirstLevelYear").val();
+        var y3 = $("#Edit_FirstLevelProsecutionID").val();
+        CircuitID: $("#CircuitID").val();
+        SessionID: $("#SessionID").val();
+        var x = $("#Edit_CircuitID").val();
+        var x2 = $("#Edit_SessionID").val();
+        var x3 = $("#Edit_CircuitID").val();
+        var v = [];
+        v.push({
+            SessionID: $("#Edit_SessionID").val(),
+            CircuitID: $("#Edit_CircuitID").val(),
+            FirstLevelNumber: $("#Edit_FirstLevelNumber").val(),
+            FirstLevelYear: $("#Edit_FirstLevelYear").val(),
+            FirstLevelProsecutionID: $("#Edit_FirstLevelProsecutionID").val(),
+            CircuitID: $("#Edit_CircuitID").val(),
+            SessionID: $("#Edit_SessionID").val(),
+            SecondLevelProsecutionID: $("#Edit_CircuitID").val(),
+            SecondLevelNumber: $("#Edit_SessionID").val(),
+            SecondLevelYear: $("#Edit_CircuitID").val(),
+
+            PoliceStationID: $("#Edit_PoliceStationID").val(),
+            DefendantStatusID: $("#Edit_DefendantStatusID").val(),
+            CrimeType: $("#Edit_CrimeType").val(),
+            CrimeID: $("#Edit_CrimeID").val(),
+            CaseStatusID: $("#Edit_CaseStatusID").val(),
+
+        });
+
+        $.ajaxSetup({ traditional: false });
+
+        var SubmitObject = { model: v, __RequestVerificationToken: $(':input[name="__RequestVerificationToken"]').val() };
+        $.post("@Html.Raw(Url.Action("Edit"))", @Html.Raw(Json.Encode(Model)));
+
+    }
+</script>

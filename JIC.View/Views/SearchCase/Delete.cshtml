@@ -1,0 +1,38 @@
+﻿@model JIC.Crime.View.Models.SearchGridViewModel
+@{
+    Layout = null;
+}
+<div id="DeleteCasediiv">
+    @using (Ajax.BeginForm("Delete", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "DeleteCasediiv" }))
+    {
+        <input type="hidden" name="CaseID" value="@Model.CaseID" />
+        @Html.HiddenFor(m => m.CaseID)
+        <div class="row">
+            هل تريد حذف القضيه؟
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <input type="submit" value="@JIC.Base.Resources.Resources.Delete" class="btn btn-default" />
+            </div>
+            <div class="col-sm-3">
+                @*   <input type="submit" value="@JIC.Base.Resources.Resources.Cancel" name="action:CancelDelete" id="Cancel" class="btn btn-default" formaction="CancelDelete" />*@
+                <button type="button" class="btn btn-default" data-dismiss="modal">@JIC.Base.Resources.Resources.Cancel</button>
+            </div>
+        </div>
+      
+    }
+</div>
+
+<script type="text/javascript">
+    function Submit_Onclick() {
+        debugger;
+        var model = new Object();
+        $('#DeleteCasediiv').find('from').first().serializeArray().map(function (x) { Model[x.name] = x.value; });
+         $.ajaxSetup({ traditional: false });
+        var SubmitObject = { __RequestVerificationToken: $(':input[name="__RequestVerificationToken"]').val(), model: model };
+        $.post("@Html.Raw(Url.Action("Delete","SearchCase"))", SubmitObject)
+            .done(function (data) {
+            });
+
+    }
+</script>

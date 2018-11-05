@@ -1,0 +1,57 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model  IEnumerable<TextPredectionsViewModels>
+
+@{
+    ViewBag.Title = JIC.Base.Resources.Resources.TextPredections;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{Html.RenderAction("Create");}
+
+@(Html
+                    .Grid(Model)
+                    .Build(columns =>
+                    {
+                        columns.Add(model => model.CircuitName).Titled(JIC.Base.Resources.Resources.CircuitName);
+                        columns.Add(model => model.TextTitle).Titled(JIC.Base.Resources.Resources.TextTitle);
+
+                        columns.Add(model => model.TextPredectionsDescription).Titled(JIC.Base.Resources.Resources.TextPredectionsDescription);
+
+                        columns.Add(model =>
+                        //@Html.ActionLink(" ", "Edit", new { ProsecutorID = model.ID }, new { @class = "fa fa-pencil-square-o  fa-lg modal-link", data_toggle = "modal", data_target = "#EditModel" }).ToHtmlString()
+
+                        @"<a href=""#"" class=""fa fa-pencil-square-o  fa-lg modal-link"" data-toggle=""modal"" data-target=""#EditModel"" title=""" + Resources.Edit + @""" data-url=""" + Url.Action("Edit", new { id = model.TextID }) + @"""></button></a>" + " | " +
+                          //@Html.ActionLink(JIC.Base.Resources.Resources.Delete, "Delete", new { ProsecutorID = model.ID }, new { @class = "fa fa-trash-o", data_toggle = "modal", data_target = "#DeleteModel" }).ToHtmlString()
+                          @"<a href=""#"" class=""fa fa-trash-o modal-link"" data-toggle=""modal"" data-target=""#DeleteModel"" title=""" + Resources.Delete + @""" data-url=""" + Url.Action("Delete", new { id = model.TextID }) + @"""></button>"
+
+                         //"<button type="button" class="fa fa-trash-o" data-toggle="modal" data-target="#DeleteModel" ></button>"
+                         ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+
+
+                    })
+                    .Filterable()
+                    .Sortable()
+                    .Pageable()
+
+
+)
+@using (Html.BeginModel("EditModel", JIC.Base.Resources.Resources.EditText))
+{
+
+}
+
+@using (Html.BeginModel("DeleteModel", JIC.Base.Resources.Resources.DeleteText))
+{
+
+}
+@section scripts{
+    <script>
+        $(".modal-link").on('click', function () {
+            var modelId = $(this).data('target');
+            $(modelId).find('.modal-body').load($(this).data('url'));
+        });
+    </script>
+
+}

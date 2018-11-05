@@ -1,0 +1,489 @@
+﻿@using JIC.Crime.View.Models
+@model AddAttachmentViewModel
+
+@{
+    string x = Request.Url.LocalPath;
+}
+@if (Request.Url.LocalPath.Contains("/ALLMinutesOfSession/Index/"))
+{
+        ViewBag.Title = "مرفقات القضية";
+        Layout = null;
+}
+else
+{
+    
+        ViewBag.Title = "مرفقات القضية";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (ViewBag.SavedEdite != null && (bool)ViewBag.SavedEdite)
+{
+    <script>
+        debugger;
+        $('#EditAttachmentModel_id').hide();
+        $('.modal-backdrop').hide();
+        $('#CaseAttachmentsDiv').trigger('update');
+    </script>
+}
+
+
+<div class="row">
+    @if (Model.UserTypeID == (int)JIC.Base.SystemUserTypes.Secretary)
+    {
+        <div class="col-xs-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">مرفقات القضية</div>
+                <div class="panel-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0" aria-valuemax="100" id="uploadProgressBar"></div>
+                    </div>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-sm-12">
+                            <div class="text-right">
+                                <a href="#" class="btn btn-primary" data-toggle='modal' data-target='#DocumentFolder'>الحافظات</a>
+                                @*<a href='#' class='btn btn-primary modal-link' data-toggle='modal' data-target='#AddAttachment' data-url='@Url.Action("CreateAttachment", new { id = Model.CaseID })'>إضافة مرفق جديد</a>*@
+                                <span class="btn btn-success fileinput-button">
+                                    <i class="glyphicon glyphicon-plus"></i>
+                                    <span>إضافة مرفق</span>
+                                    <!-- The file input field used as target for the file upload widget -->
+                                    <input type="file" id="fileUpload" name="Filedata" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    @using (Html.CUpdatePanel(Url.Action("CaseAttachment", "Attachment", new { id = Model.CaseID, SessionID = Model.SessionID }), "CaseAttachmentsDiv"))
+                    {
+                        Html.RenderAction("CaseAttachment", new { id = Model.CaseID, SessionID = Model.SessionID });
+                    }
+                </div>
+            </div>
+
+            @using (Html.BeginModel("AddAttachment", "إضافة مرفق جديد"))
+            {
+            <form id="addFileData">
+                <input type="hidden" id="FileId" name="FileId" value="2" />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="Name">الحافظة</label>
+                            <span class="required" aria-required="true">*</span>
+                            @using (Html.CUpdatePanel(Url.Action("GetFolders", "FolderAttachment", new { CaseID = Model.CaseID, SessionID = Model.SessionID }), "AddAttachmentDiv"))
+                {
+                    Html.RenderAction("GetFolders", "FolderAttachment", new { CaseID = Model.CaseID, SessionID = Model.SessionID });
+                }
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(m => m.Name)
+                        @Html.HiddenFor(m => m.CaseID)
+                        @Html.HiddenFor(m => m.SessionID)
+                        @Html.HiddenFor(m => m.CircuitID)
+                        @*<div class="form-group">
+            <label class="control-label" for="Name">إسم الملف</label>
+            <span class="required" aria-required="true">*</span>
+            @Html.TextBox("Name", null, new { @class = "form-control" })
+        </div>*@
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="Name">نوع الملف</label>
+                            <span class="required" aria-required="true">*</span>
+                            @Html.DropDownList("AttachmentType", new SelectList(Model.AttachmentTypes, "ID", "Name"), new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" id="attachmentUpload" value="حفظ" class="btn btn-primary" onclick="AddUploadData($('#addFileData').serializeArray());" />
+
+                @*<input type="button" id="attachmentUpload" value="حفظ" class="btn btn-primary" onclick="AddUploadData($('#addFileData').serializeArray());" />*@
+            </form>
+            }
+
+            @using (Html.BeginModel("AttachmentError", "إضافة مرفق جديد"))
+            {
+
+            }
+
+            @using (Html.BeginModel("DocumentFolder", "الحافظات"))
+            {
+                using (Html.CUpdatePanel(Url.Action("CaseFolders", "FolderAttachment", new { id = Model.CaseID, SessionID = Model.SessionID }), "CaseFoldersUpdatePanel"))
+                {
+                    Html.RenderAction("CaseFolders", "FolderAttachment", new { id = Model.CaseID, SessionID = Model.SessionID });
+                }
+            }
+        </div>
+    }
+    else
+    {
+        <div class="col-xs-3">
+            @Html.Partial("PVCaseStep", new CaseViewModel { CaseID = Model.CaseID, caseStatus = JIC.Base.CaseStatus.CaseAttachments })
+
+        </div>
+        <div class="col-xs-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading">مرفقات القضية</div>
+                <div class="panel-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0" aria-valuemax="100" id="uploadProgressBar"></div>
+                    </div>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-sm-12">
+                            <div class="text-right">
+                                <a href="#" class="btn btn-primary" data-toggle='modal' data-target='#DocumentFolder'>الحافظات</a>
+                                @*<a href='#' class='btn btn-primary modal-link' data-toggle='modal' data-target='#AddAttachment' data-url='@Url.Action("CreateAttachment", new { id = Model.CaseID })'>إضافة مرفق جديد</a>*@
+                                <span class="btn btn-success fileinput-button">
+                                    <i class="glyphicon glyphicon-plus"></i>
+                                    <span>إضافة مرفق</span>
+                                    <!-- The file input field used as target for the file upload widget -->
+                                    <input type="file" id="fileUpload" name="Filedata" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    @using (Html.CUpdatePanel(Url.Action("CaseAttachment", "Attachment", new { id = Model.CaseID, SessionID = Model.SessionID }), "CaseAttachmentsDiv"))
+                    {
+                        Html.RenderAction("CaseAttachment", new { id = Model.CaseID, SessionID = Model.SessionID });
+                    }
+                </div>
+            </div>
+
+        @using (Html.BeginModel("AddAttachment", "إضافة مرفق جديد"))
+        {
+            <form id="addFileData">
+                <input type="hidden" id="FileId" name="FileId" value="2" />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="Name">الحافظة</label>
+                            <span class="required" aria-required="true">*</span>
+                            @using (Html.CUpdatePanel(Url.Action("GetFolders", "FolderAttachment", new { CaseID = Model.CaseID, SessionID = Model.SessionID }), "AddAttachmentDiv"))
+                            {
+                                Html.RenderAction("GetFolders", "FolderAttachment", new { CaseID = Model.CaseID, SessionID = Model.SessionID });
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(m => m.Name)
+                        @Html.HiddenFor(m => m.CaseID)
+                        @Html.HiddenFor(m => m.SessionID)
+                        @Html.HiddenFor(m => m.CircuitID)
+                        @*<div class="form-group">
+            <label class="control-label" for="Name">إسم الملف</label>
+            <span class="required" aria-required="true">*</span>
+            @Html.TextBox("Name", null, new { @class = "form-control" })
+            @Html.ValidationMessage("Name")
+
+        </div>*@
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="Name">نوع الملف</label>
+                            <span class="required" aria-required="true">*</span>
+                            @Html.DropDownList("AttachmentType", new SelectList(Model.AttachmentTypes, "ID", "Name"), new { @class = "form-control" })
+
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" id="attachmentUpload" value="حفظ" class="btn btn-primary" onclick="AddUploadData($('#addFileData').serializeArray());" />
+
+                @*<input type="button" id="attachmentUpload" value="حفظ" class="btn btn-primary" onclick="AddUploadData($('#addFileData').serializeArray());" />*@
+            </form>
+        }
+
+            @using (Html.BeginModel("AttachmentError", "إضافة مرفق جديد"))
+            {
+
+            }
+
+            @using (Html.BeginModel("DocumentFolder", "الحافظات"))
+            {
+                using (Html.CUpdatePanel(Url.Action("CaseFolders", "FolderAttachment", new { id = Model.CaseID, SessionID = Model.SessionID }), "CaseFoldersUpdatePanel"))
+                {
+                    Html.RenderAction("CaseFolders", "FolderAttachment", new { id = Model.CaseID, SessionID = Model.SessionID });
+                }
+            }
+        </div>
+    }
+
+</div>
+<div id="AttachmentBody">
+
+</div>
+
+@using (Html.BeginModel("DeleteAttachmentModel_id", "حذف مرفق"))
+{
+    using (Html.CUpdatePanel(Url.Action("Delete", "Attachment", new { CaseID = Model.CaseID, SessionID = Model.SessionID}), "DeleteAttachmentModelUpdatePanel_id"))
+    {
+
+    }
+}
+@using (Html.BeginModel("EditAttachmentModel_id", "تعديل مرفق"))
+{
+    using (Html.CUpdatePanel(Url.Action("Edit", "Attachment", new { CaseID = Model.CaseID, SessionID = Model.SessionID }), "EditAttachmentModelUpdatePanel_id"))
+    {
+
+    }
+}
+<script>
+    OnDocReady(function () {
+        //function trackClose() {
+        //    debugger;
+        //    alert("You want to close it");
+        //}
+        //window.onbeforeunload = function () { trackClose(); }
+        $(document).on('FileAttachment:Edited', function () {
+            $(document).trigger('SuccessMessage', '@JIC.Base.Resources.Messages.OperationCompletedSuccessfully');
+            $('#EditAttachmentModel_id').modal('hide');
+            $('#CaseAttachmentsDiv').trigger('update');
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('FileAttachment:Delete', function () {
+            $(document).trigger('SuccessMessage', '@JIC.Base.Resources.Messages.OperationCompletedSuccessfully');
+            $('#DeleteAttachmentModel_id').modal('hide');
+            $('#CaseAttachmentsDiv').trigger('update');
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('FileAttachment:SentToJudge', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن رفع أو تعديل أو حذف مرفق بعد إرسال المحضر للقاضي للتصديق');
+
+            $('#EditAttachmentModel_id').modal('hide');
+            $('#AddAttachment').modal('hide');
+            $('#DeleteAttachmentModel_id').modal('hide');
+
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('FolderAttachment:SentToJudge', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن إنشاءأو تعديل حافظة بعد إرسال المحضر للقاضي للتصديق ');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+
+        $(document).on('FolderAttachmentDelete:SentToJudge', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن حذف حافظة بعد إرسال المحضر للقاضي للتصديق ');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('UserNotDelete:Folder', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن حذف حافظة تم اضافته من مستخدم أخر ');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('UserNotEdite:Folder', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن تعديل حافظة تم اضافته من مستخدم أخر ');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+        
+
+
+        $(document).on('FileCritical:NoDelete', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', ' هذا الملف إجبارى، لا يمكن حذفه بدون تحميل ملف آخر ');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+            $('#DeleteAttachmentModel_id').modal('hide');
+            $('#CaseAttachmentsDiv').trigger('update');
+            $('.modal-backdrop').remove();
+        });
+
+        $(document).on('FileCritical:NoEdite', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', ' هذا الملف إجبارى، لا يمكن تعديل نوعه بدون تحميل ملف آخر ');
+            $('#EditAttachmentModel_id').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('UserNotEdit:Edited', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن تعديل مرفق تم اضافته من مستخدم أخر');
+            $('#EditAttachmentModel_id').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+
+        $(document).on('UserNotDelete:Delete', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لا يمكن حذف مرفق تم اضافته من مستخدم أخر');
+            $('#EditAttachmentModel_id').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+        $(':button.close').click(function () {
+            debugger;
+            $('#CaseFoldersUpdatePanel').trigger('update');
+        });
+    });
+   
+          
+</script>
+
+
+<script>
+    var fileIndex = 0;
+    var UploadedFiles = {};
+    OnDocReady(function () {
+
+        $('#fileUpload').fileupload({
+            dataType: 'json',
+            url: '/@Url.Content("Handler/UploadHandler.ashx")',
+            add: function (e, data) {
+                data.formData = { id: fileIndex };
+                $("#FileId").val(fileIndex);
+                fileIndex++;
+                data.submit();
+                $("#AddAttachment").modal('show');
+            },
+            done: function (e, data) {
+                var UploadFileData = GetUploadFiles(data.result.id);
+                UploadFileData['file'] = data.result;
+                UploadIfReady(data.result.id);
+            }
+        }).on('fileuploadprogress', function (e, data) {
+            console.log(data._progress);
+            var progress = (data._progress.loaded / data._progress.total)*100;
+            $("#uploadProgressBar").prop('aria-valuenow', progress);
+            $("#uploadProgressBar").width(progress + '%');
+        });
+        $(document).on('FolderAttachment2:Saved', function () {
+            $(document).trigger('SuccessMessage', 'تمت العملية بنجاح');
+            //$('#DocumentFolder').modal('hide');
+            $('#AddAttachment').modal('hide');
+            $("#CaseAttachmentsDiv").trigger('update');
+            $('.modal-backdrop').remove();
+        });
+        $(document).on('NumberOfDocumentOverFlow:error', function () {
+            $(document).trigger('ErrorMessage', 'الحافظة ممتلئة');
+
+            //$('#DocumentFolder').modal('hide');
+            $('#AddAttachment').modal('hide');
+         //   $("#CaseAttachmentsDiv").trigger('update');
+            $('.modal-backdrop').remove();
+        });
+        
+        $(document).on('NumberOfDocumentOverFlowEdite:error', function () {
+            $(document).trigger('ErrorMessage', 'لا يمكن نقل الملف لهذه الحافظة لأنها ممتلئة');
+            
+            $('#EditAttachmentModel_id').hide();
+            $('.modal-backdrop').hide();
+        });
+        $(document).on('CreateFolder:Saved', function () {
+            debugger;
+             $(document).trigger('SuccessMessage', 'تمت العملية بنجاح');
+            $('#CaseFoldersUpdatePanel').trigger('update');
+            $("#CaseAttachmentsDiv").trigger('update');
+            $("#AddAttachmentDiv").trigger('update');
+        });
+
+        $(document).on('CreateFolder:Failed', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'لم تتم العملية بنجاح');
+            $('#CaseFoldersUpdatePanel').trigger('update');
+            $("#CaseAttachmentsDiv").trigger('update');
+            $("#AddAttachmentDiv").trigger('update');
+        });
+
+        $(document).on('CreateFolder:Folder_Has_Documents', function () {
+            debugger;
+            $(document).trigger('ErrorMessage', 'تحتوى الحافظة على ملفات');
+            $('#CaseFoldersUpdatePanel').trigger('update');
+            $("#CaseAttachmentsDiv").trigger('update');
+            $("#AddAttachmentDiv").trigger('update');
+        });
+
+        $(document).on('FolderHasFileCritical:NoDelete', function () {
+            $(document).trigger('ErrorMessage', ' الحافظة بها ملف اجبارى لايمكن حذفها ');
+            $('#CaseFoldersUpdatePanel').trigger('update');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+
+        });
+        $(document).on('NumberOfDocumentHigh:NoChange', function () {
+            $(document).trigger('ErrorMessage', 'لا يمكن تغيير عدد المستندات لقيمة أقل من عدد المستندات الحالية');
+
+            $('#CaseFoldersUpdatePanel').trigger('update');
+            $('#DocumentFolder').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+
+        function AddRequiredValidation(selector) {
+        $(selector).attr("data-val", "true");
+        $(selector).attr("data-val-required", "@JIC.Base.Resources.Resources.RequiredErrorMessage");
+         }
+           function RemoveRequiredValidation(selector) {
+        $(selector).removeAttr("data-val");
+        $(selector).removeAttr("data-val-required");
+        }
+
+        $("#@Html.IdFor(model =>model.FolderID)").on('change', function () {
+            debugger;
+            if ($("#@Html.IdFor(model => model.FolderID)").val() == "00000000-0000-0000-0000-000000000000") {
+                $("#Name").before('<span class="required">*</span>');
+
+        }
+            else {
+                $('#addFileData > div:nth-child(3) > div:nth-child(1) > div > span.required').remove();
+             }
+         });
+
+        });
+    function UploadIfReady(index) {
+        var UploadData = GetUploadFiles(index);
+        if (UploadData['file'] != null && UploadData['fileData'] != null) {
+            var FormData = UploadData['fileData'].slice();
+            FormData.push({ name: "filePath", value: UploadData['file']["filePath"] });
+            FormData.push({ name: "vpath", value: UploadData['file']["vpath"] });
+            FormData.push({ name: "FileName", value: UploadData['file']["FileName"] });
+            FormData.push({ name: "Name", value: UploadData['file']["AttachmentView.Name"] });
+            FormData.push({ name: "CaseID", value: UploadData['file']["AttachmentView.CaseID"] });
+
+            $.post("@Url.Action("CreateAttachment",new { id = Model.CaseID, SessionID = Model.SessionID})" , FormData)
+                .done(function (data) {
+                                   // $(document).trigger('SuccessMessage', '@JIC.Base.Resources.Messages.OperationCompletedSuccessfully');
+
+                    //$("#AttachmentBody").html(data);
+                    //$("#CaseAttachmentsDiv").trigger('update');
+                }).fail(function (data) {
+                                  //  $(document).trigger('SuccessMessage', '@JIC.Base.Resources.Messages.OperationCompletedSuccessfully');
+
+                    //$("#AttachmentError .modal-body").html(data.responseText);
+                    //$("#AttachmentError").modal('show');
+                });
+        }
+    }
+    function AddUploadData(data) {
+        debugger;
+            if ($("#@Html.IdFor(model => model.FolderID)").val() == "00000000-0000-0000-0000-000000000000") {
+                //  $("#Name").before('<span class="required">*</span>');
+            }
+            else {
+                $('#addFileData > div:nth-child(3) > div:nth-child(1) > div > span.required').remove();
+                $('#addFileData > div:nth-child(3) > div:nth-child(1) > div > span').remove();
+            }
+
+            for (var index = 0; index < data.length; index++) {
+            if (data[index].name == "FileId") {
+                var UploadFileData = GetUploadFiles(data[index].value);
+                UploadFileData['fileData'] = data;
+                UploadIfReady(data[index].value);
+            }
+        }
+
+        //$("#AddAttachment").modal('hide');
+    }
+
+    function GetUploadFiles(index) {
+        if (UploadedFiles[index] == null)
+            UploadedFiles[index] = {};
+        return UploadedFiles[index];
+    }
+</script>
+
+

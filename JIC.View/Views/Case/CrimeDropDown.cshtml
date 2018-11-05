@@ -1,0 +1,3 @@
+﻿@using JIC.Crime.View.Models
+@model CaseBasicDataViewModel
+@Html.CDropDownFor(m => m.CrimeID, new SelectList(Model.CrimesTypes, "ID", "Name"), new { onchange = "ddlCrimeID_SelectedIndexChanged()" }, true)

@@ -1,0 +1,14 @@
+4
+adminName
+1234
+1
+1
+„Õﬂ„… ‘„«· «·ﬁ«Â—…
+11
+  UserId = lines[0],
+  Username = lines[1],
+  Password = lines[2],
+  UserTypeId = lines[3],
+  CourtID = lines[4],
+  CourtName = lines[5]
+  hhhhh

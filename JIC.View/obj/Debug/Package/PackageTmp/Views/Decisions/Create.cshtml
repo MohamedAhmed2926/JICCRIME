@@ -1,0 +1,142 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model DecisionsViewModel
+@{
+    ViewBag.Title = JIC.Base.Resources.PageTitles.Dicision;
+    Layout = null;
+}
+<style>
+    #DecionDescription {
+        width: 100%;
+        height: 100px !important;
+    }
+</style>
+
+<div class="row">
+    @Html.Partial("_CaseDecisions", Model)
+    @*<h3>جلسة + (@Model.SessionDate.ToShortDateString()) + - @Model.CaseNumber.ToString() </h3>*@
+</div>
+
+
+
+@if (ViewBag.DecisionSaved != null && (bool)ViewBag.DecisionSaved)
+{
+    <script>
+        debugger;
+        $(document).trigger('Decision:Saved');
+    </script>
+}
+<script>
+    //$(document).ready(function () {
+    //    debugger;
+
+    //});
+    OnDocReady(function () {
+        debugger;
+
+        var value = $("#@Html.IdFor(m=>m.CaseResultType)")
+
+        switch ((parseInt(value))) {
+            case (1):
+                @*var $select = $('#@Html.IdFor(m=>m.DecisionTypeID)').selectize();
+                var control = $select[0].selectize;
+                control.clear();
+                var $select = $('#@Html.IdFor(m=>m.NextSessionDate)').selectize();
+                var control = $select[0].selectize;
+                control.clear();*@
+                $("#@Html.IdFor(m=>m.IsReadyForFinalDecision)").prop("checked", false);
+
+                $("#Div_FinalDecision").hide();
+                $("#@Html.IdFor(m=>m.CaseJudmentTypeID)").hide();
+                $("#div_Session").hide();
+                $("#div_Decisions").show();
+                $("#CaseJudmentTypeID_div").hide();
+                $("#DecisionTypeID_div").show();
+                $("#div_PostDecision").hide();
+                break;
+            case (2):
+                @*var $select = $('#@Html.IdFor(m=>m.CaseJudmentTypeID)').selectize();
+                var control = $select[0].selectize;
+                control.clear();
+                var $select = $('#JudgmentID').selectize();
+                var control = $select[0].selectize;
+                control.clear();
+                var $select = $('#NextSessionDate').selectize();
+                var control = $select[0].selectize;
+                control.clear();*@
+                $("#@Html.IdForDiv(m=>m.CaseJudmentTypeID)").show();
+                $("#div_ReadyForFinalDecision").show();
+                $("#DecisionTypeID_div").hide();
+                $("#div_ReadyForFinalDecision").hide();
+                $("#CaseJudmentTypeID_div").show();
+                $("#div_Session").hide();
+                break;
+        }
+        if ($("#@Html.IdFor(m=>m.CaseJudmentTypeID)").val() != null) {
+
+            switch (parseInt($("#@Html.IdFor(m=>m.CaseJudmentTypeID)").val())) {
+                case @(((int)JIC.Base.CaseLevels.Elementary)):
+
+
+                    $("#Div_FinalDecision").show();
+                    $("#div_PostDecision").hide();
+                    $("#div_Session").hide();
+                    $("#div_ReadyForFinalDecision").hide();
+
+                    break;
+                case @((int)JIC.Base.CaseLevels.Initial):
+                    $("#Div_FinalDecision").hide();
+                    $("#div_PostDecision").show();
+                    $("#div_Session").show();
+                    $("#NextSessionDate_div").show();
+
+                    $("#div_Decisions").hide();
+                    $("#div_ReadyForFinalDecision").hide();
+                    $("#CaseJudmentTypeID_div").show();
+                default:
+                    break;
+            }
+        }
+        $(':radio[name=CaseResultType]').change(function () {
+            resetValidation();
+
+            var value = $(this).val();
+            switch ((parseInt(value))) {
+                case (1):
+                    var $select = $('#@Html.IdFor(m=>m.DecisionTypeID)').selectize();
+                    var control = $select[0].selectize;
+                    control.clear();
+                    var $select = $('#@Html.IdFor(m=>m.NextSessionDate)').selectize();
+                    var control = $select[0].selectize;
+                    control.clear();
+                    $("#@Html.IdFor(m=>m.IsReadyForFinalDecision)").prop("checked", false);
+
+                    $("#Div_FinalDecision").hide();
+                    $("#@Html.IdFor(m=>m.CaseJudmentTypeID)").hide();
+                    $("#div_Session").hide();
+                    $("#div_Decisions").show();
+                    $("#CaseJudmentTypeID_div").hide();
+                    $("#DecisionTypeID_div").show();
+                    $("#div_PostDecision").hide();
+                    break;
+                case (2):
+                    var $select = $('#@Html.IdFor(m=>m.CaseJudmentTypeID)').selectize();
+                    var control = $select[0].selectize;
+                    control.clear();
+                    var $select = $('#@Html.IdFor(m=>m.JudgmentID)').selectize();
+                    var control = $select[0].selectize;
+                    control.clear();
+                    var $select = $('#@Html.IdFor(m=>m.NextSessionDate)').selectize();
+                    var control = $select[0].selectize;
+                    control.clear();
+                    $("#@Html.IdForDiv(m=>m.CaseJudmentTypeID)").show();
+                    $("#div_ReadyForFinalDecision").show();
+                    $("#DecisionTypeID_div").hide();
+                    $("#div_ReadyForFinalDecision").hide();
+                    $("#CaseJudmentTypeID_div").show();
+                    $("#div_Session").hide();
+                    break;
+            }
+        });
+    });
+</script>

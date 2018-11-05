@@ -1,0 +1,251 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{85B3DF27-A5BF-4D4F-B84C-DDCA3B501346}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8523133E-C8FE-44ED-BCC9-FC20DF671BCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8C11B0A6-AA93-42C2-8226-F99098C898AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Base", "JIC.Base\JIC.Base.csproj", "{DAC34128-EDBD-492A-81BE-68B641B896EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Components", "JIC.Components\JIC.Components.csproj", "{74CB8404-1109-4368-A5DC-0C2E2321A063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Services", "JIC.Services\JIC.Services.csproj", "{C5480104-1172-4B8E-B000-86FEF08FCE11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Utilities", "JIC.Utilities\JIC.Utilities.csproj", "{6C2C1326-5835-44B2-9649-40C5000EC026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Repositories", "JIC.Repositories\JIC.Repositories.csproj", "{0D77F8FB-6ADF-47FA-AFFE-E11532C0E490}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crime", "Crime", "{F1D63BC4-36FF-4102-89DC-01DAC7502F34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Crime.Repositories", "JIC.Crime.Repositories\JIC.Crime.Repositories.csproj", "{2E10614F-1C05-4AAE-84F8-3C6971285CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Crime.Entities", "JIC.Crime.Entities\JIC.Crime.Entities.csproj", "{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Crime.View", "JIC.View\JIC.Crime.View.csproj", "{E0524A08-B6BF-4D43-ACCA-9A429CABEC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Base.Entities", "JIC.Entities\JIC.Base.Entities.csproj", "{15DAB1E4-6220-4D73-AEE4-D3F3B76A19F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{B9BF3CC8-54C4-4145-A1AA-61C31AC15624}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{B0BFE9A0-2D7A-4F91-BB16-0507155110FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.ServicesJicCrimTests", "JIC.ServicesJicCrimTests\JIC.ServicesJicCrimTests.csproj", "{5048FD12-CE4A-4D84-8367-F727CCB07454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.ServicesTests", "JIC.ServicesTests\JIC.ServicesTests.csproj", "{D0A9D5DB-DAF2-47BD-A02B-F26D243AF728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServices", "WebServices", "{018CBFDC-3E57-49EE-B982-68550425840C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Prosecution.BaseService", "JIC.Prosecution.Service\JIC.Prosecution.BaseService.csproj", "{33506BDB-5940-4C6B-A53B-E968609534DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fault", "Fault", "{88D05394-47A7-457A-BA14-C102D956E565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Fault.Entities", "JIC.Fault.Entities\JIC.Fault.Entities.csproj", "{FF41FC88-D3ED-4FB3-842A-D525346B0AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Fault.Repositories", "JIC.Fault.Repositories\JIC.Fault.Repositories.csproj", "{73D2954A-AC20-405B-A58F-536208F52E5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Prosecution.Service.Fault", "JIC.Prosecution.Service.Fault\JIC.Prosecution.Service.Fault.csproj", "{CB380ACF-44D4-4726-A8AF-7A60556E355E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Prosecution.Service.ServiceBus", "JIC.Prosecution.Service.ServiceBus\JIC.Prosecution.Service.ServiceBus.csproj", "{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsServices", "WindowsServices", "{2B4D80DB-1BF6-4679-9CF9-C171CFAD499D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Fault.WindowsService.Court", "JIC.Fault.WindowsService.Court\JIC.Fault.WindowsService.Court.csproj", "{953D8274-0BAB-4826-9B4D-CA581CF33520}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412} = {A12FA6C8-6714-42A4-88F1-F3FCA0C2F412}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBus", "ServiceBus", "{A01DB536-7DA9-4B57-BD1A-D8DD033E65FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIC.Prosecution.Service.Fault.Test", "JIC.Prosecution.Service.Fault.Test\JIC.Prosecution.Service.Fault.Test.csproj", "{B073E74D-FD85-42FB-AE78-DD3C5C0E4CF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC34128-EDBD-492A-81BE-68B641B896EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC34128-EDBD-492A-81BE-68B641B896EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC34128-EDBD-492A-81BE-68B641B896EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC34128-EDBD-492A-81BE-68B641B896EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CB8404-1109-4368-A5DC-0C2E2321A063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CB8404-1109-4368-A5DC-0C2E2321A063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CB8404-1109-4368-A5DC-0C2E2321A063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CB8404-1109-4368-A5DC-0C2E2321A063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5480104-1172-4B8E-B000-86FEF08FCE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5480104-1172-4B8E-B000-86FEF08FCE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5480104-1172-4B8E-B000-86FEF08FCE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5480104-1172-4B8E-B000-86FEF08FCE11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2C1326-5835-44B2-9649-40C5000EC026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2C1326-5835-44B2-9649-40C5000EC026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2C1326-5835-44B2-9649-40C5000EC026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2C1326-5835-44B2-9649-40C5000EC026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D77F8FB-6ADF-47FA-AFFE-E11532C0E490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D77F8FB-6ADF-47FA-AFFE-E11532C0E490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D77F8FB-6ADF-47FA-AFFE-E11532C0E490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D77F8FB-6ADF-47FA-AFFE-E11532C0E490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E10614F-1C05-4AAE-84F8-3C6971285CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E10614F-1C05-4AAE-84F8-3C6971285CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E10614F-1C05-4AAE-84F8-3C6971285CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E10614F-1C05-4AAE-84F8-3C6971285CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0524A08-B6BF-4D43-ACCA-9A429CABEC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0524A08-B6BF-4D43-ACCA-9A429CABEC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0524A08-B6BF-4D43-ACCA-9A429CABEC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0524A08-B6BF-4D43-ACCA-9A429CABEC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15DAB1E4-6220-4D73-AEE4-D3F3B76A19F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DAB1E4-6220-4D73-AEE4-D3F3B76A19F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DAB1E4-6220-4D73-AEE4-D3F3B76A19F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DAB1E4-6220-4D73-AEE4-D3F3B76A19F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5048FD12-CE4A-4D84-8367-F727CCB07454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5048FD12-CE4A-4D84-8367-F727CCB07454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5048FD12-CE4A-4D84-8367-F727CCB07454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5048FD12-CE4A-4D84-8367-F727CCB07454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A9D5DB-DAF2-47BD-A02B-F26D243AF728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A9D5DB-DAF2-47BD-A02B-F26D243AF728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A9D5DB-DAF2-47BD-A02B-F26D243AF728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A9D5DB-DAF2-47BD-A02B-F26D243AF728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33506BDB-5940-4C6B-A53B-E968609534DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33506BDB-5940-4C6B-A53B-E968609534DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33506BDB-5940-4C6B-A53B-E968609534DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33506BDB-5940-4C6B-A53B-E968609534DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF41FC88-D3ED-4FB3-842A-D525346B0AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF41FC88-D3ED-4FB3-842A-D525346B0AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF41FC88-D3ED-4FB3-842A-D525346B0AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF41FC88-D3ED-4FB3-842A-D525346B0AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D2954A-AC20-405B-A58F-536208F52E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D2954A-AC20-405B-A58F-536208F52E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D2954A-AC20-405B-A58F-536208F52E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D2954A-AC20-405B-A58F-536208F52E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB380ACF-44D4-4726-A8AF-7A60556E355E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB380ACF-44D4-4726-A8AF-7A60556E355E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB380ACF-44D4-4726-A8AF-7A60556E355E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB380ACF-44D4-4726-A8AF-7A60556E355E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953D8274-0BAB-4826-9B4D-CA581CF33520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953D8274-0BAB-4826-9B4D-CA581CF33520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953D8274-0BAB-4826-9B4D-CA581CF33520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953D8274-0BAB-4826-9B4D-CA581CF33520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B073E74D-FD85-42FB-AE78-DD3C5C0E4CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B073E74D-FD85-42FB-AE78-DD3C5C0E4CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B073E74D-FD85-42FB-AE78-DD3C5C0E4CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B073E74D-FD85-42FB-AE78-DD3C5C0E4CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8523133E-C8FE-44ED-BCC9-FC20DF671BCA} = {B9BF3CC8-54C4-4145-A1AA-61C31AC15624}
+		{DAC34128-EDBD-492A-81BE-68B641B896EA} = {85B3DF27-A5BF-4D4F-B84C-DDCA3B501346}
+		{74CB8404-1109-4368-A5DC-0C2E2321A063} = {8C11B0A6-AA93-42C2-8226-F99098C898AE}
+		{C5480104-1172-4B8E-B000-86FEF08FCE11} = {8C11B0A6-AA93-42C2-8226-F99098C898AE}
+		{6C2C1326-5835-44B2-9649-40C5000EC026} = {8C11B0A6-AA93-42C2-8226-F99098C898AE}
+		{0D77F8FB-6ADF-47FA-AFFE-E11532C0E490} = {8523133E-C8FE-44ED-BCC9-FC20DF671BCA}
+		{F1D63BC4-36FF-4102-89DC-01DAC7502F34} = {8523133E-C8FE-44ED-BCC9-FC20DF671BCA}
+		{2E10614F-1C05-4AAE-84F8-3C6971285CCA} = {F1D63BC4-36FF-4102-89DC-01DAC7502F34}
+		{B87B07D9-2FF4-4E78-80D2-3ACA9B80C8E3} = {F1D63BC4-36FF-4102-89DC-01DAC7502F34}
+		{E0524A08-B6BF-4D43-ACCA-9A429CABEC72} = {B9BF3CC8-54C4-4145-A1AA-61C31AC15624}
+		{15DAB1E4-6220-4D73-AEE4-D3F3B76A19F0} = {B0BFE9A0-2D7A-4F91-BB16-0507155110FD}
+		{B0BFE9A0-2D7A-4F91-BB16-0507155110FD} = {8523133E-C8FE-44ED-BCC9-FC20DF671BCA}
+		{018CBFDC-3E57-49EE-B982-68550425840C} = {B9BF3CC8-54C4-4145-A1AA-61C31AC15624}
+		{33506BDB-5940-4C6B-A53B-E968609534DB} = {018CBFDC-3E57-49EE-B982-68550425840C}
+		{88D05394-47A7-457A-BA14-C102D956E565} = {8523133E-C8FE-44ED-BCC9-FC20DF671BCA}
+		{FF41FC88-D3ED-4FB3-842A-D525346B0AFC} = {88D05394-47A7-457A-BA14-C102D956E565}
+		{73D2954A-AC20-405B-A58F-536208F52E5B} = {88D05394-47A7-457A-BA14-C102D956E565}
+		{CB380ACF-44D4-4726-A8AF-7A60556E355E} = {018CBFDC-3E57-49EE-B982-68550425840C}
+		{A12FA6C8-6714-42A4-88F1-F3FCA0C2F412} = {A01DB536-7DA9-4B57-BD1A-D8DD033E65FE}
+		{2B4D80DB-1BF6-4679-9CF9-C171CFAD499D} = {B9BF3CC8-54C4-4145-A1AA-61C31AC15624}
+		{953D8274-0BAB-4826-9B4D-CA581CF33520} = {2B4D80DB-1BF6-4679-9CF9-C171CFAD499D}
+		{A01DB536-7DA9-4B57-BD1A-D8DD033E65FE} = {B9BF3CC8-54C4-4145-A1AA-61C31AC15624}
+		{B073E74D-FD85-42FB-AE78-DD3C5C0E4CF9} = {018CBFDC-3E57-49EE-B982-68550425840C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {645DEE56-6706-4365-A3C5-9EA77728522A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 19
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://41.33.41.30:8080/tfs/enfazproject
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JIC.Base\\JIC.Base.csproj
+		SccProjectTopLevelParentUniqueName1 = JIC.sln
+		SccProjectName1 = JIC.Base
+		SccLocalPath1 = JIC.Base
+		SccProjectUniqueName2 = JIC.Components\\JIC.Components.csproj
+		SccProjectTopLevelParentUniqueName2 = JIC.sln
+		SccProjectName2 = JIC.Components
+		SccLocalPath2 = JIC.Components
+		SccProjectUniqueName3 = JIC.Crime.Entities\\JIC.Crime.Entities.csproj
+		SccProjectTopLevelParentUniqueName3 = JIC.sln
+		SccProjectName3 = JIC.Crime.Entities
+		SccLocalPath3 = JIC.Crime.Entities
+		SccProjectUniqueName4 = JIC.Crime.Repositories\\JIC.Crime.Repositories.csproj
+		SccProjectTopLevelParentUniqueName4 = JIC.sln
+		SccProjectName4 = JIC.Crime.Repositories
+		SccLocalPath4 = JIC.Crime.Repositories
+		SccProjectUniqueName5 = JIC.Repositories\\JIC.Repositories.csproj
+		SccProjectTopLevelParentUniqueName5 = JIC.sln
+		SccProjectName5 = JIC.Repositories
+		SccLocalPath5 = JIC.Repositories
+		SccProjectUniqueName6 = JIC.Services\\JIC.Services.csproj
+		SccProjectTopLevelParentUniqueName6 = JIC.sln
+		SccProjectName6 = JIC.Services
+		SccLocalPath6 = JIC.Services
+		SccProjectUniqueName7 = JIC.Utilities\\JIC.Utilities.csproj
+		SccProjectTopLevelParentUniqueName7 = JIC.sln
+		SccProjectName7 = JIC.Utilities
+		SccLocalPath7 = JIC.Utilities
+		SccProjectUniqueName8 = JIC.View\\JIC.Crime.View.csproj
+		SccProjectTopLevelParentUniqueName8 = JIC.sln
+		SccProjectName8 = JIC.View
+		SccLocalPath8 = JIC.View
+		SccProjectUniqueName9 = JIC.Entities\\JIC.Base.Entities.csproj
+		SccProjectTopLevelParentUniqueName9 = JIC.sln
+		SccProjectName9 = JIC.Entities
+		SccLocalPath9 = JIC.Entities
+		SccProjectUniqueName10 = JIC.ServicesJicCrimTests\\JIC.ServicesJicCrimTests.csproj
+		SccProjectName10 = JIC.ServicesJicCrimTests
+		SccLocalPath10 = JIC.ServicesJicCrimTests
+		SccProjectUniqueName11 = JIC.ServicesTests\\JIC.ServicesTests.csproj
+		SccProjectName11 = JIC.ServicesTests
+		SccLocalPath11 = JIC.ServicesTests
+		SccProjectUniqueName12 = JIC.Fault.Entities\\JIC.Fault.Entities.csproj
+		SccProjectTopLevelParentUniqueName12 = JIC.sln
+		SccProjectName12 = JIC.Fault.Entities
+		SccLocalPath12 = JIC.Fault.Entities
+		SccProjectUniqueName13 = JIC.Fault.Repositories\\JIC.Fault.Repositories.csproj
+		SccProjectTopLevelParentUniqueName13 = JIC.sln
+		SccProjectName13 = JIC.Fault.Repositories
+		SccLocalPath13 = JIC.Fault.Repositories
+		SccProjectUniqueName14 = JIC.Prosecution.Service.Fault\\JIC.Prosecution.Service.Fault.csproj
+		SccProjectTopLevelParentUniqueName14 = JIC.sln
+		SccProjectName14 = JIC.Prosecution.Service.Fault
+		SccLocalPath14 = JIC.Prosecution.Service.Fault
+		SccProjectUniqueName15 = JIC.Prosecution.Service.ServiceBus\\JIC.Prosecution.Service.ServiceBus.csproj
+		SccProjectTopLevelParentUniqueName15 = JIC.sln
+		SccProjectName15 = JIC.Prosecution.Service.ServiceBus
+		SccLocalPath15 = JIC.Prosecution.Service.ServiceBus
+		SccProjectUniqueName16 = JIC.Fault.WindowsService.Court\\JIC.Fault.WindowsService.Court.csproj
+		SccProjectTopLevelParentUniqueName16 = JIC.sln
+		SccProjectName16 = JIC.Fault.WindowsService.Court
+		SccLocalPath16 = JIC.Fault.WindowsService.Court
+		SccProjectUniqueName17 = JIC.Prosecution.Service\\JIC.Prosecution.BaseService.csproj
+		SccProjectTopLevelParentUniqueName17 = JIC.sln
+		SccProjectName17 = JIC.Prosecution.Service
+		SccLocalPath17 = JIC.Prosecution.Service
+		SccProjectUniqueName18 = JIC.Prosecution.Service.Fault.Test\\JIC.Prosecution.Service.Fault.Test.csproj
+		SccProjectTopLevelParentUniqueName18 = JIC.sln
+		SccProjectName18 = JIC.Prosecution.Service.Fault.Test
+		SccLocalPath18 = JIC.Prosecution.Service.Fault.Test
+	EndGlobalSection
+EndGlobal

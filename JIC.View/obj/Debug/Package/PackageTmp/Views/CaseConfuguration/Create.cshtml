@@ -1,0 +1,89 @@
+﻿
+@using JIC.Crime.View.Models
+@model CaseDataViewModels
+
+@{
+    Layout = null;
+}
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<div class="CaseBasicDataFrom" id="CaseBasic">
+
+    @using (Ajax.BeginForm("Create", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "CaseBasic" }))
+    {
+        @Html.AntiForgeryToken()
+
+        if (Model.caseConfigurationData.caseConfiguration.Cases.Count == 0)
+        {
+            <h5>برجاء تحديد القضايا أولاً</h5>
+        }
+        else
+        {
+            <div class="">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        @Html.Label("تحديد الدائرة و الجلسة ل" + (Model.caseConfigurationData.caseConfiguration.Cases.Count).ToString() + " قضية ")
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        @Html.CDropDownFor(m => m.caseConfigurationData.caseConfiguration.CircuitID, new SelectList(Model.caseConfigurationData.Circuits, "ID", "Name"), new { onchange = "ddlCircuit_SelectedIndexChanged()" }, true)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        @using (Html.CUpdatePanel(Url.Action("GetSessions", "CaseConfuguration", new { id = Model.caseConfigurationData.caseConfiguration.CircuitID }), "SessionsDiv"))
+                        {
+                            @Html.CDropDownFor(m => m.caseConfigurationData.caseConfiguration.SessionID, new SelectList(Model.caseConfigurationData.Sessions, "ID", "Name"), true)
+
+                        }
+                    </div>
+                </div>
+                <div class="row">
+                    @*<button type="submit" class="btn btn-primary" data-dismiss="modal">@JIC.Base.Resources.Resources.SaveAndSend</button>*@
+                    <input type="submit" class="btn btn-primary" value="@JIC.Base.Resources.Resources.Save" />
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">@JIC.Base.Resources.Resources.Cancel</button>
+                </div>
+            </div>
+        }
+
+    }
+</div>
+
+<script type="text/javascript">
+        function ddlCircuit_SelectedIndexChanged() {
+            debugger;
+            var CircuitID = $("#@Html.IdFor(m=>m.caseConfigurationData.caseConfiguration.CircuitID)").val();
+            $('#SessionsDiv').trigger('update', { CircuitID: CircuitID });
+            @*$.ajax(
+                {
+
+                    url: '/CaseConfuguration/GetSessions',
+                    type: "GET",
+                    dataType: "JSON",
+                    data: { CircuitID: CircuitID },
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (Sessions) {
+                        var x = $("#@Html.IdFor(m => m.caseConfigurationData.caseConfiguration.SessionID)");
+                        x.each(function () {
+                            console.log(this);
+                            if (this.selectize) {
+                                var ddlSession = this.selectize;
+                                ddlSession.clearOptions();
+                                $.each(Sessions, function (i, Sessions) {
+                                    console.log(Sessions);
+                                    ddlSession.addOption({ value: Sessions.ID, text: Sessions.Name.toString() });
+                        });
+
+                            }
+                        });
+                    }
+                });*@
+        }
+</script>

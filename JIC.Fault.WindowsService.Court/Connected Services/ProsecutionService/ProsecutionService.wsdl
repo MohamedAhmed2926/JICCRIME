@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProsecutionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59832/ProsecutionService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59832/ProsecutionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59832/ProsecutionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:59832/ProsecutionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/JIC.Base.Views.ProsecutionService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProsecutionService_updateCourtHearingDateReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateCourtHearingDateReservation" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_updateCourtHearingDateReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateCourtHearingDateReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_newCircle_InputMessage">
+    <wsdl:part name="parameters" element="tns:newCircle" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_newCircle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:newCircleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_updateBusinessCaseDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateBusinessCaseDescription" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_updateBusinessCaseDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateBusinessCaseDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_courtJudgementCompleteResolution_InputMessage">
+    <wsdl:part name="parameters" element="tns:courtJudgementCompleteResolution" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_courtJudgementCompleteResolution_OutputMessage">
+    <wsdl:part name="parameters" element="tns:courtJudgementCompleteResolutionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_addCourtDecision_InputMessage">
+    <wsdl:part name="parameters" element="tns:addCourtDecision" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_addCourtDecision_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addCourtDecisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_addPartyToBusinessCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPartyToBusinessCase" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_addPartyToBusinessCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPartyToBusinessCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_updatePartyToBusinessCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatePartyToBusinessCase" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_updatePartyToBusinessCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatePartyToBusinessCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_businessCaseMerging_InputMessage">
+    <wsdl:part name="parameters" element="tns:businessCaseMerging" />
+  </wsdl:message>
+  <wsdl:message name="IProsecutionService_businessCaseMerging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:businessCaseMergingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProsecutionService">
+    <wsdl:operation name="updateCourtHearingDateReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/updateCourtHearingDateReservation" message="tns:IProsecutionService_updateCourtHearingDateReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/updateCourtHearingDateReservationResponse" message="tns:IProsecutionService_updateCourtHearingDateReservation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="newCircle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/newCircle" message="tns:IProsecutionService_newCircle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/newCircleResponse" message="tns:IProsecutionService_newCircle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateBusinessCaseDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/updateBusinessCaseDescription" message="tns:IProsecutionService_updateBusinessCaseDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/updateBusinessCaseDescriptionResponse" message="tns:IProsecutionService_updateBusinessCaseDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="courtJudgementCompleteResolution">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/courtJudgementCompleteResolution" message="tns:IProsecutionService_courtJudgementCompleteResolution_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/courtJudgementCompleteResolutionResponse" message="tns:IProsecutionService_courtJudgementCompleteResolution_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addCourtDecision">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/addCourtDecision" message="tns:IProsecutionService_addCourtDecision_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/addCourtDecisionResponse" message="tns:IProsecutionService_addCourtDecision_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addPartyToBusinessCase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/addPartyToBusinessCase" message="tns:IProsecutionService_addPartyToBusinessCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/addPartyToBusinessCaseResponse" message="tns:IProsecutionService_addPartyToBusinessCase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePartyToBusinessCase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/updatePartyToBusinessCase" message="tns:IProsecutionService_updatePartyToBusinessCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/updatePartyToBusinessCaseResponse" message="tns:IProsecutionService_updatePartyToBusinessCase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="businessCaseMerging">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProsecutionService/businessCaseMerging" message="tns:IProsecutionService_businessCaseMerging_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProsecutionService/businessCaseMergingResponse" message="tns:IProsecutionService_businessCaseMerging_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomBinding_IProsecutionService" type="tns:IProsecutionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="updateCourtHearingDateReservation">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/updateCourtHearingDateReservation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="newCircle">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/newCircle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateBusinessCaseDescription">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/updateBusinessCaseDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="courtJudgementCompleteResolution">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/courtJudgementCompleteResolution" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCourtDecision">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/addCourtDecision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPartyToBusinessCase">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/addPartyToBusinessCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePartyToBusinessCase">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/updatePartyToBusinessCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="businessCaseMerging">
+      <soap:operation soapAction="http://tempuri.org/IProsecutionService/businessCaseMerging" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProsecutionService">
+    <wsdl:port name="CustomBinding_IProsecutionService" binding="tns:CustomBinding_IProsecutionService">
+      <soap:address location="http://localhost:59832/ProsecutionService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

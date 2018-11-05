@@ -1,0 +1,205 @@
+﻿@using JIC.Crime.View.Models
+@model CircuitConfigurationViewModel
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+
+@*<h2>@JIC.Base.Resources.PageTitles.CaseBasicData </h2>*@
+<div class="row">
+    <div class="col-md-12">
+        <section id="CaseBasicDataFrom">
+            @using (Ajax.BeginForm("Create", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "CaseBasicDataFrom" }))
+            {
+                @Html.AntiForgeryToken()
+                if (Model.AllCourts.Count == 0)
+                {
+                    <div class="row">
+                        <div class="col-xs-4">
+                            @Model.CourtName.ToString()
+                        </div>
+
+                    </div>
+                }
+                else
+                {
+                    <div class="row">
+                        <div class="col-xs-4">
+                            @Html.CDropDownFor(m => m.CourtID, new SelectList(Model.AllCourts, "ID", "Name"), new { onchange = "ddlCourt_SelectedIndexChanged()" }, Model.AllCourts.Count != 1, Model.AllCourts.Count == 1)
+                        </div>
+
+                    </div>
+                }
+
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CTextBoxFor(m => m.CircuitName)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.HeadJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.SecretaryHead, new SelectList(Model.AllSecretaries, "ID", "Name"), true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.SecretaryAssistant, new SelectList(Model.AllSecretaries, "ID", "Name"), true)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.JudgeCount, new SelectList(Model.JudgeCounts, "ID", "Name"), new { onchange = "ddlJudgeCountChange()" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.FirstJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.SecondJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                </div>
+                <div class="row" style="@((Model.JudgeCount != 4 && Model.JudgeCount != 6) ? "display:none": "")" id="div_FourJudges">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.ThirdJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.FourthJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                </div>
+                <div class="row" style="@(Model.JudgeCount != 6 ? "display:none": "")" id="div_SixJudges">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.FifthJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.SixthJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.alternativeJudge, new SelectList(Model.AllJudges, "ID", "Name"), true)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.CrimeType, new SelectList(Model.AllCrimes, "ID", "Name"))
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+
+                        @Html.CDateTimePickerFor(m => m.CircuitStartDate)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CSelectize(model => model.PoliceStation, new SelectList(Model.AllPoliceStation, "ID", "Name"), new CelectizeAtt { IncludeDefaultItem = true, SelectizeMode = JIC.Base.SelectizeModes.Tags })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        @Html.CDropDownFor(m => m.Cycle, new SelectList(Model.AllCycles, "ID", "Name"), true)
+                        @*@Html.CSelectize(model => model.UserData.UserJudgeLevel, new SelectList(Model.JudgeLevels, "ID", "Name"), new CelectizeAtt { IncludeDefaultItem = true ,SelectizeMode = JIC.Base.SelectizeModes.Tags})*@
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-md-8">
+                        <input type="submit" class="btn btn-primary" name="submitButton" value="@JIC.Base.Resources.Resources.SaveAndNewCircuitConfiguration" />
+                        <input type="submit" class="btn btn-primary" name="submitButton" value="@JIC.Base.Resources.Resources.SaveAndClose" />
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    @*<input type="reset" value="@JIC.Base.Resources.Resources.Reset" id="reset" class="btn btn-default" />*@
+
+
+                </div>
+            }
+        </section>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function AddRequired(selector) {
+        $('#'+ selector+"_div").find('span').remove()
+        var x = $("#"+selector + "_div" + " label:first-child").after("<span  class='required' aria- required='true' >*</span > ");
+        $(selector).rules("add", "required")
+        $(selector).rules("add", {
+            required: true,
+
+            messages: {
+                required:"@JIC.Base.Resources.Resources.RequiredErrorMessage"
+            }
+        });
+    }
+    function RemoveRequired(selector) {
+        $(selector).rules("remove", "required")
+    }
+
+    function ddlJudgeCountChange() {
+
+        switch (parseInt($("#@Html.IdFor(m=>m.JudgeCount)").val())) {
+            case @(2):
+                $("#alternativeJudge_div label:first-child").html("عضو يسار اليسار");
+                $("#div_FourJudges").hide();
+                $("#div_SixJudges").hide();
+                RemoveRequired("@Html.IdFor(m=>m.ThirdJudge)");
+                RemoveRequired("@Html.IdFor(m=>m.FourthJudge)");
+                RemoveRequired("@Html.IdFor(m=>m.FifthJudge)");
+                RemoveRequired("@Html.IdFor(m=>m.SixthJudge)");
+                break;
+            case @(4):
+                $("#alternativeJudge_div label:first-child").html("عضو يسار يسار يسار اليسار");
+                $("#div_FourJudges").show();
+                $("#div_SixJudges").hide();
+                AddRequired("@Html.IdFor(m=>m.ThirdJudge)");
+                AddRequired("@Html.IdFor(m=>m.FourthJudge)");
+                RemoveRequired("@Html.IdFor(m=>m.FifthJudge)");
+                RemoveRequired("@Html.IdFor(m=>m.SixthJudge)");
+                break;
+            case @(6):
+                $("#alternativeJudge_div label:first-child").html("عضو يسار يسار يسار يسار يسار اليسار");
+                $("#div_FourJudges").show();
+                $("#div_SixJudges").show();
+                AddRequired("@Html.IdFor(m=>m.ThirdJudge)");
+                AddRequired("@Html.IdFor(m=>m.FourthJudge)");
+                AddRequired("@Html.IdFor(m=>m.FifthJudge)");
+                AddRequired("@Html.IdFor(m=>m.SixthJudge)");
+                break;
+
+        }
+
+        }
+        function ddlCourt_SelectedIndexChanged() {
+            var CourtID = $("#@Html.IdFor(m=>m.CourtID)").val();
+            $.ajax(
+                {
+
+                    url: '/CircuitConfiguration/GetPoliceStationsByCourtID',
+                    type: "GET",
+                    dataType: "JSON",
+                    data: { CourtID: CourtID },
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (AllPoliceStation) {
+                        $('#PoliceStation').each(function () {
+                            if (this.selectize) {
+                                var ddlPoliceStation = this.selectize;
+                                ddlPoliceStation.clearOptions();
+                                $.each(AllPoliceStation, function (i, AllPoliceStation) {
+                                    ddlPoliceStation.addOption({ value: AllPoliceStation.ID, text: AllPoliceStation.Name });
+                        });
+
+                            }
+                        });
+                    }
+                });
+        }
+
+</script>
+

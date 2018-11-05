@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAC34128-EDBD-492A-81BE-68B641B896EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JIC.Base</RootNamespace>
+    <AssemblyName>JIC.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Events\NewCase.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Interfaces\ICaseVictimProsecutioRepository.cs" />
+    <Compile Include="Interfaces\ICaseDefendantProsecutioRepository.cs" />
+    <Compile Include="Interfaces\ICaseDescriptionRepository.cs" />
+    <Compile Include="Interfaces\ICaseProsecutionRepository.cs" />
+    <Compile Include="Interfaces\ICrimeCaseRepository.cs" />
+    <Compile Include="Interfaces\ICaseSessionsRepository.cs" />
+    <Compile Include="Interfaces\IDecisionsRepository.cs" />
+    <Compile Include="Interfaces\IDecisionTypesRepository.cs" />
+    <Compile Include="Interfaces\IDefendantCaseLog.cs" />
+    <Compile Include="Interfaces\IDefendantChargesRepository.cs" />
+    <Compile Include="Interfaces\IDefendantsDecisionRepository.cs" />
+    <Compile Include="Interfaces\IFaultCaseRepository.cs" />
+    <Compile Include="Interfaces\IMasterCaseRepository.cs" />
+    <Compile Include="Interfaces\ICaseTypeReposatry.cs" />
+    <Compile Include="Interfaces\ICircuitMembersRepository.cs" />
+    <Compile Include="Interfaces\ICircuitRollsRepository.cs" />
+    <Compile Include="Interfaces\ICircuitsRepository.cs" />
+    <Compile Include="Interfaces\ICourtRepository.cs" />
+    <Compile Include="Interfaces\ICycleRepository.cs" />
+    <Compile Include="Interfaces\IDefendantsSessionLogRepository.cs" />
+    <Compile Include="Interfaces\IDocumentsRepository.cs" />
+    <Compile Include="Interfaces\IFoldersRepository.cs" />
+    <Compile Include="Interfaces\IDefendantsRepository.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
+    <Compile Include="Interfaces\ILookupRepository.cs" />
+    <Compile Include="Interfaces\IOrderOfAssignmentRepository.cs" />
+    <Compile Include="Interfaces\IOverAllNumberRepository.cs" />
+    <Compile Include="Interfaces\IPersonInformationRepository.cs" />
+    <Compile Include="Interfaces\IPoliceStationsCircuitsRepository.cs" />
+    <Compile Include="Interfaces\IPoliceStationsRepository.cs" />
+    <Compile Include="Interfaces\IProsecuterRepository.cs" />
+    <Compile Include="Interfaces\IPersonRepository.cs" />
+    <Compile Include="Interfaces\IProsecutionsRepository.cs" />
+    <Compile Include="Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\ISearchCaseRepository.cs" />
+    <Compile Include="Interfaces\ISessionRepository.cs" />
+    <Compile Include="Interfaces\ITextPredictionsRepository.cs" />
+    <Compile Include="Interfaces\IVictimsSessionLogRepository.cs" />
+    <Compile Include="Interfaces\IVictimsRepository.cs" />
+    <Compile Include="Interfaces\ISecurity_Users.cs" />
+    <Compile Include="Interfaces\IUserRepostiory.cs" />
+    <Compile Include="Interfaces\IVacationsRepository.cs" />
+    <Compile Include="Interfaces\IWorkDaysRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PageTitles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PageTitles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ICrimeTypeRepository.cs" />
+    <Compile Include="Views\ProsecutionService\parParties.cs" />
+    <Compile Include="Views\ProsecutionService\party.cs" />
+    <Compile Include="Views\Services\CaseBase.cs" />
+    <Compile Include="Views\Services\CaseDecision.cs" />
+    <Compile Include="Views\Services\CompleteCase.cs" />
+    <Compile Include="Views\Services\CompleteDecision.cs" />
+    <Compile Include="Views\Services\DefendantDecision.cs" />
+    <Compile Include="Views\Services\Document.cs" />
+    <Compile Include="Views\Services\CaseDescription.cs" />
+    <Compile Include="Views\Services\CaseParty.cs" />
+    <Compile Include="Views\Services\ErrorCode.cs" />
+    <Compile Include="Views\Services\FirstSession.cs" />
+    <Compile Include="Views\Services\LegalPerson.cs" />
+    <Compile Include="Views\Services\NewCase.cs" />
+    <Compile Include="Views\Services\ObjectionRequest.cs" />
+    <Compile Include="Views\Services\PartyDecision.cs" />
+    <Compile Include="Views\Services\PostPoneDecision.cs" />
+    <Compile Include="Views\Services\Response.cs" />
+    <Compile Include="Views\Services\ResumptionRequest.cs" />
+    <Compile Include="Views\vw_AddSessionSearchResult.cs" />
+    <Compile Include="Views\vw_AddSessionsSearchData.cs" />
+    <Compile Include="Views\vw_CaseConfiguration.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Views\vw_CaseDefectData.cs" />
+    <Compile Include="SystemConfigurations.cs" />
+    <Compile Include="Testing\handelar.cs" />
+    <Compile Include="Views\vw_CaseBasicData.cs" />
+    <Compile Include="Views\vw_CasePartyProsecution.cs" />
+    <Compile Include="Views\vw_CaseProsecution.cs" />
+    <Compile Include="Views\vw_CaseWitnesses.cs" />
+    <Compile Include="Views\vw_DefentantData.cs" />
+    <Compile Include="Views\vw_DefendantsDecisionData.cs" />
+    <Compile Include="Views\vw_FaultCaseBasicData.cs" />
+    <Compile Include="Views\vw_FaultCaseConfiguration.cs" />
+    <Compile Include="Views\vw_InformationPerson.cs" />
+    <Compile Include="Views\vw_KeyValueDate.cs" />
+    <Compile Include="Views\SearchResult.cs" />
+    <Compile Include="Views\vw_AddCycles.cs" />
+    <Compile Include="Views\vw_AttachmentData.cs" />
+    <Compile Include="Views\vw_CaseDecision.cs" />
+    <Compile Include="Views\vw_CaseDefectsData.cs" />
+    <Compile Include="Views\vw_CaseDescription.cs" />
+    <Compile Include="Views\vw_CaseDocuments.cs" />
+    <Compile Include="Views\vw_CaseOrder.cs" />
+    <Compile Include="Views\vw_CircuitConfiguration.cs" />
+    <Compile Include="Views\vw_CircuitsGrid.cs" />
+    <Compile Include="Views\vw_CircuitsJudges.cs" />
+    <Compile Include="Views\vw_DefendantFullData.cs" />
+    <Compile Include="Views\vw_CircuitData.cs" />
+    <Compile Include="Views\vw_address.cs" />
+    <Compile Include="Views\vw_CrimeCaseBasicData.cs" />
+    <Compile Include="Views\vw_CaseData.cs" />
+    <Compile Include="Views\vw_DefendantData.cs" />
+    <Compile Include="Views\vw_Documents.cs" />
+    <Compile Include="Views\vw_Folders.cs" />
+    <Compile Include="Views\vw_ListOfDefendant.cs" />
+    <Compile Include="Views\vw_MessageViewModel.cs" />
+    <Compile Include="Views\vw_KeyValue.cs" />
+    <Compile Include="Views\vw_MinutesOfSession.cs" />
+    <Compile Include="Views\vw_OrderOfAssignment.cs" />
+    <Compile Include="Views\vw_PersonData.cs" />
+    <Compile Include="Views\vw_ProcecuterData.cs" />
+    <Compile Include="Views\vw_Prosecution.cs" />
+    <Compile Include="Views\vw_RollCases.cs" />
+    <Compile Include="Views\vw_SearchData.cs" />
+    <Compile Include="Views\vw_SessionData.cs" />
+    <Compile Include="Views\vw_SystemActions.cs" />
+    <Compile Include="Views\vw_SystemUser.cs" />
+    <Compile Include="Views\vw_TextPredections.cs" />
+    <Compile Include="Views\vw_unCompletCase.cs" />
+    <Compile Include="Views\vw_UserData.cs" />
+    <Compile Include="Views\vw_UserSecurity.cs" />
+    <Compile Include="Views\vw_VacationData.cs" />
+    <Compile Include="Views\vw_Vacations.cs" />
+    <Compile Include="Views\vw_VictimData.cs" />
+    <Compile Include="Views\vw_VictimFullData.cs" />
+    <Compile Include="Views\vw_WitnessesSessionLog.cs" />
+    <Compile Include="Views\vw_WorkDays.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PageTitles.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PageTitles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ServiceHandler\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,32 @@
+﻿@using JIC.Crime.View.Models
+@model OpenRollCreateViewModel
+
+@{
+    ViewBag.Title = @JIC.Base.Resources.Resources.CompleteOpenRoll;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@JIC.Base.Resources.Resources.CompleteOpenRoll</h2>
+
+
+<div id="OpenRoll">
+  
+        @Html.AntiForgeryToken()
+
+        @(Html
+                                                                                                                                  .Grid(Model.AllOpenRolls.AsEnumerable())
+                                                                                                                                  .Build(columns =>
+                                                                                                                                  {
+                                                                                                                                      columns.Add(model => model.SessionDate.Date.ToShortDateString()).Titled(JIC.Base.Resources.Resources.SessionDate);
+                                                                                                                                      columns.Add(model => model.CircuitName).Titled(JIC.Base.Resources.Resources.CircuitName);
+                                                                                                                                      columns.Add(model =>
+                                                                                                                                      @Html.ActionLink(" ", "CompleteOPenRoll", new { SessionID = model.SessionID},new { @class = "fa fa-folder" , @title =JIC.Base.Resources.Resources.CompleteOpenRoll})).Titled(JIC.Base.Resources.Resources.operation);
+                                                                                                                                  })
+
+                                                                                                                                 .Pageable()
+                                                                                                                                 .Filterable()
+
+        )
+</div>
+
+

@@ -1,0 +1,56 @@
+﻿@using JIC.Crime.View.Models
+@model  TextPredectionsModels
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<style>
+    .TextArea {
+        height: 100px;
+        width: 950px;
+        
+    }
+ 
+</style>
+<div id="Editdiv">
+    @using (Ajax.BeginForm("Edit", new { id = Model.TextPredections.TextID }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Editdiv" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.TextPredections.TextID)
+
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.CTextBoxFor(m => m.TextPredections.TextTitle)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.CLabelFor(m => m.TextPredections.TextPredectionsDescription)
+
+                @Html.TextAreaFor(m => m.TextPredections.TextPredectionsDescription, new { Class = "TextArea" })
+                @Html.ValidationMessageFor(m => m.TextPredections.TextPredectionsDescription, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.CDropDownFor(m => m.TextPredections.CircuitID, new SelectList(Model.Circuits, "ID", "Name"), true)
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+                <input type="submit" value="@JIC.Base.Resources.Resources.Save" id="Edit" class="btn btn-default" name="action:Edit" />
+            </div>
+            <div class="col-sm-3" y>
+                @*// @Html.ActionLink("JIC.Base.Resources.Resources.Cancel", "Index", new { @class = "btn btn-default", @style = "background-color:maroon;color:white;border-radius:4px;" })*@
+                @*  <input type="submit" value="@JIC.Base.Resources.Resources.Cancel" name="action:CancelEdit" id="Cancel" class="btn btn-default"  formaction="CancelEdit" />*@
+                <button type="button" class="btn btn-default" data-dismiss="modal">@JIC.Base.Resources.Resources.Cancel</button>
+            </div>
+        </div>
+    }
+</div>

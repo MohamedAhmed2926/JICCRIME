@@ -1,0 +1,17 @@
+﻿
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+@media (min-width: 1024px) {
+    .modal-dialog {
+        width: 75%
+    }
+}
+
+span.required{
+    color: red;
+}
+

@@ -1,0 +1,58 @@
+﻿@using JIC.Crime.View.Models
+@model  TextPredectionsModels
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<style>
+    .TextArea{
+        height:100px;
+        width:1000px;
+          
+    }
+ 
+</style>
+<div id="Creatediv">
+    <h2>@JIC.Base.Resources.Resources.TextPredections</h2>
+    @using (Ajax.BeginForm("Create", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Creatediv" }))
+    {<div class="row">
+            @Html.AntiForgeryToken()
+
+            <div class="col-lg-4">
+                @Html.CDropDownFor(m => m.TextPredections.CircuitID, new SelectList(Model.Circuits, "ID", "Name"), true)
+
+            </div>
+            <div class="col-lg-4">
+                @Html.CTextBoxFor(m => m.TextPredections.TextTitle)
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                @Html.CLabelFor(m => m.TextPredections.TextPredectionsDescription)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                @Html.TextAreaFor(m => m.TextPredections.TextPredectionsDescription ,new{ Class = "TextArea" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                @Html.ValidationMessageFor(m => m.TextPredections.TextPredectionsDescription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="submit" value="@JIC.Base.Resources.Resources.AddText" id="ADD" class="btn btn-default" />
+            </div>
+            <div class="col-sm-4">
+                <input type="reset" value="@JIC.Base.Resources.Resources.Reset"  class="btn btn-default" />
+
+            </div>
+        </div>
+    }
+</div>

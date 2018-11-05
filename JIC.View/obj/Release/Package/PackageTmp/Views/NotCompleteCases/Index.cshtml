@@ -1,0 +1,65 @@
+﻿@using JIC.Crime.View.Models
+@model  IEnumerable<NotCompleteCaseViewModels>
+
+@{
+    ViewBag.Title = JIC.Base.Resources.Resources.NotCompleteCases;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>@JIC.Base.Resources.Resources.NotCompleteCases</h2>
+
+@if (Model.Count() == 1)
+{
+<h6>@Model.Count().ToString()</h6>  @Html.Label("قضية", Model.Count()); 
+
+}
+else
+{
+<h6>@Model.Count().ToString()</h6>  @Html.Label("قضايا", Model.Count());
+
+}
+@(Html
+                            .Grid(Model)
+                            .Build(columns =>
+                            {
+                                columns.Add(model => model.SecondNumber).Titled(JIC.Base.Resources.Resources.SecondLevelNumber);
+
+                                columns.Add(model => model.FirstNumber).Titled(JIC.Base.Resources.Resources.FirstLevelNumber);
+
+                                columns.Add(model => model.CaseTitle).Titled(JIC.Base.Resources.Resources.CaseTitle);
+                                columns.Add(model => model.CrimName).Titled(JIC.Base.Resources.Resources.CrimeType);
+                                columns.Add(model => model.ShowCaseStatus).Titled(JIC.Base.Resources.Resources.NotComplete);
+
+                                columns.Add(model =>
+
+                           //@"<a href=""#"" class=""fa fa-arrow-down "" title=""" + JIC.Base.Resources.Resources.Complete + @"""  data-url=""" + Url.Action("Complete", new { id = model.CaseId, notCompleteStatus = model.NotCompleteStatus }) + @"""></a>"
+                           @Html.ActionLink(" ", "Complete", new { id = model.CaseId}, new { @class = "fa fa-mercury", @title = JIC.Base.Resources.Resources.Complete }).ToHtmlString()
+                                + " | " +
+
+                                @"<a href=""#"" class=""fa fa-trash-o modal-link"" data-toggle=""modal"" data-target=""#DeleteModel"" title=""" + JIC.Base.Resources.Resources.Delete + @""" data-url=""" + Url.Action("Delete", new { id = model.CaseId }) + @"""></button>"
+
+
+                                ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+
+
+                            })
+                            .Filterable()
+                            .Sortable()
+                            .Pageable()
+
+
+)
+
+
+@using (Html.BeginModel("DeleteModel", JIC.Base.Resources.Resources.DeleteCase))
+{
+    // Html.RenderAction("Delete");
+}
+@section scripts{
+    <script>
+        $(".modal-link").on('click', function () {
+            var modelId = $(this).data('target');
+            $(modelId).find('.modal-body').load($(this).data('url'));
+        });
+    </script>
+
+}

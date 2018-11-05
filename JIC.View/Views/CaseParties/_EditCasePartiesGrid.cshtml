@@ -1,0 +1,67 @@
+﻿@using JIC.Crime.View.Models;
+@model CasePartiesViewModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">المتهمين</div>
+
+    <div class="panel-body">
+        @Html.HiddenFor(model=>model.CaseID)
+        @(Html.Grid(Model.CaseParties.Where(party => party.PartyType == JIC.Base.PartyTypes.Defendant))
+                            .Build(columns =>
+                            {
+                                columns.Add(model => new MvcHtmlString("<i class='fa fa-bars fa-lg' aria-hidden='true'></i>").ToString()+ Html.Hidden("OrderID", model.PartiesOrder)+Html.Hidden("DefectID", model.id) + Html.Hidden("DefectType", model.PartyType)).Encoded(false);
+                                columns.Add(model => model.PartiesOrder).Titled("ترتيب الخصم");
+                                columns.Add(model => model.PartyName).Titled("إسم الخصم");
+                                columns.Add(model => model.NationalID).Titled("الرقم القومى");
+                                columns.Add(model => model.Status).Titled(JIC.Base.Resources.Resources.PartyStatus);
+                                columns.Add(model => model.IsCivilRightProsecutor ? new MvcHtmlString("<i class='fa fa-check-square-o  fa-lg' aria-hidden='true'></i>") : new MvcHtmlString("<i class='fa fa-square-o  fa-lg' aria-hidden='true'></i>")).Titled("مدعى بالحق المدني");
+                                columns.Add(model => Html.MvcString("<a href='#/'  onclick='EditParty(" + model.id + "," + ((int)JIC.Base.PartyTypes.Defendant) + ")'  class='fa fa-pencil-square-o  fa-lg' aria-hidden='true'></a>") + Html.MvcString("<a href='#/' onclick='DeleteParty(" + model.id + "," + ((int)JIC.Base.PartyTypes.Defendant) + ")'  class='fa fa-trash  fa-lg' aria-hidden='true'></i>"));
+                            }).Css("table-sortable-Defendant")
+                            .RowCss(row => "Defendent")
+        )
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">المجنى عليهم</div>
+    <div class="panel-body">
+
+        @(Html.Grid(Model.CaseParties.Where(party => party.PartyType == JIC.Base.PartyTypes.Victim))
+                            .Build(columns =>
+                            {
+                                columns.Add(model => Html.MvcString("<i class='fa fa-bars fa-lg' aria-hidden='true'></i>").ToString() + Html.Hidden("OrderID", model.PartiesOrder) + Html.Hidden("DefectID", model.id) + Html.Hidden("DefectType", model.PartyType)).Encoded(false);
+                                columns.Add(model => model.PartiesOrder).Titled("ترتيب الخصم");
+                                columns.Add(model => model.PartyName).Titled("إسم الخصم");
+                                columns.Add(model => model.NationalID).Titled("الرقم القومى");
+                                columns.Add(model => model.IsCivilRightProsecutor ? new MvcHtmlString("<i class='fa fa-check-square-o  fa-lg' aria-hidden='true'></i>") : new MvcHtmlString("<i class='fa fa-square-o  fa-lg' aria-hidden='true'></i>")).Titled("مدعى بالحق المدني");
+                                columns.Add(model => Html.MvcString("<a href='#/' onclick='EditParty(" + model.id + "," + ((int)JIC.Base.PartyTypes.Victim) + ")' class='fa fa-pencil-square-o  fa-lg' aria-hidden='true'></a>") + Html.MvcString("<a href='#/'  onclick='DeleteParty(" + model.id + "," + ((int)JIC.Base.PartyTypes.Victim) + ")'  class='fa fa-trash  fa-lg' aria-hidden='true'></i>"));
+                            }).Css("table-sortable-Victim")
+                            .RowCss(row => "Victims")
+        )
+    </div>
+</div>
+
+@using (Html.BeginModel("DeleteCasePartyDiv", "حذف"))
+{
+    using (Html.CUpdatePanel(Url.Action("Delete"), "DeleteCasePartyDiv_Update"))
+    {
+
+    }
+}
+@using (Html.BeginModel("EditCasePartyDiv", "تعديل بيانات خصم فى القضية"))
+{
+    using (Html.CUpdatePanel(Url.Action("Edit"), "EditCasePartyDiv_Update"))
+    {
+
+    }
+}
+
+<script>
+    function DeleteParty(partyID,PartyType) {
+        $("#DeleteCasePartyDiv").modal('show');
+        $("#DeleteCasePartyDiv_Update").trigger('update', { PartyID: partyID, CaseID:@Model.CaseID,PartyType: PartyType });
+    }
+    function EditParty(partyID,PartyType) {
+        $("#EditCasePartyDiv").modal('show');
+        $("#EditCasePartyDiv_Update").trigger('update', { PartyID: partyID, CaseID:@Model.CaseID,PartyType: PartyType });
+    }
+</script>

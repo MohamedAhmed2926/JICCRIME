@@ -1,0 +1,51 @@
+﻿@using JIC.Crime.View.Models
+@model OpenRollCreateViewModel
+
+@{
+    ViewBag.Title = @JIC.Base.Resources.Resources.CloseRollOPened;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@JIC.Base.Resources.Resources.CloseRollOPened</h2>
+
+
+
+(@Model.SessionData.DayName , @Model.SessionData.SessionDate.ToShortDateString())
+
+<div id="OpenRoll">
+    @using (Ajax.BeginForm("CloseRoll", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Creatediv" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+             <a href='@Url.Action("CloseRollP", "OpenRoll",new {SessionID=Model.ListCasesInRoll.First().SessionID })'>
+            <input type='button' value='@JIC.Base.Resources.Resources.CloseRoll' class="btn btn-default" />
+        </a>
+        </div>
+
+
+        @(Html
+                                                                                                                                              .Grid(Model.ListCasesInRoll.AsEnumerable())
+                                                                                                                                              .Build(columns =>
+                                                                                                                                              {
+                                                                                                                                                  columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
+                                                                                                                                                  columns.Add(model => model.OverAllNumber).Titled(JIC.Base.Resources.Resources.OverAllNumber);
+                                                                                                                                                  columns.Add(model => model.SecondLevelNumber).Titled(JIC.Base.Resources.Resources.SecondLevelNumber);
+                                                                                                                                                  columns.Add(model => model.FirstLevelNumber).Titled(JIC.Base.Resources.Resources.FirstLevelNumber);
+                                                                                                                                                  columns.Add(model => model.CaseStatus).Titled(JIC.Base.Resources.Resources.CaseStatus);
+                                                                                                                                                  columns.Add(model => model.MainCrime).Titled(JIC.Base.Resources.Resources.MainCrime);
+                                                                                                                                                  columns.Add(model =>
+                                                                                                                                                  @Html.ActionLink(" ", "Index", "ALLMinutesOfSession", new { id = model.CaseID, SessionID = model.SessionID, CircuitID = Model.OPenRoll.CircuitID }, new { @class = (model.MinutesStatus == JIC.Base.MinutesStatus.Saved ? "fa fa-folder" : model.MinutesStatus == JIC.Base.MinutesStatus.NotSaved ? "fa fa-folder-open" : "fa fa-folder-open"), @title = (model.MinutesStatus == JIC.Base.MinutesStatus.Saved ? JIC.Base.Resources.Resources.MinutesSaved : model.MinutesStatus == JIC.Base.MinutesStatus.NotSaved ? JIC.Base.Resources.Resources.NotSave : JIC.Base.Resources.Resources.MinuteNotComplete) }).ToHtmlString()).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+
+                                                                                                                                              })
+
+                                                                                                                                             .Pageable()
+                                                                                                                                             .Filterable()
+
+        )
+
+
+    }
+</div>
+
+

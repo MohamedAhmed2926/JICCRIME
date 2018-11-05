@@ -1,0 +1,116 @@
+﻿
+@model IEnumerable<JIC.Crime.View.Models.SearchGridViewModel>
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+@if (Model.Count() > 0)
+{
+
+
+    if (Model.Count() == 1)
+    {
+        <h6>@Model.Count().ToString()  @Html.Label("قضية", Model.Count()) </h6>;
+
+    }
+    else
+    {
+        <h6>@Model.Count().ToString()  @Html.Label("قضايا", Model.Count()) </h6>;
+
+    }
+
+
+
+
+
+    @(Html
+                .Grid(Model)
+                .Build(columns =>
+                {
+                    columns.Add(model => model.OverAllNumber).Titled(JIC.Base.Resources.Resources.OverAllNumber.ToString());
+                    columns.Add(model => model.SecondNumber).Titled(JIC.Base.Resources.Resources.SecondLevelNumber.ToString());
+                    columns.Add(model => model.FirstNumber).Titled(JIC.Base.Resources.Resources.FirstLevelNumber.ToString());
+                    columns.Add(model => model.CrimeType).Titled(JIC.Base.Resources.Resources.CrimeType.ToString());
+                    columns.Add(model => model.LastSessionDate).Titled(JIC.Base.Resources.Resources.SessionDate.ToString());
+                    columns.Add(model => model.LastDecesion).Titled(JIC.Base.Resources.Resources.SessionDecion.ToString());
+                    if ((bool)ViewData["showDelete"] && (bool)ViewData["showEdit"])
+                    {
+                        columns.Add(model => Html.MvcString("<a href='#/' onclick='EditCase(" + model.CaseID + ")' class='fa fa-pencil-square-o  fa-lg' aria-hidden='true'></a>") + Html.MvcString(" | ") + Html.MvcString("<a href='#/' onclick='ViewCase(" + model.CaseID + ")' class='fa fa-eye  fa-lg' aria-hidden='true'></a>") + Html.MvcString(" | ") + Html.MvcString("<a href='#/' onclick='DeleteCase(" + model.CaseID + ")' class='fa fa-trash  fa-lg' aria-hidden='true'></a>"));
+                    }
+                    else if((bool)ViewData["showEdit"])
+                    {
+                        columns.Add(model => Html.MvcString("<a href='#/' onclick='EditCase(" + model.CaseID + ")' class='fa fa-pencil-square-o  fa-lg' aria-hidden='true'></a>") + Html.MvcString(" | ") + Html.MvcString("<a href='#/' onclick='ViewCase(" + model.CaseID + ")' class='fa fa-eye  fa-lg' aria-hidden='true'></a>"));
+                    }
+                    else if ((bool)ViewData["showDelete"])
+                    {
+                        columns.Add(model => Html.MvcString("<a href='#/' onclick='ViewCase(" + model.CaseID + ")' class='fa fa-eye  fa-lg' aria-hidden='true'></a>") + Html.MvcString(" | ") + Html.MvcString("<a href='#/' onclick='DeleteCase(" + model.CaseID + ")' class='fa fa-trash  fa-lg' aria-hidden='true'></a>"));
+                    }
+                    else
+                    {
+                        columns.Add(model => Html.MvcString("<a href='#/' onclick='ViewCase(" + model.CaseID + ")' class='fa fa-eye  fa-lg' aria-hidden='true'></a>"));
+                    }
+                })
+               .Pageable()
+                .Sortable()
+    )
+
+
+}
+else
+{
+    <center>
+        <div style="font-size:large;font-weight:bold">
+
+
+            لا توجد نتائج بحث
+
+        </div>
+    </center>
+}
+
+<input style="visibility:hidden" id="UserID" value="@ViewData["UserID"]" />
+<input style="visibility:hidden" id="secID" value="@( (int)JIC.Base.SystemUserTypes.Secretary)" />
+
+@using (Html.BeginModel("DeleteCase", "حذف القضية"))
+{
+    using (Html.CUpdatePanel(Url.Action("Delete", "SearchCase"), "DeleteCase_Update"))
+    {
+
+    }
+}
+@using (Html.BeginModel("UnAuthorizedEdit", ""))
+{
+    <h3 style="color:red">لا يمكن تعديل  بيانات هذه القضية بعد انشاء الرقم الشامل الا بمعرفة مدير النظام</h3>
+
+}
+<script>
+    function EditCase(CaseID) {
+
+        var x = $("#UserID").val();
+        var sec = $("#secID").val();
+
+        if (x == sec) //secretary
+        { $("#UnAuthorizedEdit").modal('show'); }
+        else { window.location.href = "/Case/Edit?id=" + CaseID; } // another user
+
+    }
+
+    function ViewCase(CaseID) { window.location.href = "/DisplayCaseData/Index?id=" + CaseID; }
+
+    function DeleteCase(CaseID) {
+        $("#DeleteCase").modal('show');
+        $("#DeleteCase_Update").trigger('update', { CaseID: CaseID });
+    }
+
+</script>
+
+@*.Pageable(pager =>
+    {
+        pager.PagesToDisplay = 2;
+        pager.RowsPerPage = 10;
+    })*@
+
+@*+ Html.MvcString("<a href='#/' onclick='DeleteCase(" + model.CaseID + ")' class='fa fa-trash  fa-lg' aria-hidden='true'></i>")+*@

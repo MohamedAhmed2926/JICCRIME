@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmMessage" xml:space="preserve">
+    <value>هل أنت متأكد من رغيتك في إنهاء العملية؟</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ExceptionMessage" xml:space="preserve">
+    <value>برجاء الإتصال بمدير النظام لوجود خطأ في النظام</value>
+    <comment>Default</comment>
+  </data>
+  <data name="ExistUserName" xml:space="preserve">
+    <value>أسم المستخدم موجود من قبل</value>
+  </data>
+  <data name="ExistUserPerson" xml:space="preserve">
+    <value>الشخص مربوط فعلا مع مستخدم أخر</value>
+  </data>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>برجاء التحقق من اسم المستخدم وكلمة المرور</value>
+  </data>
+  <data name="MustSelectSession" xml:space="preserve">
+    <value>يجب أختيار جلسة</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+    <comment>Default</comment>
+  </data>
+  <data name="NoePersonSelect" xml:space="preserve">
+    <value>لم يتم إختير شخص</value>
+  </data>
+  <data name="NotAuthorizedAccess" xml:space="preserve">
+    <value>حساب المستخدم غير مفعل</value>
+    <comment>Default</comment>
+  </data>
+  <data name="OperationCompletedSuccessfully" xml:space="preserve">
+    <value>تمت العملية بنجاح</value>
+    <comment>Default</comment>
+  </data>
+  <data name="OperationNotCompleted" xml:space="preserve">
+    <value>لم تتم العملية بنجاح</value>
+  </data>
+  <data name="PartyAlreadyExists" xml:space="preserve">
+    <value>هذا الشخص مسجل بالقضية كخصم</value>
+  </data>
+  <data name="SessionApprovedbyJudge" xml:space="preserve">
+    <value>لقد تمت الموافقة على الجلسة من قبل القاضي</value>
+  </data>
+  <data name="WrongValu" xml:space="preserve">
+    <value>قيمة مدخلة غير صالحة</value>
+  </data>
+  <data name="SessionNotAvilaple" xml:space="preserve">
+    <value>الجلسة غير متاحة للتعديل</value>
+  </data>
+  <data name="YourAccountHasLooked" xml:space="preserve">
+    <value>لقد بلغت الحد الأقصى للمحاولات و تم غلق الحساب ... لأستعادة الحساب يرجى التواصل مع مدير النظام</value>
+  </data>
+  <data name="ApprovCsesessionMessage" xml:space="preserve">
+    <value>هل توافق على التصديق على الجلسة لهذة القضية</value>
+  </data>
+  <data name="UserAlreadyLoggedIn" xml:space="preserve">
+    <value>تم تسجيل الدخول بهذا المستخدم من جهاز آخر</value>
+  </data>
+  <data name="RollNotSortable" xml:space="preserve">
+    <value>لا يمكن ترتيب هذا الرول</value>
+  </data>
+  <data name="ExistProsecuterName" xml:space="preserve">
+    <value>أسم المستخدم مدخل من قبل!</value>
+  </data>
+  <data name="ExistProsecuterPerson" xml:space="preserve">
+    <value>لقد تم أختيار هذا الشخص مع مستخدم سابق</value>
+  </data>
+  <data name="NoFileName" xml:space="preserve">
+    <value>لم يتم أدخال أسم الملف!</value>
+  </data>
+  <data name="checkPartiesList" xml:space="preserve">
+    <value>يلزم وجود متهم واحد و مجني عليه واحد على الأقل بالقضية</value>
+  </data>
+  <data name="PartyAdded" xml:space="preserve">
+    <value>تم حفظ بيانات الخصم بنجاح</value>
+  </data>
+  <data name="PartyNotAdded" xml:space="preserve">
+    <value>خطأ في الحفظ</value>
+  </data>
+  <data name="InValidDate" xml:space="preserve">
+    <value>يجب إدخال تاريخ صحيح</value>
+  </data>
+  <data name="EnterNationalID" xml:space="preserve">
+    <value>ادخل رقم البطاقة</value>
+  </data>
+  <data name="EnterProsecution" xml:space="preserve">
+    <value>برجاء إختر النيابة الخاصة بوكيل النيابة</value>
+  </data>
+  <data name="EnterProsecutor" xml:space="preserve">
+    <value>برجاء إدخال إسم وكيل النيابة</value>
+  </data>
+  <data name="NationalIDNotValid" xml:space="preserve">
+    <value> برجاء إدخال الرقم القومى 14 رقما فقط صحيح </value>
+  </data>
+  <data name="DeleteFaild" xml:space="preserve">
+    <value>خطأ فى الحذف</value>
+  </data>
+  <data name="DeleteSucess" xml:space="preserve">
+    <value>تم الحذف بنجاح</value>
+  </data>
+  <data name="EditSucess" xml:space="preserve">
+    <value>تم التعديل</value>
+  </data>
+  <data name="EditVaild" xml:space="preserve">
+    <value>خطأ فى التعديل</value>
+  </data>
+  <data name="FaildAdd" xml:space="preserve">
+    <value>خطأ فى الاضافة</value>
+  </data>
+  <data name="sucessAdd" xml:space="preserve">
+    <value>تم الاضافة</value>
+  </data>
+  <data name="Durations" xml:space="preserve">
+    <value>تاريخ الانتهاء يجب ان يكون اكبر من او يساوى تاريخ البدايه</value>
+  </data>
+  <data name="IntersectedCycles" xml:space="preserve">
+    <value>يجب ان تكون ايام الدور ليست مختاره فى دور اخر</value>
+  </data>
+  <data name="RequiredCourt" xml:space="preserve">
+    <value>يجب اختيار المحكمة</value>
+  </data>
+  <data name="RequiredCrime" xml:space="preserve">
+    <value>يجب اختيار نوع الجناية</value>
+  </data>
+  <data name="RequiredFirstLevelNumber" xml:space="preserve">
+    <value>يجب ادخال رقم القضية الجزئى</value>
+  </data>
+  <data name="RequiredFirstProsecution" xml:space="preserve">
+    <value>يجب اختيار النيابة الجزئية</value>
+  </data>
+  <data name="RequiredPoliceStation" xml:space="preserve">
+    <value>يجب اختيار قسم الشرطة</value>
+  </data>
+  <data name="RequiredProsecution" xml:space="preserve">
+    <value>يجب اختيار النيابة الكلية</value>
+  </data>
+  <data name="RequiredCourtName" xml:space="preserve">
+    <value>ادخل اسم الدائرة</value>
+  </data>
+  <data name="RequiredJudgeCount" xml:space="preserve">
+    <value>ادخل عدد القضاة</value>
+  </data>
+  <data name="RequiredFirstJudge" xml:space="preserve">
+    <value>ادخل القاضى الأول</value>
+  </data>
+  <data name="RequiredHeadJudge" xml:space="preserve">
+    <value>ادخل رئيس المحكمة</value>
+  </data>
+  <data name="RequiredSecondJudge" xml:space="preserve">
+    <value>ادخل القاضى الثانى</value>
+  </data>
+  <data name="RequiredSecretaryHead" xml:space="preserve">
+    <value>اخل امين السر</value>
+  </data>
+  <data name="InvalidDateLessThanToday" xml:space="preserve">
+    <value>التاريخ سابق لتاريخ اليوم</value>
+  </data>
+  <data name="InvalidMaxDate" xml:space="preserve">
+    <value>التاريخ الحد الاقصى</value>
+  </data>
+  <data name="RequiredCycle" xml:space="preserve">
+    <value>اختر الدائرة</value>
+  </data>
+  <data name="RequiredErrorMessage" xml:space="preserve">
+    <value>هذا الحقل مطلوب</value>
+  </data>
+  <data name="EditVailidation" xml:space="preserve">
+    <value>تاكد من ادخال حروف فى الاسم والرقم القومى صحيح</value>
+  </data>
+  <data name="DateFieldError" xml:space="preserve">
+    <value>يجب ادخال التاريخ</value>
+  </data>
+  <data name="NameFieldError" xml:space="preserve">
+    <value>يجب إدخال اسم الاجازة</value>
+  </data>
+  <data name="CaseIsExist" xml:space="preserve">
+    <value>القضية متواجدة من قبل</value>
+  </data>
+  <data name="VacationStartDate" xml:space="preserve">
+    <value>تاريخ بداية الاجازة يجب ان يكون اكبر من تاريخ اليوم</value>
+  </data>
+  <data name="ErrorOrder" xml:space="preserve">
+    <value>حدث خطا فى حفظ الترنيب</value>
+  </data>
+  <data name="RollOpened" xml:space="preserve">
+    <value>تم فتح رول الجلسه لا يمكن حفظ الترتيب</value>
+  </data>
+  <data name="SuccessOrder" xml:space="preserve">
+    <value>تم حفظ الترتيب</value>
+  </data>
+  <data name="CircuitExists" xml:space="preserve">
+    <value>إسم الدائرة مستخدم من قبل</value>
+  </data>
+  <data name="JudgeUsedTwice" xml:space="preserve">
+    <value>يجب عدم تكرار اسم القاضى</value>
+  </data>
+  <data name="NoSearchResult" xml:space="preserve">
+    <value>لا توجد نتائج بحث</value>
+  </data>
+  <data name="NumbersOnly" xml:space="preserve">
+    <value>هذا الحقل يقبل أرقام فقط</value>
+  </data>
+  <data name="SameName" xml:space="preserve">
+    <value>يوجد جملة شهيرة بنفس العنوان </value>
+  </data>
+  <data name="NotOrder" xml:space="preserve">
+    <value>الرول غير مرتب</value>
+  </data>
+  <data name="PreviousRollNotClosed" xml:space="preserve">
+    <value>يوجد رول مفتوح</value>
+  </data>
+  <data name="NoUpdateOverAllNumberExist" xml:space="preserve">
+    <value>لا يمكن التعديل القضية لها رقم شامل</value>
+  </data>
+  <data name="NoUpdateThereIsASession" xml:space="preserve">
+    <value>لا يمكن التعديل تم تحديد جلسات للقضية</value>
+  </data>
+  <data name="InvalidNumberField" xml:space="preserve">
+    <value>يجب أن يحتوى هذا الحقل على ارقام</value>
+  </data>
+  <data name="InValidMaxVacationNumber" xml:space="preserve">
+    <value> الحد الأقصى لأيام العطلات يومان فقط</value>
+  </data>
+  <data name="InvalidCharacterField" xml:space="preserve">
+    <value>يجب أن يحتوى هذا الحقل على حروف عربية</value>
+  </data>
+  <data name="NatIDExist" xml:space="preserve">
+    <value>يوجد شخص اخر له نفس الرقم القومى</value>
+  </data>
+  <data name="ProsecutorSessionExistDelete" xml:space="preserve">
+    <value>لا يمكن حذف وكيل النيابة لأنه مدرج فى جلسة</value>
+  </data>
+  <data name="DeleteProsecutorNotPeson" xml:space="preserve">
+    <value>تم مسح وكيل النيابة ولكن الشخص مربوط بشئ اخر</value>
+  </data>
+  <data name="SecondNumberExistBefore" xml:space="preserve">
+    <value>رقم القضية الكلى متكرر</value>
+  </data>
+  <data name="InValidFutureYear" xml:space="preserve">
+    <value>يجب عدم إدخال سنة لاحقة</value>
+  </data>
+  <data name="InValidYearFormat" xml:space="preserve">
+    <value>يجب إدخال سنة صحيحة</value>
+  </data>
+  <data name="SecretaryUsedTwice" xml:space="preserve">
+    <value>يجب عدم تكرار امين سر</value>
+  </data>
+  <data name="InvalidDateMaxNextYear" xml:space="preserve">
+    <value>يمكن تشكيل دوائر السنة القضائية الحالية و القادمة فقط</value>
+  </data>
+  <data name="MinDateToday" xml:space="preserve">
+    <value>يجب إدخال تاريخ اليوم أو تاريخ لاحق</value>
+  </data>
+  <data name="CaseConnectedToCircuit" xml:space="preserve">
+    <value>لا يمكن حذف هذة الدائرة .. يوجد قضايا لهذة الدائرة</value>
+  </data>
+  <data name="DateBeforeTodayError" xml:space="preserve">
+    <value>يجب إدخال تاريخ اكبر من تاريخ اليوم</value>
+  </data>
+  <data name="UnCompletedCaseDefendent" xml:space="preserve">
+    <value>يجب إدخال خصوم القضية</value>
+  </data>
+  <data name="UnCompletedCaseDocument" xml:space="preserve">
+    <value>يجب إدخال مرفقات القضية من نوع ادلة ثبوت او  أمر الأحالة</value>
+  </data>
+  <data name="UnCompletedCaseOverAllReserved" xml:space="preserve">
+    <value>القضية لديها رقم شامل</value>
+  </data>
+  <data name="SendToJudgeMsg" xml:space="preserve">
+    <value>لا يمكن تعديل المحضر بعد إرساله للقاضى للتصديق</value>
+  </data>
+  <data name="AttachmentsUnSaved" xml:space="preserve">
+    <value>يجب إدخال المرفقات حتى تتمكن من إرسال المحضر</value>
+  </data>
+  <data name="DecisionUnSaved" xml:space="preserve">
+    <value>يجب إدخال القرارت و الاحكام حتى تتمكن من إرسال المحضر</value>
+  </data>
+  <data name="DefectsPresenceUnSaved" xml:space="preserve">
+    <value>يجب إدخال إثبات حضور المتهمين حتى تتمكن من إرسال المحضر</value>
+  </data>
+  <data name="SessionMinUnSaved" xml:space="preserve">
+    <value>يجب إدخال محضر الجلسه حتى تتمكن من إرسال المحضر</value>
+  </data>
+  <data name="UnCompletedCaseOptaimentDocument" xml:space="preserve">
+    <value>يجب إدخال مرفقات القضية من نوع حرز</value>
+  </data>
+  <data name="UnCompletedCaseDescription" xml:space="preserve">
+    <value>يجب إدخال أمر الأحالة</value>
+  </data>
+  <data name="ProsecutorSessionExistEdite" xml:space="preserve">
+    <value>لا يمكن تعديل بيانات وكيل النيابة لأنه مدرج فى جلسة</value>
+  </data>
+  <data name="UnCompletedCaseAttachment" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnFilledDays" xml:space="preserve">
+    <value>يوجد أيام لم يتم تعريفها، يجب تعريفها لإتمام الحفظ</value>
+  </data>
+  <data name="SentBefore" xml:space="preserve">
+    <value>تم الإرسال من قبل</value>
+  </data>
+</root>

@@ -1,0 +1,55 @@
+﻿@using JIC.Crime.View.Models
+@model  NotCompleteCaseViewModels
+
+
+<div id="DeleteDiv">
+    @using (Ajax.BeginForm("Delete", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "DeleteDiv" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.CaseId)
+        @Html.HiddenFor(model => model.FirstNumber)
+        @Html.HiddenFor(model => model.SecondNumber)
+        @Html.HiddenFor(model => model.CaseTitle)
+        @Html.HiddenFor(model => model.CrimName)
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.SecondNumber)
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.SecondNumber, Model.SecondNumber)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.FirstNumber)
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.FirstNumber, Model.FirstNumber)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseTitle)
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CaseTitle, Model.CaseTitle)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CrimName)
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(m => m.CrimName, Model.CrimName)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <input type="submit" value="@JIC.Base.Resources.Resources.Delete" id="Delete" class="btn btn-default" />
+            </div>
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-default" data-dismiss="modal">@JIC.Base.Resources.Resources.Cancel</button>
+            </div>
+        </div>
+    }
+</div>

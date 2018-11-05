@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Default" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>ادارة المستخدمين</value>
+  </data>
+  <data name="AddCase" xml:space="preserve">
+    <value>قيد دعوي جديدة</value>
+  </data>
+  <data name="Circuits" xml:space="preserve">
+    <value>تشكيل الدوائر</value>
+  </data>
+  <data name="CaseSearch" xml:space="preserve">
+    <value>البحث عن قضية</value>
+  </data>
+  <data name="ViewCase" xml:space="preserve">
+    <value>عرض بيانات قضية</value>
+  </data>
+  <data name="RollApprove" xml:space="preserve">
+    <value>التصديق على رول الجلسة</value>
+  </data>
+  <data name="RollOrder" xml:space="preserve">
+    <value>ترتيب رول الجلسة</value>
+  </data>
+  <data name="StartingRoll" xml:space="preserve">
+    <value>فتح رول الجلسة</value>
+  </data>
+  <data name="JudgmentOnDefendant" xml:space="preserve">
+    <value>تسديد الأحكام</value>
+  </data>
+  <data name="JudgRoll" xml:space="preserve">
+    <value>طباعة رول القاضي</value>
+  </data>
+  <data name="SessionRoll" xml:space="preserve">
+    <value>طباعة رول الجلسة</value>
+  </data>
+  <data name="SessionRollReview" xml:space="preserve">
+    <value>رول الجلسة</value>
+  </data>
+  <data name="OpenSessionRoll" xml:space="preserve">
+    <value>فتح رول الجلسة</value>
+  </data>
+  <data name="Session" xml:space="preserve">
+    <value>محضر الجلسة</value>
+  </data>
+  <data name="CaseSessionApprove" xml:space="preserve">
+    <value>التصديق على محضر الجلسة</value>
+  </data>
+  <data name="CurrentUsers" xml:space="preserve">
+    <value>المستخدمين الحاليين للنظام</value>
+  </data>
+  <data name="AdministrativePostApproval" xml:space="preserve">
+    <value>التصديق على النقل الأدارى</value>
+  </data>
+  <data name="AdministrativePostpound" xml:space="preserve">
+    <value>نقل ادارى</value>
+  </data>
+  <data name="EditCase" xml:space="preserve">
+    <value>تعديل قضية</value>
+  </data>
+  <data name="EditElementaryCase" xml:space="preserve">
+    <value>تعديل استئناف</value>
+  </data>
+  <data name="EditLegalPerson" xml:space="preserve">
+    <value>تعديل بيانات شخص اعتبارى</value>
+  </data>
+  <data name="EditNormalPerson" xml:space="preserve">
+    <value>تعديل بيانات شخص طبيعى</value>
+  </data>
+  <data name="EditObjection" xml:space="preserve">
+    <value>تعديل معارضة</value>
+  </data>
+  <data name="ElementaryCase" xml:space="preserve">
+    <value>الأستئناف</value>
+  </data>
+  <data name="ExpertPayment" xml:space="preserve">
+    <value>سداد امانة الخبير</value>
+  </data>
+  <data name="MangeProsecuters" xml:space="preserve">
+    <value>وكلاء النيابة</value>
+  </data>
+  <data name="MoveCases" xml:space="preserve">
+    <value>نقل قضايا لدائرة</value>
+  </data>
+  <data name="ObjectionBasicData" xml:space="preserve">
+    <value>المعارضات</value>
+  </data>
+  <data name="TextPredections" xml:space="preserve">
+    <value>الجمل الشهيرة</value>
+  </data>
+  <data name="UrgeCaseFromSuspend" xml:space="preserve">
+    <value>التعجيل من الوقف</value>
+  </data>
+  <data name="Vacations" xml:space="preserve">
+    <value>الأجازات</value>
+  </data>
+  <data name="CaseSessionReportsReview" xml:space="preserve">
+    <value>استعراض تقارير محاضر الجلسة</value>
+  </data>
+  <data name="CaseSessionRoll" xml:space="preserve">
+    <value>تقرير محضر الجلسة</value>
+  </data>
+  <data name="SessionSearch" xml:space="preserve">
+    <value>البحث عن جلسات سابقة</value>
+  </data>
+  <data name="ReJudge" xml:space="preserve">
+    <value>اعادة قضية للرول</value>
+  </data>
+  <data name="GroupJudgment" xml:space="preserve">
+    <value>الأحكام الغيابية المجمعة</value>
+  </data>
+  <data name="CaseBasicData" xml:space="preserve">
+    <value>البيانات التعريفية للقضية</value>
+  </data>
+  <data name="Cycles" xml:space="preserve">
+    <value>تحديد ايام الأدوار الشهرية و فواصل الأنعقاد</value>
+  </data>
+  <data name="AddCircuitConfiguration" xml:space="preserve">
+    <value>إضافة تشكيل دائرة</value>
+  </data>
+  <data name="EditCircuitConfiguration" xml:space="preserve">
+    <value>تعديل تشكيل دائرة</value>
+  </data>
+  <data name="circuitconfiguration" xml:space="preserve">
+    <value>تشكيل الدوائر وتسكين الاعضاء</value>
+  </data>
+  <data name="EditCaseBasicData" xml:space="preserve">
+    <value>تعديل البيانات التعريفية للقضية</value>
+  </data>
+  <data name="DefectsAttendance" xml:space="preserve">
+    <value>إثبات حضور الخصوم</value>
+  </data>
+  <data name="WorkingDays" xml:space="preserve">
+    <value>تحديد العطلات الأسبوعية</value>
+  </data>
+  <data name="CaseDecision" xml:space="preserve">
+    <value>القرارات و الأحكام</value>
+  </data>
+  <data name="Dicision" xml:space="preserve">
+    <value>القرارات و الأحكام</value>
+  </data>
+  <data name="OverallNumber" xml:space="preserve">
+    <value>انشاء رقم شامل</value>
+  </data>
+  <data name="CaseSessions" xml:space="preserve">
+    <value>تحديد دوائر و جلسات للقضايا</value>
+  </data>
+  <data name="SendToJudge" xml:space="preserve">
+    <value>إرسال المحضر للقاضى للتصديق</value>
+  </data>
+</root>

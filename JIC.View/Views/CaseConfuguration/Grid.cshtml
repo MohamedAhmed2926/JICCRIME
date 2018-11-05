@@ -1,0 +1,27 @@
+﻿@*@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model IEnumerable<JIC.Crime.View.Models.SessionsSearchViewModel>
+
+@(Html
+                                    .Grid(Model)
+                                    .Build(columns =>
+                                    {
+                                        columns.Add(model => Html.Hidden("CaseID", model.CaseID)).Encoded(false);
+                                        columns.Add(model => Html.CheckBox("Check")).Titled(Html.CheckBox("CheckAll"));
+                                        columns.Add(model => model.FirstLevelNumber).Titled(Resources.number);
+                                        columns.Add(model => model.SecondLevelNumber).Titled(Resources.CaseNumber);
+                                        columns.Add(model => model.CrimeType).Titled(Resources.FirstLevelNumber);
+                                        columns.Add(model => model.cr).Titled(Resources.CrimeNumber);
+                                        columns.Add(model => model.MainCrime).Titled(Resources.PoliceStation);
+                                        columns.Add(model =>
+
+                               @"<a href=""#"" class=""fa fa-eye  fa-lg modal-link"" data-toggle=""modal"" data-target=""#Edit"" title=""" + Resources.ShowCaseDetails + @""" data-url=""" + Url.Action("Edit", new { id = model.CaseID }) + @"""></a>"
+
+
+                                ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+                                    })
+                                    .Empty("لا توجد نتائج بحث")
+                                    .Filterable()
+                                    .Sortable()
+                                    .Pageable()
+                                    .RowCss(row => "CaseRow")*@

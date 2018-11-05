@@ -1,0 +1,67 @@
+﻿@using JIC.Crime.View.Models
+@model IEnumerable<GetCircuitData>
+@{
+    ViewBag.Title = JIC.Base.Resources.PageTitles.circuitconfiguration;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-9">
+        <h3>@JIC.Base.Resources.PageTitles.circuitconfiguration</h3>
+    </div>
+    <div class="col-xs-3">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Create">@JIC.Base.Resources.Resources.AddCircuitConfiguration</button>
+    </div>
+</div>
+@(Html
+                    .Grid(Model)
+                    .Build(columns =>
+                    {
+                        columns.Add(model => model.CircuitName).Titled(JIC.Base.Resources.Resources.CircuitName);
+                        columns.Add(model => model.HeadJugeName).Titled(JIC.Base.Resources.Resources.HeadJudge);
+                        columns.Add(model => model.CrimeTypeName).Titled(JIC.Base.Resources.Resources.CrimeType);
+                        columns.Add(model => model.StartDate).Titled(JIC.Base.Resources.Resources.CircuitStartDate);
+                        columns.Add(model => model.PoliceStationsName).Titled(JIC.Base.Resources.Resources.PoliceStation);
+                        columns.Add(model => model.CycleName).Titled(JIC.Base.Resources.Resources.Cycle);
+
+                        columns.Add(model =>
+
+                        @"<a href=""#"" class=""fa fa-pencil-square-o  fa-lg modal-link"" data-toggle=""modal"" data-target=""#Edit"" title=""" + JIC.Base.Resources.Resources.Edit + @""" data-url=""" + Url.Action("Edit", new { id = model.ID }) + @"""></a>"
+                            + " | " +
+                          @"<a href=""#"" class=""fa fa-trash-o modal-link"" data-toggle=""modal"" data-target=""#Delete"" title=""" + JIC.Base.Resources.Resources.Delete + @""" data-url=""" + Url.Action("Delete", new { id = model.ID }) + @"""></a>"
+
+                         ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+
+
+                    })
+                    .Filterable()
+                    .Sortable()
+                    .Pageable()
+
+
+)
+@using (Html.BeginModel("Create", JIC.Base.Resources.Resources.AddCircuitConfiguration))
+{
+    using (Html.CUpdatePanel(Url.Action("Create", "CircuitConfiguration"), "CreateDiv"))
+    {
+        Html.RenderAction("Create",new { m = Model });
+    } 
+
+}
+@using (Html.BeginModel("Edit", JIC.Base.Resources.PageTitles.EditCircuitConfiguration))
+{
+}
+@using (Html.BeginModel("Delete", JIC.Base.Resources.Resources.DeleteCircuit))
+{
+}
+
+@section Scripts
+                    {
+<script type="text/javascript">
+    //$('#Create').on('hidden.bs.modal', function (event) {
+    //    event.preventDefault();
+    //    $("#CreateDiv").trigger('update',);
+    //})
+    
+</script>
+    }

@@ -1,0 +1,13 @@
+﻿@using JIC.Crime.View.Models;
+
+@model int?
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="Indexdiv">
+    @Html.Partial("_OrderForm", Model)
+</div>

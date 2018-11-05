@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://court.integration.cj.rss.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="CourtServicesService" targetNamespace="http://court.integration.cj.rss.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="CourtServicesService_schema1.xsd" namespace="http://court.integration.cj.rss.com/" />
+    </xsd:schema>
+  </types>
+  <message name="updateCourtHearingDateReservation">
+    <part name="parameters" element="tns:updateCourtHearingDateReservation" />
+  </message>
+  <message name="updateCourtHearingDateReservationResponse">
+    <part name="parameters" element="tns:updateCourtHearingDateReservationResponse" />
+  </message>
+  <message name="newCircle">
+    <part name="parameters" element="tns:newCircle" />
+  </message>
+  <message name="newCircleResponse">
+    <part name="parameters" element="tns:newCircleResponse" />
+  </message>
+  <message name="updateBusinessCaseDescription">
+    <part name="parameters" element="tns:updateBusinessCaseDescription" />
+  </message>
+  <message name="updateBusinessCaseDescriptionResponse">
+    <part name="parameters" element="tns:updateBusinessCaseDescriptionResponse" />
+  </message>
+  <message name="courtJudgementCompleteResolution">
+    <part name="parameters" element="tns:courtJudgementCompleteResolution" />
+  </message>
+  <message name="courtJudgementCompleteResolutionResponse">
+    <part name="parameters" element="tns:courtJudgementCompleteResolutionResponse" />
+  </message>
+  <message name="courtJudgementResolution">
+    <part name="parameters" element="tns:courtJudgementResolution" />
+  </message>
+  <message name="courtJudgementResolutionResponse">
+    <part name="parameters" element="tns:courtJudgementResolutionResponse" />
+  </message>
+  <message name="businessCaseMerging">
+    <part name="parameters" element="tns:businessCaseMerging" />
+  </message>
+  <message name="addCourtDecision">
+    <part name="parameters" element="tns:addCourtDecision" />
+  </message>
+  <message name="addCourtDecisionResponse">
+    <part name="parameters" element="tns:addCourtDecisionResponse" />
+  </message>
+  <message name="addPartyToBusinessCase">
+    <part name="parameters" element="tns:addPartyToBusinessCase" />
+  </message>
+  <message name="addPartyToBusinessCaseResponse">
+    <part name="parameters" element="tns:addPartyToBusinessCaseResponse" />
+  </message>
+  <message name="updatePartyToBusinessCase">
+    <part name="parameters" element="tns:updatePartyToBusinessCase" />
+  </message>
+  <message name="updatePartyToBusinessCaseResponse">
+    <part name="parameters" element="tns:updatePartyToBusinessCaseResponse" />
+  </message>
+  <message name="businessCaseMergingResponse">
+    <part name="parameters" element="tns:businessCaseMergingResponse" />
+  </message>
+  <portType name="CourtServices">
+    <operation name="updateCourtHearingDateReservation">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/updateCourtHearingDateReservationRequest" message="tns:updateCourtHearingDateReservation" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/updateCourtHearingDateReservationResponse" message="tns:updateCourtHearingDateReservationResponse" />
+    </operation>
+    <operation name="newCircle">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/newCircleRequest" message="tns:newCircle" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/newCircleResponse" message="tns:newCircleResponse" />
+    </operation>
+    <operation name="updateBusinessCaseDescription">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/updateBusinessCaseDescriptionRequest" message="tns:updateBusinessCaseDescription" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/updateBusinessCaseDescriptionResponse" message="tns:updateBusinessCaseDescriptionResponse" />
+    </operation>
+    <operation name="courtJudgementCompleteResolution">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/courtJudgementCompleteResolutionRequest" message="tns:courtJudgementCompleteResolution" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/courtJudgementCompleteResolutionResponse" message="tns:courtJudgementCompleteResolutionResponse" />
+    </operation>
+    <operation name="courtJudgementResolution">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/courtJudgementResolutionRequest" message="tns:courtJudgementResolution" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/courtJudgementResolutionResponse" message="tns:courtJudgementResolutionResponse" />
+    </operation>
+    <operation name="addCourtDecision">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/addCourtDecisionRequest" message="tns:addCourtDecision" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/addCourtDecisionResponse" message="tns:addCourtDecisionResponse" />
+    </operation>
+    <operation name="addPartyToBusinessCase">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/addPartyToBusinessCaseRequest" message="tns:addPartyToBusinessCase" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/addPartyToBusinessCaseResponse" message="tns:addPartyToBusinessCaseResponse" />
+    </operation>
+    <operation name="updatePartyToBusinessCase">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/updatePartyToBusinessCaseRequest" message="tns:updatePartyToBusinessCase" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/updatePartyToBusinessCaseResponse" message="tns:updatePartyToBusinessCaseResponse" />
+    </operation>
+    <operation name="businessCaseMerging">
+      <input wsam:Action="http://court.integration.cj.rss.com/CourtServices/businessCaseMergingRequest" message="tns:businessCaseMerging" />
+      <output wsam:Action="http://court.integration.cj.rss.com/CourtServices/businessCaseMergingResponse" message="tns:businessCaseMergingResponse" />
+    </operation>
+  </portType>
+  <binding name="CourtServicesPortBinding" type="tns:CourtServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="updateCourtHearingDateReservation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="newCircle">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateBusinessCaseDescription">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="courtJudgementCompleteResolution">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="courtJudgementResolution">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="businessCaseMerging">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addCourtDecision">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addPartyToBusinessCase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePartyToBusinessCase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CourtServicesService">
+    <port name="CourtServicesPort" binding="tns:CourtServicesPortBinding">
+      <soap:address location="http://localhost:7101/criminal_justice-integration-context-root/CourtServicesPort" />
+    </port>
+  </service>
+</definitions>

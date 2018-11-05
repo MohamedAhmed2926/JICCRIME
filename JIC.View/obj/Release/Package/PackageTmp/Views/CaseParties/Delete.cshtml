@@ -1,0 +1,31 @@
+﻿@model JIC.Crime.View.Models.PartyViewModel
+
+@using (Html.BeginAjaxForm("DeleteCasePartyForm", Url.Action("Delete")))
+{
+    <input type="hidden" name="CaseID" value="@Model.CaseID" />
+    <input type="hidden" name="PartyID" value="@Model.PartyID" />
+    <input type="hidden" name="PartyType" value="@Model.PartyType" />
+    <div class="row">
+        تأكيد حذف الخصم؟
+    </div>
+    <div class="row">
+        <input type="submit" value="حذف" class="btn btn-danger" />
+        <input type="button" value="إلغاء" class="btn" onclick="OnClose()" />
+    </div>
+}
+@if (ViewBag.SavedDelete != null && (bool)ViewBag.SavedDelete)
+{
+    <script>
+        
+        $(document).trigger('Parties:DeleteSuccefull');
+        
+        
+    </script>
+}
+    <script>
+        function OnClose() {
+            debugger;
+            $('#DeleteCasePartyDiv').hide();
+            $('.modal-backdrop').hide();
+        }
+    </script>

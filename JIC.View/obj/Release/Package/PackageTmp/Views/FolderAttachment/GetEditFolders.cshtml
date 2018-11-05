@@ -1,0 +1,19 @@
+﻿@model List < JIC.Crime.View.Models.FolderViewModel>
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+@(Html
+            .Grid(Model)
+            .Build(columns =>
+            {
+                columns.Add(model => (Model.IndexOf(model) + 1) + Html.Hidden("AttachmentID", model.AttachmentID).ToString()).Titled("مسلسل").Encoded(false);
+                columns.Add(model => Html.CTextBox("Name", model.Name, String.Format("FolderViewModel[{0}].Name", Model.IndexOf(model)))).Titled("اسم الحافظة");
+                columns.Add(model => Html.TextBox("FolderCount", model.FolderCount, new { @class = "form-control" })).Titled("عدد المرفقات");
+                columns.Add(model => Html.MvcString(@"<input type='button' class='btn btn-danger' value='x' onclick=""$('#DeleteFolderID').val('" + model.AttachmentID.ToString() + @"');$('#DeleteFolderID').closest('form').submit();""/>")).Titled("حذف الحافظة");
+            })
+            .RowCss(row => "FolderViewModelRow")
+)

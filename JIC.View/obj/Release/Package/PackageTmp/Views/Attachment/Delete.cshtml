@@ -1,0 +1,37 @@
+﻿@model JIC.Crime.View.Models.FileAttachment
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<div id="DeleteAttachmentDiv">
+
+    @using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "DeleteAttachmentDiv" }))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.AttachmentID)
+        @Html.HiddenFor(modal => modal.CaseID)
+        @Html.HiddenFor(modal => modal.SessionID)
+        @Html.HiddenFor(modal => modal.AttachmentType)
+
+        <div class="row">
+            هل انت متاكد ان تريد حذف الملف؟
+        </div>
+        <div class="row">
+            <input type="submit" value="حذف" class="btn btn-danger" />
+            <input type="button" value="إلغاء" class="btn" onclick="OnClose()" />
+        </div>
+
+    }
+</div>
+<script>
+    function OnClose() {
+        debugger;
+        $('#DeleteAttachmentModel_id').hide();
+        $('.modal-backdrop').hide();
+
+    }
+</script>

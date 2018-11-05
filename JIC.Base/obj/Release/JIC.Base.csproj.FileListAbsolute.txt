@@ -1,0 +1,13 @@
+E:\EnProject\JICCRIME\JIC.Base\bin\Release\JIC.Base.dll
+E:\EnProject\JICCRIME\JIC.Base\bin\Release\JIC.Base.pdb
+E:\EnProject\JICCRIME\JIC.Base\bin\Release\AutoMapper.dll
+E:\EnProject\JICCRIME\JIC.Base\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\EnProject\JICCRIME\JIC.Base\bin\Release\AutoMapper.xml
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.csprojResolveAssemblyReference.cache
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.Resources.Messages.resources
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.Resources.PageTitles.resources
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.Resources.Resources.resources
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.csproj.GenerateResource.Cache
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.csproj.CoreCompileInputs.cache
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.dll
+E:\EnProject\JICCRIME\JIC.Base\obj\Release\JIC.Base.pdb

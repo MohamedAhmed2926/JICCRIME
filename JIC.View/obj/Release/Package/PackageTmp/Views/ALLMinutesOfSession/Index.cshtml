@@ -1,0 +1,201 @@
+﻿@using JIC.Crime.View.Models
+@model MinutesOfSessionViewModel
+
+@{
+    ViewBag.Title = @JIC.Base.Resources.Resources.MinutesOfSession;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.HiddenFor(m => m.CaseID)
+@Html.HiddenFor(m => m.SessionID)
+@Html.HiddenFor(m => m.CircuitID)
+@Html.HiddenFor(m => m.SaveAttendance)
+@Html.HiddenFor(m => m.SaveMinutes)
+
+<style>
+    .notactive {
+        pointer-events: none;
+        cursor: default;
+    }
+</style>
+
+
+<div class="col-xs-4">
+    <ul class="nav nav-pills  nav-stacked text-center">
+        <li class="active" id="atten">
+            <a data-toggle="pill" href="#Attendance" id="AttendanceCheck">
+                @JIC.Base.Resources.PageTitles.DefectsAttendance
+                @if (Model.SaveAttendance)
+            {
+                <i class="fa fa-check">
+
+                </i>
+        }
+
+            </a>
+        </li>
+        @if (Model.CurentUserID == (int)JIC.Base.SystemUserTypes.Secretary)
+        {
+
+
+        <li id="min">
+            <a data-toggle="pill" href="#MinuteOfSession" id="MinutesCheck">
+                @JIC.Base.Resources.Resources.MinutesOfSession
+                @if (Model.SaveMinutes)
+            {
+                <i class="fa fa-check">
+
+                </i>
+                }
+            </a>
+        </li>
+
+        <li id="judge">
+            <a data-toggle="pill" href="#Attachement" id="CaseAttachement">
+                @JIC.Base.Resources.Resources.CaseDocuments
+                <i class="fa fa-check">
+
+                </i>
+            </a>
+        </li>
+        <li id="dec">
+            <a data-toggle="pill" href="#Decision" id="DecisionCheck">
+                @JIC.Base.Resources.PageTitles.CaseDecision
+                @if (Model.SavedDecisions)
+            {
+                <i class="fa fa-check">
+
+                </i>
+                }
+            </a>
+        </li>
+        <li id="print">
+            <a data-toggle="pill" href="#Print" id="printCheck">
+                @JIC.Base.Resources.Resources.PrintMinutesOfSession
+                @*<i class="fa fa-check">
+                </i>*@
+            </a>
+        </li>
+            if (Model.CurentUserID != 2)
+            {
+        <li id="judge">
+            <a data-toggle="pill" href="#SendToJudge" id="SendToJudgeCheck">
+                @JIC.Base.Resources.PageTitles.SendToJudge
+                @if (Model.SentToJudge)
+                {
+                <i class="fa fa-check">
+
+                </i>
+                }
+            </a>
+        </li>
+   
+            }
+        }
+    </ul>
+</div>
+<div class="col-xs-8">
+    <div class="tab-content">
+        <div id="Attendance" class="tab-pane fade in active">
+            <h3>@JIC.Base.Resources.PageTitles.DefectsAttendance</h3>
+            @*@using (Html.CUpdatePanel(Url.Action("Index", "Attendance"), "UPAttendance"))*@
+
+            @{Html.RenderAction("Index", "Attendance", new { SessionID = Model.SessionID, id = Model.CaseID, CircuitID = Model.CircuitID });}
+
+        </div>
+        @if (Model.CurentUserID == (int)JIC.Base.SystemUserTypes.Secretary)
+        {
+        <div id="MinuteOfSession" class="tab-pane fade">
+            <h3>  @JIC.Base.Resources.Resources.MinutesOfSession</h3>
+            @*  @using (Html.CUpdatePanel(Url.Action("Create", "MinutesOfSession"), "UPMinutesOfSession"))*@
+
+            @{Html.RenderAction("Create", "MinutesOfSession", new { SessionID = Model.SessionID, id = Model.CaseID, CircuitID = Model.CircuitID });}
+
+        </div>
+
+        <div id="Attachement" class="tab-pane fade">
+
+            @{ Html.RenderAction("Index", "Attachment", new { id = Model.CaseID, SessionID = Model.SessionID });}
+        </div>
+        <div id="Decision" class="tab-pane fade">
+            <h3>@JIC.Base.Resources.PageTitles.CaseDecision</h3>
+            @* @using (Html.CUpdatePanel(Url.Action("Create", "Decisions"), "UPDecisions"))*@
+            @{Html.RenderAction("Create", "Decisions", new { SessionID = Model.SessionID, id = Model.CaseID });}
+
+        </div>
+        <div id="Print" class="tab-pane fade">
+            <a href='@Url.Action("Report", "Print", new { ReportName = JIC.Base.SystemReports.CaseSessionRepo.ToString(), ReportDesc = "", sessionId = Model.SessionID, caseId = Model.CaseID, CourtId = Model.CourtID, rollId = Model.RollID, printUser = Model.CurentUserID })'>
+                <input type='button' value='@JIC.Base.Resources.Resources.PrintMinutesOfSession' class="btn btn-default" />
+            </a>
+        </div>
+        <div id="SendToJudge" class="tab-pane fade">
+            <h3>@JIC.Base.Resources.PageTitles.SendToJudge</h3>
+            @*@using (Html.CUpdatePanel(Url.Action("Index", "SendToJudge"), "UPSendToJudge"))
+            {*@
+            @if (Model.CurentUserID != 2)
+            {
+                {
+                    Html.RenderAction("SendPartial", "SendToJudge", new { SessionID = Model.SessionID, id = Model.CaseID });
+                }
+            }
+        @*}*@
+        </div>
+                }
+    </div>
+    </div>
+
+@*<script>
+    OnDocReady(function () {
+        $("#atten").click(function () {
+            debugger;
+            $("#UPAttendance").trigger('update', { SessionID: $("#@Html.IdFor(m => m.SessionID)").val(), id: $("#@Html.IdFor(m => m.CaseID)").val(), CircuitID: $("#@Html.IdFor(m => m.CircuitID)").val() });
+        });
+        $("#min").click(function () {
+            debugger;
+            $("#UPMinutesOfSession").trigger('update', { SessionID: $("#@Html.IdFor(m => m.SessionID)").val(), id: $("#@Html.IdFor(m => m.CaseID)").val(), CircuitID: $("#@Html.IdFor(m => m.CircuitID)").val() });
+        });
+        $("#dec").click(function () {
+            debugger;
+            $("#UPDecisions").trigger('update', { SessionID: $("#@Html.IdFor(m => m.SessionID)").val(), id: $("#@Html.IdFor(m => m.CaseID)").val() });
+        });
+          $("#judge").click(function () {
+            debugger;
+            $("#UPSendToJudge").trigger('update', { SessionID: $("#@Html.IdFor(m => m.SessionID)").val(), id: $("#@Html.IdFor(m => m.CaseID)").val() });
+        });
+    });
+*@
+
+<script>
+
+    OnDocReady(function () {
+    
+              var SaveAttendance=$("#@Html.IdFor(m=>m.SaveAttendance)").val();
+           if (SaveAttendance != "True") {
+
+               $("#min,#dec,#judge,#print").addClass("disabled");
+               $("#min,#dec,#judge,#print").addClass("notactive");
+              };
+              $(document).on('Attendance:Saved', function () {
+                  debugger;
+                  $("#min,#dec,#judge,#print").removeClass("disabled");
+                  $("#min,#dec,#judge,#print").removeClass("notactive");
+              $("#AttendanceCheck").append("<i class='fa fa-check'></i >");
+              });
+
+              $(document).on('Minutes:Saved', function () {
+                  debugger;
+                  $("#MinutesCheck").append("<i class='fa fa-check'></i >");
+
+              });
+              $(document).on('Decision:Saved', function () {
+                  debugger;
+                  $("#DecisionCheck").append("<i class='fa fa-check'></i >");
+
+              });
+              $(document).on('SendToJudge:Saved', function () {
+                  debugger;
+                  $("#SendToJudgeCheck").append("<i class='fa fa-check'></i >");
+
+              });
+ });
+
+</script>

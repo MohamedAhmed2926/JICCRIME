@@ -1,0 +1,49 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base.Resources
+@model  IEnumerable<ProsecutorViewModels>
+
+@{
+    ViewBag.Title = JIC.Base.Resources.Resources.prosecuteradd;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{Html.RenderAction("Create");}
+
+@(Html
+                .Grid(Model)
+                .Build(columns =>
+                {
+                    columns.Add(model => model.ProcecutoerName).Titled(JIC.Base.Resources.Resources.Name);
+                    columns.Add(model => model.ProsecutionName).Titled(JIC.Base.Resources.Resources.Prosecution);
+
+                    columns.Add(model => model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+
+                    columns.Add(model =>
+                    //@Html.ActionLink(" ", "Edit", new { ProsecutorID = model.ID }, new { @class = "fa fa-pencil-square-o  fa-lg modal-link", data_toggle = "modal", data_target = "#EditModel" }).ToHtmlString()
+
+                    @"<a href=""#"" class=""fa fa-pencil-square-o  fa-lg modal-link"" data-toggle=""modal"" data-target=""#EditModel"" title=""" + Resources.Edit + @"""  data-url=""" + Url.Action("Edit", new { id = model.ID }) + @"""></a>"
+                        + " | " +
+                      //@Html.ActionLink(JIC.Base.Resources.Resources.Delete, "Delete", new { ProsecutorID = model.ID }, new { @class = "fa fa-trash-o", data_toggle = "modal", data_target = "#DeleteModel" }).ToHtmlString()
+                      @"<a href=""#"" class=""fa fa-trash-o modal-link"" data-toggle=""modal"" data-target=""#DeleteModel"" title=""" + Resources.Delete + @""" data-url=""" + Url.Action("Delete", new { id = model.ID }) + @"""></a>"
+
+                     //"<button type="button" class="fa fa-trash-o" data-toggle="modal" data-target="#DeleteModel" ></button>"
+                     ).Titled(JIC.Base.Resources.Resources.operation).Encoded(false);
+
+
+                })
+                .Filterable()
+                .Sortable()
+                .Pageable()
+
+
+)
+@using (Html.BeginModel("EditModel", JIC.Base.Resources.Resources.prosecuterEdit))
+{
+    //Html.RenderAction("Edit");
+}
+
+@using (Html.BeginModel("DeleteModel", JIC.Base.Resources.Resources.prosecuterDelete))
+{
+    // Html.RenderAction("Delete");
+}

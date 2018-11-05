@@ -1,0 +1,23 @@
+﻿
+@model JIC.Crime.View.Models.PersonInformatViewModel
+@{
+    ViewBag.Title = "استعلامات";
+    Layout = null;
+}
+
+<div id="Creatediv">
+    @using (Ajax.BeginForm("create", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Creatediv" }))
+    {
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CTextBoxFor(model => model.NatNo, new { }, false)
+            </div>
+            <div class="col-sm-6">
+                @Html.CTextBoxFor(model => model.Name, new { }, false)
+            </div>
+        </div>
+        <input type="submit" value="بحث" id="search" class="btn btn-default" />
+
+    }
+</div>
+

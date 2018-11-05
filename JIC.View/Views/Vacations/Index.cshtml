@@ -1,0 +1,136 @@
+﻿@using JIC.Crime.View.Models
+@model VacationsModel
+
+
+@section scripts {
+    <script>
+        var dates = GetVacDates();
+        $('#court-calendar').on('Calendar:DateChanged', function (event, date) {
+            for (var i = 0; i < dates.length; i++) {
+                FD = local_to_utc(new Date(dates[i].FromDate.match(/\d+/)[0] * 1));
+                TD = local_to_utc(new Date(dates[i].EndDate.match(/\d+/)[0] * 1));
+                if (date.getTime() >= FD.getTime() && date.getTime() <= TD.getTime()) {
+                    //redirect to edit/ delete page
+                    // alert(TD);
+                    window.location.href = "/Vacations/Edit?ID=" + dates[i].ID;
+                    break;
+                }
+            }
+        });
+
+        function GetVacDates() {
+            var dataobj;
+
+            $.ajaxSetup({
+                async: false
+            });
+            $.ajax({
+                type: 'GET',
+                url: '/Vacations/GetListOfVacations',
+                success: function (data) {
+                    dataobj = data;
+                }
+            });
+
+            return dataobj;
+
+        }
+        $(document).ready(function () {
+            SetFields();
+        });
+
+        function SetFields()
+        {
+           
+          ////  var currentTime = new Date();
+          //  var newdate = new Date(currentTime.getDate() + 1, currentTime.getFullYear(), (currentTime.getMonth() + 1)); // currentTime.getDate()+1; // + 1 + "/" + (currentTime.getMonth() + 1) + "/" + currentTime.getFullYear();
+           // newdate.format("MM/dd/yyyy");
+           // $('#EndDate').val(newdate);
+          //  $('#FromDate').val(newdate);
+           // $('#Name').val("");
+            //alert("ss");
+        }
+    </script>
+}
+<style>
+    .requiredDate:after {
+        content: " * ";
+        font-family: initial;
+        color: red;
+    }
+
+</style>
+@{
+    ViewBag.Title = JIC.Base.Resources.Resources.Vacations;
+}
+
+<h2>@JIC.Base.Resources.Resources.Vacations </h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger redfont" })
+
+
+        @{if (ViewData["SBeforeID"] != null)
+            {
+                if ((bool)ViewData["SBeforeID"])
+                {
+                    <div style="font-weight:bold">
+                         هذه الاجازة مسجله من قبل , للتعديل اضغط
+                        @Html.ActionLink("هنا", "Edit", "Vacations", routeValues: new
+               {
+                   ID = Model.ID,
+                   Name = Model.Name,
+                   FromDateDay = Model.FromDate.Day,
+                   FromDateMonth = Model.FromDate.Month,
+                   FromDateYear = Model.FromDate.Year,
+                   ToDateDay = Model.EndDate.Day,
+                   ToDateMonth = Model.EndDate.Month,
+                   ToDateYear = Model.EndDate.Year
+               }, htmlAttributes: null)
+                    </div>
+                }
+            }
+        }
+        <div class="row">
+            <div class="col-sm-2">
+                @Html.Partial("CourtConfiguration", new CourtConfigurationViewModel { CourtConfigurationMode = CourtConfiguration.VacationDatesMode })
+            </div>
+            <div class="col-sm-5">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        @Html.CTextBoxFor(model => model.Name)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.FromDate )
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.EndDate)
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-5">
+                @{Html.RenderAction("CourtCalendar", "CyclesDistribution");}
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class=" col-md-10">
+            <input type="submit" value="حفظ" class="btn btn-default" />
+            <input type="reset" value="إلغاء" class="btn btn-default" />
+        </div>
+    </div>
+
+
+}

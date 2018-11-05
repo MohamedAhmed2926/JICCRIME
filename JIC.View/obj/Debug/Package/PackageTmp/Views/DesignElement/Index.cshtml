@@ -1,0 +1,25 @@
+﻿@using JIC.Crime.View.Models
+
+@model LoginViewModel
+@{
+    ViewBag.Title = "Design Elements";
+    IDictionary<string, object> Attributes = new Dictionary<string, object>();
+    if (true)
+    {
+        Attributes.Add("disabled", true);
+    }
+
+
+
+
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("DesignElement", "Index", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    @Html.CRadioButton(model => model.Password, "Male", "Male",new { disabled = "disabled"})
+    @Html.CRadioButton(model => model.Password, "FeMale", "FeMale", Attributes)
+    //@Html.CCheckBox(model => model.RememberMe, "RememberME","");
+}
+

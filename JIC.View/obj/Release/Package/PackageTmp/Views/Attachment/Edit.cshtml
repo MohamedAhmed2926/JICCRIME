@@ -1,0 +1,40 @@
+﻿@model JIC.Crime.View.Models.AttachmentViewModel
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+<div id="edit">
+    @using (Ajax.BeginForm("Edit", "Attachment", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "edit" }))
+    {
+        @Html.HiddenFor(m => m.AttachmentID)
+        @Html.HiddenFor(m => m.CaseID)
+        @Html.HiddenFor(m => m.FileName)
+        @Html.HiddenFor(m => m.SessionID)
+        @*@Html.HiddenFor(m => m.filePath)*@
+        @*@Html.HiddenFor(m=>m.vpath)*@
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CDropDownFor(model => model.FolderID, new SelectList(Model.FoldersList, "ID", "Name"))
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CTextBoxFor(model => model.Name)
+            </div>
+            <div class="col-sm-6">
+                @Html.CDropDownFor(model => model.AttachmentTypeID, new SelectList(Model.AttachmentTypes, "ID", "Name"))
+            </div>
+        </div>
+
+
+        <input type="submit" value="حفظ" class="btn btn-primary" />
+    }
+</div>
+<script>
+
+</script>

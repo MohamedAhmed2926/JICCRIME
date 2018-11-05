@@ -1,0 +1,201 @@
+﻿@model JIC.Crime.View.Models.CyclesModel
+@if (ViewData["SessionEnded"] != null && (bool)ViewData["SessionEnded"])
+{
+    <script>
+        debugger;
+        window.location.href = "/User/Login?returnUrl=/";
+    </script>
+}
+@Html.HiddenFor(model => model.Month.Month)
+@Html.HiddenFor(model => model.Month.Year)
+<script>
+    function getEndOfWeek(date) {
+        // alert(date.getDay());
+        var remainFromFriday = 4 - date.getDay();
+        if (remainFromFriday < 0)
+            remainFromFriday += 7;
+        var endDate = new Date(date);
+        endDate.setDate(endDate.getDate() + remainFromFriday);
+        if (endDate.getMonth() > date.getMonth())
+            endDate.setDate(0);
+
+        return endDate;
+    }
+    function getStartOfWeek(date) {
+        var remainFromSaturday = date.getDay() - 6;
+        if (remainFromSaturday < 0)
+            remainFromSaturday += 7;
+        var startDate = new Date(date);
+        startDate.setDate(startDate.getDate() - remainFromSaturday);
+        if (startDate.getMonth() < date.getMonth()) {
+            startDate.setMonth(startDate.getMonth() + 1);
+            startDate.setDate(0);
+        }
+        return startDate;
+    }
+    function getStartOfMonth(date) {
+        var startOfMonth = new Date(date);
+        startOfMonth.setDate(1);
+        return startOfMonth;
+    }
+    function getEndOfMonth(date) {
+        var endOfMonth = new Date(date);
+        endOfMonth.setMonth(endOfMonth.getMonth() + 1);
+        endOfMonth.setDate(0);
+        return endOfMonth;
+    }
+
+    function getDates(startDate, stopDate) {
+        var dateArray = new Array();
+        var currentDate = new Date(startDate);
+        while (currentDate <= stopDate) {
+            dateArray.push(new Date(currentDate));
+            currentDate = currentDate.addDays(1);
+        }
+
+        return dateArray;
+    }
+</script>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">الأدوار</div>
+
+    <div class="panel-body">
+        <label class="control-label">الدور الاول</label>
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.FirstFrom, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.FirstTo, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+        </div>
+
+        <label class="control-label ">الدور الثانى</label>
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.SecondFrom, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.SecondTo, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+        </div>
+        <label class="control-label">الدور الثالث</label>
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.ThirdFrom, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.ThirdTo, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+        </div>
+        <label class="control-label">الدور الرابع</label>
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.FourthFrom, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+            <div class="col-sm-6">
+                @Html.CDateTimePickerFor(model => model.FourthTo, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">فواصل الإنعقاد</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <label class="control-label">فاصل إنعقاد</label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.FirstSeperatorFrom, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.FirstSeperatorTo, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <label class="control-label">فاصل إنعقاد</label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.SecondSeperatorFrom, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.SecondSeperatorTo, new DatePickerAtt { monthOnly = new ShowMonthOnly(Model.Month.Month, Model.Month.Year), Inline = true })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+OnDocReady(function () {
+    $("#@Html.IdForDiv(model => model.FirstFrom)").on('Calendar:DateChanged', function (event, date) {
+        if (date) {
+            $("#@Html.IdForDiv(model => model.FirstTo)").trigger('Calendar:SetDate', getEndOfWeek(date));
+            $('#court-calendar').trigger('CourtCalendar:SetFirstCycle', [getDates(date, getEndOfWeek(date))]);
+            var nextWeek = new Date(date);
+            nextWeek.setDate(nextWeek.getDate() + 7);
+            $("#@Html.IdForDiv(model => model.SecondFrom)").trigger('Calendar:SetDate', getStartOfWeek(nextWeek));
+            var startOfMonth = getStartOfMonth(date);
+            if (startOfMonth.getTime() != date.getTime()) {
+                var FirstSeperatorTo = new Date(date);
+                FirstSeperatorTo.setDate(date.getDate()-1);
+             //   alert(FirstSeperatorTo);
+                $("#@Html.IdForDiv(model => model.FirstSeperatorFrom)").trigger('Calendar:SetDate', startOfMonth);
+                $("#@Html.IdForDiv(model => model.FirstSeperatorTo)").trigger('Calendar:SetDate', FirstSeperatorTo);
+                $('#court-calendar').trigger('CourtCalendar:SetFirstSeperator', [getDates(startOfMonth, FirstSeperatorTo)]);
+            } else {
+                $("#@Html.IdForDiv(model => model.FirstSeperatorFrom)").trigger('Calendar:ClearDate');
+                $("#@Html.IdForDiv(model => model.FirstSeperatorTo)").trigger('Calendar:ClearDate');
+                $('#court-calendar').trigger('CourtCalendar:SetFirstSeperator', [[]]);
+            }
+        }
+    });
+    $("#@Html.IdForDiv(model => model.SecondFrom)").on('Calendar:DateChanged', function (event, date) {
+        if (date) {
+            $("#@Html.IdForDiv(model => model.SecondTo)").trigger('Calendar:SetDate', getEndOfWeek(date));
+            $('#court-calendar').trigger('CourtCalendar:SetSecondCycle', [getDates(date, getEndOfWeek(date))]);
+            var nextWeek = new Date(date);
+            nextWeek.setDate(nextWeek.getDate() + 7);
+            $("#@Html.IdForDiv(model => model.ThirdFrom)").trigger('Calendar:SetDate', getStartOfWeek(nextWeek));
+        }
+    });
+    $("#@Html.IdForDiv(model => model.ThirdFrom)").on('Calendar:DateChanged', function (event, date) {
+        if (date) {
+            $("#@Html.IdForDiv(model => model.ThirdTo)").trigger('Calendar:SetDate', getEndOfWeek(date));
+            $('#court-calendar').trigger('CourtCalendar:SetThirdCycle', [getDates(date, getEndOfWeek(date))]);
+            var nextWeek = new Date(date);
+            nextWeek.setDate(nextWeek.getDate() + 7);
+            $("#@Html.IdForDiv(model => model.FourthFrom)").trigger('Calendar:SetDate', getStartOfWeek(nextWeek));
+        }
+    });
+    $("#@Html.IdForDiv(model => model.FourthFrom)").on('Calendar:DateChanged', function (event, date) {
+        if (date) {
+            $("#@Html.IdForDiv(model => model.FourthTo)").trigger('Calendar:SetDate', getEndOfWeek(date));
+            $('#court-calendar').trigger('CourtCalendar:SetFourthCycle', [getDates(date, getEndOfWeek(date))]);
+
+            var EndOfMonth = getEndOfMonth(date);
+            if (EndOfMonth.getTime() != getEndOfWeek(date).getTime()) {
+                var SecondSeperatorFrom = new Date(getEndOfWeek(date) );
+
+                SecondSeperatorFrom.setDate(SecondSeperatorFrom.getDate() + 1);
+                $("#@Html.IdForDiv(model => model.SecondSeperatorFrom)").trigger('Calendar:SetDate', SecondSeperatorFrom );
+                $("#@Html.IdForDiv(model => model.SecondSeperatorTo)").trigger('Calendar:SetDate', EndOfMonth);
+                $('#court-calendar').trigger('CourtCalendar:SetSecondSeperator', [getDates(SecondSeperatorFrom, EndOfMonth)]);
+
+            } else {
+                $("#@Html.IdForDiv(model => model.SecondSeperatorFrom)").trigger('Calendar:ClearDate');
+                $("#@Html.IdForDiv(model => model.SecondSeperatorTo)").trigger('Calendar:ClearDate');
+                $('#court-calendar').trigger('CourtCalendar:SetSecondSeperator', [[]]);
+            }
+        }
+    });
+});
+</script>
+
+

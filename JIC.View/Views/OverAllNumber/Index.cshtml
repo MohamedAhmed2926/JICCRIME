@@ -1,0 +1,30 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base
+@model OverAllNumberViewModel
+@{
+    ViewBag.Title = JIC.Base.Resources.PageTitles.OverallNumber;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-xs-3">
+
+    @Html.Partial("PVCaseStep", new CaseViewModel { CaseID = Model.CaseID, caseStatus = JIC.Base.CaseStatus.noncomplet })
+</div>
+<div class="col-xs-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">@JIC.Base.Resources.PageTitles.OverallNumber</div>
+        <div class="panel-body">
+            @using (Html.BeginForm("Index", "OverAllNumber", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(m=>m.CaseID)
+                @*@Html.CDropDownFor(m => m.CourtID, new SelectList(Model.Courts, "ID", "Name"), new { disabled = "disabled" })*@
+                <div class="col-xs-offset-4">
+                    <input type="submit" class="btn btn-default" value="@JIC.Base.Resources.Resources.GenerateOverAllNumber" />
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+

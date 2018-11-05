@@ -1,0 +1,59 @@
+﻿@model JIC.Crime.View.Models.ApproveSessionsViewModel
+
+@{
+    ViewBag.Title = @JIC.Base.Resources.Resources.CaseSessionApprove;
+    Layout="~/Views/Shared/_Layout.cshtml";
+}
+<div id="approveformdiv">
+    @*@using (Ajax.BeginForm("Index", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "approveformdiv" }))*@
+    @using(Html.BeginForm ())
+    {
+                    @Html.AntiForgeryToken()
+
+
+        if (Model.Sessions.Count > 0)
+        {
+@Html.CDropDownFor(m => m.RollID, new SelectList(Model.Sessions, "ID", "Name"), false)
+
+
+<div class="row">
+    <div class="form-group">
+        <div class="col-md-offset-1 col-md-10">
+            <input type = "submit" class="btn btn-default" value="@JIC.Base.Resources.Resources.Search"  />
+
+        </div>
+    </div>
+</div>
+
+    <br />
+
+
+            //using (Html.CUpdatePanel(Url.Action("GetCases", "ApproveByJudge", new { RollID = Model.RollID }), "divgridcases"))
+
+           // {
+    @Html.AjaxGrid(Url.Action("GetCases", new
+{
+
+    RollID = Model.RollID
+}))
+             //   }
+            
+
+
+
+
+        }
+        else
+        {
+            <center>
+                <div style="font-size:large;font-weight:bold">
+                    لا توجد قضايا للتصديق
+
+                </div>
+            </center>
+
+        }
+    }
+</div>
+
+

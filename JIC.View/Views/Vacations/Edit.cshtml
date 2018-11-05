@@ -1,0 +1,142 @@
+﻿@using JIC.Crime.View.Models
+@model VacationsModel
+
+@{
+    ViewBag.Title = "تعديل الاجازة";
+}
+@section scripts {
+    <script>
+        function DeleteVacation(id) {
+            $("#DeleteModelUpdatePanel").trigger('update', { vacationID: id });
+        }
+
+        //function DeleteVacation() {
+        //    var ID = document.getElementById("VID").value;
+
+        //    $.ajaxSetup({
+        //        async: false
+        //    });
+        //    $.ajax({
+        //        type: 'POST',
+        //        url: '/Vacations/Delete?VacationID=' + ID,
+        //        success: function (d) {
+        //            alert(d);
+        //            if (d == 1) {
+        //                document.getElementById("del").style.visibility = "visible";
+        //                document.getElementById("err").style.visibility = "hidden";
+        //            }
+        //            else {
+        //                document.getElementById("del").style.visibility = "hidden";
+        //                document.getElementById("err").style.visibility = "visible";
+        //            }
+
+        //        }
+        //    });
+            
+        //}
+
+
+    
+    </script>
+}
+<style>
+    .requiredDate:after {
+        content: " * ";
+        font-family: initial;
+        color: red;
+    }
+</style>
+
+<h2>تعديل الاجازة</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+
+        <hr />
+        <div style="color:red;visibility:hidden" class="text-danger" id="err"> لم يتم حذف الاجازة</div>
+        <div style="color:green; visibility:hidden " id="del">تم حذف الاجازة بنجاح</div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @{if (ViewData["SBeforeID"] != null)
+            {
+                if ((bool)ViewData["SBeforeID"])
+                {
+                    @Html.ActionLink("تعديل الاجازة", "Edit", "Vacations", routeValues: new
+                    {
+                        ID = Model.ID,
+                        Name = Model.Name,
+                        FromDateDay = Model.FromDate.Day,
+                        FromDateMonth = Model.FromDate.Month,
+                        FromDateYear = Model.FromDate.Year,
+                        ToDateDay = Model.EndDate.Day,
+                        ToDateMonth = Model.EndDate.Month,
+                        ToDateYear = Model.EndDate.Year
+                    }
+                    , htmlAttributes: null)
+                }
+            }
+        }
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="row">
+            <div class="col-sm-2">
+                @Html.Partial("CourtConfiguration", new CourtConfigurationViewModel { CourtConfigurationMode = CourtConfiguration.VacationDatesMode })
+            </div>
+            <div class="col-sm-5">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        @Html.CTextBoxFor(model => model.Name)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.FromDate)
+                    </div>
+                    <div class="col-sm-6">
+                        @Html.CDateTimePickerFor(model => model.EndDate)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <input type="submit" value="حفظ" class="btn btn-default" />
+                        @*<input type="button" value="حذف" class="btn btn-default" onclick="DeleteVacation(); " />*@
+                        @*<input type="button" value="حذف" class="btn btn-default" data-toggle="modal" data-target="#DeleteModel" data-url="@Url.Action("Delete", new { id=Model.ID })"/>*@
+                      
+                        
+                        
+                        <a href="#" data-toggle="modal" data-target="#DeleteModel" onclick="DeleteVacation(@(Model.ID))">
+                            <input type='button' value='@JIC.Base.Resources.Resources.Delete' class="btn btn-default" />
+                        </a>
+                      
+                        <input type="button" value="رجوع" class="btn btn-default" onclick="window.location.href='/Vacations/Index'" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-5">
+                @{Html.RenderAction("CourtCalendar", "CyclesDistribution");}
+            </div>
+        </div>
+
+
+        <input type="hidden" value="@ViewData["VID"]" id="VID" />
+        
+    </div>
+
+                    }
+
+
+@using (Html.BeginModel("DeleteModel", JIC.Base.Resources.Resources.Delete))
+{
+    using(Html.CUpdatePanel(Url.Action("Delete"), "DeleteModelUpdatePanel"))
+    {
+
+    }
+    // Html.RenderAction("Delete");
+}
+
+

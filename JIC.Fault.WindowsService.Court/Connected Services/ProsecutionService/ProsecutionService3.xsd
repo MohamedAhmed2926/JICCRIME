@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59832/ProsecutionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://localhost:59832/ProsecutionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/JIC.Base.Views.ProsecutionService" />
+  <xs:element name="updateCourtHearingDateReservation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reservationId" type="xs:int" />
+        <xs:element minOccurs="0" name="newReservationDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="newCircleId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateCourtHearingDateReservationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateCourtHearingDateReservationResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="newCircle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="circleId" type="xs:int" />
+        <xs:element minOccurs="0" name="courtId" type="xs:int" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="circleHearingDates" nillable="true" type="q1:ArrayOfNullableOfdateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="newCircleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="newCircleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateBusinessCaseDescription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="circleId" type="xs:int" />
+        <xs:element minOccurs="0" name="courtId" type="xs:int" />
+        <xs:element minOccurs="0" name="businessCaseId" type="xs:int" />
+        <xs:element minOccurs="0" name="circleDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="newDescription" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateBusinessCaseDescriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateBusinessCaseDescriptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="courtJudgementCompleteResolution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="resolution" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="circleId" type="xs:int" />
+        <xs:element minOccurs="0" name="businesscaseId" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/JIC.Base.Views.ProsecutionService" minOccurs="0" name="parties" nillable="true" type="q2:ArrayOfparty" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="courtJudgementCompleteResolutionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="courtJudgementCompleteResolutionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addCourtDecision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="businessCaseId" type="xs:int" />
+        <xs:element minOccurs="0" name="decisionCode" type="xs:int" />
+        <xs:element minOccurs="0" name="decisionText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decisionUrl" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addCourtDecisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addCourtDecisionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addPartyToBusinessCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/JIC.Base.Views.ProsecutionService" minOccurs="0" name="parParties" nillable="true" type="q3:parParties" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addPartyToBusinessCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addPartyToBusinessCaseResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatePartyToBusinessCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/JIC.Base.Views.ProsecutionService" minOccurs="0" name="parParties" nillable="true" type="q4:parParties" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatePartyToBusinessCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updatePartyToBusinessCaseResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="businessCaseMerging">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="originalBusinessCase" type="xs:int" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="mergedBusinessCases" nillable="true" type="q5:ArrayOfNullableOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="businessCaseMergingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="businessCaseMergingResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

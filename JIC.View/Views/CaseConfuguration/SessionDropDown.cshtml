@@ -1,0 +1,6 @@
+﻿@using JIC.Crime.View.Models
+@model CaseDataViewModels
+
+@Html.CDropDownFor(m => m.caseConfigurationData.caseConfiguration.SessionID, new SelectList(Model.caseConfigurationData.Sessions, "ID", "Name"), true)
+    
+

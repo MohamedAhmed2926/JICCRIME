@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ce7034a2-2cbf-4cdd-85c1-6997419a4f29" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59832/ProsecutionService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProsecutionService.xsd" MetadataType="Schema" ID="887e1c6c-70a0-4018-9ec0-49a12e2cef9e" SourceId="1" SourceUrl="http://localhost:59832/ProsecutionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProsecutionService1.xsd" MetadataType="Schema" ID="02a23deb-aec0-4d3d-9204-b70bd94fad3d" SourceId="1" SourceUrl="http://localhost:59832/ProsecutionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProsecutionService2.xsd" MetadataType="Schema" ID="7e8bb306-867b-4870-9ffd-3f0bd89b94d5" SourceId="1" SourceUrl="http://localhost:59832/ProsecutionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProsecutionService3.xsd" MetadataType="Schema" ID="014bd8d7-0289-4c84-90a9-16e12b48d655" SourceId="1" SourceUrl="http://localhost:59832/ProsecutionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProsecutionService.wsdl" MetadataType="Wsdl" ID="f1df9e1b-c134-41a5-ae87-2862b92fe39e" SourceId="1" SourceUrl="http://localhost:59832/ProsecutionService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,41 @@
+﻿@using JIC.Crime.View.Models
+@using JIC.Base
+@model CaseViewModel
+
+@{
+    List<TabsViewModel> TabsViewModel = new List<TabsViewModel>();
+    if (Model.caseStatus == CaseStatus.New && Model.CaseID == 0)
+    {
+        TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Create", "Case"), Name = "البيانات التعريفية للقضية", IsActive = true, IsDisabled = false });
+    }
+    else
+    {
+        TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Edit", "Case", new { id = Model.CaseID }), Name = "البيانات التعريفية للقضية", IsActive = Model.caseStatus == CaseStatus.Edit, IsDisabled = false , IsDone = true });
+    }
+    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "CaseParties", new { CaseID = Model.CaseID }), Name = "خصوم القضية", IsActive = Model.caseStatus == CaseStatus.CaseParties, IsDisabled = Model.caseStatus == CaseStatus.New });
+
+    if (Model.statusCheck==StatusCheck.OrderOFAssignmentExist)
+    {
+        TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Edit", "OrderOfAssignment", new { id = Model.CaseID }), Name = "أمر الإحالة", IsActive = Model.caseStatus == CaseStatus.OrderOfAssigment, IsDisabled = Model.caseStatus == CaseStatus.New, IsDone = true });
+    }
+    else
+    {
+        TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Create", "OrderOfAssignment", new { id = Model.CaseID }), Name = "أمر الإحالة", IsActive = Model.caseStatus == CaseStatus.OrderOfAssigment, IsDisabled = Model.caseStatus == CaseStatus.New });
+
+    }
+    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "CaseWitness", new { id = Model.CaseID }), Name = "الشهود", IsActive = Model.caseStatus == CaseStatus.CaseWitness, IsDisabled = Model.caseStatus == CaseStatus.New });
+    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "Attachment", new { id = Model.CaseID }), Name = "مرفقات القضية ", IsActive = Model.caseStatus == CaseStatus.CaseAttachments, IsDisabled = Model.caseStatus == CaseStatus.New });
+    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "OverAllNumber", new { CaseID = Model.CaseID }), Name = "انشاء الرقم الشامل", IsActive = Model.caseStatus == CaseStatus.previousdecisions, IsDisabled = Model.caseStatus == CaseStatus.New });
+
+
+    //    TabsViewModel.AddRange(new List<TabsViewModel>
+    //{
+    //new TabsViewModel { Url = Url.Action("Index", "CaseParties", new { CaseID = Model.CaseID }), Name = "خصوم القضية", IsActive = Model.caseStatus == CaseStatus.CaseParties, IsDisabled = Model.caseStatus == CaseStatus.New },
+    ////new TabsViewModel { Url = Url.Action("Edit", "OrderOfAssignment",new { id = Model.CaseID }), Name = "أمر الإحالة", IsActive = Model.caseStatus == CaseStatus.OrderOfAssigment, IsDisabled = Model.caseStatus == CaseStatus.New },
+    //new TabsViewModel { Url = Url.Action("Index", "Attachment", new { id = Model.CaseID }), Name = "مرفقات القضية ", IsActive = Model.caseStatus == CaseStatus.CaseAttachments, IsDisabled = Model.caseStatus == CaseStatus.New },
+    ////new TabsViewModel { Url = Url.Action("Edit", "Case", new { id = Model.CaseID }), Name = "القرارت السابقة للقضية ", IsActive = Model.caseStatus == CaseStatus.previousdecisions, IsDisabled = Model.caseStatus == CaseStatus.New },
+    //new TabsViewModel { Url = Url.Action("Index", "OverAllNumber", new { CaseID = Model.CaseID }), Name = "انشاء الرقم الشامل", IsActive = Model.caseStatus == CaseStatus.previousdecisions, IsDisabled = Model.caseStatus == CaseStatus.New }
+    //});
+    }
+
+@Html.Partial("TabsHelper", TabsViewModel)
