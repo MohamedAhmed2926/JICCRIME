@@ -877,7 +877,7 @@ namespace JIC.Base
          Document = 3,
         OverAllNumber = 4,
         Complete = 5,
-       
+        Witnesses=6
 
     }
     public enum AddOverAllStatus
@@ -1060,8 +1060,7 @@ IsMember,
     public enum AddTestimonyStatus
     {
         AddedSuccessfully,
-        FailedToAdd,
-        SentToJudge
+        FailedToAdd
     }
 
     public enum AddWitnessStatus

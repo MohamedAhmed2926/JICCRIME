@@ -209,12 +209,12 @@ namespace JIC.Crime.Repositories.Repositories
                  DefendantNotComplete = _case.Cases_CaseDefendants.Count == 0,
                  OrderOfAssignmentNotComplete = _case.Cases_MasterCase.OrderOfAssignment == null,
                  CaseDocumentFoldersNotComplete = _case.Cases_CaseDocumentFolders.Any(folder => folder.Cases_CaseDocuments.Count == 0) || _case.Cases_CaseDocumentFolders.Count == 0,
-                 OverallNumbersNotComplete = _case.Cases_MasterCase.Configurations_OverallNumbers == null
-                 
+                 OverallNumbersNotComplete = _case.Cases_MasterCase.Configurations_OverallNumbers == null,
+              //   WitnessNotComplete = _case.Cases_CaseWitnesses == null
 
-                 //? NotCompleteStatus.Defendent
-                 //  : _case.Cases_MasterCase.OrderOfAssignment == null ? NotCompleteStatus.OrderOfAssignment : _case.Cases_CaseDocumentFolders.Any(folder=>folder.Cases_CaseDocuments.Count == 0) || _case.Cases_CaseDocumentFolders.Count == 0 ? NotCompleteStatus.Document  :_case.Cases_MasterCase.Configurations_OverallNumbers==null? NotCompleteStatus.OverAllNumber : NotCompleteStatus.Complete
-             });
+                        //? NotCompleteStatus.Defendent
+                        //  : _case.Cases_MasterCase.OrderOfAssignment == null ? NotCompleteStatus.OrderOfAssignment : _case.Cases_CaseDocumentFolders.Any(folder=>folder.Cases_CaseDocuments.Count == 0) || _case.Cases_CaseDocumentFolders.Count == 0 ? NotCompleteStatus.Document  :_case.Cases_MasterCase.Configurations_OverallNumbers==null? NotCompleteStatus.OverAllNumber : NotCompleteStatus.Complete
+                    });
         }
 
         public void UpdateCaseBasicData(vw_CrimeCaseBasicData caseBasicData)

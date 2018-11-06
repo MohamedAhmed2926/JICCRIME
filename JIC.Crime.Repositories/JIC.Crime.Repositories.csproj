@@ -72,6 +72,7 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -277,18 +278,6 @@
     <Compile Include="Migrations\201810171229041_EditWitnessestable.Designer.cs">
       <DependentUpon>201810171229041_EditWitnessestable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810250920294_WitnessSessions.cs" />
-    <Compile Include="Migrations\201810250920294_WitnessSessions.Designer.cs">
-      <DependentUpon>201810250920294_WitnessSessions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810281000064_EditWitness.cs" />
-    <Compile Include="Migrations\201810281000064_EditWitness.Designer.cs">
-      <DependentUpon>201810281000064_EditWitness.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810290926063_WitnessSessionLogs.cs" />
-    <Compile Include="Migrations\201810290926063_WitnessSessionLogs.Designer.cs">
-      <DependentUpon>201810290926063_WitnessSessionLogs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CaseRepository.cs" />
@@ -491,15 +480,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810171229041_EditWitnessestable.resx">
       <DependentUpon>201810171229041_EditWitnessestable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810250920294_WitnessSessions.resx">
-      <DependentUpon>201810250920294_WitnessSessions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810281000064_EditWitness.resx">
-      <DependentUpon>201810281000064_EditWitness.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810290926063_WitnessSessionLogs.resx">
-      <DependentUpon>201810290926063_WitnessSessionLogs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

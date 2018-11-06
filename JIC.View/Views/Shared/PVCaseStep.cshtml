@@ -14,7 +14,7 @@
     }
     TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "CaseParties", new { CaseID = Model.CaseID }), Name = "خصوم القضية", IsActive = Model.caseStatus == CaseStatus.CaseParties, IsDisabled = Model.caseStatus == CaseStatus.New });
 
-    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "Witnesses", new { id = Model.CaseID }), Name = "الشهود", IsActive = Model.caseStatus == CaseStatus.Witnesses, IsDisabled = Model.caseStatus == CaseStatus.New });
+    TabsViewModel.Add(new TabsViewModel { Url = Url.Action("Index", "Witnesses", new { id = Model.CaseID }), Name = "قائمة الثبوت", IsActive = Model.caseStatus == CaseStatus.Witnesses, IsDisabled = Model.caseStatus == CaseStatus.New });
 
 
     if (Model.statusCheck==StatusCheck.OrderOFAssignmentExist)

@@ -19,7 +19,7 @@ namespace JIC.Base.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -214,15 +214,6 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to اضافة نص الشهادة.
-        /// </summary>
-        public static string AddDocumentWitness {
-            get {
-                return ResourceManager.GetString("AddDocumentWitness", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to اضافة ملف.
         /// </summary>
         public static string AddFile {
@@ -300,15 +291,6 @@ namespace JIC.Base.Resources {
         public static string AddWitness {
             get {
                 return ResourceManager.GetString("AddWitness", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ادخال نص الشهادة.
-        /// </summary>
-        public static string AddWitnessTestimony {
-            get {
-                return ResourceManager.GetString("AddWitnessTestimony", resourceCulture);
             }
         }
         
@@ -2070,6 +2052,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to توكيل المحاميين.
+        /// </summary>
+        public static string LawyersTabTitle {
+            get {
+                return ResourceManager.GetString("LawyersTabTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to قاضى اليسار.
         /// </summary>
         public static string LeftJudge {
@@ -3393,15 +3384,6 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to عدم امكانية ادخال الشهادة بعد ارسال المحضر للقاضى للتصديق .
-        /// </summary>
-        public static string SendtoJudge {
-            get {
-                return ResourceManager.GetString("SendtoJudge", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to رقم التتابع.
         /// </summary>
         public static string SequenceNo {
@@ -3794,6 +3776,15 @@ namespace JIC.Base.Resources {
         public static string Witnesses {
             get {
                 return ResourceManager.GetString("Witnesses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to قائمة الثبوت.
+        /// </summary>
+        public static string WitnessesList {
+            get {
+                return ResourceManager.GetString("WitnessesList", resourceCulture);
             }
         }
         

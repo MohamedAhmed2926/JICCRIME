@@ -25,7 +25,6 @@ namespace JIC.Services.Services
         public SessionsComponent SessionsComp { get { return GetComponent<SessionsComponent>(); } }
         public PersonComponent  PersonComp { get { return GetComponent<PersonComponent >(); } }
 
-        public WitnessSessionLogComponent WitnessSessionLogComponent { get { return GetComponent<WitnessSessionLogComponent>(); } }
         public AddWitnessStatus AddNewWitness(vw_PersonData WitnessData, int CaseID,int SessionID, byte[] FileData, int UserID, SystemUserTypes UserType)
         {
             
@@ -94,8 +93,8 @@ namespace JIC.Services.Services
         {
             if (UserType == SystemUserTypes.Secretary)
             {
-                WitnessSessionLogComponent.AddTestimonyToWitness(CaseID,SessionID,TestimonyText,WitnessID,FileData);
-                return  AddTestimonyStatus.AddedSuccessfully;
+
+               return  AddTestimonyStatus.AddedSuccessfully;
             }
             else
             {
@@ -126,7 +125,7 @@ namespace JIC.Services.Services
 
         public UpdatePresenceStatus UpdateWitnessesPresence(List<vw_WitnessAttendance> WitnessesAttendanceList)
         {
-            return WitnessSessionLogComponent.UpdateWitnessesPresence(WitnessesAttendanceList);
+            throw new NotImplementedException();
         }
     }
 }

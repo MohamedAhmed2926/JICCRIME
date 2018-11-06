@@ -30,7 +30,8 @@ namespace JIC.Crime.View.Controllers
             {
                 try
             {
-                List<NotCompleteCaseViewModels> NotCompleteCase = NotCompleteCasesService.GetNotCompleteCase(IsAuthenticatied ? CurrentUser.CourtID.Value : 0).ToList()
+
+                    List<NotCompleteCaseViewModels> NotCompleteCase = NotCompleteCasesService.GetNotCompleteCase(IsAuthenticatied ? CurrentUser.CourtID.Value : 0).ToList()
                .Select(Case => new NotCompleteCaseViewModels
                {
                    CaseId = Case.CaseId,
@@ -41,7 +42,7 @@ namespace JIC.Crime.View.Controllers
                    NotCompleteStatus = Case.NotCompleteStatus,
                }).ToList();
 
-                foreach (var Case in NotCompleteCase)
+                    foreach (var Case in NotCompleteCase)
                 {
                     int countStatus = 0; 
                     int count = Case.NotCompleteStatus.Count();
@@ -49,7 +50,11 @@ namespace JIC.Crime.View.Controllers
                     {
                         switch (CaseStatus)
                         {
-                            case NotCompleteStatus.Defendent:
+                                case NotCompleteStatus.Witnesses:
+                                    Case.ShowCaseStatus = JIC.Base.Resources.Resources.WitnessesList;
+                                    countStatus++;
+                                    break;
+                                case NotCompleteStatus.Defendent:
                                 Case.ShowCaseStatus = JIC.Base.Resources.Resources.CaseParties;
                                 countStatus++;
                                 break;
@@ -109,7 +114,9 @@ namespace JIC.Crime.View.Controllers
                     {
                         switch (CaseStatus)
                         {
-                        case NotCompleteStatus.Defendent:
+                            case NotCompleteStatus.Witnesses:
+                                return RedirectToAction("Index", "Witnesses", new { CaseID = id });
+                            case NotCompleteStatus.Defendent:
                                 return RedirectToAction("Index", "CaseParties", new { CaseID = id });
                         case NotCompleteStatus.OrderOfAssignment:
                             return RedirectToAction("Create", "OrderOfAssignment", new { id = id });

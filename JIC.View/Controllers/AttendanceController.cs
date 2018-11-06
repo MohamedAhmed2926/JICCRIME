@@ -23,10 +23,8 @@ namespace JIC.Crime.View.Controllers
         private ICrimeCaseService CaseService;
         private ICircuitMembersService CircuitMembersService;
         private IWitnessesService WitnessesService;
-        private IWitnessSessionLogService WitnessSessionLogService;
 
-
-        public AttendanceController(IWitnessesService WitnessesService, IWitnessSessionLogService WitnessSessionLogService, IDefectsService DefectsService, ISessionService SessionService, ILookupService LookupService, ITextPredectionsService TextPredectionsService, ICrimeCaseService CaseService, ICircuitMembersService CircuitMembersService)
+        public AttendanceController(IWitnessesService WitnessesService,IDefectsService DefectsService, ISessionService SessionService, ILookupService LookupService, ITextPredectionsService TextPredectionsService, ICrimeCaseService CaseService, ICircuitMembersService CircuitMembersService)
         {
             this.DefectsService = DefectsService;
             this.SessionService = SessionService;
@@ -35,7 +33,6 @@ namespace JIC.Crime.View.Controllers
             this.CaseService = CaseService;
             this.CircuitMembersService = CircuitMembersService;
             this.WitnessesService = WitnessesService;
-            this.WitnessSessionLogService = WitnessSessionLogService;
         }
 
         private List<vw_KeyValue>  GetWitnessesAttendanceTypes()
@@ -56,10 +53,8 @@ namespace JIC.Crime.View.Controllers
             MinutesOfSessionCreateViewModel CreateViewObj = new MinutesOfSessionCreateViewModel();
           
            var caseWitnesses = WitnessesService.GetWitnessesByCaseID(MinutesOfSession.CaseID);
-           var caseWitnessesLog = WitnessSessionLogService.GetWitnessesByCaseID(MinutesOfSession.CaseID);
-          
-
-            var attendanctype = LookupService.GetLookupsByCategory(Base.LookupsCategories.PresenceStatuses);
+   
+                var attendanctype = LookupService.GetLookupsByCategory(Base.LookupsCategories.PresenceStatuses);
             var defendents = DefectsService.GetDefectsByCaseID(MinutesOfSession.CaseID, MinutesOfSession.SessionID);
 
             var result = new MinutesOfSessionCreateViewModel()
@@ -135,57 +130,35 @@ namespace JIC.Crime.View.Controllers
 
             };
             result.MinutesOfSession.Text = SessionService.GetMinutesOfSession(MinutesOfSession.SessionID);
-            foreach (var witness in caseWitnesses) {
-                string[] li = Regex.Split(witness.Address.ToString(), "/");
-               
-                if (li[1] != null)
-                    witness.Address = li[0];
-                
-                witness.Age = CalculateAge(witness.Birthdate.Value);
-            }
-          
-            if (caseWitnessesLog != null)
-            {
-                var count = 1;
-                foreach (var WitnessesLog in caseWitnessesLog)
-                {
-                caseWitnesses.First(e => e.ID == WitnessesLog.WitnessID).Attendence= WitnessesLog.AttendanceID;
-                    caseWitnesses.First(e => e.ID == WitnessesLog.WitnessID).Order = count;
-                    count++;
-                }
-            }
-            //  result WitnessesAttendanceTypes = GetWitnessesAttendanceTypes();
+
+          //  result WitnessesAttendanceTypes = GetWitnessesAttendanceTypes();
             result.CaseWitnesses = caseWitnesses
                   .Select(W => new CaseDefectsDataViewModel
                   {
-                      //ID = W.ID,
-                      DefectID=W.ID,
+                      ID = W.ID,
                       Address = W.Address,
                       Age = CalculateAge(W.Birthdate.Value),
                       Birthdate = W.Birthdate,
-                      //CaseID = W.CaseID,
+                      CaseID = W.CaseID,
                       JobName = W.JobName,
                       Name = W.Name,
                       NationalID = W.NationalID,
-                      //NationalityType = W.NationalityType,
-                      Nationality = W.NationalityName,
+                      NationalityType = W.NationalityType,
+                      Nationality = W.Nationality,
                       Order = W.Order,
                       PassportNumber = W.PassportNumber,
-                      //PersonID = W.PersonID,
-                      //Presence = W.Presence,
-                      //Status = W.Status,
-                      //SessionId= MinutesOfSession.SessionID,
+                      PersonID = W.PersonID,
+                      Presence = W.Presence,
+                      Status = W.Status,
                       AtendanceType = GetWitnessesAttendanceTypes()
                       .Select(attendance => new SelectListItem
                       {
                           Text = attendance.Name,
                           Value = attendance.ID.ToString(),
-                          Selected = (W.Attendence == attendance.ID),
+                          Selected = ((int)W.Presence == 0),
 
                       }).ToList(),
                   }).ToList();
-
-            
             return result;
         }
         private int CalculateAge(DateTime birthdate)
@@ -248,9 +221,7 @@ namespace JIC.Crime.View.Controllers
             MinutesOfSession.CrimeTypeID = CaseService.GetCaseBasicData(CaseID).CrimeTypeID;
             MinutesOfSessionCreateViewModel CreateViewModel = PrepareViewModel(MinutesOfSession);
             CreateViewModel = DayNameChange(CreateViewModel);
-            List<AtendanceViewModel> attendanceVD = attendance.Where(e => e.WitnessPresence == null).ToList();
-            //المتهمين
-            foreach (var defendent in attendanceVD.Where(e => e.DefectType == PartyTypes.Defendant))
+            foreach (var defendent in attendance.Where(e => e.DefectType == PartyTypes.Defendant))
             {
                 var obj = CreateViewModel.CaseDefectsData.Single(e => e.ID == defendent.DefectID);
                 obj.Presence = defendent.Presence;
@@ -263,8 +234,7 @@ namespace JIC.Crime.View.Controllers
 
                     }).ToList();
             }
-            //المجنى عيهم
-            foreach (var defendent in attendanceVD.Where(e => e.DefectType == PartyTypes.Victim))
+            foreach (var defendent in attendance.Where(e => e.DefectType == PartyTypes.Victim))
             {
                 var obj = CreateViewModel.CaseVictims.Single(e => e.ID == defendent.DefectID);
                 obj.Presence = defendent.Presence;
@@ -277,19 +247,6 @@ namespace JIC.Crime.View.Controllers
 
                    }).ToList();
 
-            }
-            //الشهود
-            var ResultWitness = UpdatePresenceStatus.Failed_To_Update;
-            foreach (var defendent in attendance.Where(e => e.WitnessPresence !=null ))
-            {
-                vw_WitnessAttendance _WitnessAttendance = new vw_WitnessAttendance();
-                _WitnessAttendance.WitnessID = int.Parse(defendent.DefectID.ToString());
-                _WitnessAttendance.SessionID= int.Parse(defendent.SessionId.ToString());
-                _WitnessAttendance.AttendanceID = int.Parse(defendent.WitnessPresence.ToString());
-                _WitnessAttendance.CaseID = CaseID;
-                List<vw_WitnessAttendance> WitnessesAttendanceList = new List<vw_WitnessAttendance>();
-                WitnessesAttendanceList.Add(_WitnessAttendance);
-                ResultWitness= WitnessSessionLogService.UpdateWitnessesPresence(WitnessesAttendanceList);
             }
             List<vw_CaseDefectsData> DefectsList = new List<vw_CaseDefectsData>();
 
@@ -325,17 +282,12 @@ namespace JIC.Crime.View.Controllers
                     foreach (var name in Defect)
                         DefendantsPresenceFailed += " / "+ name +" ";
                 }
-                if (SaveDefects == Base.SaveDefectsStatus.Saved && ResultWitness==UpdatePresenceStatus.Updated_Successfully)
+                if (SaveDefects == Base.SaveDefectsStatus.Saved)
                 {
-                   
                     //CreateViewModel = PrepareViewModel(MinutesOfSession);
 
                     ViewBag.Saved = true;
                     return CPartialView("_AttendanceForm", CreateViewModel).WithSuccessMessages("تمت العملية بنجاح");
-                }
-                else if (ResultWitness==UpdatePresenceStatus.Failed_To_Update)
-                {
-                    return CPartialView("_AttendanceForm", CreateViewModel).WithErrorMessages("لم تتم العملية فى حفظ حضور الشهود ");
                 }
                 else if (SaveDefects == Base.SaveDefectsStatus.DefendantsPresenceFailed)
                 {
@@ -345,7 +297,6 @@ namespace JIC.Crime.View.Controllers
                 {
                     return CPartialView("_AttendanceForm", CreateViewModel).WithErrorMessages("لا يمكن تعديل بيانات الحضور للخصم بالقضية بعد إرسال المحضر للقاضى للتصديق");
                 }
-
                 else if (SaveDefects == Base.SaveDefectsStatus.Saved_Before)
                 {
                     CreateViewModel = PrepareViewModel(MinutesOfSession);

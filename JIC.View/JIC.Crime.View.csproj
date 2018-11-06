@@ -41,6 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>6</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +51,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
@@ -297,7 +299,6 @@
     <Compile Include="Controllers\ALLMinutesOfSessionController.cs" />
     <Compile Include="Controllers\AllOpenRollsController.cs" />
     <Compile Include="Controllers\ApproveByJudgeController.cs" />
-    <Compile Include="Controllers\AtendanceWitnessesController.cs" />
     <Compile Include="Controllers\AttachmentController.cs" />
     <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\CaseConfugurationController.cs" />
@@ -312,6 +313,7 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FolderAttachmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LawyersDefectsController.cs" />
     <Compile Include="Controllers\NotCompleteCasesController.cs" />
     <Compile Include="Controllers\OpenRollController.cs" />
     <Compile Include="Controllers\OrderOfAssignmentController.cs" />
@@ -325,6 +327,7 @@
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VacationsController.cs" />
     <Compile Include="Controllers\ProsecutorController.cs" />
+    <Compile Include="Controllers\WitnessesAttendanceController.cs" />
     <Compile Include="Controllers\WitnessesController.cs" />
     <Compile Include="Controllers\WorkingDaysController.cs" />
     <Compile Include="Controllers\MinutesOfSessionController.cs" />
@@ -348,6 +351,7 @@
     <Compile Include="Models\CaseDefentantsViewModel.cs" />
     <Compile Include="Models\CaseDescriptionViewModels.cs" />
     <Compile Include="Models\CaseOrderViewModel.cs" />
+    <Compile Include="Models\CasePartiesForLawyersViewModel.cs" />
     <Compile Include="Models\CasePartiesViewModels.cs" />
     <Compile Include="Models\CaseSessionViewModel.cs" />
     <Compile Include="Models\CaseViewModel.cs" />
@@ -385,7 +389,6 @@
     <Compile Include="Models\TextPredectionsViewModels.cs" />
     <Compile Include="Models\UserPersonViewModel.cs" />
     <Compile Include="Models\UserViewModels.cs" />
-    <Compile Include="Models\WitnessSessionViewModel.cs" />
     <Compile Include="Models\WitnessViewModel.cs" />
     <Compile Include="Models\WorkingDaysViewModels.cs" />
     <Compile Include="Models\VacationsModel.cs" />
@@ -828,9 +831,10 @@
     <Content Include="Views\ApproveByJudge\Approve.cshtml" />
     <Content Include="Views\SearchCase\UnAuthorizedEdit.cshtml" />
     <Content Include="Views\ApproveByJudge\ReturnToSecretary.cshtml" />
+    <Content Include="Views\WitnessesAttendance\Index.cshtml" />
     <Content Include="Views\Witnesses\Index.cshtml" />
     <Content Include="Views\Witnesses\Create.cshtml" />
-    <Content Include="Views\AtendanceWitnesses\Create.cshtml" />
+    <Content Include="Views\LawyersDefects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

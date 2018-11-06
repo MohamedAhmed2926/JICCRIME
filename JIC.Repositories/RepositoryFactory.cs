@@ -77,7 +77,6 @@ namespace JIC.Repositories
                     DIContainer.RegisterType<IDecisionTypesRepository, JIC.Crime.Repositories.Repositories.DecisionTypesRepository>();
                     DIContainer.RegisterType<ISessionRepository, JIC.Crime.Repositories.Repositories.SessionRepository>();
                     DIContainer.RegisterType<ICaseWitnessesRepository, JIC.Crime.Repositories.Repositories.CaseWitnessesRepository>();
-                    DIContainer.RegisterType<ICasesWitnessSessionLogRepository, JIC.Crime.Repositories.Repositories.CasesWitnessSessionLogRepository>();
 
                     DIContainer.RegisterType<ICaseDescriptionRepository>(new InjectionFactory((c) => null));
 

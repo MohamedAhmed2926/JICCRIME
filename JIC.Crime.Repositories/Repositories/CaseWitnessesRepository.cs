@@ -27,12 +27,9 @@ namespace JIC.Crime.Repositories.Repositories
 
         public List<vw_CaseDefectsData> GetWitnessesByCaseID(int CaseID)
         {
-        
             return (from cw in DataContext.Cases_CaseWitnesses
                     join Person in DataContext.Configurations_Persons on cw.PersonID equals Person.ID
                     join cases in DataContext.Cases_Cases on cw.CaseID equals cases.ID
-                    join Lookup in DataContext.Configurations_Lookups on Person.NationalityID equals Lookup.ID
-                    //join WitnessSessionLog in DataContext.Cases_WitnessSessionLog on cw.ID equals WitnessSessionLog.WitnessID
                     where cw.CaseID == CaseID && cases.IsDeleted != true
                     select new vw_CaseDefectsData
                     {
@@ -41,14 +38,11 @@ namespace JIC.Crime.Repositories.Repositories
                         NationalID = Person.NationalID,
                         JobName = Person.JobTitle,
                         NationalityType = Person.NationalityID,
-                        NationalityName = Lookup.Name,
                         PassportNumber = Person.PassportNumber,
                         Birthdate = Person.Birthdate,
                         ID = cw.ID,
                         Address = Person.Address,
-                        WitnessTestimonyFile = cw.TestimonyFileData,
-                        
-                        //Attendence=WitnessSessionLog.PresenceStatus
+                        WitnessTestimonyFile = cw.TestimonyFileData
                     }).ToList();
         }
 

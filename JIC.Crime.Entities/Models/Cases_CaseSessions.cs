@@ -16,8 +16,7 @@ namespace JIC.Crime.Entities.Models
             Cases_CaseObtainments = new HashSet<Cases_CaseObtainments>();
             Cases_DefendatnsSessionsLog = new HashSet<Cases_DefendatnsSessionsLog>();
             Cases_VictimsSessionsLog = new HashSet<Cases_VictimsSessionsLog>();
-            Cases_WitnessSessionLog = new HashSet<Cases_WitnessSessionLog>();
-
+        
         }
 
         public long ID { get; set; }
@@ -66,7 +65,5 @@ namespace JIC.Crime.Entities.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cases_VictimsSessionsLog> Cases_VictimsSessionsLog { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cases_WitnessSessionLog> Cases_WitnessSessionLog { get; set; }
     }
 }

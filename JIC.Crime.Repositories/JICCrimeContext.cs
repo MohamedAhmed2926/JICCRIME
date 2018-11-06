@@ -80,7 +80,7 @@ namespace JIC.Crime.Repositories
         public virtual DbSet<CourtConfigurations_WorkDays> CourtConfigurations_WorkDays { get; set; }
         public virtual DbSet<CourtConfigurations_TextPredictions> CourtConfigurations_TextPredictions { get; set; }
         public virtual DbSet<CourtConfigurations_CourtHalls> CourtConfigurations_CourtHalls { get; set; }
-        public virtual DbSet<Cases_WitnessSessionLog> Cases_WitnessSessionLog { get; set; }
+
         #endregion
 
         #region Methods
@@ -170,6 +170,12 @@ namespace JIC.Crime.Repositories
                 .WithRequired(e => e.Cases_Cases)
                 .HasForeignKey(e => e.CaseID)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Cases_Cases>()
+             .HasMany(e => e.Cases_CaseWitnesses)
+             .WithRequired(e => e.Cases_Cases)
+             .HasForeignKey(e => e.CaseID)
+             .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Cases_Cases>()
                 .HasMany(e => e.Cases_CaseNotes)
@@ -821,25 +827,6 @@ namespace JIC.Crime.Repositories
               .HasMany(e => e.CourtConfigurations_CircuitRolls)
               .WithOptional(e => e.CourtConfigurations_CourtHalls)
               .HasForeignKey(e => e.HallID);
-
-
-            modelBuilder.Entity<Cases_Cases>()
-               .HasMany(e => e.Cases_WitnessSessionLog)
-               .WithRequired(e => e.Cases_Cases)
-               .HasForeignKey(e => e.CaseID)
-               .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Cases_CaseSessions>()
-              .HasMany(e => e.Cases_WitnessSessionLog)
-              .WithRequired(e => e.Cases_CaseSessions)
-              .HasForeignKey(e => e.SessionID)
-             .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Cases_CaseWitnesses>()
-            .HasMany(e => e.Cases_WitnessSessionLog)
-            .WithRequired(e => e.Cases_CaseWitnesses)
-            .HasForeignKey(e => e.WitnessID)
-           .WillCascadeOnDelete(false);
         }
 
         #endregion

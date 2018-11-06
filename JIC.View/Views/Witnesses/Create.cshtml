@@ -2,25 +2,33 @@
 @model  WitnessViewModel
 
 
-@using (Html.BeginForm("Create", "Witnesses", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+@using (Html.BeginForm("Create", "Witnesses", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form",enctype="multipart/form-data" ,id="fileUpload" }))
 {
-   
+
     //Model.CaseID = (int)ViewData["CaseID"];
     @Html.AntiForgeryToken()
-    <div class="row">
-        <div class="col-sm-12">
-            @Html.CTextBoxFor(model => model.NatNo, new { }, false)
-        </div>
 
-    </div>
-    
+
+    <div class="col-xs-9">
+        <div class="panel panel-primary">
+            <div class="panel-heading">@JIC.Base.Resources.Resources.AddWitness</div>
+
+            <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        @Html.CTextBoxFor(model => model.NatNo, new TextBoxAtt { TextBoxDataTypes = JIC.Base.TextBoxDataTypes.NationalID })
+                    </div>
+
+                </div>
+
                 <div class="row">
                     <div class="col-sm-6">
                         @Html.CTextBoxFor(model => model.Name, new { })
                     </div>
                     <div class="col-sm-6">
                         @Html.CTextBoxFor(model => model.Job, new { })
-                        @*<span class="hidden" id='Jobrequire' style='color: red'>هذا الحقل مطلوب</span>*@
+                        <span class="hidden" id='Jobrequire' style='color: red'>هذا الحقل مطلوب</span>
                     </div>
                 </div>
                 <div class="row">
@@ -47,19 +55,119 @@
                         @Html.CDateTimePickerFor(model => model.BirthDate)
                     </div>
                     <div class="col-sm-6">
-                        @*<label for="age_id">@JIC.Base.Resources.Resources.Age</label>
-                            <input type="text" id="age_id" class="form-control disabled" disabled />*@
+
+                        @*<input type="text" id="age_id" class="form-control disabled" disabled />*@
                         @Html.CTextBoxFor(model => model.Age, "", true)
                     </div>
+                    </div>
+                        @Html.HiddenFor(m=>m.PersonID)
 
-                    <div class="form-group">
-                        <div class="">
+     
 
-                            <input type="submit" class="btn btn-primary" name="submitButton" value="@JIC.Base.Resources.Resources.SaveAndClose" />
+                <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">اضافة مرفق الشهادة</div>
+                        <div class="panel-body">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                     aria-valuemin="0" aria-valuemax="100" id="uploadProgressBar"></div>
+                            </div>
+                            <div class="row" style="padding-bottom:10px;">
+                                <div class="col-sm-12">
+                                    <div class="text-right">
+                                   
+                                          <span class="btn btn-success fileinput-button">
+                                            <i class="glyphicon glyphicon-plus"></i>
+                                            <span>إضافة مرفق</span>
+                                            <input type="file" id="file" name="file" />
+                                        </span>
 
-
+                                    </div>
+                                </div>
+                            </div>
+                    
                         </div>
                     </div>
-                </div>
 
-}
+                </div>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <input type="submit" class="btn btn-primary" name="submitButton" value="@JIC.Base.Resources.Resources.SaveAndClose" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+};
+<script>
+
+       OnDocReady(function () {
+        $("#@Html.IdFor(model=>model.NatNo)").on('change', function () {
+            if ($(this).val().length == 14 || $(this).val().length == 0) {
+                $.get('/Witnesses/GetPersonData', { NatID: $(this).val() },
+                    function (data) {
+                    //    debugger;
+                        alert(data.CityID);
+                        alert(data.PoliceStationID);
+                       // alert("#@Html.IdFor(model => model.address_CityID)");
+                        if (data != null || data.ID != 0) {
+                            $("#@Html.IdFor(model => model.Name)").val(data.Name).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.Job)").val(data.Job).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.NationalityID)").val(data.NationalityID).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.address_address)").val(data.Address).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.address_CityID)").val(data.CityID).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.address_PoliceStationID)").val(data.PoliceStationID).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.PassportNo)").val(data.PassportNo).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.BirthDate)").val(data.BirthDate).attr("disabled", true);
+                            $("#@Html.IdFor(model => model.PersonID)").val(data.ID).attr("disabled", true);
+
+                        }
+
+                        }, 'json'); // Set the type to ‘json’!
+
+
+
+            }
+        });
+
+
+
+
+
+        $('#file').fileupload({
+            dataType: 'json',
+            url: '/@Url.Content("Handler/UploadHandler.ashx")',
+            //add: function (e, data) {
+            //    data.formData = { id: fileIndex };
+            //    $("#FileId").val(fileIndex);
+            //    fileIndex++;
+            //    data.submit();
+            //    $("#AddAttachment").modal('show');
+            //},
+            done: function (e, data) {
+                var UploadFileData = GetUploadFiles(data.result.id);
+                UploadFileData['file'] = data.result;
+                UploadIfReady(data.result.id);
+            }
+        }).on('fileuploadprogress', function (e, data) {
+            console.log(data._progress);
+            var progress = (data._progress.loaded / data._progress.total)*100;
+            $("#uploadProgressBar").prop('aria-valuenow', progress);
+            $("#uploadProgressBar").width(progress + '%');
+        });
+       });
+
+                          document.addEventListener("DOMContentLoaded", function (event) {
+                                $("#@Html.IdFor(model => model.BirthDate)").on('change', function () {
+                                $("#age_id").val('');
+                                if ($(this).val())
+                                $("#age_id").val(moment($(this).val(), "DD/MM/YYYY").locale('ar').fromNow());
+                                });
+                                });
+
+</script>

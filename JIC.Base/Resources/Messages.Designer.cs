@@ -19,7 +19,7 @@ namespace JIC.Base.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Messages {
@@ -592,6 +592,15 @@ namespace JIC.Base.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to هذا الشخص تم ربطه بالقضية كمحامى من قبل.
+        /// </summary>
+        public static string PersonIsALawyer {
+            get {
+                return ResourceManager.GetString("PersonIsALawyer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يوجد رول مفتوح.
         /// </summary>
         public static string PreviousRollNotClosed {
@@ -930,6 +939,15 @@ namespace JIC.Base.Resources {
         public static string VacationStartDate {
             get {
                 return ResourceManager.GetString("VacationStartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to هذا الشخص تم ربطه بالقضية كشاهد من قبل.
+        /// </summary>
+        public static string WitnessSavedBefore {
+            get {
+                return ResourceManager.GetString("WitnessSavedBefore", resourceCulture);
             }
         }
         

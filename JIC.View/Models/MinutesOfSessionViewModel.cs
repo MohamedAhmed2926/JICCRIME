@@ -60,6 +60,7 @@ namespace JIC.Crime.View.Models
         public bool SaveMinutes { get; set; }
         public bool SavedBefore { get; set; }
 
+        public bool SaveLawyers { get; set; }
         public bool SavedDecisions { get; set; }
         public bool SentToJudge { get;  set; }
         public int? CurentUserID { get; set; }
@@ -78,7 +79,7 @@ namespace JIC.Crime.View.Models
 
         public List<CaseDefectsDataViewModel> CaseWitnesses { get; set; }
 
-       
+
         public int CrimeType { get; set; }
         public vw_SessionData SessionData { get; set; }
         public vw_CrimeCaseBasicData CaseBasicData { get; set; }

@@ -34,8 +34,6 @@ namespace JIC.Crime.View.Models
         [Required(ErrorMessageResourceType = typeof(Messages),
 ErrorMessageResourceName = "RequiredErrorMessage")]
         public List<SelectListItem> AtendanceType { get; set; }
-        public int Attendence { get; set; }
-        public int SessionId { get; set; }
 
     }
     public class CaseDefentsViewModel

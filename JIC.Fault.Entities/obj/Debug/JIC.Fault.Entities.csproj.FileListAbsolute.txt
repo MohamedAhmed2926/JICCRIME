@@ -9,14 +9,12 @@ C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Enti
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.dll
 C:\Users\Lenovo\JIC Project\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.pdb
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\JIC.Fault.Entities.dll.config
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\JIC.Fault.Entities.dll
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\JIC.Fault.Entities.pdb
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.dll
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.SqlServer.dll
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.xml
-E:\new\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.SqlServer.xml
-E:\new\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.csprojResolveAssemblyReference.cache
-E:\new\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.csproj.CoreCompileInputs.cache
-E:\new\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.dll
-E:\new\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.pdb
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\JIC.Fault.Entities.dll.config
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\JIC.Fault.Entities.dll
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\JIC.Fault.Entities.pdb
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.dll
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.xml
+D:\JICCRIME\JIC.Fault.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.dll
+D:\JICCRIME\JIC.Fault.Entities\obj\Debug\JIC.Fault.Entities.pdb

@@ -1,0 +1,28 @@
+﻿@using JIC.Crime.View.Models
+@model  MinutesOfSessionCreateViewModel
+@{
+
+    Layout = null;
+}
+
+<>
+<div id="Indexdiv">
+    @(Html
+.Grid(Model.CaseWitnesses.AsEnumerable())
+.Build(columns =>
+{
+columns.Add(model => model.Order).Titled(JIC.Base.Resources.Resources.number);
+columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Victims' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("WitnessID", model.ID)). Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
+//columns.Add(model => Html.DropDownList("AttendenceType", model.AtendanceType, "إختار....", new { @class = "form-control" }).ToString() + new MvcHtmlString("<span class='hidden' id='Victims' style='color: red'>هذا الحقل مطلوب</span>").ToString() + Html.Hidden("DefectID", model.ID) + Html.Hidden("DefectType", model.DefectType)).Encoded(false).Titled(JIC.Base.Resources.Resources.PresenceStatusInSession);
+columns.Add(model => model.Name).Titled(JIC.Base.Resources.Resources.Name);
+columns.Add(model => model.Nationality).Titled(JIC.Base.Resources.Resources.Nationality);
+columns.Add(model => model.NationalID == null ? model.PassportNumber : model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+columns.Add(model => model.Birthdate).Titled(JIC.Base.Resources.Resources.Birthday);
+columns.Add(model => model.Age.ToString()).Titled(JIC.Base.Resources.Resources.Age);
+columns.Add(model => model.JobName).Titled(JIC.Base.Resources.Resources.Job);
+columns.Add(model => model.PassportNumber).Titled(JIC.Base.Resources.Resources.PassportNo);
+columns.Add(model => model.Address).Titled(JIC.Base.Resources.Resources.Address);
+})/*.RowCss(row => "Victims")*/
+
+    )
+</div>

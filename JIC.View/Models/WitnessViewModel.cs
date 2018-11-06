@@ -7,13 +7,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
 namespace JIC.Crime.View.Models
 {
     public class WitnessViewModel
     {
-        public int CaseID { get; set; }
+        public int PersonID { get; set; }
 
         [Display(Name = "Age", ResourceType = typeof(JIC.Base.Resources.Resources))]
         public int Age { get; set; }
@@ -32,9 +31,7 @@ namespace JIC.Crime.View.Models
         [Required(ErrorMessageResourceType = typeof(Messages), ErrorMessageResourceName = "RequiredErrorMessage")]
 
         public virtual string NatNo { get; set; }
-        [Required(ErrorMessageResourceType = typeof(Base.Resources.Resources), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [Display(Name = "Nationality", ResourceType = typeof(JIC.Base.Resources.Resources))]
-        public virtual string NationalityName { get; set; } 
+
         public bool NationalIDRequired { get; set; } = false;
 
         [Required(ErrorMessageResourceType = typeof(Base.Resources.Resources), ErrorMessageResourceName = "RequiredErrorMessage")]
@@ -85,17 +82,38 @@ namespace JIC.Crime.View.Models
             }
             return null;
             //return BirthDate;
-        }
+    }
+
+        public string  FilePath { get; set; }
+        public HttpPostedFileBase FileUpload { get; set; }
 
 
-
-        public List<SelectListItem> AtendanceWitnessType { get; set; }
-
-
-        // public vw_PersonData PersonData { get; set; }
+        //  public PersonViewModel PersonData { get; set; }
+        public vw_PersonData PersonData { get; set; }
         public List<vw_KeyValue> Cities { get; set; }
         public List<vw_KeyValue> PoliceStations { get; set; }
         public List<vw_KeyValue> Nationalities { get; set; }
         public bool IsLocked { get; internal set; }
+    }
+
+    public class RetrievedPersonData
+    {
+        public long ID { get; set; }
+        public string Name { get; set; }
+        public string NatNo { get; set; }
+        public int? NationalityID { get; set; }
+        public string PassportNo { get; set; }
+
+        public string Job { get; set; }
+
+        public int? CityID { get; set; }
+        public int? PoliceStationID { get; set; }
+        public string Address { get; set; }
+
+        public string BirthDate { get; set; }
+        public string CleanFullName { get; set; }
+        public string PhoneNo { get; set; }
+        public int Age { get; set; }
+
     }
 }

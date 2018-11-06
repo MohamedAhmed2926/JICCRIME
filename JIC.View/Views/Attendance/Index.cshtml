@@ -58,27 +58,7 @@
                 Presence: $(this).find("#AttendenceType").val(),
                DefectType: $(this).find("#DefectType").val(),
             });
-                });
-
-                $(".AttendanceWitness").each(function () {
-                    var AttendenceValue = $(this).find('#AttendenceType').val();
-                    var ChooseValue = $(this).find("#AttendenceType option:eq(0)").val();
-                    if (AttendenceValue == ChooseValue) {
-                        $(this).find("#witness").removeClass("hidden");
-                        $(this).find("#witness").addClass("show");
-                        NotSubmit = false;
-                    } else {
-                        $(this).find("#witness").removeClass("show");
-                        $(this).find("#witness").addClass("hidden");
-                    };
-                    ObjectAfter.push({
-                     
-                        DefectID: $(this).find("#DefectID").val(),
-                        WitnessPresence: $(this).find("#AttendenceType").val(),
-                        SessionId: $(this).find("#SessionId").val(),
-                    });
-                });
-
+        });
         $.ajaxSetup({ traditional: false });
         var SubmitObjectAfter = { attendance: ObjectAfter, __RequestVerificationToken: $(':input[name="__RequestVerificationToken"]').val() };
 

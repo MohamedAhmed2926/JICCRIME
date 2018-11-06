@@ -49,6 +49,7 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -118,7 +119,6 @@
     <Compile Include="Components\VictimsComponent.cs" />
     <Compile Include="Components\VictimsSessionLogComponent.cs" />
     <Compile Include="Components\WitnessesComponents.cs" />
-    <Compile Include="Components\WitnessSessionLogComponent.cs" />
     <Compile Include="Components\WorkDaysComponent.cs" />
     <Compile Include="Components\UserComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

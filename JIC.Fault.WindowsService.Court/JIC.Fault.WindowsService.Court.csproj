@@ -74,6 +74,7 @@
       <HintPath>..\packages\Quartz.Unity.3.0.0\lib\net452\Quartz.Unity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />

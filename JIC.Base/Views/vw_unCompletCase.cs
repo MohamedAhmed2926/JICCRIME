@@ -52,5 +52,6 @@ namespace JIC.Base.Views
         public bool OrderOfAssignmentNotComplete { get; set; }
         public bool CaseDocumentFoldersNotComplete { get; set; }
         public bool OverallNumbersNotComplete { get; set; }
+        public bool WitnessNotComplete { get; set; }
     }
 }

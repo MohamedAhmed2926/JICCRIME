@@ -1,0 +1,42 @@
+﻿@using JIC.Crime.View.Models
+@model  CasePartiesForLawyersViewModel
+@{
+    ViewBag.Title = "Index";
+}
+@using (Ajax.BeginForm("Index", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "Indexdiv" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-4">
+                @*<h4>جلسة (@Model.SessionData.SessionDate.ToShortDateString()) </h4>*@
+            </div>
+
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            @JIC.Base.Resources.Resources.CaseParties
+        </div>
+     
+            <div class="panel-body">
+                @Html.Label((Model.CaseParties.Count).ToString() + " خصوم ")
+
+
+                @(Html
+.Grid(Model.CaseParties.AsEnumerable())
+.Build(columns =>
+{
+    columns.Add(model => model.PartiesOrder).Titled(JIC.Base.Resources.Resources.number);
+    columns.Add(model => model.PartyName).Titled(JIC.Base.Resources.Resources.Name);
+    columns.Add(model => model.NationalID).Titled(JIC.Base.Resources.Resources.NationalId);
+    columns.Add(model => model.Status).Titled(JIC.Base.Resources.Resources.Status);
+    columns.Add(model => model.PartyType).Titled(JIC.Base.Resources.Resources.PartyType);
+})/*.RowCss(row => "Victims")*/
+
+                )
+            </div>
+        </div>
+
+}

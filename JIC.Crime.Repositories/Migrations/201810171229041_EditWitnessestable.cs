@@ -9,7 +9,7 @@ namespace JIC.Crime.Repositories.Migrations
         {
             AddColumn("dbo.Cases_CaseWitnesses", "TestimonyFileData", c => c.Binary());
             AddColumn("dbo.Cases_CaseWitnesses", "UserID", c => c.Int(nullable: false));
-          //  AddColumn("dbo.Cases_WitnessSessionLog", "TestimonyFileData", c => c.Binary());
+            AddColumn("dbo.Cases_WitnessSessionLog", "TestimonyFileData", c => c.Binary());
 
 
            // CreateIndex("dbo.Cases_WitnessSessionLog", "WitnessID");

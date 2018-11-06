@@ -419,4 +419,10 @@
   <data name="SentBefore" xml:space="preserve">
     <value>تم الإرسال من قبل</value>
   </data>
+  <data name="PersonIsALawyer" xml:space="preserve">
+    <value>هذا الشخص تم ربطه بالقضية كمحامى من قبل</value>
+  </data>
+  <data name="WitnessSavedBefore" xml:space="preserve">
+    <value>هذا الشخص تم ربطه بالقضية كشاهد من قبل</value>
+  </data>
 </root>

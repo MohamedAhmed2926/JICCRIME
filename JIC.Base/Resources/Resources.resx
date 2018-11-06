@@ -1410,13 +1410,10 @@
   <data name="AddWitness" xml:space="preserve">
     <value>إضافة شاهد جديد</value>
   </data>
-  <data name="AddDocumentWitness" xml:space="preserve">
-    <value>اضافة نص الشهادة</value>
+  <data name="WitnessesList" xml:space="preserve">
+    <value>قائمة الثبوت</value>
   </data>
-  <data name="AddWitnessTestimony" xml:space="preserve">
-    <value>ادخال نص الشهادة</value>
-  </data>
-  <data name="SendtoJudge" xml:space="preserve">
-    <value>عدم امكانية ادخال الشهادة بعد ارسال المحضر للقاضى للتصديق </value>
+  <data name="LawyersTabTitle" xml:space="preserve">
+    <value>توكيل المحاميين</value>
   </data>
 </root>

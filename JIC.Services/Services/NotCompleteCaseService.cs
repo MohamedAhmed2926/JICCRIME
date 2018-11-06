@@ -49,7 +49,15 @@ namespace JIC.Services.Services
 
         public IQueryable<vw_unCompletCase> GetNotCompleteCase(int CourtId)
         {
-            return NotCompleteCaseComponent.GetNotCompleteCase(CourtId);
+            try
+            {
+                return NotCompleteCaseComponent.GetNotCompleteCase(CourtId);
+            }
+            catch (Exception e)
+            {
+                HandleException(e);
+                return null;
+            }
         }
     }
 }
